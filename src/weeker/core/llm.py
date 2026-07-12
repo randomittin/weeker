@@ -10,6 +10,7 @@ OpenAI-compatible chat-completions endpoint.
 from __future__ import annotations
 
 import json
+import re
 from typing import Any, Protocol, runtime_checkable
 
 import httpx
@@ -61,8 +62,40 @@ class HTTPTransport:
                 ],
             },
         )
-        resp.raise_for_status()
-        return resp.json()["choices"][0]["message"]["content"]
+        if resp.status_code >= 400:
+            # Surface the provider's error envelope (Gemini/Groq return a JSON
+            # body with the real cause) instead of a bare status line.
+            raise LLMError(f"LLM HTTP {resp.status_code} from {self.base_url}: {resp.text[:500]}")
+        return _content_from_envelope(resp.json())
+
+
+def _content_from_envelope(payload: Any) -> str:
+    """Pull the assistant text out of an OpenAI-compatible chat envelope.
+
+    Handles the shapes Gemini/Groq actually return: the standard
+    ``choices[0].message.content``, a 200-status ``{"error": {...}}`` envelope,
+    and ``content`` delivered as a list of ``{"text": ...}`` parts (some
+    OpenAI-compatible proxies do this). Raises :class:`LLMError` when no text can
+    be found so the caller sees the real body, not a ``KeyError``.
+    """
+    if isinstance(payload, dict) and payload.get("error"):
+        err = payload["error"]
+        msg = err.get("message") if isinstance(err, dict) else err
+        raise LLMError(f"provider error: {msg}")
+    try:
+        choices = payload["choices"]
+        message = choices[0]["message"]
+        content = message.get("content")
+    except (KeyError, IndexError, TypeError) as exc:
+        raise LLMError(f"unexpected completion envelope: {str(payload)[:500]}") from exc
+    if isinstance(content, list):
+        # Multi-part content: concatenate the text parts.
+        content = "".join(
+            part.get("text", "") for part in content if isinstance(part, dict)
+        )
+    if content is None:
+        raise LLMError(f"completion had no content: {str(message)[:300]}")
+    return content
 
 
 _default_transport: Transport | None = None
@@ -73,6 +106,75 @@ def _get_default_transport() -> Transport:
     if _default_transport is None:
         _default_transport = HTTPTransport()
     return _default_transport
+
+
+_FENCE_RE = re.compile(r"```(?:json|JSON)?\s*(.*?)\s*```", re.DOTALL)
+
+
+def extract_json(raw: str) -> Any:
+    """Parse JSON out of a real LLM reply, tolerating fences and prose.
+
+    Gemini and Groq (OpenAI-compatible ``/chat/completions``) routinely wrap
+    strict-JSON output in a ```json … ``` markdown fence and/or bracket it with
+    prose ("Here is the JSON:" …). This tries, in order: the whole string, the
+    contents of any fenced block, then the first balanced ``{…}``/``[…]`` span
+    found in the text. Raises :class:`json.JSONDecodeError` if nothing parses.
+    """
+    text = raw.strip()
+    candidates: list[str] = [text]
+    candidates.extend(block.strip() for block in _FENCE_RE.findall(text))
+    span = _first_json_span(text)
+    if span is not None:
+        candidates.append(span)
+
+    last_err: json.JSONDecodeError | None = None
+    for cand in candidates:
+        try:
+            return json.loads(cand)
+        except json.JSONDecodeError as e:
+            last_err = e
+            continue
+    raise last_err if last_err is not None else json.JSONDecodeError("no JSON", text, 0)
+
+
+def _first_json_span(text: str) -> str | None:
+    """Return the first balanced ``{...}`` or ``[...]`` substring, or None.
+
+    Scans for the earliest opening bracket and walks to its matching close,
+    respecting strings and escapes so braces inside JSON string values don't
+    throw off the depth count.
+    """
+    start = None
+    for i, ch in enumerate(text):
+        if ch in "{[":
+            start = i
+            break
+    if start is None:
+        return None
+    open_ch = text[start]
+    close_ch = "}" if open_ch == "{" else "]"
+    depth = 0
+    in_str = False
+    escape = False
+    for i in range(start, len(text)):
+        ch = text[i]
+        if in_str:
+            if escape:
+                escape = False
+            elif ch == "\\":
+                escape = True
+            elif ch == '"':
+                in_str = False
+            continue
+        if ch == '"':
+            in_str = True
+        elif ch == open_ch:
+            depth += 1
+        elif ch == close_ch:
+            depth -= 1
+            if depth == 0:
+                return text[start : i + 1]
+    return None
 
 
 def validate_json(data: Any, schema: dict) -> list[str]:
@@ -151,7 +253,7 @@ def complete(
             return raw
 
         try:
-            data = json.loads(raw)
+            data = extract_json(raw)
         except json.JSONDecodeError as e:
             last_error = f"invalid JSON ({e})"
             continue
