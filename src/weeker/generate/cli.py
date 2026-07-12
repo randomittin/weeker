@@ -137,7 +137,7 @@ def register(group_app: typer.Typer) -> None:
         course: str = typer.Option(None, "--course", "-c"),
         caselets: bool = typer.Option(False, "--caselets", help="Also apply the caselet bar."),
     ) -> None:
-        """Run the M3 bank gate (schema/grounding/blind/near-dup/G4[/caselets])."""
+        """Run the M3 bank gate (schema/grounding/blind/near-dup/G4; --caselets adds the caselet bar)."""
         with session_scope() as db:
             c = _resolve_course(db, course)
             if c is None:
