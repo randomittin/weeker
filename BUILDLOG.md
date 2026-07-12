@@ -10,6 +10,14 @@ Task → what → gate command → result. Gates run from `./.venv`.
 | T-04 | `core/llm.py` `complete()` strict-JSON retry + injectable transport; `core/embed.py` batching + sha256 on-disk cache | `pytest tests/test_llm.py tests/test_embed.py` | PASS (retry path + cache-hit proven) |
 | T-05 | `cli/main.py` typer app + 6 sub-app groups (ingest/generate/study/mock/status/verify) with wave-attach hook; `cli/doctor.py` (`atlas doctor`) db/migrations/keys/live/embed-dim checks, SKIP when absent | `atlas doctor` exit 0 — **M0 gate** | PASS (all live checks SKIP, exit 0) |
 
+# BUILDLOG — Wave 1a (Ingestion pipeline)
+
+| Task | What | Gate | Result |
+|---|---|---|---|
+| T-16 | `ingest/review.py` S5 review TUI (Textual) — a/e/m/s/d accept/edit/merge/split/drop + `p` peek source; each decision writes `review_status`+`reviewed_at` and commits → resumable (relaunch re-queries `pending`). Fix: `action_edit` uses `push_screen(...,callback)` (not `push_screen_wait`, which needs a worker) | `pytest -q tests/test_ingest_review.py` (Textual Pilot drives a/e/d over 3 fixtures; asserts DB status transitions + resumable + peek) | PASS (3 tests) |
+| T-17 | `ingest/objectives.py` S6 — `generate_objectives` (batch-of-10 via `prompts/objectives.txt`, response keyed by concept id, per-concept validation, bloom/style coerced) + `compute_blueprint_weights` (base ∝ reviewed-concept count, manifest overrides authoritative, remainder split by base, Σ=1.0) + `persist_blueprint_weights`; `verify/concept_checks.py` `verify_concepts` = **M2 gate** (≥1 objective/reviewed concept, blueprint normalized, no orphan chapter/source-chunk) | `pytest -q tests/test_ingest_objectives.py` (fake LLM parse, batch-of-10, override exact + normalized, verify pass + 3 fail modes) | PASS (8 tests) |
+| —   | `ingest/cli.py` `register(group_app)` → `atlas ingest run` (S0-S6 orchestration: manifest→parse→structure→chunk→embed→concepts→objectives+blueprint), `review` (launch TUI), `verify-parse`, `verify` (M1), `verify-concepts` (M2); real functions, no stub | `atlas ingest --help` lists 5 commands; imports resolve | PASS |
+
 # BUILDLOG — Wave 2 (Adaptive learn loop)
 
 | Task | What | Gate | Result |
