@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weeker — Pass your certification exam in a week</title>
+  <meta name="description" content="Weeker is an open-source, locally-run adaptive certification exam-prep learning engine. Ingest a workbook PDF, generate original gate-verified questions, and study with a confidence-weighted Elo + FSRS-lite loop. CLI + TUI, Python." />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#0d1424" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2334d17f'/%3E%3Cpath d='M7 9l3 14 3-9 3 9 3-14' fill='none' stroke='%2305230f' stroke-width='2.4' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <meta property="og:title" content="Weeker — Pass your certification exam in a week" />
+  <meta property="og:description" content="Open-source adaptive exam-prep learning engine. Gate-verified original questions, Elo + FSRS-lite study loop, full-pattern NISM mocks. CLI + TUI, Python." />
+  <meta property="og:type" content="website" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Reusable inline SVG symbols -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-github" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.1-.75.4-1.27.73-1.56-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M4 12.5l5 5L20 6"/>
+    </symbol>
+    <symbol id="i-elo" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 17l5-6 4 3 5-8 4 5"/>
+    </symbol>
+    <symbol id="i-retention" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-3-6.7M21 4v4h-4"/>
+    </symbol>
+    <symbol id="i-concept" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3zM12 12l8-4.5M12 12v9M12 12L4 7.5"/>
+    </symbol>
+  </svg>
+
+  <!-- ================= Header ================= -->
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Weeker home">
+        <svg class="logo" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="7" fill="#34d17f"/>
+          <path d="M7 9l3 14 3-9 3 9 3-14" fill="none" stroke="#05230f" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+        </svg>
+        <span>Weeker</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a class="nav-hide" href="#how">How it works</a>
+        <a class="nav-hide" href="#gates">Gate chain</a>
+        <a class="nav-hide" href="#science">Learning science</a>
+        <a class="nav-hide" href="#mock">Mock</a>
+        <a class="btn btn-ghost btn-sm" href="https://github.com/randomittin/weeker" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> GitHub
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <a id="top"></a>
+
+    <!-- ================= Hero ================= -->
+    <section class="hero">
+      <div class="wrap">
+        <p class="hero-badge"><span class="dot" aria-hidden="true"></span> Open-source learning engine · runs locally</p>
+        <h1>Pass your certification exam <span class="grad">in a week.</span></h1>
+        <p class="lede">An adaptive exam-prep learning engine you run on your own machine. Point it at a certification workbook and it does the rest.</p>
+        <p class="sub">Weeker ingests a workbook PDF, extracts a reviewed concept inventory, generates <em>original</em> gate-verified questions and caselets, then drives an adaptive study loop toward a full-pattern mock and a score prediction. Built for India's NISM certifications; workbook-agnostic.</p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://github.com/randomittin/weeker" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> View on GitHub
+          </a>
+          <a class="btn btn-ghost" href="#quickstart">Quickstart</a>
+        </div>
+
+        <div class="hero-meta">
+          <span><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg> <b>195</b>&nbsp;tests</span>
+          <span><b>~85%</b>&nbsp;coverage</span>
+          <span><b>6</b>&nbsp;quality gates per question</span>
+          <span>Python <b>3.11</b> · CLI + TUI</span>
+        </div>
+
+        <!-- Terminal preview -->
+        <div class="terminal reveal" role="img" aria-label="Terminal showing a weeker study session predicting a passing score">
+          <div class="terminal-bar">
+            <span class="tdot" aria-hidden="true"></span><span class="tdot" aria-hidden="true"></span><span class="tdot" aria-hidden="true"></span>
+            <span class="tname">weeker — study loop</span>
+          </div>
+<pre aria-hidden="true"><code><span class="t-prompt">$</span> <span class="t-cmd">weeker study run</span>
+<span class="t-out">concept</span>  Time value of money        <span class="t-out">mastery</span> <span class="t-ok">0.82 ▲</span>
+<span class="t-out">concept</span>  Mutual fund taxation       <span class="t-out">mastery</span> 0.54 ▲
+<span class="t-out">concept</span>  Systematic risk            <span class="t-out">mastery</span> 0.71 ▲
+<span class="t-out">due for retention:</span> 3   <span class="t-out">new concepts:</span> 2
+
+<span class="t-prompt">$</span> <span class="t-cmd">weeker mock full</span> <span class="t-flag">--predict</span>
+<span class="t-out">150 marks · 180 min · negative 0.25×</span>
+<span class="t-out">predicted score</span>  <span class="t-ok">104 / 150   PASS ✓</span>  <span class="t-out">(cut-off 90)</span></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= How it works ================= -->
+    <section id="how">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Pipeline</p>
+          <h2>Workbook in, mastery out</h2>
+          <p>Four stages turn a static PDF into an adaptive course. Each is a command; each writes to a database you can inspect and replay.</p>
+        </div>
+        <div class="steps">
+          <article class="step">
+            <div class="num" aria-hidden="true">01</div>
+            <h3>Ingest</h3>
+            <p>Parse the workbook PDF, chunk it, and extract a <b>reviewed concept inventory</b> — concepts, not pages, become the unit of study.</p>
+            <code class="cmd">weeker ingest run</code>
+          </article>
+          <article class="step">
+            <div class="num" aria-hidden="true">02</div>
+            <h3>Generate</h3>
+            <p>Produce <b>original</b> questions and caselets grounded in the source, each pushed through a six-gate verification chain.</p>
+            <code class="cmd">gate chain G1–G6</code>
+          </article>
+          <article class="step">
+            <div class="num" aria-hidden="true">03</div>
+            <h3>Learn</h3>
+            <p>A day-0 diagnostic seeds ability; the adaptive loop schedules concepts by weakness and retention, tracking misconceptions.</p>
+            <code class="cmd">weeker study run</code>
+          </article>
+          <article class="step">
+            <div class="num" aria-hidden="true">04</div>
+            <h3>Mock &amp; predict</h3>
+            <p>Sit a full-pattern exam under real timing and negative marking, then read a per-section score prediction.</p>
+            <code class="cmd">weeker mock full</code>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Gate chain (star) ================= -->
+    <section id="gates">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">The differentiator</p>
+          <h2>Nothing ships unproven</h2>
+        </div>
+        <div class="gates-intro">
+          <p style="color:var(--fg-muted); font-size:var(--step-1);">Every generated question runs a chain of six independent quality gates before it can ever reach you. Each question stores its <b style="color:var(--fg)">gate evidence</b> — so mastery is replayable straight from the attempt log.</p>
+          <p class="gates-note">A question is <b>rejected</b> the moment any gate fails. Source text is never copied; correctness is confirmed by a second model family that never saw the answer.</p>
+        </div>
+
+        <div class="gate-chain">
+          <article class="gate">
+            <span class="gate-id">G1 <svg class="chk" aria-hidden="true"><use href="#i-check"/></svg></span>
+            <span class="gate-name">Structural</span>
+            <span class="gate-desc">Exactly 4 options, exactly 1 correct, no all/none-of-the-above, options are distinct.</span>
+          </article>
+          <article class="gate">
+            <span class="gate-id">G4 <svg class="chk" aria-hidden="true"><use href="#i-check"/></svg></span>
+            <span class="gate-name">Originality</span>
+            <span class="gate-desc">8-gram overlap + stem↔source cosine check — the source text is never copied.</span>
+          </article>
+          <article class="gate">
+            <span class="gate-id">G5 <svg class="chk" aria-hidden="true"><use href="#i-check"/></svg></span>
+            <span class="gate-name">Dedup / variant</span>
+            <span class="gate-desc">Near-duplicates and thin variants of existing items are collapsed out.</span>
+          </article>
+          <article class="gate">
+            <span class="gate-id">G2 <svg class="chk" aria-hidden="true"><use href="#i-check"/></svg></span>
+            <span class="gate-name">Grounding</span>
+            <span class="gate-desc">An LLM verifier confirms the question and key are grounded in the source concept.</span>
+          </article>
+          <article class="gate">
+            <span class="gate-id">G3 <svg class="chk" aria-hidden="true"><use href="#i-check"/></svg></span>
+            <span class="gate-name">Blind-solve</span>
+            <span class="gate-desc">A different model family solves it blind; consensus confirms, dispute rejects.</span>
+          </article>
+          <article class="gate">
+            <span class="gate-id">G6 <svg class="chk" aria-hidden="true"><use href="#i-check"/></svg></span>
+            <span class="gate-name">Scenario-dependence</span>
+            <span class="gate-desc">For caselets: the scenario must be load-bearing, not decorative context.</span>
+          </article>
+        </div>
+        <p class="gate-flow">draft → <b>G1</b> → <b>G4</b> → <b>G5</b> → <b>G2</b> → <b>G3</b> → <b>G6</b> → banked, with evidence</p>
+      </div>
+    </section>
+
+    <!-- ================= Learning science ================= -->
+    <section id="science" style="background:var(--bg-elev); border-block:1px solid var(--border-soft);">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Learning science</p>
+          <h2>Measured ability, not vibes</h2>
+          <p>Concepts are the unit of mastery. The loop estimates what you know, schedules what you'll forget, and remembers where you went wrong.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature">
+            <div class="ficon" aria-hidden="true"><svg><use href="#i-elo"/></svg></div>
+            <h3>Confidence-weighted Elo</h3>
+            <p>Each concept carries an Elo-style ability estimate that moves with every attempt — weighted by how confident you were.</p>
+            <p>A day-0 diagnostic seeds the estimate so the loop starts calibrated instead of cold.</p>
+          </article>
+          <article class="feature">
+            <div class="ficon" aria-hidden="true"><svg><use href="#i-retention"/></svg></div>
+            <h3>FSRS-lite retention</h3>
+            <p>A spaced-retention scheduler surfaces concepts just before you'd forget them, balancing new material against review.</p>
+            <p>Study time flows to weak and decaying concepts first.</p>
+          </article>
+          <article class="feature">
+            <div class="ficon" aria-hidden="true"><svg><use href="#i-concept"/></svg></div>
+            <h3>Concept mastery &amp; misconceptions</h3>
+            <p>Mastery is tracked per concept, not per question — so it generalises across the whole item bank.</p>
+            <p>Wrong answers feed a misconception model that targets what to fix next.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Mock breakdown ================= -->
+    <section id="mock">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Full-pattern mock</p>
+          <h2>The real exam shape, under real pressure</h2>
+          <p>Weeker builds a complete NISM-pattern mock and scores it exactly like the exam — then predicts your result per section with an attempt-or-skip strategy.</p>
+        </div>
+        <div class="mock">
+          <div class="mock-stats">
+            <div class="stat accent"><div class="val">150</div><div class="lbl">total marks</div></div>
+            <div class="stat"><div class="val">180<span class="u"> min</span></div><div class="lbl">time limit</div></div>
+            <div class="stat accent"><div class="val">90</div><div class="lbl">marks to pass</div></div>
+            <div class="stat"><div class="val">0.25<span class="u">×</span></div><div class="lbl">negative marking (of marks)</div></div>
+          </div>
+          <div class="mock-table">
+            <table>
+              <caption>Paper composition</caption>
+              <thead>
+                <tr><th scope="col">Segment</th><th scope="col">Count</th><th scope="col">Marks</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Standalone questions</td><td class="mono">90</td><td class="mono">90</td></tr>
+                <tr><td>1-mark caselets</td><td class="mono">6 × 5</td><td class="mono">30</td></tr>
+                <tr><td>2-mark caselets</td><td class="mono">3 × 5</td><td class="mono">30</td></tr>
+              </tbody>
+              <tfoot>
+                <tr><td>Total</td><td class="mono">120 items</td><td class="mono">150</td></tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+        <p class="gates-note" style="margin-top:var(--sp-5); border-left-color:var(--cyan);">
+          <b>Attempt / skip EV.</b> With 0.25× negative marking, a guess only pays off above a breakeven probability of <b>p = 0.2</b>. Weeker prints a per-section score prediction and flags the expected-value decision for every item you're unsure of.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= Tech + Quickstart ================= -->
+    <section id="quickstart" style="background:var(--bg-elev); border-top:1px solid var(--border-soft);">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Get started</p>
+          <h2>Clone it and run <code style="font-family:var(--font-mono); color:var(--accent); font-size:.85em;">weeker doctor</code></h2>
+          <p>Pure Python. No hosted service, no account — the engine lives on your machine and the CLI and TUI are thin shells around it.</p>
+        </div>
+
+        <div class="badges" aria-label="Project status badges">
+          <span class="badge ok"><span class="k">tests</span><span class="v">195 passing</span></span>
+          <span class="badge ok"><span class="k">coverage</span><span class="v">~85%</span></span>
+          <span class="badge"><span class="k">python</span><span class="v">3.11</span></span>
+          <span class="badge"><span class="k">license</span><span class="v">MIT</span></span>
+          <span class="badge ok"><span class="k">gates</span><span class="v">G1–G6</span></span>
+        </div>
+
+        <div class="stack-list" style="margin-bottom:var(--sp-6);">
+          <span class="chip"><b>SQLAlchemy</b> 2.0</span>
+          <span class="chip"><b>Postgres</b> + pgvector</span>
+          <span class="chip"><b>PyMuPDF</b></span>
+          <span class="chip"><b>Typer</b> CLI</span>
+          <span class="chip"><b>Textual</b> TUI</span>
+          <span class="chip"><b>pydantic</b> v2</span>
+        </div>
+
+        <div class="terminal quickstart-terminal" style="position:relative;">
+          <div class="terminal-bar">
+            <span class="tdot" aria-hidden="true"></span><span class="tdot" aria-hidden="true"></span><span class="tdot" aria-hidden="true"></span>
+            <span class="tname">bash</span>
+          </div>
+          <button class="copy-btn" type="button" data-copy-target="#qs-code" aria-label="Copy quickstart commands to clipboard">Copy</button>
+<pre><code id="qs-code"><span class="t-prompt">$</span> <span class="t-cmd">git clone https://github.com/randomittin/weeker && cd weeker</span>
+<span class="t-prompt">$</span> <span class="t-cmd">pip install -e .</span>
+<span class="t-prompt">$</span> <span class="t-cmd">weeker doctor</span>            <span class="t-out"># readiness check</span>
+<span class="t-prompt">$</span> <span class="t-cmd">weeker ingest run</span>         <span class="t-out"># workbook → concepts</span>
+<span class="t-prompt">$</span> <span class="t-cmd">weeker mock diagnose</span>      <span class="t-out"># day-0 diagnostic, seed ability</span>
+<span class="t-prompt">$</span> <span class="t-cmd">weeker study run</span>          <span class="t-out"># adaptive study loop</span>
+<span class="t-prompt">$</span> <span class="t-cmd">weeker mock full</span>          <span class="t-out"># full-pattern mock + prediction</span>
+<span class="t-prompt">$</span> <span class="t-cmd">weeker status show</span>        <span class="t-out"># mastery + readiness</span></code></pre>
+        </div>
+        <p class="qs-note">Postgres + pgvector is the production path; the test suite runs on SQLite with no keys or Postgres needed.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= Footer ================= -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-inner">
+        <a class="brand" href="#top">
+          <svg class="logo" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="7" fill="#34d17f"/>
+            <path d="M7 9l3 14 3-9 3 9 3-14" fill="none" stroke="#05230f" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+          </svg>
+          <span>Weeker</span>
+        </a>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="https://github.com/randomittin/weeker" rel="noopener">GitHub</a>
+          <a href="#how">How it works</a>
+          <a href="#gates">Gate chain</a>
+          <a href="#quickstart">Quickstart</a>
+        </nav>
+      </div>
+      <p class="footer-note">
+        Open source under the MIT license. Built with Python 3.11, SQLAlchemy 2.0, Postgres + pgvector, PyMuPDF, Typer and Textual.
+        Weeker is a learning engine you run yourself — not a hosted service. "NISM" refers to India's National Institute of Securities Markets; Weeker is an independent, workbook-agnostic study tool.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Copy-to-clipboard for the quickstart block. Degrades gracefully: if the
+    // Clipboard API is unavailable the button is simply hidden.
+    (function () {
+      var btn = document.querySelector('.copy-btn');
+      if (!btn) return;
+      if (!navigator.clipboard || !navigator.clipboard.writeText) {
+        btn.hidden = true;
+        return;
+      }
+      btn.addEventListener('click', function () {
+        var target = document.querySelector(btn.getAttribute('data-copy-target'));
+        if (!target) return;
+        // Strip inline comments so the copied text is runnable commands only.
+        var lines = target.innerText.split('\n').map(function (l) {
+          return l.replace(/^\$\s?/, '').replace(/\s+#.*$/, '').trim();
+        }).filter(Boolean);
+        navigator.clipboard.writeText(lines.join('\n')).then(function () {
+          var prev = btn.textContent;
+          btn.textContent = 'Copied';
+          btn.classList.add('copied');
+          setTimeout(function () { btn.textContent = prev; btn.classList.remove('copied'); }, 1600);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
