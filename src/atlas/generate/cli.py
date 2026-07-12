@@ -21,6 +21,7 @@ from sqlalchemy import select
 from atlas.core.db import get_session, session_scope
 from atlas.core.models import Course, Question
 from atlas.generate.calibrate import audit_bank
+from atlas.generate.caselets import run_caselets
 from atlas.generate.pipeline import run_generation
 from atlas.generate.review_tui import DisputeApp
 from atlas.verify.bank_checks import verify_bank
@@ -56,6 +57,37 @@ def register(group_app: typer.Typer) -> None:
         typer.echo(
             f"generated={report.generated} accepted={report.accepted} "
             f"disputed={report.disputed} rejected={report.rejected} by_gate={report.by_gate}"
+        )
+        raise typer.Exit(0)
+
+    @group_app.command("caselets")
+    def caselets_cmd(
+        count: int = typer.Option(9, "--count", "-n", help="Caselets to author."),
+        two_mark: int = typer.Option(3, "--two-mark", help="How many are 2-mark caselets."),
+        refill: bool = typer.Option(False, "--refill", help="Weak-concept refill mode."),
+        user: str = typer.Option("default", "--user", "-u"),
+        course: str = typer.Option(None, "--course", "-c"),
+        consensus: int = typer.Option(1, "--consensus", help="Blind-solve consensus count."),
+    ) -> None:
+        """Generate, gate (incl. G6) and persist caselets for a course."""
+        with session_scope() as db:
+            c = _resolve_course(db, course)
+            if c is None:
+                typer.echo("No course found — ingest a course first.")
+                raise typer.Exit(1)
+            report = run_caselets(
+                db,
+                c,
+                user,
+                count=count,
+                two_mark_count=two_mark,
+                refill=refill,
+                consensus=consensus,
+            )
+        typer.echo(
+            f"caselets generated={report.generated} accepted={report.accepted} "
+            f"disputed={report.disputed} rejected={report.rejected} "
+            f"g6_regenerated={report.g6_regenerated}"
         )
         raise typer.Exit(0)
 

@@ -81,52 +81,57 @@ def verify_bank(
     report.total_active = len(active)
     if not active:
         report.failures.append("no active standalone questions in bank")
-        return report
+    else:
+        # 1. schema 100% — re-run G1 structurally (no embedding needed for invariants).
+        schema_bad = []
+        for q in active:
+            res = gates.check_g1(
+                stem=q.stem, options=q.options or [], correct_key=q.correct_key, gate_log={}
+            )
+            if not res.passed:
+                schema_bad.append((q.id, res.reason))
+        if schema_bad:
+            report.schema_ok = False
+            report.failures.append(
+                f"schema: {len(schema_bad)}/{len(active)} active fail G1 "
+                f"(e.g. {schema_bad[0][1]})"
+            )
 
-    # 1. schema 100% — re-run G1 structurally (no embedding needed for the invariants).
-    schema_bad = []
-    for q in active:
-        res = gates.check_g1(
-            stem=q.stem, options=q.options or [], correct_key=q.correct_key, gate_log={}
-        )
-        if not res.passed:
-            schema_bad.append((q.id, res.reason))
-    if schema_bad:
-        report.schema_ok = False
-        report.failures.append(
-            f"schema: {len(schema_bad)}/{len(active)} active fail G1 "
-            f"(e.g. {schema_bad[0][1]})"
-        )
+        # 2. grounding 100% — every active question passed G2.
+        ungrounded = [q.id for q in active if not _gate_passed(q, "G2")]
+        if ungrounded:
+            report.grounding_ok = False
+            report.failures.append(
+                f"grounding: {len(ungrounded)}/{len(active)} active without G2 pass"
+            )
 
-    # 2. grounding 100% — every active question passed G2.
-    ungrounded = [q.id for q in active if not _gate_passed(q, "G2")]
-    if ungrounded:
-        report.grounding_ok = False
-        report.failures.append(f"grounding: {len(ungrounded)}/{len(active)} active without G2 pass")
+        # 3. blind agreement ≥ 95% post-dispute.
+        disputed = [q.id for q in active if _g3_disputed(q)]
+        report.disputed_count = len(disputed)
+        report.blind_agreement = 1.0 - len(disputed) / len(active)
+        if report.blind_agreement < BLIND_AGREEMENT_MIN:
+            report.failures.append(
+                f"blind agreement {report.blind_agreement:.3f} < {BLIND_AGREEMENT_MIN} "
+                f"({len(disputed)} still disputed)"
+            )
 
-    # 3. blind agreement ≥ 95% post-dispute.
-    disputed = [q.id for q in active if _g3_disputed(q)]
-    report.disputed_count = len(disputed)
-    report.blind_agreement = 1.0 - len(disputed) / len(active)
-    if report.blind_agreement < BLIND_AGREEMENT_MIN:
-        report.failures.append(
-            f"blind agreement {report.blind_agreement:.3f} < {BLIND_AGREEMENT_MIN} "
-            f"({len(disputed)} still disputed)"
-        )
+        # 4. near-duplicate < 2%.
+        dups = [q.id for q in active if _g5_duplicate(q)]
+        report.near_dup_rate = len(dups) / len(active)
+        if report.near_dup_rate >= NEAR_DUP_MAX:
+            report.failures.append(
+                f"near-dup rate {report.near_dup_rate:.3f} ≥ {NEAR_DUP_MAX} ({len(dups)} flagged)"
+            )
 
-    # 4. near-duplicate < 2%.
-    dups = [q.id for q in active if _g5_duplicate(q)]
-    report.near_dup_rate = len(dups) / len(active)
-    if report.near_dup_rate >= NEAR_DUP_MAX:
-        report.failures.append(
-            f"near-dup rate {report.near_dup_rate:.3f} ≥ {NEAR_DUP_MAX} ({len(dups)} flagged)"
-        )
-
-    # 5. zero G4 hits among active.
-    g4 = [q.id for q in active if q.gate_log and "G4" in q.gate_log and not _gate_passed(q, "G4")]
-    report.g4_hits = len(g4)
-    if g4:
-        report.failures.append(f"{len(g4)} active question(s) carry a failed G4")
+        # 5. zero G4 hits among active.
+        g4 = [
+            q.id
+            for q in active
+            if q.gate_log and "G4" in q.gate_log and not _gate_passed(q, "G4")
+        ]
+        report.g4_hits = len(g4)
+        if g4:
+            report.failures.append(f"{len(g4)} active question(s) carry a failed G4")
 
     if caselets:
         _verify_caselets(session, course_id, report)
