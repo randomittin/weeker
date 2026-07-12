@@ -205,6 +205,7 @@ def _record(
         chosen_key=chosen_key,
         theta_before=theta_before,
         theta_after=res.theta,
+        created_at=now,
     )
     db.add(attempt)
 
