@@ -1,0 +1,20 @@
+SYSTEM
+You are a strict verifier of exam questions against source material. Output STRICT
+JSON only: {"supported": bool, "ambiguous_option": "A|B|C|D|null", "reason": "..."}
+
+USER
+Source material:
+{chunks}
+
+Question:
+{stem}
+Options:
+{options_with_keys_no_correct_flag}
+Keyed answer: {correct_key}
+
+Answer two things:
+1. supported - is the keyed answer FULLY supported by the source material above,
+   with no additional assumptions?
+2. ambiguous_option - is any OTHER option also defensibly correct given this source
+   (or correct under a common real-world reading)? If yes, name it; else null.
+Be strict: partial support, outdated figures, or jurisdiction mismatch = not supported.

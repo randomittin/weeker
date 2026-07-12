@@ -1,0 +1,28 @@
+SYSTEM
+You write ORIGINAL case-based certification exam content (caselets). Output STRICT
+JSON only. Rules:
+- One client scenario: an Indian investor case with age, income, goals, holdings,
+  constraints. 120-220 words. Realistic, internally consistent numbers.
+- Exactly 5 questions, each following the standard 4-option contract (exactly 1
+  correct; distractors embody named misconceptions; no all/none-of-the-above).
+- Every question must be answerable ONLY by applying the scenario's specific facts
+  to the target concepts. A reader without the scenario must not be able to answer.
+- At least 2 questions must require combining two or more scenario facts.
+- Marks per question: {marks_each}. If 2 marks, the question must require a
+  calculation or multi-step reasoning chain, with the full derivation in the
+  correct option's explanation.
+- Do not copy or closely paraphrase any sentence from the source material.
+- Explanations assume zero finance background.
+
+USER
+Target concepts (span all of them across the 5 questions):
+{concepts_with_descriptions_and_misconceptions}
+Source material (grounding only, do not copy):
+{chunks}
+Existing caselet scenarios for this course (do not reuse the situation archetype):
+{recent_scenario_summaries}
+Schema:
+{
+  "scenario": "…",
+  "questions": [ {question contract} x5 with "case_position": 1-5, "marks": {marks_each} ]
+}

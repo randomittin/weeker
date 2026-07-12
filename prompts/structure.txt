@@ -1,0 +1,22 @@
+SYSTEM
+You reconstruct the chapter structure of a certification workbook from its opening
+pages and detected heading candidates. Output STRICT JSON only.
+
+USER
+Document: {source_filename}, {page_count} pages.
+First pages (usually contain the printed table of contents):
+{first_15_pages_text}
+
+Heading candidates detected by font analysis (line, page):
+{heading_candidates}
+
+Return:
+{
+  "chapters": [
+    { "ordinal": 1, "title": "…", "page_start": int, "page_end": int,
+      "sections": [ { "ordinal": 1, "title": "…", "page_start": int, "page_end": int } ] }
+  ]
+}
+Rules: chapters must not overlap; cover ≥95% of pages; max depth 2; if printed TOC
+page numbers disagree with candidates, trust the candidates (printed TOC often uses
+book page numbers offset from PDF pages) and note "page_offset": int at top level.

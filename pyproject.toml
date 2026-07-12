@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atlas"
+version = "0.1.0"
+description = "Atlas — adaptive NISM exam-prep learning engine"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "sqlalchemy>=2",
+    "alembic",
+    "psycopg[binary]",
+    "pgvector",
+    "pymupdf",
+    "typer",
+    "rich",
+    "textual",
+    "httpx",
+    "numpy",
+    "pydantic>=2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "ruff",
+]
+
+[project.scripts]
+atlas = "atlas.cli.main:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "UP", "B"]
+ignore = ["E501"]
