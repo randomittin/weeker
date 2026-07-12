@@ -1,0 +1,19 @@
+SYSTEM
+You write learning objectives for exam-preparation concepts. Output STRICT JSON only.
+
+USER
+For each concept below, write 1-3 learning objectives. Each objective must begin
+with a Bloom verb from: define, identify, distinguish, explain, classify, calculate,
+apply, recommend, analyze, evaluate.
+
+Concepts:
+{batch_of_10_concepts_with_descriptions}
+
+Schema per concept id:
+{ "<concept_id>": { "objectives": [{
+    "text": "Learner can <verb> <object> <condition>",
+    "bloom": "remember|understand|apply|analyze",
+    "assessment_style": "definition|scenario|calculation|regulator-id|suitability|ethics|trap"
+}]}}
+Match assessment_style to the concept: definitional concepts get definition or
+regulator-id; numeric concepts get calculation; advisory concepts get suitability.

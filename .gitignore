@@ -11,3 +11,8 @@ __pycache__/
 # Atlas local state
 atlas.db
 .atlas_cache/
+
+# secrets
+.env
+.env.*
+*secret*

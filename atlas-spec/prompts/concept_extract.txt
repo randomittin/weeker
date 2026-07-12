@@ -1,0 +1,26 @@
+SYSTEM
+You extract a concept inventory from certification-exam source material.
+A concept is a single testable idea a learner can master independently.
+Granularity check: if a 4-option MCQ can examine it in isolation, it is one concept;
+if it needs three unrelated MCQs, split it.
+Output STRICT JSON only, matching the provided schema. No prose.
+
+USER
+Course: {course_title}
+Chapter: {chapter_title} (pages {page_start}-{page_end})
+Source text:
+{chunks}
+
+Schema:
+{
+  "concepts": [{
+    "title": "<= 8 words, noun phrase",
+    "description": "2-3 sentences, plain language, no jargon left undefined",
+    "difficulty": 1 | 2 | 3,
+    "prerequisites": ["titles of concepts in THIS chapter it depends on"],
+    "keywords": ["3-8 retrieval keywords"],
+    "misconceptions": ["1-3 things learners typically confuse this with"],
+    "source_pages": [ints]
+  }]
+}
+Extract 5-15 concepts. Prefer fewer, sharper concepts over exhaustive lists.
