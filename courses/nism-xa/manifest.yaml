@@ -1,0 +1,66 @@
+# Weeker course manifest — NISM Series X-A: Investment Adviser (Level 1)
+#
+# This is the single declared input to `weeker ingest run`. It encodes the
+# VERIFIED NISM X-A exam pattern (see atlas-spec/017 §1) and points at the
+# workbook PDF you must drop in yourself (see `sources` below).
+#
+# Validation is strict (src/weeker/ingest/manifest.py): the exam total_marks
+# must equal the sum of the sections, and any blueprint.overrides must sum to 1.0.
+
+course:
+  title: "NISM Series X-A: Investment Adviser (Level 1)"
+  slug: nism-xa
+
+sources:
+  # Drop the official NISM X-A workbook PDF at this exact path before ingesting.
+  # The file is NOT committed to the repo — you supply it. `weeker ingest run`
+  # hashes it (sha256) for idempotent re-ingestion.
+  - filename: nism-xa-workbook.pdf
+    path: nism-xa-workbook.pdf     # resolved relative to this manifest's directory
+    page_offset: 0                 # set to (printed page 1's PDF index - 1) if the PDF has front matter
+
+# VERIFIED exam pattern (atlas-spec/017 §1): 90 standalone 1-mark MCQs
+# + 6 caselets x 5 x 1-mark + 3 caselets x 5 x 2-mark = 150 marks, pass at 90,
+# 180 minutes, negative marking = 25% of the question's own marks.
+exam:
+  duration_minutes: 180
+  passing_marks: 90
+  total_marks: 150
+  negative_marking_fraction: 0.25
+  sections:
+    - kind: standalone
+      questions: 90
+      marks_each: 1
+    - kind: caselet
+      count: 6
+      questions_each: 5
+      marks_each: 1
+    - kind: caselet
+      count: 3
+      questions_each: 5
+      marks_each: 2
+
+# PLACEHOLDER — replace with the official NISM X-A chapter weightage (ADR-004).
+# These are EVEN placeholder weights (0.1 each, summing to exactly 1.0); they are
+# NOT the authoritative NISM weightage. Two things you must do after your first
+# `weeker ingest run`:
+#   1. Match each key below to the chapter TITLE that ingestion actually detects
+#      (printed as "structure (...): N chapters" — titles come from the PDF).
+#      Weights are keyed by chapter title; a key that doesn't match a detected
+#      title is silently ignored.
+#   2. Replace the even 0.1 weights with the real per-chapter weightage from the
+#      official NISM X-A exam outline. The overrides must still sum to 1.0.
+# Leave this block empty (blueprint: {}) to instead auto-derive weights from the
+# reviewed-concept count per chapter.
+blueprint:
+  overrides:
+    "Introduction to the Indian Financial System": 0.1
+    "Securities Market Segments": 0.1
+    "Mutual Funds": 0.1
+    "Investment Products": 0.1
+    "Managing Investment Risk": 0.1
+    "Measuring Investment Returns": 0.1
+    "Financial Planning": 0.1
+    "Asset Allocation and Investment Strategies": 0.1
+    "Regulation of Investment Advisers": 0.1
+    "Ethical Issues and Grievance Redressal": 0.1
