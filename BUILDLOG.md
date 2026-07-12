@@ -27,6 +27,25 @@ Task → what → gate command → result. Gates run from `./.venv`.
 
 Note: `attempt_service._record` now stamps `Attempt.created_at=now` — replay orders the log by `(created_at, id)`, so the write path must persist the caller's timestamp for deterministic recompute.
 
+# BUILDLOG — Wave 2b (Generation engine + caselets)
+
+| Task | What | Gate | Result |
+|---|---|---|---|
+| T-20 | `generate/targets.py` — `allocate_targets` (largest-remainder Hamilton apportionment, min-3 floor, mastery≥0.9 refill exclusion, refill eff-weight = weight×(1−mastery)) + `compute_targets` (blueprint chapter weight shared per concept, mastery from `elo.mastery(theta)`) | `pytest -q tests/test_generate_targets.py` | PASS (6 tests) |
+| T-21 | `generate/prompts.py` — `GeneratedQuestion` pydantic contract (exactly 4 opts A–D, one keyed-correct, explanation, named misconception per distractor) + `render_question_prompt` (prompts/question_gen.txt verbatim) + `generate_batch`/`generate_for_concept` (top-4 concept→chunk grounding, batch-of-GEN_BATCH parse) | `pytest -q tests/test_generate_prompts.py` (contract round-trip + recorded 5-object fixture) | PASS (7 tests) |
+| T-22 | `generate/gates.py` — G1 (structural + all/none ban + option distinctness OPTION_DISTINCT_MAX_COS), G4 (`build_ngram_index` 8-gram scan OCR-excluded + stem↔chunk G4_STEM_CHUNK_MAX_COS), G5 (dedup G5_DUP_COS + variant tag G5_VARIANT_COS); each records reason into gate_log | `pytest -q tests/test_generate_gates.py` (crafted 3-opt / two-correct / verbatim lift / 0.91 dup / 0.84 variant) | PASS (11 tests) |
+| T-23 | `generate/gates.py` — G2 grounding verifier (prompts/grounding_verify.txt → supported/ambiguous), G3 blind solve on MODEL_SOLVER_BLIND with `--consensus` (pass iff unanimous-with-key; else `disputed`) | `pytest -q tests/test_generate_gates_llm.py` (G2 supported/ambiguous/unsupported; G3 agree/disagree/2-of-3/3-of-3) | PASS (8 tests) |
+| T-24 | `generate/pipeline.py` (overgenerate ×GEN_OVERGEN_FACTOR → gate chain → persist active/disputed; course n-gram index OCR-excluded), `generate/review_tui.py` `DisputeApp` (k keep / 1-4 fix-key / x discard, resumable), `verify/bank_checks.py` `verify_bank` = **M3 gate** (schema/grounding 100%, blind ≥95%, near-dup <2%, zero G4), `generate/cli.py` run/review/verify-bank | `pytest -q tests/test_generate_pipeline.py tests/test_generate_bank.py tests/test_generate_review.py` | PASS (3+6+2 tests) |
+| T-25 | `generate/calibrate.py` — `initial_q_rating` (difficulty→logit, consumed by pipeline), `apply_rating`/`apply_rating_value` (live Elo hook off `UpdateResult.q_rating`), `needs_recalibration` (>1.5 logit drift), `dead_distractors` (zero pulls @≥20), `compute_discrimination`/`should_retire` (point-biserial <0.05 @≥20), `audit_bank`; CLI `recalibrate` | `pytest -q tests/test_generate_calibrate.py` (30-attempt convergence, dead-distractor + low-disc streams) | PASS (8 tests) |
+| T-26 | `generate/caselets.py` — `GeneratedCaselet` contract (120-220-word scenario + 5 positioned 1|2-mark Qs), G4-on-scenario, per-Q G1/G4/G5/G2, **G6** scenario-dependence (blind-solve sans scenario → regenerate independents), combined caselet G3, `run_caselets` (concept-group select + regen loop), `caselet_drill`; `verify_bank(caselets=True)` (≥25 active / 100% G6 / per-Q green); CLI `caselets` + `verify-bank --caselets` | `pytest -q tests/test_generate_caselets.py` | PASS (10 tests) |
+
+Wave 2b totals: +61 tests (103 → 164), ruff clean. Commits: one per task, `feat(generate): T-xx …`.
+
+Wave-2b notes:
+- `CaseGroup.concept_ids` (UuidArray) is stored as **stringified** UUIDs — `ARRAY(Uuid())` accepts them on Postgres and the SQLite JSON fallback cannot serialize raw `uuid.UUID`.
+- Question-contract field list (Wave 3 mock composer): `stem:str`, `options:list[{key:'A'|'B'|'C'|'D', text:str, misconception:str|None}]`, `correct_key:'A'|'B'|'C'|'D'`, `explanation:str`, `difficulty:1|2|3`; caselet adds `case_position:1..5`, `marks:1|2`. `GeneratedQuestion.option_dicts()` yields the `Question.options` jsonb shape.
+- `verify_bank(session, course_id, *, caselets=False) -> BankReport(.passed, .total_active, .schema_ok, .grounding_ok, .blind_agreement, .near_dup_rate, .g4_hits, .disputed_count, .caselets_active, .failures)`.
+
 ## Environment notes
 - Python 3.11 (pinned `>=3.11,<3.12`); no PEP695 / 3.12-only syntax.
 - No Docker: Postgres+pgvector is production; SQLite is the test fallback via the
