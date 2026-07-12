@@ -46,6 +46,26 @@ Wave-2b notes:
 - Question-contract field list (Wave 3 mock composer): `stem:str`, `options:list[{key:'A'|'B'|'C'|'D', text:str, misconception:str|None}]`, `correct_key:'A'|'B'|'C'|'D'`, `explanation:str`, `difficulty:1|2|3`; caselet adds `case_position:1..5`, `marks:1|2`. `GeneratedQuestion.option_dicts()` yields the `Question.options` jsonb shape.
 - `verify_bank(session, course_id, *, caselets=False) -> BankReport(.passed, .total_active, .schema_ok, .grounding_ok, .blind_agreement, .near_dup_rate, .g4_hits, .disputed_count, .caselets_active, .failures)`.
 
+# BUILDLOG — Wave 3 (Mock + status + diagnostic + refill)
+
+| Task | What | Gate | Result |
+|---|---|---|---|
+| T-40 | `learn/mock.py` — timed mock engine: `score_item`/`grade` marks-weighted scoring w/ per-Q negative = `neg×marks`; `compose_standalone_items` (reuses `scheduler.compose_mock`, blueprint keyed by chapter_id); `start_mock`/`save_progress`/`resume_mock` persist item-plan+answers+index+elapsed to `MockExam.config` jsonb; `snapshot_prediction`→`predicted_before`; `submit_mock` grades + `record_attempt` per answered + finalizes row + `review_order` (confident-wrong first, caselets grouped) | `pytest tests/test_mock_scoring.py` — scripted 135-answer run (100 right/20 conf-wrong/15 skip) → MockExam row raw=95.0/135; pause/resume round-trip; review order | PASS (5) |
+| T-41 | `learn/status.py` — `build_status` heatmap (chapter/concept mastery), due counts (concepts+flashcards), misconception flags, prediction band (`predict_from_db`, suppressed<coverage), tonight's refill plan (`compute_targets refill=True`), realized-calibration table shown from day 3 (≥3 distinct attempt days); `render_status` deterministic; tz-normalize naive SQLite timestamps | `pytest tests/test_status.py` — full golden-output equality on pinned fixture (coverage 25%→suppressed, 3-day calibration) + calibration-hidden-before-day-3 | PASS (2) |
+| T-36 | `learn/diagnose.py` — `select_diagnostic_questions` (3/chapter one-per-difficulty, greedy max-coverage over concept ids); `seed_diagnostic` fixed-K(=0.5) Elo from theta=0 for tested concepts, untested chapter-mates = 0.6×mean(tested) shrunk→0, `misconception_pending` on confident-wrong, records diagnostic `SessionRun`+`Attempt`s, builds first status; idempotent (`DiagnosticAlreadyRun` unless `force`) | `pytest tests/test_diagnose.py` — 36 picks ≥30 distinct concepts; chapter-mate seed = 0.6×tested & \|seed\|<\|tested\|; reseed refuses w/o force, runs w/ force; conf-wrong flags | PASS (4) |
+| T-42 | `learn/full.py` — `compose_caselet_items` (weak-concept coverage `Σ(1−mastery)`, 5-day reuse exclusion, tier by max marks) 6×1-mark+3×2-mark; `compose_full_items` 90 standalone + 9 caselets; `predict_sections` per-section expected+band + overall P(pass); `realized_calibration` + `skip_policy_lines` (breakeven p=0.2) + `strategy_report` | `pytest tests/test_full_mock.py` — hand-computed score incl 2-mark negatives (wrong 2-mark = −0.5); weak-coverage pick + recent-exclusion; full-pattern shape+sections | PASS (5) |
+| T-50 | `learn/refill.py` — `run_refill` = `run_generation(refill=True)` → `verify_bank` → `build_status`, transports injectable for cron/live | `pytest tests/test_refill.py` — green e2e on fixture (fake LLM/embed): accepted>0, bank passes, status renders | PASS (1) |
+| —  | `learn/mock_cli.py` `register`→`atlas mock run`(T-40)/`resume`/`full`(T-42)/`diagnose`(T-36) + `MockApp`/`DiagnosticApp` Textual UIs (no-feedback-until-submit, esc-pause, silent measurement); `learn/status_cli.py` `register`→`atlas status show`(T-41)/`refill`(T-50) | `pytest tests/test_mock_tui.py` (Pilot: mock answer→submit→review writes MockExam+Attempts; diagnostic collect→seed writes session) + CLI smoke (empty DB degrades gracefully) | PASS (2) |
+
+**M5 gate** = M4 green + T-40 + T-41 green → PASS. Full suite: **183 passed** (164 prior + 19), ruff clean.
+
+Wave-3 notes:
+- CLI-path deviations (main.py frozen; no `diagnose`/`refill` groups): spec `atlas diagnose` → **`atlas mock diagnose`**; spec `atlas refill` → **`atlas status refill`** (same pattern as `atlas study flash`; documented in module docstrings + `--help`).
+- Diagnostic seeding uses fixed structural literals `DIAG_K=0.5`, `DIAG_SHRINK=0.6` (017 §5) defined in `diagnose.py`, not `config` — they define the measurement procedure, not an adaptive gate tunable (same rationale as `elo.THETA_ABS_MAX`; single-source lint is warn-only).
+- Mock scoring: raw score is not floored (NISM negative marking can drive a section negative); pass = `raw ≥ passing_marks`. `submit_mock` records one `record_attempt` per **answered** item (skips write nothing), so mock answers feed mastery + realized calibration.
+- `status.render_status` normalizes naive SQLite timestamps to UTC for python-side due math (`_aware`); Postgres already returns tz-aware.
+- Ambiguity resolved: 016 T-40 gate says "135-answer" (pre-017 full count) but standalone `atlas mock run` defaults to 90; the shared marks-weighted engine scores any item list, so the 135-answer gate runs against a 135-item standalone set and T-42 adds the 2-mark caselet negatives.
+
 ## Environment notes
 - Python 3.11 (pinned `>=3.11,<3.12`); no PEP695 / 3.12-only syntax.
 - No Docker: Postgres+pgvector is production; SQLite is the test fallback via the
