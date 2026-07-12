@@ -10,8 +10,8 @@ import numpy as np
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 
-from atlas.core.config import CONCEPT_MERGE_COS, EMBED_DIM
-from atlas.core.models import (
+from weeker.core.config import CONCEPT_MERGE_COS, EMBED_DIM
+from weeker.core.models import (
     Base,
     Chapter,
     Chunk,
@@ -22,9 +22,9 @@ from atlas.core.models import (
     Section,
     Source,
 )
-from atlas.ingest import chunk as C
-from atlas.ingest import concepts as K
-from atlas.ingest import embeddings as E
+from weeker.ingest import chunk as C
+from weeker.ingest import concepts as K
+from weeker.ingest import embeddings as E
 
 _WORD = re.compile(r"[a-z]+")
 

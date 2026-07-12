@@ -12,9 +12,9 @@ import json
 import pytest
 from pydantic import ValidationError
 
-from atlas.core.config import GEN_BATCH
-from atlas.core.models import Concept, Course
-from atlas.generate.prompts import (
+from weeker.core.config import GEN_BATCH
+from weeker.core.models import Concept, Course
+from weeker.generate.prompts import (
     GeneratedQuestion,
     generate_batch,
     parse_batch,

@@ -8,9 +8,6 @@ discriminating (below floor at ≥ 20 attempts) is retired.
 
 from __future__ import annotations
 
-from atlas.core.models import Attempt, Question
-from atlas.generate import calibrate
-from atlas.learn import elo
 from tests.test_learn_fixtures import (
     mem_session,
     new_user,
@@ -18,6 +15,9 @@ from tests.test_learn_fixtures import (
     seed_course,
     seed_question,
 )
+from weeker.core.models import Attempt, Question
+from weeker.generate import calibrate
+from weeker.learn import elo
 
 
 def test_initial_q_rating_by_difficulty():

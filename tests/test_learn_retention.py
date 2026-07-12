@@ -2,8 +2,8 @@
 
 from __future__ import annotations
 
-from atlas.core import config
-from atlas.learn import retention
+from weeker.core import config
+from weeker.learn import retention
 
 
 def test_retrievability_starts_at_one_and_decays():

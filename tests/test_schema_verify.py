@@ -4,8 +4,8 @@ from __future__ import annotations
 
 from sqlalchemy import create_engine
 
-from atlas.core.models import Base
-from atlas.verify import schema
+from weeker.core.models import Base
+from weeker.verify import schema
 
 
 def test_check_passes_on_created_schema():

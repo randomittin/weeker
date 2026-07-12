@@ -6,10 +6,6 @@ from datetime import UTC, datetime, timedelta
 
 from sqlalchemy import select
 
-from atlas.core.models import Mastery
-from atlas.learn.attempt_service import record_attempt
-from atlas.learn.replay import replay
-from atlas.learn.verify_adaptive import verify_adaptive
 from tests.test_learn_fixtures import (
     mem_session,
     new_user,
@@ -17,6 +13,10 @@ from tests.test_learn_fixtures import (
     seed_course,
     seed_question,
 )
+from weeker.core.models import Mastery
+from weeker.learn.attempt_service import record_attempt
+from weeker.learn.replay import replay
+from weeker.learn.verify_adaptive import verify_adaptive
 
 
 def test_verify_adaptive_recovers_ability():

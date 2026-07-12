@@ -1,11 +1,11 @@
-"""Alembic environment — binds migrations to Atlas' engine and metadata."""
+"""Alembic environment — binds migrations to Weeker' engine and metadata."""
 
 from __future__ import annotations
 
 from alembic import context
 
-from atlas.core.db import database_url, get_engine
-from atlas.core.models import Base
+from weeker.core.db import database_url, get_engine
+from weeker.core.models import Base
 
 config = context.config
 target_metadata = Base.metadata

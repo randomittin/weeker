@@ -6,9 +6,9 @@ import fitz
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 
-from atlas.core.models import Base, Course, Source
-from atlas.ingest import parse as P
-from atlas.verify import ingest_checks
+from weeker.core.models import Base, Course, Source
+from weeker.ingest import parse as P
+from weeker.verify import ingest_checks
 
 
 def test_dehyphenate_joins_line_broken_words():

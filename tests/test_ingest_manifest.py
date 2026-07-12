@@ -8,8 +8,8 @@ import pytest
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 
-from atlas.core.models import Base, Course, Source
-from atlas.ingest import manifest as M
+from weeker.core.models import Base, Course, Source
+from weeker.ingest import manifest as M
 
 VALID = """
 course:

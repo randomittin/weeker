@@ -13,13 +13,13 @@ import re
 
 import numpy as np
 
-from atlas.core.config import (
+from weeker.core.config import (
     G4_STEM_CHUNK_MAX_COS,
     G5_DUP_COS,
     G5_VARIANT_COS,
     OPTION_DISTINCT_MAX_COS,
 )
-from atlas.generate import gates
+from weeker.generate import gates
 
 _WORD = re.compile(r"[a-z0-9]+")
 
@@ -94,7 +94,7 @@ def test_g1_non_distinct_options_fail():
     assert "distinct" in res.reason.lower()
     # sanity: those two options really are above the distinctness ceiling
     m = _bow_embed([opts[0]["text"], opts[1]["text"]])
-    from atlas.ingest.textutil import cosine
+    from weeker.ingest.textutil import cosine
 
     assert cosine(m[0], m[1]) >= OPTION_DISTINCT_MAX_COS
 
@@ -128,7 +128,7 @@ def test_g4_stem_too_close_to_chunk_fails():
     res = gates.check_g4(stem, idx, stem_vec=stem_vec, chunk_matrix=chunk_matrix, gate_log=log)
     assert not res.passed
     assert "cos" in res.reason.lower()
-    from atlas.ingest.textutil import cosine_matrix
+    from weeker.ingest.textutil import cosine_matrix
 
     assert float(cosine_matrix(stem_vec, chunk_matrix).max()) >= G4_STEM_CHUNK_MAX_COS
 
@@ -140,7 +140,7 @@ def test_g5_near_duplicate_fails():
     existing = [("q-old", _bow(base))]
     log: dict = {}
     res = gates.check_g5(stem_vec, existing, gate_log=log)
-    from atlas.ingest.textutil import cosine
+    from weeker.ingest.textutil import cosine
 
     assert cosine(stem_vec, existing[0][1]) >= G5_DUP_COS
     assert not res.passed
@@ -154,7 +154,7 @@ def test_g5_variant_is_tagged_and_passes():
     b = np.zeros(8, dtype=np.float32)
     b[0] = 0.84
     b[1] = np.sqrt(1 - 0.84**2)  # cosine(a,b) == 0.84 ∈ [VARIANT, DUP)
-    from atlas.ingest.textutil import cosine
+    from weeker.ingest.textutil import cosine
 
     assert G5_VARIANT_COS <= cosine(a, b) < G5_DUP_COS
     log: dict = {}

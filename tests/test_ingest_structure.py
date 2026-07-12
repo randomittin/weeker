@@ -8,8 +8,8 @@ import fitz
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 
-from atlas.core.models import Base, Chapter, Course, Section
-from atlas.ingest import structure as S
+from weeker.core.models import Base, Chapter, Course, Section
+from weeker.ingest import structure as S
 
 
 def test_check_structure_flags_overlap_and_gap():

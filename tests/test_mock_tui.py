@@ -6,9 +6,6 @@ from datetime import UTC, datetime
 
 from sqlalchemy import func, select
 
-from atlas.core.models import Attempt, MockExam, SessionRun
-from atlas.learn import diagnose, mock
-from atlas.learn.mock_cli import DiagnosticApp, MockApp
 from tests.test_learn_fixtures import (
     mem_session,
     new_user,
@@ -17,6 +14,9 @@ from tests.test_learn_fixtures import (
     seed_course,
     seed_question,
 )
+from weeker.core.models import Attempt, MockExam, SessionRun
+from weeker.learn import diagnose, mock
+from weeker.learn.mock_cli import DiagnosticApp, MockApp
 
 
 async def test_mock_app_answers_submits_and_reviews():

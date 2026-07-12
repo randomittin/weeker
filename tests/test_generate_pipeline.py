@@ -14,16 +14,16 @@ import numpy as np
 from sqlalchemy import create_engine, func, select
 from sqlalchemy.orm import Session
 
-from atlas.core.config import EMBED_DIM
-from atlas.core.models import (
+from tests.test_learn_fixtures import new_user, seed_chapter, seed_concept, seed_course
+from weeker.core.config import EMBED_DIM
+from weeker.core.models import (
     Base,
     BlueprintWeight,
     Chunk,
     ConceptChunk,
     Question,
 )
-from atlas.generate.pipeline import run_generation
-from tests.test_learn_fixtures import new_user, seed_chapter, seed_concept, seed_course
+from weeker.generate.pipeline import run_generation
 
 _WORD = re.compile(r"[a-z0-9]+")
 

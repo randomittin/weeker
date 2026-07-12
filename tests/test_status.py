@@ -12,8 +12,6 @@ from datetime import UTC, datetime, timedelta
 
 from sqlalchemy import select
 
-from atlas.core.models import Attempt, Flashcard, Mastery, Question
-from atlas.learn import status
 from tests.test_learn_fixtures import (
     mem_session,
     seed_chapter,
@@ -21,6 +19,8 @@ from tests.test_learn_fixtures import (
     seed_course,
     seed_question,
 )
+from weeker.core.models import Attempt, Flashcard, Mastery, Question
+from weeker.learn import status
 
 NOW = datetime(2026, 7, 12, 12, 0, 0, tzinfo=UTC)
 USER = "learner-1"

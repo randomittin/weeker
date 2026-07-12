@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import numpy as np
 
-from atlas.core.embed import embed
+from weeker.core.embed import embed
 
 
 class CountingTransport:

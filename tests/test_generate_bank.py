@@ -5,9 +5,9 @@ from __future__ import annotations
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 
-from atlas.core.models import Base, Question
-from atlas.verify.bank_checks import verify_bank
 from tests.test_learn_fixtures import seed_concept, seed_course
+from weeker.core.models import Base, Question
+from weeker.verify.bank_checks import verify_bank
 
 
 def _mem():

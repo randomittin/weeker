@@ -8,9 +8,9 @@ __pycache__/
 # venv
 .venv/
 
-# Atlas local state
-atlas.db
-.atlas_cache/
+# Weeker local state
+weeker.db
+.weeker_cache/
 
 # secrets
 .env

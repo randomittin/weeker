@@ -7,7 +7,7 @@ import uuid
 from sqlalchemy import create_engine, inspect
 from sqlalchemy.orm import Session
 
-from atlas.core.models import Base, Concept, Course, Question
+from weeker.core.models import Base, Concept, Course, Question
 
 EXPECTED_TABLES = {
     "courses",

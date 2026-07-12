@@ -12,7 +12,7 @@ import uuid
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 
-from atlas.core.models import Base, Chapter, Concept, Course, Mastery, Question
+from weeker.core.models import Base, Chapter, Concept, Course, Mastery, Question
 
 
 def mem_session() -> Session:

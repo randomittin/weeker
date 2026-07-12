@@ -6,8 +6,6 @@ from datetime import UTC, datetime
 
 from sqlalchemy import func, select
 
-from atlas.core.models import Attempt, Chunk, ConceptChunk, Flashcard
-from atlas.learn.study_cli import FlashApp, StudyApp
 from tests.test_learn_fixtures import (
     mem_session,
     new_user,
@@ -15,6 +13,8 @@ from tests.test_learn_fixtures import (
     seed_course,
     seed_question,
 )
+from weeker.core.models import Attempt, Chunk, ConceptChunk, Flashcard
+from weeker.learn.study_cli import FlashApp, StudyApp
 
 
 async def test_full_five_question_session_writes_attempts():

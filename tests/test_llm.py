@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import pytest
 
-from atlas.core.llm import LLMError, complete
+from weeker.core.llm import LLMError, complete
 
 SCHEMA = {
     "type": "object",

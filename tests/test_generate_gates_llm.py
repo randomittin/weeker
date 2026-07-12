@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import json
 
-from atlas.generate import gates
+from weeker.generate import gates
 
 _OPTS = [
     {"key": "A", "text": "Assets minus liabilities per unit"},

@@ -4,8 +4,8 @@ from __future__ import annotations
 
 import random
 
-from atlas.core import config
-from atlas.learn import elo
+from weeker.core import config
+from weeker.learn import elo
 
 
 def test_mastery_in_unit_interval():

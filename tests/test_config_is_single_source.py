@@ -1,6 +1,6 @@
 """Warn-only lint: config.py should be the single source of gate tunables.
 
-Scans every module under ``src/atlas`` (except config.py) for bare numeric
+Scans every module under ``src/weeker`` (except config.py) for bare numeric
 literals whose value equals one of the gate constants defined in config.py. Any
 hit is reported as a warning but does NOT fail the suite — this is a guardrail
 to keep magic numbers from drifting out of config, not a hard gate.
@@ -12,9 +12,9 @@ import ast
 import warnings
 from pathlib import Path
 
-from atlas.core import config
+from weeker.core import config
 
-SRC = Path(__file__).resolve().parents[1] / "src" / "atlas"
+SRC = Path(__file__).resolve().parents[1] / "src" / "weeker"
 
 # Values that legitimately appear as structural literals everywhere.
 _ALLOWED = {0, 1, 2, 3, -1, 100, 64, 60, 8, 32, 16, 24, 5, 6}

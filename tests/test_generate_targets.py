@@ -11,20 +11,20 @@ import uuid
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 
-from atlas.core.models import Base, BlueprintWeight
-from atlas.generate.targets import (
-    MASTERY_EXCLUDE_CAP,
-    MIN_FLOOR,
-    ConceptWeight,
-    allocate_targets,
-    compute_targets,
-)
 from tests.test_learn_fixtures import (
     new_user,
     seed_chapter,
     seed_concept,
     seed_course,
     seed_mastery,
+)
+from weeker.core.models import Base, BlueprintWeight
+from weeker.generate.targets import (
+    MASTERY_EXCLUDE_CAP,
+    MIN_FLOOR,
+    ConceptWeight,
+    allocate_targets,
+    compute_targets,
 )
 
 

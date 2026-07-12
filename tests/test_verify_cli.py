@@ -1,5 +1,5 @@
-"""atlas verify: every gate degrades to SKIP (never crashes) on a bare/empty DB,
-and `atlas verify all` renders the summary table. Adaptive is DB-free and PASSes.
+"""weeker verify: every gate degrades to SKIP (never crashes) on a bare/empty DB,
+and `weeker verify all` renders the summary table. Adaptive is DB-free and PASSes.
 
 Each command is driven through the real Typer app via CliRunner against an empty
 SQLite database, mirroring the M0 doctor gate's bare-env contract.
@@ -10,19 +10,19 @@ from __future__ import annotations
 from sqlalchemy import create_engine
 from typer.testing import CliRunner
 
-from atlas.cli.main import app
-from atlas.core import db as core_db
-from atlas.core.models import Base
+from weeker.cli.main import app
+from weeker.core import db as core_db
+from weeker.core.models import Base
 
 runner = CliRunner()
 
 
 def _empty_db(monkeypatch, tmp_path, *, migrated: bool = False) -> str:
     """Point DATABASE_URL at a fresh SQLite file; optionally create the schema."""
-    url = f"sqlite:///{tmp_path}/atlas.db"
+    url = f"sqlite:///{tmp_path}/weeker.db"
     monkeypatch.setenv("DATABASE_URL", url)
-    monkeypatch.delenv("ATLAS_LLM_API_KEY", raising=False)
-    monkeypatch.delenv("ATLAS_EMBED_API_KEY", raising=False)
+    monkeypatch.delenv("WEEKER_LLM_API_KEY", raising=False)
+    monkeypatch.delenv("WEEKER_EMBED_API_KEY", raising=False)
     # get_engine/_sessionmaker are @cache-keyed on the raw arg (None), so a prior
     # invocation would pin a stale engine — clear so each test resolves fresh.
     core_db.get_engine.cache_clear()
@@ -105,7 +105,7 @@ def test_all_renders_summary_table_and_exits_zero_on_bare_env(monkeypatch, tmp_p
     _empty_db(monkeypatch, tmp_path)
     result = runner.invoke(app, ["verify", "all"])
     assert result.exit_code == 0, result.output
-    assert "atlas verify all" in result.output
+    assert "weeker verify all" in result.output
     for gate in ("schema", "ingest", "concepts", "bank", "adaptive"):
         assert gate in result.output
     # adaptive is DB-free ⇒ always exercised; the rest SKIP on a bare env.

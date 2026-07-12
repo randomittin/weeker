@@ -1,4 +1,4 @@
-"""initial schema — full Atlas DDL
+"""initial schema — full Weeker DDL
 
 Creates every table from the declarative metadata. On Postgres it additionally
 enables the ``vector`` extension (needed for the embedding columns) and builds
@@ -14,7 +14,7 @@ from __future__ import annotations
 
 from alembic import op
 
-from atlas.core.models import Base
+from weeker.core.models import Base
 
 revision = "0001"
 down_revision = None

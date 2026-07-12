@@ -13,8 +13,8 @@ import pytest
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 
-from atlas.core.config import EMBED_DIM
-from atlas.core.models import (
+from weeker.core.config import EMBED_DIM
+from weeker.core.models import (
     Base,
     Chapter,
     Chunk,
@@ -23,7 +23,7 @@ from atlas.core.models import (
     Course,
     Source,
 )
-from atlas.ingest.review import ReviewApp
+from weeker.ingest.review import ReviewApp
 
 
 def _engine(tmp_path):

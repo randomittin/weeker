@@ -1,4 +1,4 @@
-"""T-50 gate: `atlas refill` runs green end-to-end (generate --refill + bank
+"""T-50 gate: `weeker refill` runs green end-to-end (generate --refill + bank
 verify + status build) against fake transports on a fixture course.
 """
 
@@ -11,10 +11,6 @@ import re
 import numpy as np
 from sqlalchemy import func, select
 
-from atlas.core.config import EMBED_DIM
-from atlas.core.models import BlueprintWeight, Chunk, ConceptChunk, Question
-from atlas.learn import refill
-from atlas.learn.status import render_status
 from tests.test_learn_fixtures import (
     mem_session,
     new_user,
@@ -22,6 +18,10 @@ from tests.test_learn_fixtures import (
     seed_concept,
     seed_course,
 )
+from weeker.core.config import EMBED_DIM
+from weeker.core.models import BlueprintWeight, Chunk, ConceptChunk, Question
+from weeker.learn import refill
+from weeker.learn.status import render_status
 
 _WORD = re.compile(r"[a-z0-9]+")
 

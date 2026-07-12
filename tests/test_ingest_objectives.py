@@ -14,7 +14,7 @@ import json
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 
-from atlas.core.models import (
+from weeker.core.models import (
     Base,
     Chapter,
     Chunk,
@@ -24,12 +24,12 @@ from atlas.core.models import (
     Objective,
     Source,
 )
-from atlas.ingest.objectives import (
+from weeker.ingest.objectives import (
     compute_blueprint_weights,
     generate_objectives,
     run_objectives,
 )
-from atlas.verify.concept_checks import verify_concepts
+from weeker.verify.concept_checks import verify_concepts
 
 
 class FakeLLM:

@@ -7,8 +7,6 @@ from __future__ import annotations
 import random
 from datetime import UTC, datetime, timedelta
 
-from atlas.core.models import Attempt, BlueprintWeight, CaseGroup, MockExam, Question
-from atlas.learn import full, mock
 from tests.test_learn_fixtures import (
     mem_session,
     new_user,
@@ -17,6 +15,8 @@ from tests.test_learn_fixtures import (
     seed_course,
     seed_question,
 )
+from weeker.core.models import Attempt, BlueprintWeight, CaseGroup, MockExam, Question
+from weeker.learn import full, mock
 
 
 def _seed_caselet(db, course, concepts, *, marks_each, position_key="A"):

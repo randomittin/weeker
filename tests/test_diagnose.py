@@ -9,8 +9,6 @@ import random
 import pytest
 from sqlalchemy import select
 
-from atlas.core.models import Mastery
-from atlas.learn import diagnose
 from tests.test_learn_fixtures import (
     mem_session,
     new_user,
@@ -19,6 +17,8 @@ from tests.test_learn_fixtures import (
     seed_course,
     seed_question,
 )
+from weeker.core.models import Mastery
+from weeker.learn import diagnose
 
 
 def _seed_12_chapters(db, course):

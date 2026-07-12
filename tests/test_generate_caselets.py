@@ -18,8 +18,9 @@ from pydantic import ValidationError
 from sqlalchemy import create_engine, select
 from sqlalchemy.orm import Session
 
-from atlas.core.config import EMBED_DIM
-from atlas.core.models import (
+from tests.test_learn_fixtures import new_user, seed_chapter, seed_concept, seed_course
+from weeker.core.config import EMBED_DIM
+from weeker.core.models import (
     Base,
     BlueprintWeight,
     CaseGroup,
@@ -27,9 +28,8 @@ from atlas.core.models import (
     ConceptChunk,
     Question,
 )
-from atlas.generate import caselets
-from atlas.verify.bank_checks import verify_bank
-from tests.test_learn_fixtures import new_user, seed_chapter, seed_concept, seed_course
+from weeker.generate import caselets
+from weeker.verify.bank_checks import verify_bank
 
 _WORD = re.compile(r"[a-z0-9]+")
 
@@ -292,7 +292,7 @@ def test_verify_bank_caselets_target_and_gates(tmp_path):
     course = _seed(db)
     # Build 25 active caselets directly (10 at 2-mark) with clean gate logs.
     concept = db.scalars(select(Question.concept_id)).first()
-    from atlas.core.models import Concept
+    from weeker.core.models import Concept
 
     cid = db.scalars(select(Concept.id).where(Concept.course_id == course.id)).first()
     for i in range(25):

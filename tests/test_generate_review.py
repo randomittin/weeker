@@ -4,9 +4,9 @@ from __future__ import annotations
 
 from sqlalchemy import select
 
-from atlas.core.models import Question
-from atlas.generate.review_tui import DisputeApp
 from tests.test_learn_fixtures import mem_session, seed_concept, seed_course
+from weeker.core.models import Question
+from weeker.generate.review_tui import DisputeApp
 
 
 def _disputed(db, course, concept, correct_key="A", votes=None):

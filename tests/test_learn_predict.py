@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import random
 
-from atlas.learn.predict import PredictItem, breakeven_p, predict_score
+from weeker.learn.predict import PredictItem, breakeven_p, predict_score
 
 
 def test_uniform_08_learner_predicted_within_8pct():

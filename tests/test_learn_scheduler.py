@@ -5,9 +5,9 @@ from __future__ import annotations
 import math
 import random
 
-from atlas.core import config
-from atlas.learn import scheduler
-from atlas.learn.scheduler import ConceptState, QuestionState
+from weeker.core import config
+from weeker.learn import scheduler
+from weeker.learn.scheduler import ConceptState, QuestionState
 
 
 def _pearson(xs, ys):

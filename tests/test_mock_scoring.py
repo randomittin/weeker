@@ -8,8 +8,6 @@ from __future__ import annotations
 
 from datetime import UTC, datetime
 
-from atlas.core.models import MockExam
-from atlas.learn import mock
 from tests.test_learn_fixtures import (
     mem_session,
     new_user,
@@ -17,6 +15,8 @@ from tests.test_learn_fixtures import (
     seed_course,
     seed_question,
 )
+from weeker.core.models import MockExam
+from weeker.learn import mock
 
 
 def _mk_items(db, course, n, correct_key="A"):

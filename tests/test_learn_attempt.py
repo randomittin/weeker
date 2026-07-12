@@ -4,14 +4,6 @@ from __future__ import annotations
 
 from sqlalchemy import func, select
 
-from atlas.core.models import (
-    AnalyticsEvent,
-    Attempt,
-    Flashcard,
-    Mastery,
-    MisconceptionFlag,
-)
-from atlas.learn.attempt_service import record_attempt
 from tests.test_learn_fixtures import (
     mem_session,
     new_user,
@@ -19,6 +11,14 @@ from tests.test_learn_fixtures import (
     seed_course,
     seed_question,
 )
+from weeker.core.models import (
+    AnalyticsEvent,
+    Attempt,
+    Flashcard,
+    Mastery,
+    MisconceptionFlag,
+)
+from weeker.learn.attempt_service import record_attempt
 
 
 def _counts(db):
@@ -156,7 +156,7 @@ def test_distractor_misconception_is_tagged_and_reused():
     card = db.scalars(select(Flashcard)).first()
     assert card.misconception_id == flag.misconception_id
     # Only one misconception row created even if the same distractor recurs.
-    from atlas.core.models import Misconception
+    from weeker.core.models import Misconception
 
     record_attempt(user_id=user, question_id=q.id, chosen_key="B", confidence="sure", db=db)
     assert db.scalar(select(func.count()).select_from(Misconception)) == 1
