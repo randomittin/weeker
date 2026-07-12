@@ -21,6 +21,7 @@ from tests.test_learn_fixtures import (
     seed_chapter,
     seed_concept,
     seed_course,
+    seed_mastery,
     seed_question,
 )
 from weeker.core.models import Attempt, Base
@@ -69,3 +70,22 @@ def test_next_session_survives_naive_prior_attempt_timestamp():
         db, user, course.id, now + timedelta(days=1), random.Random(0)
     )
     assert isinstance(session2, list)
+
+
+def test_load_concept_states_survives_naive_mastery_last_seen():
+    # The sibling code path: load_concept_states computes now - Mastery.last_seen,
+    # which SQLite returns tz-naive. Exercised end-to-end by diagnose→study.
+    db = _mem()
+    user = new_user()
+    course = seed_course(db)
+    ch = seed_chapter(db, course, 1, "Funds")
+    concept = seed_concept(db, course, "NAV", chapter=ch)
+    m = seed_mastery(db, user, concept, theta=0.3)
+    m.last_seen = datetime(2026, 1, 1, 9, 0, 0)  # naive, as SQLite yields on reload
+    db.flush()
+
+    now = datetime.now(UTC)  # aware
+    # Would raise TypeError (naive vs aware) before the _aware() normalization.
+    states = scheduler.load_concept_states(db, user, course.id, now)
+    (state,) = [s for s in states if s.concept_id == concept.id]
+    assert state.days_since is not None and state.days_since > 0
