@@ -27,8 +27,25 @@ from dataclasses import dataclass, field
 import numpy as np
 
 from weeker.core import config
-from weeker.core.llm import Transport, complete
+from weeker.core.llm import HTTPTransport, Transport, complete
 from weeker.ingest.textutil import cosine_matrix, load_prompt, render_prompt
+
+_default_solver_transport: Transport | None = None
+
+
+def get_solver_transport() -> Transport:
+    """Default transport for the G3 blind solver.
+
+    Built from ``WEEKER_SOLVER_BASE_URL`` / ``WEEKER_SOLVER_API_KEY`` (which fall
+    back to the main LLM endpoint/key) so the blind solver can target a different
+    provider/model family than the generator — the point of the ≠-family gate.
+    """
+    global _default_solver_transport
+    if _default_solver_transport is None:
+        _default_solver_transport = HTTPTransport(
+            base_url=config.SOLVER_BASE_URL, api_key=config.SOLVER_API_KEY
+        )
+    return _default_solver_transport
 
 _WORD = re.compile(r"[a-z0-9]+")
 _BANNED_OPTION_PHRASES = ("all of the above", "none of the above")
@@ -319,7 +336,7 @@ def blind_solve(
         _BLIND_SOLVE_SYSTEM,
         "\n".join(parts),
         json_schema=G3_SCHEMA,
-        transport=transport,
+        transport=transport or get_solver_transport(),
     )
     assert isinstance(data, dict)
     return BlindSolve(

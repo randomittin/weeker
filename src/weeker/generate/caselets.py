@@ -193,7 +193,7 @@ def check_g3_caselet(
             _CASELET_SOLVE_SYSTEM,
             user,
             json_schema=_CASELET_SOLVE_SCHEMA,
-            transport=transport,
+            transport=transport or gates.get_solver_transport(),
         )
         assert isinstance(data, dict)
         runs.append(
@@ -320,6 +320,7 @@ def _gate_caselet(
     existing: list[tuple[object, np.ndarray]],
     embed_fn,
     llm_transport: Transport | None,
+    solver_transport: Transport | None,
     verifier_model: str | None,
     solver_model: str | None,
     consensus: int,
@@ -368,7 +369,10 @@ def _gate_caselet(
 
     # G6 — scenario dependence (drives regeneration on failure).
     if not check_g6(
-        caselet.questions, model=solver_model, transport=llm_transport, gate_log=case_log
+        caselet.questions,
+        model=solver_model,
+        transport=solver_transport or llm_transport,
+        gate_log=case_log,
     ).passed:
         return case_log, per_q, "rejected", True
 
@@ -378,7 +382,7 @@ def _gate_caselet(
         caselet.questions,
         consensus=consensus,
         model=solver_model,
-        transport=llm_transport,
+        transport=solver_transport or llm_transport,
         gate_log=case_log,
     )
     status = STATUS_ACTIVE if g3.passed else STATUS_DISPUTED
@@ -446,10 +450,15 @@ def run_caselets(
     verifier_model: str | None = None,
     solver_model: str | None = None,
     llm_transport: Transport | None = None,
+    solver_transport: Transport | None = None,
     embed_transport: EmbedTransport | None = None,
     cache_dir: str | Path | None = None,
 ) -> CaseletReport:
-    """Generate, gate (incl. G6) and persist ``count`` caselets for the course."""
+    """Generate, gate (incl. G6) and persist ``count`` caselets for the course.
+
+    ``solver_transport`` drives the G6/G3 blind solves independently of the
+    generator/G2 ``llm_transport`` (see :func:`weeker.generate.pipeline.run_generation`).
+    """
     report = CaseletReport()
     embed_fn = _embedder(embed_transport, cache_dir)
     ngram_index = course_ngram_index(session, course.id)
@@ -496,6 +505,7 @@ def run_caselets(
                 existing=existing,
                 embed_fn=embed_fn,
                 llm_transport=llm_transport,
+                solver_transport=solver_transport,
                 verifier_model=verifier_model,
                 solver_model=solver_model,
                 consensus=consensus,

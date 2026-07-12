@@ -69,6 +69,11 @@ EMBED_DIM = int(os.getenv("WEEKER_EMBED_DIM", "1536"))
 # ── LLM / embed transport (env-overridable) ────────────────────────────────────
 LLM_BASE_URL = os.getenv("WEEKER_LLM_BASE_URL", "https://api.openai.com/v1")
 LLM_API_KEY = os.getenv("WEEKER_LLM_API_KEY", "")
+# The G3 blind solver may target a DIFFERENT provider than the generator (a
+# distinct model family is the whole point of the gate). When unset these fall
+# back to the main LLM endpoint/key, so single-provider setups keep working.
+SOLVER_BASE_URL = os.getenv("WEEKER_SOLVER_BASE_URL", "") or LLM_BASE_URL
+SOLVER_API_KEY = os.getenv("WEEKER_SOLVER_API_KEY", "") or LLM_API_KEY
 EMBED_BASE_URL = os.getenv("WEEKER_EMBED_BASE_URL", "https://api.openai.com/v1")
 EMBED_API_KEY = os.getenv("WEEKER_EMBED_API_KEY", "")
 EMBED_BATCH = int(os.getenv("WEEKER_EMBED_BATCH", "64"))

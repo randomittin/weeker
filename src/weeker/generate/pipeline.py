@@ -117,6 +117,7 @@ def gate_candidate(
     existing: list[tuple[object, np.ndarray]],
     embed_fn,
     llm_transport: Transport | None,
+    solver_transport: Transport | None,
     verifier_model: str | None,
     solver_model: str | None,
     consensus: int,
@@ -162,7 +163,7 @@ def gate_candidate(
         correct_key=gq.correct_key,
         consensus=consensus,
         model=solver_model,
-        transport=llm_transport,
+        transport=solver_transport or llm_transport,
         gate_log=gate_log,
     )
     return gate_log, (STATUS_ACTIVE if g3.passed else STATUS_DISPUTED)
@@ -208,10 +209,17 @@ def run_generation(
     verifier_model: str | None = None,
     solver_model: str | None = None,
     llm_transport: Transport | None = None,
+    solver_transport: Transport | None = None,
     embed_transport: EmbedTransport | None = None,
     cache_dir: str | Path | None = None,
 ) -> GenerationReport:
-    """Generate, gate and persist ``count`` questions across the course's concepts."""
+    """Generate, gate and persist ``count`` questions across the course's concepts.
+
+    ``solver_transport`` targets the G3 blind solver independently of
+    ``llm_transport`` (generator + G2). When omitted it falls back to
+    ``llm_transport``, and when both are omitted the blind solver uses its own
+    default endpoint (``WEEKER_SOLVER_*`` → :func:`gates.get_solver_transport`).
+    """
     report = GenerationReport()
     embed_fn = _embedder(embed_transport, cache_dir)
     ngram_index = course_ngram_index(session, course.id)
@@ -261,6 +269,7 @@ def run_generation(
                 existing=existing,
                 embed_fn=embed_fn,
                 llm_transport=llm_transport,
+                solver_transport=solver_transport,
                 verifier_model=verifier_model,
                 solver_model=solver_model,
                 consensus=consensus,
