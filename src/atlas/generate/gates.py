@@ -27,7 +27,8 @@ from dataclasses import dataclass, field
 import numpy as np
 
 from atlas.core import config
-from atlas.ingest.textutil import cosine_matrix
+from atlas.core.llm import Transport, complete
+from atlas.ingest.textutil import cosine_matrix, load_prompt, render_prompt
 
 _WORD = re.compile(r"[a-z0-9]+")
 _BANNED_OPTION_PHRASES = ("all of the above", "none of the above")
@@ -202,3 +203,177 @@ def check_g5(
         ).record(gate_log)
 
     return GateResult("G5", True, f"distinct (max cos={top:.3f})").record(gate_log)
+
+
+# ── G2 (LLM grounding verifier) ─────────────────────────────────────────────────
+G2_SCHEMA: dict = {
+    "type": "object",
+    "required": ["supported", "ambiguous_option", "reason"],
+    "properties": {
+        "supported": {"type": "boolean"},
+        "ambiguous_option": {"type": ["string", "null"]},
+        "reason": {"type": "string"},
+    },
+}
+
+
+def _options_block(options: Sequence[dict]) -> str:
+    """Render options as ``A) text`` lines with no correct-answer flag."""
+    return "\n".join(f"{o.get('key')}) {o.get('text', '')}" for o in options)
+
+
+def check_g2(
+    *,
+    stem: str,
+    options: Sequence[dict],
+    correct_key: str,
+    chunk_texts: Sequence[str],
+    model: str | None = None,
+    transport: Transport | None = None,
+    gate_log: dict,
+) -> GateResult:
+    """Grounding verifier (``prompts/grounding_verify.txt``).
+
+    Passes only when the keyed answer is fully supported by the source *and* no
+    other option is defensibly correct (``ambiguous_option`` is null).
+    """
+    system, user_t = load_prompt("grounding_verify")
+    user = render_prompt(
+        user_t,
+        chunks="\n\n".join(chunk_texts) or "(no source provided)",
+        stem=stem,
+        options_with_keys_no_correct_flag=_options_block(options),
+        correct_key=correct_key,
+    )
+    data = complete(
+        model or config.MODEL_VERIFIER_CHEAP,
+        system,
+        user,
+        json_schema=G2_SCHEMA,
+        transport=transport,
+    )
+    assert isinstance(data, dict)
+    supported = bool(data.get("supported"))
+    ambiguous = data.get("ambiguous_option")
+    if isinstance(ambiguous, str) and ambiguous.strip().lower() in ("null", "none", ""):
+        ambiguous = None
+    reason = str(data.get("reason", ""))
+    passed = supported and ambiguous is None
+    text = (
+        "grounded, no ambiguity"
+        if passed
+        else (f"unsupported: {reason}" if not supported else f"option {ambiguous} also defensible")
+    )
+    return GateResult(
+        "G2",
+        passed,
+        text,
+        tags={"supported": supported, "ambiguous_option": ambiguous},
+    ).record(gate_log)
+
+
+# ── G3 (LLM blind solve + consensus / dispute routing) ──────────────────────────
+G3_SCHEMA: dict = {
+    "type": "object",
+    "required": ["answer", "confidence", "rationale"],
+    "properties": {
+        "answer": {"type": "string", "enum": list(OPTION_KEYS)},
+        "confidence": {"type": "string", "enum": ["sure", "unsure", "guessing"]},
+        "rationale": {"type": "string"},
+    },
+}
+
+_BLIND_SOLVE_SYSTEM = (
+    "You are an expert exam candidate. Answer the multiple-choice question using "
+    "ONLY your own knowledge and any scenario provided. Do not guess a pattern from "
+    "the option wording. Output STRICT JSON: "
+    '{"answer":"A|B|C|D","confidence":"sure|unsure|guessing","rationale":"..."}'
+)
+
+
+@dataclass(frozen=True)
+class BlindSolve:
+    """One blind-solver verdict on a question."""
+
+    answer: str
+    confidence: str
+    rationale: str
+
+
+def blind_solve(
+    *,
+    stem: str,
+    options: Sequence[dict],
+    scenario: str | None = None,
+    model: str | None = None,
+    transport: Transport | None = None,
+) -> BlindSolve:
+    """Solve one question blind (no keyed answer shown) on the solver model."""
+    parts = []
+    if scenario:
+        parts.append(f"Scenario:\n{scenario}\n")
+    parts.append(f"Question:\n{stem}\n")
+    parts.append("Options:\n" + _options_block(options))
+    data = complete(
+        model or config.MODEL_SOLVER_BLIND,
+        _BLIND_SOLVE_SYSTEM,
+        "\n".join(parts),
+        json_schema=G3_SCHEMA,
+        transport=transport,
+    )
+    assert isinstance(data, dict)
+    return BlindSolve(
+        answer=str(data["answer"]).strip().upper(),
+        confidence=str(data["confidence"]),
+        rationale=str(data.get("rationale", "")),
+    )
+
+
+def check_g3(
+    *,
+    stem: str,
+    options: Sequence[dict],
+    correct_key: str,
+    consensus: int = 1,
+    scenario: str | None = None,
+    model: str | None = None,
+    transport: Transport | None = None,
+    gate_log: dict,
+) -> GateResult:
+    """Blind-solve ``consensus`` times; pass iff every solve agrees with the key.
+
+    Any disagreement — a lone dissent, a 2/3 split, or unanimous disagreement —
+    routes the question to ``disputed`` for human adjudication (the keyed rationale
+    vs. the blind solver's rationale). Records the votes and rationales so the
+    dispute TUI can show both sides.
+    """
+    solves = [
+        blind_solve(
+            stem=stem,
+            options=options,
+            scenario=scenario,
+            model=model,
+            transport=transport,
+        )
+        for _ in range(max(1, consensus))
+    ]
+    votes = [s.answer for s in solves]
+    unanimous_key = all(v == correct_key for v in votes)
+    if unanimous_key:
+        return GateResult(
+            "G3",
+            True,
+            f"blind solver agrees with key ({len(votes)}/{len(votes)})",
+            tags={"disputed": False, "votes": votes},
+        ).record(gate_log)
+    return GateResult(
+        "G3",
+        False,
+        f"blind solver disagreement, votes={votes} vs key {correct_key} → disputed",
+        tags={
+            "disputed": True,
+            "votes": votes,
+            "solver_rationales": [s.rationale for s in solves],
+            "solver_confidences": [s.confidence for s in solves],
+        },
+    ).record(gate_log)
