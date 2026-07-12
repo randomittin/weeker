@@ -57,7 +57,9 @@ Wave-2b notes:
 | T-50 | `learn/refill.py` — `run_refill` = `run_generation(refill=True)` → `verify_bank` → `build_status`, transports injectable for cron/live | `pytest tests/test_refill.py` — green e2e on fixture (fake LLM/embed): accepted>0, bank passes, status renders | PASS (1) |
 | —  | `learn/mock_cli.py` `register`→`atlas mock run`(T-40)/`resume`/`full`(T-42)/`diagnose`(T-36) + `MockApp`/`DiagnosticApp` Textual UIs (no-feedback-until-submit, esc-pause, silent measurement); `learn/status_cli.py` `register`→`atlas status show`(T-41)/`refill`(T-50) | `pytest tests/test_mock_tui.py` (Pilot: mock answer→submit→review writes MockExam+Attempts; diagnostic collect→seed writes session) + CLI smoke (empty DB degrades gracefully) | PASS (2) |
 
-**M5 gate** = M4 green + T-40 + T-41 green → PASS. Full suite: **183 passed** (164 prior + 19), ruff clean.
+| —  | `verify/cli.py` `register(group_app)`→ top-level `atlas verify` group: `schema` (introspection assert), `ingest [--stage parse]` (M1/S1), `concepts` (M2), `bank [--caselets]` (M3, prints full `BankReport`, exit 1 if not passed), `adaptive` (M4, DB-free), `all` (every gate in order → rich PASS/FAIL/SKIP summary table, exit nonzero on any hard-fail); wires real gate fns, no stub. Degrades to SKIP (not crash) on unreachable/empty/unmigrated DB, mirroring `atlas doctor` | `pytest -q tests/test_verify_cli.py` (12 tests: CliRunner per command vs empty sqlite → exit 0/SKIP; `verify all` renders summary table); `atlas verify all` bare env → table, exit 0 (adaptive PASS r=0.863, rest SKIP) | PASS (12) |
+
+**M5 gate** = M4 green + T-40 + T-41 green → PASS. Full suite: **195 passed** (183 prior + 12 verify-CLI), ruff clean.
 
 Wave-3 notes:
 - CLI-path deviations (main.py frozen; no `diagnose`/`refill` groups): spec `atlas diagnose` → **`atlas mock diagnose`**; spec `atlas refill` → **`atlas status refill`** (same pattern as `atlas study flash`; documented in module docstrings + `--help`).
