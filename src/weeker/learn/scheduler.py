@@ -14,6 +14,7 @@ from __future__ import annotations
 import math
 import random
 from dataclasses import dataclass, field
+from datetime import UTC, datetime
 
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session
@@ -21,6 +22,13 @@ from sqlalchemy.orm import Session
 from weeker.core import config
 from weeker.core.models import Attempt, Concept, Mastery, Question
 from weeker.learn import elo, retention
+
+
+def _aware(dt: datetime | None) -> datetime | None:
+    """Treat a persisted timestamp as UTC when the backend dropped the tzinfo (SQLite)."""
+    if dt is None:
+        return None
+    return dt if dt.tzinfo is not None else dt.replace(tzinfo=UTC)
 
 
 # ── value objects ────────────────────────────────────────────────────────────
@@ -327,7 +335,7 @@ def load_concept_states(
         m = mastery_rows.get(c.id)
         days_since = None
         if m is not None and m.last_seen is not None:
-            days_since = max(0.0, (now - m.last_seen).total_seconds() / 86400.0)
+            days_since = max(0.0, (now - _aware(m.last_seen)).total_seconds() / 86400.0)
         states.append(
             ConceptState(
                 concept_id=c.id,
@@ -367,7 +375,7 @@ def load_question_states(
     out: dict = {}
     for q in questions:
         ts = last_seen.get(q.id)
-        days = None if ts is None else max(0.0, (now - ts).total_seconds() / 86400.0)
+        days = None if ts is None else max(0.0, (now - _aware(ts)).total_seconds() / 86400.0)
         out.setdefault(q.concept_id, []).append(
             QuestionState(
                 question_id=q.id,
