@@ -2,9 +2,12 @@
 
 from __future__ import annotations
 
+import httpx
 import numpy as np
+import pytest
 
-from weeker.core.embed import embed
+from weeker.core import config
+from weeker.core.embed import EmbedError, HTTPTransport, embed
 
 
 class CountingTransport:
@@ -51,3 +54,55 @@ def test_order_and_values_preserved(tmp_path):
     assert out.shape == (3, 8)
     assert out[0][0] == (1 % 7) + 1
     assert out[1][0] == (2 % 7) + 1
+
+
+# ── HTTPTransport: real OpenAI-compatible embeddings response (data[].embedding) ─
+def _mock_client(handler):
+    return httpx.Client(transport=httpx.MockTransport(handler))
+
+
+def test_http_transport_parses_data_embedding_in_index_order(monkeypatch):
+    monkeypatch.setattr(config, "EMBED_DIM", 3)
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        # deliberately out of order → transport must sort by index
+        return httpx.Response(
+            200,
+            json={
+                "data": [
+                    {"index": 1, "embedding": [0.4, 0.5, 0.6]},
+                    {"index": 0, "embedding": [0.1, 0.2, 0.3]},
+                ]
+            },
+        )
+
+    t = HTTPTransport(model="e", base_url="https://api.example/v1", api_key="k",
+                      client=_mock_client(handler))
+    out = t.embed(["first", "second"])
+    assert out.shape == (2, 3)
+    assert np.allclose(out[0], [0.1, 0.2, 0.3])
+    assert np.allclose(out[1], [0.4, 0.5, 0.6])
+
+
+def test_http_transport_dim_mismatch_raises_clear_error(monkeypatch):
+    monkeypatch.setattr(config, "EMBED_DIM", 1536)
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        return httpx.Response(200, json={"data": [{"index": 0, "embedding": [0.1, 0.2, 0.3]}]})
+
+    t = HTTPTransport(model="e", base_url="https://api.example/v1", api_key="k",
+                      client=_mock_client(handler))
+    with pytest.raises(EmbedError, match="dim 3 != EMBED_DIM 1536"):
+        t.embed(["x"])
+
+
+def test_http_transport_error_status_surfaces_body(monkeypatch):
+    monkeypatch.setattr(config, "EMBED_DIM", 3)
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        return httpx.Response(401, json={"error": {"message": "bad key"}})
+
+    t = HTTPTransport(model="e", base_url="https://api.example/v1", api_key="k",
+                      client=_mock_client(handler))
+    with pytest.raises(EmbedError, match="401"):
+        t.embed(["x"])

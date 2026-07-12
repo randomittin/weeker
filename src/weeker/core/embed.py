@@ -18,6 +18,10 @@ import numpy as np
 from weeker.core import config
 
 
+class EmbedError(RuntimeError):
+    """Raised when the embeddings transport returns an unusable response."""
+
+
 @runtime_checkable
 class EmbedTransport(Protocol):
     """Embeds a batch of texts into an ``(len(texts), dim)`` array."""
@@ -54,9 +58,23 @@ class HTTPTransport:
             headers={"Authorization": f"Bearer {self.api_key}"},
             json={"model": self.model, "input": texts},
         )
-        resp.raise_for_status()
-        rows = sorted(resp.json()["data"], key=lambda d: d["index"])
-        return np.asarray([r["embedding"] for r in rows], dtype=np.float32)
+        if resp.status_code >= 400:
+            raise EmbedError(
+                f"embed HTTP {resp.status_code} from {self.base_url}: {resp.text[:500]}"
+            )
+        payload = resp.json()
+        data = payload.get("data") if isinstance(payload, dict) else None
+        if not data:
+            raise EmbedError(f"unexpected embeddings envelope: {str(payload)[:500]}")
+        rows = sorted(data, key=lambda d: d["index"])
+        vectors = np.asarray([r["embedding"] for r in rows], dtype=np.float32)
+        if vectors.ndim != 2 or vectors.shape[1] != config.EMBED_DIM:
+            got = vectors.shape[1] if vectors.ndim == 2 else vectors.shape
+            raise EmbedError(
+                f"embedding dim {got} != EMBED_DIM {config.EMBED_DIM} "
+                f"(model={self.model!r}); set WEEKER_EMBED_DIM to match the provider"
+            )
+        return vectors
 
 
 _default_transport: EmbedTransport | None = None
