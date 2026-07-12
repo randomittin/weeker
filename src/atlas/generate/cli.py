@@ -20,6 +20,7 @@ from sqlalchemy import select
 
 from atlas.core.db import get_session, session_scope
 from atlas.core.models import Course, Question
+from atlas.generate.calibrate import audit_bank
 from atlas.generate.pipeline import run_generation
 from atlas.generate.review_tui import DisputeApp
 from atlas.verify.bank_checks import verify_bank
@@ -81,6 +82,23 @@ def register(group_app: typer.Typer) -> None:
             db.close()
             raise typer.Exit(0)
         DisputeApp(disputed, db=db).run()
+
+    @group_app.command("recalibrate")
+    def recalibrate(
+        course: str = typer.Option(None, "--course", "-c"),
+    ) -> None:
+        """Audit the active bank: recompute discrimination, flag drift, retire dead items."""
+        with session_scope() as db:
+            c = _resolve_course(db, course)
+            if c is None:
+                typer.echo("No course found.")
+                raise typer.Exit(1)
+            summary = audit_bank(db, c.id)
+        typer.echo(
+            f"audited={summary['audited']} recalibrate={summary['recalibrate']} "
+            f"retired={summary['retired']} dead_distractors={summary['dead_distractors']}"
+        )
+        raise typer.Exit(0)
 
     @group_app.command("verify-bank")
     def verify_bank_cmd(
