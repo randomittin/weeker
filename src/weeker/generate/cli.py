@@ -24,6 +24,7 @@ from weeker.generate.calibrate import audit_bank
 from weeker.generate.caselets import run_caselets
 from weeker.generate.pipeline import run_generation
 from weeker.generate.review_tui import DisputeApp
+from weeker.seed.load_authored import load_authored
 from weeker.verify.bank_checks import verify_bank
 
 
@@ -90,6 +91,46 @@ def register(group_app: typer.Typer) -> None:
             f"g6_regenerated={report.g6_regenerated}"
         )
         raise typer.Exit(0)
+
+    @group_app.command("load-authored")
+    def load_authored_cmd(
+        directory: str = typer.Option(
+            "courses/nism-xa/authored", "--dir", "-d", help="Authored chapter JSON directory."
+        ),
+        course: str = typer.Option(None, "--course", "-c"),
+        review_status: str = typer.Option(
+            "accepted", "--review-status", help="Concept review_status to set."
+        ),
+    ) -> None:
+        """Load hand-authored concept/question/caselet JSON (keyless, code-gate enforced)."""
+        with session_scope() as db:
+            c = _resolve_course(db, course)
+            if c is None:
+                typer.echo("No course found — ingest a course first.")
+                raise typer.Exit(1)
+            report = load_authored(directory, db=db, review_status=review_status, course=course)
+
+        header = (
+            f"{'ch':>3}  {'title':<28} {'conc':>4} {'obj':>4} {'q':>4} "
+            f"{'case':>4} {'rejected(by gate)':>24}"
+        )
+        typer.echo(header)
+        typer.echo("-" * len(header))
+        for chp in sorted(report.chapters, key=lambda x: x.ordinal):
+            rej = ", ".join(f"{g}:{n}" for g, n in sorted(chp.rejected_by_gate.items())) or "-"
+            typer.echo(
+                f"{chp.ordinal:>3}  {chp.title[:28]:<28} "
+                f"{chp.concepts_inserted:>4} {chp.objectives_inserted:>4} "
+                f"{chp.questions_inserted:>4} {chp.caselets_inserted:>4} {rej:>24}"
+            )
+        typer.echo(
+            f"TOTAL concepts={report.concepts_inserted} objectives={report.objectives_inserted} "
+            f"questions={report.questions_inserted} caselets={report.caselets_inserted} "
+            f"rejected={report.questions_rejected} by_gate={report.rejected_by_gate}"
+        )
+        for fname, err in report.file_errors.items():
+            typer.echo(f"FILE ERROR {fname}: {err}")
+        raise typer.Exit(1 if report.file_errors else 0)
 
     @group_app.command("review")
     def review(
