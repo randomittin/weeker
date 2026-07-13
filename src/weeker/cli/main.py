@@ -52,5 +52,17 @@ def doctor() -> None:
     raise typer.Exit(code)
 
 
+@app.command()
+def serve(
+    host: str = typer.Option("127.0.0.1", "--host", help="Bind address."),
+    port: int = typer.Option(8000, "--port", help="Bind port."),
+    reload: bool = typer.Option(False, "--reload", help="Auto-reload on code changes (dev)."),
+) -> None:
+    """Run the local Weeker web/API server (requires the `web` extra)."""
+    from weeker.api.serve import run_server
+
+    run_server(host=host, port=port, reload=reload)
+
+
 if __name__ == "__main__":
     app()

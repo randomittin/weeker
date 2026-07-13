@@ -28,6 +28,10 @@ dev = [
     "pytest-asyncio",
     "ruff",
 ]
+web = [
+    "fastapi",
+    "uvicorn[standard]",
+]
 
 [project.scripts]
 weeker = "weeker.cli.main:app"
