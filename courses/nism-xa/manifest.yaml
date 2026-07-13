@@ -40,46 +40,31 @@ exam:
       questions_each: 5
       marks_each: 2
 
-# Real NISM Series X-A chapter list — the 20 chapters / 6 modules verified against
-# the official NISM Test Objectives page (see docs/analysis/nism-xa-blueprint.md,
-# sourced from nism.ac.in). NISM does NOT publish per-unit weightage for X-A, so
-# these are an EVEN split (20 x 0.05 = 1.0) — a documented, honest fallback, NOT
-# authoritative weighting.
+# Blueprint weightage for the ACTUAL ingested workbook.
 #
-# After your first `weeker ingest run`:
-#   1. Weights are keyed by the chapter TITLE ingestion detects from the PDF
-#      (printed as "structure (...): N chapters"). A key that does not match a
-#      detected title is silently ignored — reconcile these titles with what your
-#      workbook edition actually prints if they differ.
-#   2. Optionally replace the even 0.05 weights with a depth-weighted split
-#      (e.g. by workbook page-count per chapter). Overrides must still sum to 1.0.
-# Leave this block as `blueprint: {}` to instead auto-derive weights from the
-# reviewed-concept count per chapter.
+# EDITION NOTE: the supplied PDF is the older 12-chapter NISM X-A workbook edition
+# (the chapter titles below are exactly what ingestion detected from THIS PDF).
+# The current official NISM X-A outline (docs/analysis/nism-xa-blueprint.md, from
+# nism.ac.in) is restructured into 20 chapters / 6 modules — so this workbook may
+# predate the current syllabus. For studying THIS workbook the weights below are
+# correct; if your exam follows the current syllabus, verify your edition.
+#
+# NISM publishes no per-unit weightage, so these are the detected 12 chapters with
+# weights auto-derived by concept count at build time. This explicit block is keyed
+# to the EXACT detected titles (used for mock chapter-stratification). To let the
+# engine derive weights purely from reviewed-concept counts instead, set
+# `blueprint: {}`. Overrides must sum to 1.0.
 blueprint:
   overrides:
-    # Module 1 — Personal Financial Planning
-    "Introduction to Personal Financial Planning": 0.05
-    "Time Value of Money": 0.05
-    "Cash Flow Management and Budgeting": 0.05
-    "Debt Management and Loans": 0.05
-    # Module 2 — Indian Financial Markets
-    "Introduction to Indian Financial Markets": 0.05
-    "Securities Market Segments": 0.05
-    # Module 3 — Investment Products
-    "Introduction to Investments": 0.05
-    "Investing in Stocks": 0.05
-    "Investing in Fixed Income Securities": 0.05
-    "Understanding Derivatives": 0.05
-    # Module 4 — Investment through Managed Portfolio
-    "Mutual Fund": 0.05
-    "Portfolio Manager": 0.05
-    "Overview of Alternative Investment Funds (AIFs)": 0.05
-    # Module 5 — Portfolio Construction, Performance Monitoring and Evaluation
-    "Introduction to Modern Portfolio Theory": 0.05
-    "Portfolio Construction Process": 0.05
-    "Portfolio Performance Measurement and Evaluation": 0.05
-    # Module 6 — Operations, Regulatory Environment, Compliance and Ethics
-    "Operational Aspects of Investment Management": 0.05
-    "Key Regulations": 0.05
-    "Ethical Issues": 0.05
-    "Grievance Redress Mechanism": 0.05
+    "Chapter 1: INTRODUCTION TO INDIAN FINANCIAL MARKET": 0.0833
+    "Chapter 2: SECURITIES MARKET SEGMENTS": 0.0833
+    "Chapter 3: MUTUAL FUNDS": 0.0833
+    "Chapter 4: INVESTMENT PRODUCTS": 0.0833
+    "Chapter 5: MANAGING INVESTMENT RISK": 0.0833
+    "Chapter 6: MEASURING INVESTMENT RETURNS": 0.0833
+    "Chapter 7: CONCEPT OF FINANCIAL PLANNING": 0.0833
+    "Chapter 8: ASSET ALLOCATION AND INVESTMENT STRATEGIES": 0.0833
+    "Chapter 9: INSURANCE PLANNING": 0.0833
+    "Chapter 10: RETIREMENT PLANNING": 0.0833
+    "Chapter 11: TAX AND ESTATE PLANNING": 0.0833
+    "Chapter 12: REGULATORY ENVIRONMENT AND ETHICAL ISSUES": 0.0837
