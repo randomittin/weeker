@@ -85,7 +85,11 @@ class LocalModel2VecTransport:
 
     Loads ``config.EMBED_LOCAL_MODEL`` (default ``minishlab/potion-retrieval-32M``,
     512-dim) once and caches it process-wide. No API key, no torch — just numpy.
-    Set ``WEEKER_EMBED_DIM`` to the model's dim (512 for the default model).
+
+    The output dimension is derived from the loaded model itself (:attr:`dim`),
+    never from a hand-set ``WEEKER_EMBED_DIM`` — a stale env value can silently
+    mismatch the model and corrupt the shared cosine space, so the model is the
+    single source of truth here.
     """
 
     def __init__(self, model: str | None = None):
@@ -105,15 +109,24 @@ class LocalModel2VecTransport:
         _LOCAL_MODEL_CACHE[self.model] = static
         return static
 
+    @property
+    def dim(self) -> int:
+        """The model's true output width (from the model, not the env)."""
+        model = self._load()
+        d = getattr(model, "dim", None)
+        if d is None:  # fall back to a one-token probe for exotic models
+            d = np.asarray(model.encode(["x"]), dtype=np.float32).shape[1]  # type: ignore[attr-defined]
+        return int(d)
+
     def embed(self, texts: list[str]) -> np.ndarray:
+        dim = self.dim
         if not texts:
-            return np.empty((0, config.EMBED_DIM), dtype=np.float32)
+            return np.empty((0, dim), dtype=np.float32)
         vectors = np.asarray(self._load().encode(texts), dtype=np.float32)  # type: ignore[attr-defined]
-        if vectors.ndim != 2 or vectors.shape[1] != config.EMBED_DIM:
+        if vectors.ndim != 2 or vectors.shape[1] != dim:  # ragged/malformed output
             got = vectors.shape[1] if vectors.ndim == 2 else vectors.shape
             raise EmbedError(
-                f"embedding dim {got} != EMBED_DIM {config.EMBED_DIM} "
-                f"(model={self.model!r}); set WEEKER_EMBED_DIM to match the model"
+                f"local model {self.model!r} returned inconsistent dim {got} != {dim}"
             )
         return vectors
 

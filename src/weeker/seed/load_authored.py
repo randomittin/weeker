@@ -141,6 +141,22 @@ def _norm_stem(stem: str) -> str:
     return " ".join(str(stem).split()).lower()
 
 
+def _coerce_pages(raw) -> list[int]:
+    """Keep integer-parseable page entries, drop the rest (tolerant).
+
+    Some authors put section labels (``"11.1.1"``, ``"12.1"``) in ``source_pages``
+    instead of int pages. Those are not pages and must not crash the load — they
+    are silently dropped; genuine int pages (``13``, ``"14"``) are kept.
+    """
+    pages: list[int] = []
+    for x in raw or []:
+        try:
+            pages.append(int(x))
+        except (TypeError, ValueError):
+            continue
+    return pages
+
+
 def _skip_llm_gates(gate_log: dict) -> None:
     """Stamp the un-run LLM gates so authored items stay auditable."""
     reason = "skipped: authored content is pre-grounded"
@@ -272,7 +288,7 @@ def _load_concept(
             prerequisites=[str(x) for x in c_raw.get("prerequisites", []) or []],
             keywords=[str(x) for x in c_raw.get("keywords", []) or []],
             misconceptions=[str(x) for x in c_raw.get("misconceptions", []) or []],
-            source_pages=[int(x) for x in c_raw.get("source_pages", []) or []],
+            source_pages=_coerce_pages(c_raw.get("source_pages")),
             review_status=review_status,
             reviewed_at=datetime.now(UTC),
         )
@@ -502,6 +518,21 @@ def load_authored(
             raise ValueError("no course in DB — ingest a course before loading authored content")
 
         embed_fn = _embedder(embed_transport, cache_dir)
+
+        # Derive the embedder's TRUE output dim from a real probe (never trust a
+        # hand-set WEEKER_EMBED_DIM — it can silently mismatch the model). It must
+        # match the course's embedding_dim (fixed at ingestion) so authored
+        # concept/question vectors share the chunk cosine space. No pad/truncate:
+        # a mismatch means the wrong embedding model → hard error.
+        true_dim = int(np.asarray(embed_fn(["dimension probe"]), dtype=np.float32).shape[1])
+        if c.embedding_dim and true_dim != c.embedding_dim:
+            raise ValueError(
+                f"embedder emits {true_dim}-dim vectors but course "
+                f"{c.slug or c.title!r} was ingested at {c.embedding_dim}-dim; "
+                "authored embeddings would not share the chunk cosine space — "
+                "load with the same embedding model used at ingestion"
+            )
+
         ngram_index = course_ngram_index(session, c.id)
 
         # G5 dedup vectors (active/disputed bank) + exact-stem / scenario idempotency sets.
