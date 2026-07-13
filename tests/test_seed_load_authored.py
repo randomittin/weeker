@@ -249,6 +249,110 @@ def test_load_authored_tolerates_non_int_source_pages(tmp_path):
     assert concept.source_pages == [13, 14]  # ints kept, section labels dropped
 
 
+def _caselet_question(stem: str, pos: int, marks: float) -> dict:
+    q = _valid_question(stem)
+    q["case_position"] = pos
+    q["marks"] = marks
+    return q
+
+
+_SCENARIO = (
+    "Priya, a thirty-two year old graphic designer based in Kochi, recently sold an "
+    "inherited apartment and now holds a lump sum she wants to deploy sensibly across "
+    "several instruments over the coming decade. She meets a distributor who walks her "
+    "through how pooled vehicles report a per-unit figure at the end of each trading "
+    "session, and how recurring annual charges quietly erode her compounded outcome if "
+    "left unexamined. Priya keeps a small emergency reserve in a sweep account, tracks "
+    "every recurring subscription, and wants her long horizon money working harder than "
+    "idle cash. She asks the distributor to compare two schemes with different cost "
+    "structures, to explain the daily pricing mechanic in plain language, and to show "
+    "how a modest difference in annual charges changes her balance many years later. "
+    "The distributor sketches the arithmetic on a notepad and Priya starts asking "
+    "sharper questions about pricing, timing, and the true cost of staying invested."
+)
+
+
+def _caselets_fixture() -> dict:
+    """Two full caselets in ONE file — proving the loader processes every caselet,
+    not just the first — with the second referencing a non-resolving concept_title."""
+    return {
+        "chapter_ordinal": 1,
+        "chapter_title": "Fundamentals",
+        "concepts": _fixture()["concepts"],
+        "caselets": [
+            {
+                "scenario": _SCENARIO,
+                "concept_titles": ["Net asset value", "Expense ratio"],
+                "questions": [
+                    _caselet_question(f"Caselet one question at reading position {p} today", p, 1.0)
+                    for p in (1, 2, 3, 4, 5)
+                ],
+            },
+            {
+                "scenario": _SCENARIO.replace("Priya", "Meera").replace("Kochi", "Indore"),
+                # trailing space + wrong case resolves; the second title does NOT exist
+                "concept_titles": ["  expense RATIO ", "Totally Missing Concept Zzz"],
+                "questions": [
+                    _caselet_question(f"Caselet two question at reading position {p} again", p, m)
+                    for p, m in zip((1, 2, 3, 4, 5), (2.0, 2.0, 1.0, 1.0, 1.0), strict=True)
+                ],
+            },
+        ],
+    }
+
+
+def test_load_authored_loads_all_caselets_in_a_file(tmp_path):
+    """Regression: every caselet in a file loads (not just the first), and a
+    non-resolving concept_title is tolerated — the caselet still loads, linked to
+    the concepts that DO resolve (case-insensitively / trimmed)."""
+    db = _mem()
+    course, _, _ = _seed(db)
+    path = tmp_path / "ch01.json"
+    path.write_text(json.dumps(_caselets_fixture()), encoding="utf-8")
+
+    report = load_authored([str(path)], db=db, embed_transport=BowEmbed(), cache_dir=tmp_path)
+
+    assert report.file_errors == {}
+    assert report.caselets_inserted == 2  # BOTH caselets, not just the first
+
+    groups = db.scalars(select(CaseGroup).where(CaseGroup.course_id == course.id)).all()
+    assert len(groups) == 2
+    for cg in groups:
+        assert cg.status == STATUS_ACTIVE
+        # LLM gates (G2/G3/G6) are not run for authored caselets — stamped skipped
+        # so verify-bank recognises them as pre-grounded rather than gate-failed.
+        assert cg.gate_log["G6"]["skipped"] is True
+        assert cg.gate_log["G6"]["passed"] is True
+        assert cg.gate_log["G2"]["skipped"] is True
+        assert cg.gate_log["G3"]["skipped"] is True
+        qs = db.scalars(select(Question).where(Question.case_group_id == cg.id)).all()
+        assert len(qs) == 5
+        assert sorted(q.case_position for q in qs) == [1, 2, 3, 4, 5]
+
+    nav = db.scalars(select(Concept).where(Concept.title == "Net asset value")).one()
+    ter = db.scalars(select(Concept).where(Concept.title == "Expense ratio")).one()
+    one = next(cg for cg in groups if cg.scenario.startswith("Priya"))
+    two = next(cg for cg in groups if cg.scenario.startswith("Meera"))
+    # caselet one links BOTH concepts
+    assert set(one.concept_ids) == {str(nav.id), str(ter.id)}
+    # caselet two links only the resolvable concept (the missing title is dropped, not fatal)
+    assert two.concept_ids == [str(ter.id)]
+
+    # marks carried through: caselet two has two 2-mark questions.
+    two_mark = db.scalar(
+        select(func.count())
+        .select_from(Question)
+        .where(Question.case_group_id == two.id, Question.marks == 2.0)
+    )
+    assert two_mark == 2
+
+    # idempotent: a second run adds no caselets.
+    report2 = load_authored([str(path)], db=db, embed_transport=BowEmbed(), cache_dir=tmp_path)
+    assert report2.caselets_inserted == 0
+    assert sum(c.caselets_skipped for c in report2.chapters) == 2
+    assert db.scalar(select(func.count()).select_from(CaseGroup)) == 2
+
+
 def test_load_authored_derives_dim_from_model_not_config(tmp_path):
     """Bug: loader depended on a hand-set WEEKER_EMBED_DIM that can mismatch.
 

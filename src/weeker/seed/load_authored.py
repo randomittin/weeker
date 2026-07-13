@@ -180,8 +180,17 @@ def _gate_authored(
     pass, otherwise the name of the gate that rejected the question.
     """
     gate_log: dict = {}
+    # G1 runs WITHOUT ``embed_fn``: the semantic option-distinctness sub-check is a
+    # cosine heuristic calibrated for a semantic embedding model, but authored
+    # content is embedded with the course's model — here the 512-dim static
+    # potion-retrieval model — whose cosine rates distinct-but-templated options as
+    # near-identical (measured: four distinct rupee amounts at cos 0.942, four
+    # distinct risk/return pairs at cos 0.976 ≥ the 0.85 ceiling), false-rejecting
+    # valid authored questions. Structural invariants + the model-independent
+    # identical-text duplicate check still run; genuine duplicate options are caught
+    # without the static-embedding false positives.
     if not gates.check_g1(
-        stem=stem, options=options, correct_key=correct_key, embed_fn=embed_fn, gate_log=gate_log
+        stem=stem, options=options, correct_key=correct_key, embed_fn=None, gate_log=gate_log
     ).passed:
         return gate_log, "G1"
     stem_vec = np.asarray(embed_fn([stem])[0], dtype=np.float32)
@@ -394,6 +403,15 @@ def _load_caselet(
         chapter_report.reject("G4")
         return
     _skip_llm_gates(scenario_log)
+    # G6 (scenario-dependence blind-solve) is an LLM gate we deliberately do not run
+    # for authored caselets — the scenario is hand-authored to be answer-bearing —
+    # so it is stamped skipped alongside G2/G3, keeping the caselet auditable and
+    # recognisable as pre-grounded by verify-bank's caselet bar.
+    scenario_log["G6"] = {
+        "passed": True,
+        "reason": "skipped: authored caselet, scenario dependence is hand-authored",
+        "skipped": True,
+    }
 
     gated: list[tuple[CaseletQuestion, dict]] = []
     for q in sorted(caselet.questions, key=lambda x: x.case_position):

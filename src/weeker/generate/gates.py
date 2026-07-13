@@ -120,6 +120,21 @@ def check_g1(
     if not str(stem).strip():
         return GateResult("G1", False, "stem must be non-empty").record(gate_log)
 
+    # Model-independent duplicate-option check: two options whose text is identical
+    # (ignoring only case and whitespace) are a true structural defect — the same
+    # answer keyed twice. This runs regardless of ``embed_fn`` and, unlike the
+    # semantic-cosine check below, never false-positives on distinct-but-templated
+    # options (e.g. "Rs. 5 lakhs" vs "Rs. 10 lakhs"), which a static/distilled
+    # embedding rates near-identical. Punctuation and signs are PRESERVED — dropping
+    # them would collapse "4%" and "-4%" into one, which they are not.
+    norms = [" ".join(str(o.get("text", "")).split()).lower() for o in options]
+    for i in range(len(norms)):
+        for j in range(i + 1, len(norms)):
+            if norms[i] and norms[i] == norms[j]:
+                return GateResult(
+                    "G1", False, f"options {keys[i]}/{keys[j]} have identical text"
+                ).record(gate_log)
+
     if embed_fn is not None:
         texts = [str(o.get("text", "")) for o in options]
         matrix = np.asarray(embed_fn(texts), dtype=np.float32)

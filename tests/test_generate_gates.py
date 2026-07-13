@@ -99,6 +99,32 @@ def test_g1_non_distinct_options_fail():
     assert cosine(m[0], m[1]) >= OPTION_DISTINCT_MAX_COS
 
 
+def test_g1_identical_option_text_fails_without_embedder():
+    """Two options with identical text (modulo case/whitespace) are a hard defect,
+    caught by the model-independent duplicate check even with no embedder."""
+    log: dict = {}
+    opts = _opts()
+    opts[0]["text"] = "About 4% per annum"
+    opts[1]["text"] = "  about   4%   PER Annum  "  # same text, different case/spacing
+    res = gates.check_g1(stem="x?", options=opts, correct_key="A", gate_log=log)
+    assert not res.passed
+    assert "identical" in res.reason.lower()
+
+
+def test_g1_sign_and_amount_distinct_options_pass_without_embedder():
+    """Distinct-but-templated options must PASS the pure-structural G1 (no embedder):
+    the duplicate check preserves signs/punctuation, so '4%' vs '-4%' and 'Rs. 5
+    lakhs' vs 'Rs. 10 lakhs' are not collapsed into duplicates."""
+    for a, b in (("About 4% per annum.", "About -4% per annum."),
+                 ("Rs. 5 lakhs", "Rs. 10 lakhs")):
+        log: dict = {}
+        opts = _opts()
+        opts[0]["text"] = a
+        opts[1]["text"] = b
+        res = gates.check_g1(stem="x?", options=opts, correct_key="A", gate_log=log)
+        assert res.passed, f"{a!r} vs {b!r} wrongly flagged: {res.reason}"
+
+
 def test_g4_verbatim_eight_gram_lift_fails():
     corpus = "the net asset value of a mutual fund is computed once every business day"
     idx = gates.build_ngram_index([corpus])
