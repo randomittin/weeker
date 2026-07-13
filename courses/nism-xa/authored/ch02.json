@@ -1,0 +1,1187 @@
+{
+  "chapter_ordinal": 2,
+  "chapter_title": "SECURITIES MARKET SEGMENTS",
+  "concepts": [
+    {
+      "title": "Nature and Functions of the Primary Market",
+      "description": "The primary market is where a company raises fresh funds by offering securities to outside investors for the first time; a first equity offer is called 'going public'. Its functions include widening investor participation, competitive price discovery, diversifying ownership, higher disclosure standards, and providing an exit for early investors.",
+      "difficulty": 1,
+      "prerequisites": [],
+      "keywords": [
+        "primary market",
+        "going public",
+        "disclosure",
+        "ownership diversification",
+        "exit for early investors",
+        "outside investors"
+      ],
+      "misconceptions": [
+        "Thinking the primary market is where investors trade with each other",
+        "Confusing 'going public' with becoming government-owned",
+        "Believing early investors can never exit through a primary issue"
+      ],
+      "source_pages": [
+        31,
+        32,
+        33
+      ],
+      "objectives": [
+        {
+          "text": "Learner can define 'going public' and the role of the primary market.",
+          "bloom": "understand",
+          "assessment_style": "definition"
+        },
+        {
+          "text": "Learner can identify a function served by the primary market.",
+          "bloom": "understand",
+          "assessment_style": "scenario"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "A privately held company offers shares to outside investors for the first time, widening its ownership base. This event is best described as:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Going public.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Delisting.",
+              "misconception": "Names the opposite action, removing shares from an exchange"
+            },
+            {
+              "key": "C",
+              "text": "A secondary-market trade.",
+              "misconception": "Confuses issuing new securities with investors trading existing ones"
+            },
+            {
+              "key": "D",
+              "text": "Nationalisation.",
+              "misconception": "Confuses a public share issue with a government takeover"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Offering shares to outside investors for the first time is 'going public'. Delisting is the reverse, a secondary-market trade is between investors (no new issue), and nationalisation means government ownership, none of which is happening here.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Which of the following is a genuine function of the primary market?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Letting early investors such as promoters exit part of their holding when the company issues to the public.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Letting two unrelated investors trade seasoned shares between themselves.",
+              "misconception": "Describes the secondary market, not the primary market"
+            },
+            {
+              "key": "C",
+              "text": "Guaranteeing every subscriber a fixed return.",
+              "misconception": "Assumes an issue promises returns, which it does not"
+            },
+            {
+              "key": "D",
+              "text": "Setting the Cash Reserve Ratio for banks.",
+              "misconception": "Assigns an RBI monetary tool to the primary market"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A vibrant primary market lets early investors realise value and exit part of their stake when the company issues to the public. Trading seasoned shares is a secondary-market function, issues carry no return guarantee, and CRR is an RBI tool.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Why are higher disclosure and transparency standards imposed on companies that raise money in the primary market?",
+          "options": [
+            {
+              "key": "A",
+              "text": "So prospective outside investors get adequate, verifiable information to evaluate the business.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "To increase the company's tax liability.",
+              "misconception": "Confuses disclosure requirements with taxation"
+            },
+            {
+              "key": "C",
+              "text": "To guarantee the share price will rise after listing.",
+              "misconception": "Treats disclosure as a promise about price"
+            },
+            {
+              "key": "D",
+              "text": "To remove the need for a stock exchange.",
+              "misconception": "Assumes disclosure replaces the trading venue"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Outside investors are unfamiliar with the business, so regulations demand detailed, verifiable disclosures to help them assess it. Disclosure is not about tax, is not a price guarantee, and does not replace the exchange.",
+          "difficulty": 1
+        }
+      ]
+    },
+    {
+      "title": "IPO: Fresh Issue versus Offer for Sale",
+      "description": "An Initial Public Offer can be a fresh issue, an offer for sale, or both. In a fresh issue the company creates new shares, so its share capital rises, existing holders' percentages fall, and the money goes to the company. In an offer for sale, existing shareholders sell their own shares, so share capital is unchanged and the proceeds go to the sellers, not the company.",
+      "difficulty": 2,
+      "prerequisites": [
+        "Nature and Functions of the Primary Market"
+      ],
+      "keywords": [
+        "IPO",
+        "fresh issue",
+        "offer for sale",
+        "share capital",
+        "percentage holding",
+        "disinvestment"
+      ],
+      "misconceptions": [
+        "Thinking an offer for sale raises new capital for the company",
+        "Believing a fresh issue leaves percentage holdings unchanged",
+        "Assuming the company always receives the IPO proceeds"
+      ],
+      "source_pages": [
+        37,
+        38,
+        39
+      ],
+      "objectives": [
+        {
+          "text": "Learner can compute post-issue percentage holdings after a fresh issue.",
+          "bloom": "apply",
+          "assessment_style": "calculation"
+        },
+        {
+          "text": "Learner can determine who receives the proceeds in a fresh issue versus an offer for sale.",
+          "bloom": "understand",
+          "assessment_style": "scenario"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "A company has 2,000 shares held equally by two founders (1,000 each). It makes a fresh issue of 2,000 new shares to the public. After the IPO, what is each founder's percentage holding?",
+          "options": [
+            {
+              "key": "A",
+              "text": "25%.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "50%, unchanged.",
+              "misconception": "Assumes a fresh issue does not dilute existing holders"
+            },
+            {
+              "key": "C",
+              "text": "33.33%.",
+              "misconception": "Divides 1,000 by 3,000, forgetting the total rises to 4,000"
+            },
+            {
+              "key": "D",
+              "text": "20%.",
+              "misconception": "Uses an incorrect total of 5,000 shares"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A fresh issue adds new shares, so total shares become 2,000 + 2,000 = 4,000. Each founder still holds 1,000, so 1,000 / 4,000 = 25%. Their percentage falls because the company created new shares, even though their share count is unchanged.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Instead, the same IPO is done as an offer for sale, where each founder sells 500 of their 1,000 shares to the public. What happens to the company's issued share capital?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It stays at 2,000 shares; only ownership shifts and the proceeds go to the founders.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "It rises to 3,000 shares.",
+              "misconception": "Treats an offer for sale as if new shares were created"
+            },
+            {
+              "key": "C",
+              "text": "It falls to 1,000 shares.",
+              "misconception": "Assumes the sold shares are cancelled"
+            },
+            {
+              "key": "D",
+              "text": "It doubles to 4,000 shares.",
+              "misconception": "Applies fresh-issue logic to an offer for sale"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "In an offer for sale, existing shareholders sell shares they already own, so no new shares are created and the share capital stays at 2,000. The sale proceeds go to the selling founders, not the company; ownership simply moves to new investors.",
+          "difficulty": 2
+        },
+        {
+          "stem": "The government sells part of its stake in a public-sector company to the public (a disinvestment). Where do the sale proceeds go?",
+          "options": [
+            {
+              "key": "A",
+              "text": "To the government, which is selling the shares; the company's capital is unchanged.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "To the company, boosting its cash reserves.",
+              "misconception": "Assumes proceeds always reach the company"
+            },
+            {
+              "key": "C",
+              "text": "Split equally between the company and the government.",
+              "misconception": "Invents a split of offer-for-sale proceeds"
+            },
+            {
+              "key": "D",
+              "text": "To the stock exchange as a listing fee.",
+              "misconception": "Confuses sale proceeds with an exchange fee"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A disinvestment is an offer for sale by the government of shares it already holds, so the money goes to the government (the seller) and the company's share capital does not change. The company does not receive the proceeds.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Book Building and the Cut-off Price",
+      "description": "In a book-built issue the company sets a floor price or a price band, and investors bid a quantity at a chosen price. The cut-off price is the price at which the whole issue just gets subscribed; every bid at or above the cut-off is eligible for allotment. A retail investor who 'bids at cut-off' agrees to pay whatever price is discovered, so the bid is never rejected for being too low.",
+      "difficulty": 2,
+      "prerequisites": [
+        "Nature and Functions of the Primary Market"
+      ],
+      "keywords": [
+        "book building",
+        "price band",
+        "floor price",
+        "cut-off price",
+        "bidding",
+        "allotment"
+      ],
+      "misconceptions": [
+        "Thinking bids below the cut-off still receive allotment",
+        "Believing the highest bid price always becomes the cut-off",
+        "Confusing the cut-off price with the floor price"
+      ],
+      "source_pages": [
+        40,
+        41,
+        42
+      ],
+      "objectives": [
+        {
+          "text": "Learner can read a bid book and identify the cut-off price.",
+          "bloom": "apply",
+          "assessment_style": "calculation"
+        },
+        {
+          "text": "Learner can explain the effect of bidding at cut-off.",
+          "bloom": "understand",
+          "assessment_style": "scenario"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "A company offers 4,000 shares in a band of Rs 100-120. Cumulative demand is: at Rs 120, 800 shares; at Rs 115, 2,000 shares; at Rs 110, 4,000 shares; at Rs 105, 5,500 shares. What is the cut-off price?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs 110.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs 120.",
+              "misconception": "Assumes the highest bid price is always the cut-off"
+            },
+            {
+              "key": "C",
+              "text": "Rs 105.",
+              "misconception": "Picks the price with the largest total demand rather than where the offer just fills"
+            },
+            {
+              "key": "D",
+              "text": "Rs 100.",
+              "misconception": "Assumes the floor price is automatically the cut-off"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The cut-off is the price at which cumulative demand first reaches the number offered (4,000 shares). That happens at Rs 110. Rs 120 is only the top of the book, Rs 105 is over-subscribed beyond the offer, and Rs 100 is merely the floor.",
+          "difficulty": 2
+        },
+        {
+          "stem": "An investor bids Rs 105 in the issue above, where the cut-off is discovered at Rs 110. What allotment does she receive?",
+          "options": [
+            {
+              "key": "A",
+              "text": "None; her bid is below the cut-off price.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Full allotment at Rs 105.",
+              "misconception": "Assumes any bid gets filled at its own quoted price"
+            },
+            {
+              "key": "C",
+              "text": "Allotment at Rs 110 anyway.",
+              "misconception": "Assumes below-cut-off bids are automatically pulled up"
+            },
+            {
+              "key": "D",
+              "text": "Proportionate allotment due to over-subscription.",
+              "misconception": "Applies the proportionate rule to a failed, below-cut-off bid"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Only bids at or above the cut-off (Rs 110) are eligible for allotment. A bid at Rs 105 is below the cut-off, so it fails and the money is refunded. Below-cut-off bids are not pulled up, and proportionate allotment applies only among successful bidders.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Why does bidding 'at cut-off' almost always secure a retail investor an allotment (subject to proportionate scaling)?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It signals willingness to pay whatever price the book discovers, so the bid is never rejected for being too low.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "It locks the investor's price at the floor, the cheapest possible.",
+              "misconception": "Confuses bidding at cut-off with paying the floor price"
+            },
+            {
+              "key": "C",
+              "text": "It guarantees shares at the lowest bid in the entire book.",
+              "misconception": "Assumes cut-off means the lowest price bid by anyone"
+            },
+            {
+              "key": "D",
+              "text": "It exempts the investor from proportionate allotment in an over-subscribed issue.",
+              "misconception": "Assumes cut-off bidders escape proportionate scaling"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Bidding at cut-off means accepting the discovered price, so the bid is never dropped for being too low, and the investor pays the cut-off price. It is not the floor price, not the lowest bid, and it does not exempt the investor from proportionate allotment if the issue is over-subscribed.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Investor Categories and Allotment Reservations",
+      "description": "Primary-issue applicants are classed by size and type. An individual applying for less than Rs 2 lakh in an issue is a retail investor; more than Rs 2 lakh makes a non-institutional investor (NII). Large institutions are qualified institutional buyers (QIBs). In a book-built issue, not more than 50% is offered to QIBs, at least 15% to NIIs, and at least 35% to retail investors. A PAN card is needed to apply.",
+      "difficulty": 2,
+      "prerequisites": [
+        "Nature and Functions of the Primary Market"
+      ],
+      "keywords": [
+        "retail investor",
+        "non-institutional investor",
+        "qualified institutional buyer",
+        "reservation",
+        "PAN",
+        "Rs 2 lakh"
+      ],
+      "misconceptions": [
+        "Mixing up the Rs 2 lakh retail/NII cut-off",
+        "Treating the QIB 50% ceiling as a guaranteed minimum",
+        "Assuming no PAN is required to apply"
+      ],
+      "source_pages": [
+        35,
+        42
+      ],
+      "objectives": [
+        {
+          "text": "Learner can classify an applicant into retail, NII or QIB by amount and type.",
+          "bloom": "apply",
+          "assessment_style": "scenario"
+        },
+        {
+          "text": "Learner can recall the reservation limits in a book-built issue.",
+          "bloom": "remember",
+          "assessment_style": "definition"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "An individual applies for Rs 3.5 lakh worth of shares in a single public issue. Into which category does this application fall?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Non-institutional investor (NII).",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Retail individual investor.",
+              "misconception": "Ignores that retail is capped at under Rs 2 lakh in a single issue"
+            },
+            {
+              "key": "C",
+              "text": "Qualified institutional buyer (QIB).",
+              "misconception": "Treats an individual as an institution"
+            },
+            {
+              "key": "D",
+              "text": "Promoter.",
+              "misconception": "Confuses an outside applicant with a promoter"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "An individual investing more than Rs 2 lakh in a single issue is a non-institutional investor. Retail applies only below Rs 2 lakh, QIBs are institutions (not individuals), and a promoter is an insider, not an applicant here.",
+          "difficulty": 2
+        },
+        {
+          "stem": "In a book-built public issue, which statement about the reservations is correct?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Not more than 50% is offered to QIBs, and at least 35% is reserved for retail investors.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "At least 50% must go to QIBs.",
+              "misconception": "Turns the QIB ceiling into a floor"
+            },
+            {
+              "key": "C",
+              "text": "Retail investors are capped at 15%.",
+              "misconception": "Swaps the retail and NII figures"
+            },
+            {
+              "key": "D",
+              "text": "The entire issue is reserved for QIBs.",
+              "misconception": "Ignores the retail and NII reservations"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "In a book-built issue, QIBs get not more than 50% (a ceiling), NIIs at least 15%, and retail investors at least 35%. Treating the QIB limit as a minimum, capping retail at 15%, or reserving everything for QIBs are all wrong.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which document issued by the Income Tax authorities must an investor hold to apply in a primary issue of securities?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A PAN card.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Only a passport.",
+              "misconception": "Names an identity document that is not the required tax document"
+            },
+            {
+              "key": "C",
+              "text": "None; holding a demat account is sufficient.",
+              "misconception": "Assumes the demat account removes the PAN requirement"
+            },
+            {
+              "key": "D",
+              "text": "A GST registration.",
+              "misconception": "Names a business tax registration unrelated to the requirement"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A PAN (Permanent Account Number) card issued by the Income Tax authorities is required to apply in a primary issue. A passport or GST registration is not the required document, and a demat account, while needed for demat-only issues, does not replace the PAN requirement.",
+          "difficulty": 1
+        }
+      ]
+    },
+    {
+      "title": "Public, Private, Preferential and QIP Issues",
+      "description": "A public issue offers securities to anyone eligible. A private placement offers them to a small, pre-identified set of investors. When a listed company makes a private placement it is a preferential issue; when that placement is specifically to qualified institutional buyers it is a qualified institutional placement (QIP). Under the Companies Act 2013, an offer to fewer than 50 persons is treated as a private placement.",
+      "difficulty": 2,
+      "prerequisites": [
+        "Nature and Functions of the Primary Market"
+      ],
+      "keywords": [
+        "public issue",
+        "private placement",
+        "preferential issue",
+        "qualified institutional placement",
+        "listed company",
+        "fewer than 50 persons"
+      ],
+      "misconceptions": [
+        "Thinking any private placement is a QIP",
+        "Believing a preferential issue is open to the general public",
+        "Confusing a public issue with a private placement"
+      ],
+      "source_pages": [
+        34,
+        47,
+        48
+      ],
+      "objectives": [
+        {
+          "text": "Learner can classify an issue as public, private, preferential or QIP.",
+          "bloom": "understand",
+          "assessment_style": "definition"
+        },
+        {
+          "text": "Learner can apply the 'fewer than 50 persons' rule for private placement.",
+          "bloom": "apply",
+          "assessment_style": "regulator-id"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "A company listed on the exchange places shares privately with a chosen group of strategic investors and employees. This is a:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Preferential issue.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Public issue.",
+              "misconception": "Assumes any share issue is open to the public"
+            },
+            {
+              "key": "C",
+              "text": "Bonus issue.",
+              "misconception": "Confuses a paid private placement with free shares"
+            },
+            {
+              "key": "D",
+              "text": "Initial public offer.",
+              "misconception": "Confuses a targeted private placement with a first public offer"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A private placement by a listed company to an identified set of investors on preferential terms is a preferential issue. It is not a public issue (not open to all), not a bonus (which is free), and not an IPO (which is a public offer).",
+          "difficulty": 2
+        },
+        {
+          "stem": "What makes a preferential allotment specifically a qualified institutional placement (QIP)?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A listed company places the securities with qualified institutional buyers such as mutual funds and banks.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "The securities are offered to retail investors on preferential terms.",
+              "misconception": "Assumes a QIP targets retail investors rather than QIBs"
+            },
+            {
+              "key": "C",
+              "text": "It is carried out by an unlisted company.",
+              "misconception": "Ignores that a QIP requires a listed company"
+            },
+            {
+              "key": "D",
+              "text": "It is a free allotment to existing shareholders.",
+              "misconception": "Confuses a QIP with a bonus issue"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A QIP is a private placement by a listed company specifically to qualified institutional buyers (institutions like mutual funds and banks). It is not aimed at retail investors, requires a listed issuer, and is a paid placement, not a free bonus.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Under the Companies Act, 2013, an offer of securities made to fewer than 50 persons is treated as:",
+          "options": [
+            {
+              "key": "A",
+              "text": "A private placement, outside most public-issue requirements.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "A public issue requiring a full prospectus.",
+              "misconception": "Confuses a small, targeted offer with a public issue"
+            },
+            {
+              "key": "C",
+              "text": "A rights issue.",
+              "misconception": "Names an offer to existing shareholders instead"
+            },
+            {
+              "key": "D",
+              "text": "A bonus issue.",
+              "misconception": "Names a free allotment instead of a placement"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "An offer to fewer than 50 persons is a private placement under the Companies Act 2013, and the public-issue requirements do not apply to it. It is neither a public issue, nor a rights issue (to existing holders), nor a bonus (free shares).",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Functions of the Secondary Market",
+      "description": "The secondary market is where already-issued securities trade between investors, giving no fresh capital to the issuer. Its core functions are providing liquidity, discovering prices through continuous trading, signalling information about companies, indicating overall economic activity via indices, and acting as a market for corporate control that enables takeovers of poorly-run firms.",
+      "difficulty": 2,
+      "prerequisites": [],
+      "keywords": [
+        "secondary market",
+        "liquidity",
+        "price discovery",
+        "information signalling",
+        "market for corporate control",
+        "index"
+      ],
+      "misconceptions": [
+        "Thinking secondary-market trades raise fresh capital for the company",
+        "Confusing price discovery with the company raising funds",
+        "Believing an index sets individual share prices"
+      ],
+      "source_pages": [
+        45,
+        46,
+        47
+      ],
+      "objectives": [
+        {
+          "text": "Learner can match a market outcome to the secondary-market function it illustrates.",
+          "bloom": "understand",
+          "assessment_style": "scenario"
+        },
+        {
+          "text": "Learner can explain that secondary trades do not fund the issuer.",
+          "bloom": "understand",
+          "assessment_style": "definition"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "A persistently underperforming listed company sees its share price fall so low that an outside acquirer buys control and improves the business. Which secondary-market function does this illustrate?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The market for corporate control.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Price discovery only, with no effect on governance.",
+              "misconception": "Overlooks that the falling price enabled a governance change"
+            },
+            {
+              "key": "C",
+              "text": "Information signalling with no consequence.",
+              "misconception": "Treats the signal as having no follow-on effect"
+            },
+            {
+              "key": "D",
+              "text": "A primary-market fund raise.",
+              "misconception": "Confuses a takeover in the secondary market with issuing new capital"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "When weak governance pushes a price down and makes a firm a takeover target that a new owner improves, the secondary market is acting as a market for corporate control. This goes beyond mere price discovery or signalling, and no new capital is raised, so it is not a primary-market event.",
+          "difficulty": 2
+        },
+        {
+          "stem": "When investors trade a seasoned share heavily on the exchange, so others can easily buy or sell it, the secondary market is chiefly providing:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Liquidity.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Fresh capital for the issuing company.",
+              "misconception": "Assumes active trading funds the company"
+            },
+            {
+              "key": "C",
+              "text": "A bonus issue.",
+              "misconception": "Confuses trading activity with a corporate action"
+            },
+            {
+              "key": "D",
+              "text": "A credit rating for the share.",
+              "misconception": "Confuses market activity with a rating agency's assessment"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Heavy trading that lets investors enter and exit easily is liquidity. Secondary trades do not fund the issuer, are not a bonus issue, and do not produce a credit rating.",
+          "difficulty": 2
+        },
+        {
+          "stem": "How does a rising, widely-tracked market index function for the economy?",
+          "options": [
+            {
+              "key": "A",
+              "text": "As a barometer signalling healthy corporate performance and economic activity.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "As a guarantee of future returns to all investors.",
+              "misconception": "Treats an index as a promise of returns"
+            },
+            {
+              "key": "C",
+              "text": "As the mechanism that raises capital for listed firms.",
+              "misconception": "Confuses a market indicator with primary fund-raising"
+            },
+            {
+              "key": "D",
+              "text": "As the tool that fixes each company's share price.",
+              "misconception": "Assumes the index sets prices rather than reflecting them"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A sustained rise in a broad index signals strong revenues, profits and expansion, so it acts as a barometer of economic activity. It does not guarantee returns, does not raise capital, and reflects prices rather than fixing them.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Market Capitalisation, Turnover and Indices",
+      "description": "Market capitalisation equals the number of shares outstanding times the current market price per share, measuring the market value of a company's equity. Companies are grouped as large, mid or small cap. Turnover measures trading activity. Most Indian indices (the Sensex with 30 stocks, the Nifty with 50 stocks) are weighted by market capitalisation.",
+      "difficulty": 2,
+      "prerequisites": [
+        "Functions of the Secondary Market"
+      ],
+      "keywords": [
+        "market capitalisation",
+        "shares outstanding",
+        "Sensex",
+        "Nifty",
+        "large cap",
+        "turnover"
+      ],
+      "misconceptions": [
+        "Computing market cap using face value instead of market price",
+        "Thinking the Sensex has 50 stocks",
+        "Believing a higher share price alone means a larger company"
+      ],
+      "source_pages": [
+        50,
+        51,
+        52
+      ],
+      "objectives": [
+        {
+          "text": "Learner can compute a company's market capitalisation.",
+          "bloom": "apply",
+          "assessment_style": "calculation"
+        },
+        {
+          "text": "Learner can recall the composition and weighting of the Sensex and Nifty.",
+          "bloom": "remember",
+          "assessment_style": "definition"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "A company has 5,00,000 shares outstanding, a face value of Rs 10, and is currently trading at Rs 80. What is its market capitalisation?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs 4,00,00,000 (Rs 4 crore).",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs 50,00,000.",
+              "misconception": "Uses face value (Rs 10) instead of the market price"
+            },
+            {
+              "key": "C",
+              "text": "Rs 4,50,00,000.",
+              "misconception": "Multiplies shares by price plus face value (Rs 90)"
+            },
+            {
+              "key": "D",
+              "text": "Rs 40,00,000.",
+              "misconception": "Drops a zero from the share count"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Market capitalisation = shares outstanding x market price = 5,00,000 x 80 = Rs 4 crore. Using the face value of Rs 10, adding face value to the price, or miscounting shares all give wrong figures. Only the market price matters here.",
+          "difficulty": 2
+        },
+        {
+          "stem": "The BSE Sensex is computed from how many representative stocks, and on what weighting basis?",
+          "options": [
+            {
+              "key": "A",
+              "text": "30 stocks, weighted by market capitalisation.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "50 stocks, equally weighted.",
+              "misconception": "Uses the Nifty's count and the wrong weighting"
+            },
+            {
+              "key": "C",
+              "text": "100 stocks, price weighted.",
+              "misconception": "Names an incorrect count and weighting"
+            },
+            {
+              "key": "D",
+              "text": "40 stocks, weighted by turnover.",
+              "misconception": "Uses the SX40's count and the wrong weighting"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The Sensex is a market-capitalisation-weighted index of 30 chosen BSE stocks. The Nifty has 50 stocks and the SX40 has 40, and leading Indian indices are weighted by market cap, not equally, by price, or by turnover.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Company P trades at Rs 2,000 per share with 1 lakh shares outstanding. Company Q trades at Rs 50 per share with 1 crore shares outstanding. Which has the larger market capitalisation?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Company Q, at Rs 50 crore versus Company P's Rs 20 crore.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Company P, because its share price is much higher.",
+              "misconception": "Equates a high share price with a high market cap"
+            },
+            {
+              "key": "C",
+              "text": "They are equal.",
+              "misconception": "Assumes the two companies must have the same value"
+            },
+            {
+              "key": "D",
+              "text": "It cannot be known without the face values.",
+              "misconception": "Assumes face value determines market cap"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Market cap uses price times shares. Company Q = 50 x 1,00,00,000 = Rs 50 crore; Company P = 2,000 x 1,00,000 = Rs 20 crore. So Q is larger despite its lower price. A high price alone does not mean a bigger company, and face value is irrelevant to market cap.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "title": "Corporate Actions: Rights, Bonus, Split, Buyback and Dividend",
+      "description": "Corporate actions change a shareholder's position. A rights issue offers new shares to existing holders in a set ratio, which they may renounce. A bonus issue gives free shares from reserves at no cost. A stock split reduces the face value and multiplies the share count without changing total value. A buyback repurchases and extinguishes shares. Dividends, now declared per share, can only be paid out of profits.",
+      "difficulty": 3,
+      "prerequisites": [
+        "Functions of the Secondary Market"
+      ],
+      "keywords": [
+        "rights issue",
+        "bonus issue",
+        "stock split",
+        "buyback",
+        "dividend",
+        "record date"
+      ],
+      "misconceptions": [
+        "Thinking a bonus issue requires the shareholder to pay",
+        "Believing a stock split changes the total value of a holding",
+        "Assuming a loss-making company can still pay a dividend"
+      ],
+      "source_pages": [
+        56,
+        57,
+        58,
+        60,
+        61
+      ],
+      "objectives": [
+        {
+          "text": "Learner can compute the effect of a stock split on shares held and price.",
+          "bloom": "apply",
+          "assessment_style": "calculation"
+        },
+        {
+          "text": "Learner can distinguish a bonus issue, rights issue and dividend.",
+          "bloom": "analyze",
+          "assessment_style": "definition"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "An investor holds 300 shares of face value Rs 10, trading at Rs 600 each. The company announces a 1:5 stock split. After the split, how many shares does she hold and at what approximate price?",
+          "options": [
+            {
+              "key": "A",
+              "text": "1,500 shares at about Rs 120 each.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "60 shares at about Rs 3,000 each.",
+              "misconception": "Treats the split as a consolidation, reversing the ratio"
+            },
+            {
+              "key": "C",
+              "text": "1,500 shares at Rs 600 each.",
+              "misconception": "Multiplies the shares but forgets the price falls proportionally"
+            },
+            {
+              "key": "D",
+              "text": "300 shares at Rs 120 each.",
+              "misconception": "Cuts the price but forgets the share count rises"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A 1:5 split turns each share into 5, so 300 becomes 1,500, and the price falls to about 600 / 5 = Rs 120. Total value stays roughly 300 x 600 = 1,500 x 120 = Rs 1,80,000. It is not a consolidation, and both the count and the price change together.",
+          "difficulty": 3
+        },
+        {
+          "stem": "A bonus issue in the ratio 1:3 means a shareholder:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Receives 1 free share for every 3 already held, at no cost.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Must buy 1 new share for every 3 held.",
+              "misconception": "Confuses a free bonus with a paid rights issue"
+            },
+            {
+              "key": "C",
+              "text": "Has their shares consolidated 3-into-1.",
+              "misconception": "Confuses a bonus with a reverse split"
+            },
+            {
+              "key": "D",
+              "text": "Receives cash equal to one-third of the share price.",
+              "misconception": "Confuses a bonus with a cash dividend"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A 1:3 bonus gives 1 additional share free for every 3 held, funded from the company's reserves at no cost to the holder. It is not a paid purchase (that is a rights issue), not a consolidation, and not a cash dividend.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which of these companies is prohibited from declaring a dividend?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A company that made a loss for the year and has no distributable profits.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "A company that recently completed a bonus issue.",
+              "misconception": "Assumes a bonus issue bars future dividends"
+            },
+            {
+              "key": "C",
+              "text": "A company whose share price fell during the year.",
+              "misconception": "Treats a price decline as a bar to dividends"
+            },
+            {
+              "key": "D",
+              "text": "A company that has paid all its debenture interest on time.",
+              "misconception": "Treats meeting debt obligations as a bar to dividends"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Dividends can only be paid out of profits, so a loss-making company with no distributable profits cannot declare one. A prior bonus issue, a fallen share price, or having paid debenture interest do not, by themselves, prevent a dividend.",
+          "difficulty": 2
+        },
+        {
+          "stem": "In a rights issue, an existing shareholder who does not want to subscribe may:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Renounce the rights entitlement by selling it to another investor.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Force the company to buy back the entitlement at face value.",
+              "misconception": "Invents an obligation on the company to repurchase the right"
+            },
+            {
+              "key": "C",
+              "text": "Have the entitlement automatically converted into a bonus share.",
+              "misconception": "Confuses an unsubscribed right with a free bonus"
+            },
+            {
+              "key": "D",
+              "text": "Do nothing and still receive the shares free of charge.",
+              "misconception": "Assumes rights shares are free like a bonus"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A shareholder who declines a rights issue can renounce (sell) the entitlement to another investor, since rights entitlements can be traded during the offer. The company is not obliged to buy it back, it does not become a bonus, and rights shares must be paid for, not received free.",
+          "difficulty": 3
+        }
+      ]
+    }
+  ],
+  "caselets": [
+    {
+      "scenario": "Sunrise Ceramics Ltd is a founder-owned firm with 3,00,000 equity shares held equally by two promoters (1,50,000 each). To fund a new kiln, it launches an IPO as a fresh issue of 1,00,000 new shares through the book-building route, with a price band of Rs 90 to Rs 110. In this issue, an individual applying for less than Rs 2 lakh is treated as a retail investor. The bid book builds up as follows: at Rs 110, cumulative demand is 40,000 shares; at Rs 100, cumulative demand reaches exactly 1,00,000 shares; at Rs 90, cumulative demand is 1,60,000 shares. Ravi, a retail investor, bids at cut-off for 200 shares and is fully allotted. After listing, the shares trade at Rs 150. About a year later, with strong profits, the company announces a 1:1 bonus issue. Ravi wants to work out how the fresh issue, the cut-off price, the post-listing valuation and the bonus each affect his position and the company's ownership.",
+      "concept_titles": [
+        "IPO: Fresh Issue versus Offer for Sale",
+        "Book Building and the Cut-off Price",
+        "Investor Categories and Allotment Reservations",
+        "Market Capitalisation, Turnover and Indices",
+        "Corporate Actions: Rights, Bonus, Split, Buyback and Dividend"
+      ],
+      "questions": [
+        {
+          "stem": "After the fresh issue of 1,00,000 new shares, what is each promoter's percentage holding in Sunrise Ceramics?",
+          "options": [
+            {
+              "key": "A",
+              "text": "37.5%.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "50%, unchanged.",
+              "misconception": "Assumes the fresh issue does not dilute the promoters"
+            },
+            {
+              "key": "C",
+              "text": "33.33%.",
+              "misconception": "Divides 1,50,000 by a wrong total of 4,50,000"
+            },
+            {
+              "key": "D",
+              "text": "30%.",
+              "misconception": "Divides 1,50,000 by a wrong total of 5,00,000"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A fresh issue raises total shares to 3,00,000 + 1,00,000 = 4,00,000. Each promoter still holds 1,50,000, so 1,50,000 / 4,00,000 = 37.5%. Their percentage falls because new shares were created, even though their share count is unchanged.",
+          "difficulty": 2,
+          "case_position": 1,
+          "marks": 2
+        },
+        {
+          "stem": "From the bid book given, at what cut-off price does the issue of 1,00,000 shares get subscribed?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs 100.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs 110.",
+              "misconception": "Assumes the highest bid price is the cut-off"
+            },
+            {
+              "key": "C",
+              "text": "Rs 90.",
+              "misconception": "Picks the price with the largest total demand rather than where the offer just fills"
+            },
+            {
+              "key": "D",
+              "text": "Rs 95.",
+              "misconception": "Assumes the cut-off is the midpoint of the price band"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The cut-off is the price at which cumulative demand first equals the 1,00,000 shares offered, which is Rs 100. Rs 110 is only the top of the book (40,000 shares), Rs 90 is over-subscribed at 1,60,000, and the midpoint of the band is not a rule.",
+          "difficulty": 2,
+          "case_position": 2,
+          "marks": 2
+        },
+        {
+          "stem": "Ravi is allotted 200 shares at the cut-off. Combining the cut-off price with the fact that this is a fresh issue, how much does Ravi pay and who receives it?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs 20,000, received by the company.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs 20,000, received by the promoters.",
+              "misconception": "Applies offer-for-sale logic, sending fresh-issue proceeds to the sellers"
+            },
+            {
+              "key": "C",
+              "text": "Rs 22,000 at Rs 110, received by the company.",
+              "misconception": "Uses the top of the band instead of the cut-off price"
+            },
+            {
+              "key": "D",
+              "text": "Nothing, because bidding at cut-off is free.",
+              "misconception": "Assumes bidding at cut-off means paying nothing"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The cut-off is Rs 100, so 200 shares cost 200 x 100 = Rs 20,000. Because this is a fresh issue, the money goes to the company, not the promoters. The price is the cut-off (Rs 100), not Rs 110, and bidding at cut-off still requires payment.",
+          "difficulty": 3,
+          "case_position": 3,
+          "marks": 2
+        },
+        {
+          "stem": "After listing, the shares trade at Rs 150. Using the post-issue share count, what is Sunrise Ceramics' market capitalisation?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs 6 crore.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs 4.5 crore.",
+              "misconception": "Uses the pre-issue count of 3,00,000 shares"
+            },
+            {
+              "key": "C",
+              "text": "Rs 1.5 crore.",
+              "misconception": "Counts only the 1,00,000 newly issued shares"
+            },
+            {
+              "key": "D",
+              "text": "Rs 4 crore.",
+              "misconception": "Uses the cut-off price of Rs 100 instead of the market price"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Post-issue there are 4,00,000 shares. Market cap = 4,00,000 x 150 = Rs 6 crore. Using the old count (3,00,000), only the new shares (1,00,000), or the cut-off price (Rs 100) instead of the Rs 150 market price all give wrong values.",
+          "difficulty": 3,
+          "case_position": 4,
+          "marks": 2
+        },
+        {
+          "stem": "After the 1:1 bonus, how many shares does Ravi hold, and what happens to the total value of his holding, assuming the price adjusts?",
+          "options": [
+            {
+              "key": "A",
+              "text": "400 shares, with the total value broadly unchanged as the price adjusts downward.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "400 shares, and his wealth doubles because the share count doubled.",
+              "misconception": "Assumes a bonus creates new value rather than dividing the same value"
+            },
+            {
+              "key": "C",
+              "text": "200 shares, and he must pay for the bonus shares.",
+              "misconception": "Confuses a free bonus with a paid rights issue"
+            },
+            {
+              "key": "D",
+              "text": "100 shares, because the bonus halves his count.",
+              "misconception": "Confuses a bonus issue with a reverse split"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A 1:1 bonus gives 1 free share per share held, so Ravi's 200 shares become 400. Since no new value is added, the market price adjusts down (roughly halves) and his total holding value is broadly unchanged. A bonus is free (not paid) and increases, not reduces, the share count.",
+          "difficulty": 3,
+          "case_position": 5,
+          "marks": 2
+        }
+      ]
+    }
+  ]
+}

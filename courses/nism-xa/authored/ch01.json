@@ -1,0 +1,1176 @@
+{
+  "chapter_ordinal": 1,
+  "chapter_title": "INTRODUCTION TO INDIAN FINANCIAL MARKET",
+  "concepts": [
+    {
+      "title": "Primary and Secondary Market Segments",
+      "description": "The securities market has two linked parts. The primary market is where a company sells brand-new securities directly to investors and receives the money raised. The secondary market is where investors later trade those already-issued securities among themselves, so no fresh money reaches the issuer.",
+      "difficulty": 1,
+      "prerequisites": [],
+      "keywords": [
+        "primary market",
+        "secondary market",
+        "new issue",
+        "stock exchange",
+        "liquidity",
+        "capital raising"
+      ],
+      "misconceptions": [
+        "Believing the company gets money whenever its shares change hands on the exchange",
+        "Confusing the 'new issue market' with a market only for newly formed companies",
+        "Thinking the secondary market creates new capital for the issuer"
+      ],
+      "source_pages": [
+        13,
+        14
+      ],
+      "objectives": [
+        {
+          "text": "Learner can distinguish a primary-market transaction from a secondary-market transaction.",
+          "bloom": "understand",
+          "assessment_style": "definition"
+        },
+        {
+          "text": "Learner can identify which market segment actually supplies capital to the issuer.",
+          "bloom": "understand",
+          "assessment_style": "scenario"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "A software firm sells shares for the first time and the collected money is deposited in the firm's account to build a data centre. A month later, two investors trade those same shares on the exchange. Which statement is correct?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The first sale is a primary-market transaction; the later trade is a secondary-market transaction.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Both are primary-market transactions because they involve the same shares.",
+              "misconception": "Defines the market segment by the security rather than by who receives the money"
+            },
+            {
+              "key": "C",
+              "text": "Both are secondary-market transactions because trading happens on an exchange.",
+              "misconception": "Assumes any trade routed through an exchange must be secondary"
+            },
+            {
+              "key": "D",
+              "text": "The first sale is secondary and the later trade is primary.",
+              "misconception": "Reverses the two definitions"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The primary market is where an issuer sells newly created securities and pockets the proceeds (here, the software firm). The secondary market is where investors resell existing securities to each other. So the first sale is primary and the later investor-to-investor trade is secondary. The segment is decided by who gets the money, not by the venue or the identity of the shares.",
+          "difficulty": 1
+        },
+        {
+          "stem": "When shares of a listed company are bought and sold between two investors on the stock exchange, how much fresh capital does the company itself receive?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Nothing; the money only moves from the buying investor to the selling investor.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "The full value of the trade, credited to the company.",
+              "misconception": "Assumes every exchange trade funds the issuer"
+            },
+            {
+              "key": "C",
+              "text": "A fixed listing fee taken out of each trade.",
+              "misconception": "Invents a company cut on secondary trades"
+            },
+            {
+              "key": "D",
+              "text": "Only the profit portion of the trade.",
+              "misconception": "Confuses an investor's gain with money going to the issuer"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Secondary-market trades transfer ownership between investors. The company raised its capital earlier, in the primary market, and is not a party to these later trades. So a resale on the exchange gives the issuer no new money at all.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Why is the primary market also called the 'new issue market'?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Because securities are offered to investors for the first time by the issuer.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Because only newly incorporated companies are allowed to use it.",
+              "misconception": "Assumes only brand-new companies can issue securities"
+            },
+            {
+              "key": "C",
+              "text": "Because the securities sold there were just purchased from other investors.",
+              "misconception": "Confuses reselling existing securities with issuing fresh ones"
+            },
+            {
+              "key": "D",
+              "text": "Because the prices quoted there are always brand-new figures.",
+              "misconception": "Reads 'new' literally as never-before-seen prices"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "'New issue' refers to securities being issued (created and sold) for the first time by the issuer to investors. Established companies use it too, not just new firms. It has nothing to do with reselling securities or with prices being 'new'.",
+          "difficulty": 1
+        }
+      ]
+    },
+    {
+      "title": "Money Market versus Capital Market",
+      "description": "The financial market is split by the length of the fund transfer. The money market handles short-term borrowing and lending. The capital (securities) market handles longer-term transfers using debt and equity instruments. RBI supervises the money-market segment.",
+      "difficulty": 1,
+      "prerequisites": [],
+      "keywords": [
+        "money market",
+        "capital market",
+        "short-term",
+        "long-term",
+        "debt",
+        "equity"
+      ],
+      "misconceptions": [
+        "Treating equity shares as money-market instruments",
+        "Assuming SEBI regulates the money market",
+        "Thinking 'capital market' means only equity, excluding long-term debt"
+      ],
+      "source_pages": [
+        11,
+        12,
+        13
+      ],
+      "objectives": [
+        {
+          "text": "Learner can classify an instrument as money-market or capital-market by its time horizon.",
+          "bloom": "understand",
+          "assessment_style": "definition"
+        },
+        {
+          "text": "Learner can identify the regulator of the money-market segment.",
+          "bloom": "remember",
+          "assessment_style": "regulator-id"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "A company treasurer wants to park surplus cash safely for about 60 days before a tax payment is due. Which segment of the market is designed for such short-term transfers of funds?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The money market.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "The capital market, because all investing is capital investing.",
+              "misconception": "Treats every fund transfer as a capital-market activity"
+            },
+            {
+              "key": "C",
+              "text": "The commodities market.",
+              "misconception": "Confuses commodity trading with short-term cash management"
+            },
+            {
+              "key": "D",
+              "text": "The foreign exchange market, because rupees are involved.",
+              "misconception": "Assumes any rupee transaction is a forex transaction"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The money market handles short-term lending and borrowing (typically under a year), which fits parking cash for 60 days. The capital market is for longer-term debt and equity, and neither commodities nor forex is about parking surplus rupees short-term.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Equity shares and long-term corporate bonds are used to transfer funds over long horizons. These instruments belong to which segment?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The capital (securities) market.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "The money market, because bonds pay interest.",
+              "misconception": "Assumes any interest-bearing instrument is a money-market instrument"
+            },
+            {
+              "key": "C",
+              "text": "The money market for the bonds and the capital market only for the shares.",
+              "misconception": "Splits long-term debt into the money market incorrectly"
+            },
+            {
+              "key": "D",
+              "text": "Neither; they are ordinary banking products like deposits.",
+              "misconception": "Conflates market securities with bank deposits"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The capital market covers longer-term transfers of funds through both debt (like long-term bonds) and equity (shares). Paying interest does not make a bond a money-market instrument; what matters is the long horizon. These are securities, not bank deposits.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Which authority regulates the money-market segment of the securities market and manages the government's borrowing programme?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The Reserve Bank of India (RBI).",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "SEBI, since it is the chief securities regulator.",
+              "misconception": "Assumes SEBI covers every segment of the securities market"
+            },
+            {
+              "key": "C",
+              "text": "IRDA.",
+              "misconception": "Names the insurance regulator for a money-market role"
+            },
+            {
+              "key": "D",
+              "text": "The Forward Markets Commission.",
+              "misconception": "Names the commodity-futures regulator for a money-market role"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "RBI regulates the money-market segment and acts as the government's debt manager. SEBI is the chief securities regulator overall but the money-market slice sits with RBI. IRDA (insurance) and the FMC (commodity futures) are unrelated to the money market.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Role of the Reserve Bank of India",
+      "description": "RBI is the regulator and monetary authority of India's banking system. It licenses banks, is the currency note-issuing authority, acts as banker to the government and lender of last resort, and controls credit using tools like the Cash Reserve Ratio (CRR) and Statutory Liquidity Ratio (SLR).",
+      "difficulty": 2,
+      "prerequisites": [
+        "Money Market versus Capital Market"
+      ],
+      "keywords": [
+        "RBI",
+        "CRR",
+        "SLR",
+        "lender of last resort",
+        "note issue",
+        "monetary policy"
+      ],
+      "misconceptions": [
+        "Believing RBI regulates the stock/equity market",
+        "Confusing RBI's role with SEBI's role",
+        "Thinking commercial banks, not RBI, issue currency notes"
+      ],
+      "source_pages": [
+        13,
+        22,
+        23
+      ],
+      "objectives": [
+        {
+          "text": "Learner can recall the core functions of RBI in the banking system.",
+          "bloom": "remember",
+          "assessment_style": "definition"
+        },
+        {
+          "text": "Learner can apply RBI's credit-control tools to a scenario.",
+          "bloom": "apply",
+          "assessment_style": "scenario"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "A commercial bank suddenly runs short of cash and no other bank is willing to lend to it. Which institution can step in as the lender of last resort?",
+          "options": [
+            {
+              "key": "A",
+              "text": "RBI.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "SEBI.",
+              "misconception": "Assigns a banking backstop role to the securities regulator"
+            },
+            {
+              "key": "C",
+              "text": "The Ministry of Corporate Affairs.",
+              "misconception": "Names a corporate-registration body for a banking role"
+            },
+            {
+              "key": "D",
+              "text": "The stock exchange's clearing corporation.",
+              "misconception": "Confuses the trade-settlement guarantor with a banking backstop"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "'Lender of last resort' means the body that lends to banks in distress when no one else will; that is RBI. SEBI oversees securities, the Ministry of Corporate Affairs handles company law, and a clearing corporation only guarantees exchange trades.",
+          "difficulty": 2
+        },
+        {
+          "stem": "RBI raises the Cash Reserve Ratio (CRR). What is the most direct effect on banks?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Banks must keep a larger share of their deposits with RBI, leaving less money available to lend.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Trading on the stock exchange is frozen for the day.",
+              "misconception": "Confuses a monetary tool with a market circuit breaker"
+            },
+            {
+              "key": "C",
+              "text": "Insurance premiums across the country are capped.",
+              "misconception": "Applies a banking tool to an unrelated insurance outcome"
+            },
+            {
+              "key": "D",
+              "text": "The rupee's exchange rate is fixed by decree.",
+              "misconception": "Confuses credit control with fixing the exchange rate"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "CRR is the fraction of deposits a bank must hold with RBI. Raising it locks up more of each bank's deposits, reducing what banks can lend and tightening credit. It does not freeze markets, cap premiums, or fix the exchange rate.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which of the following is NOT a function of RBI?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Granting recognition to stock exchanges and approving their bye-laws.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Issuing currency notes.",
+              "misconception": "This actually is an RBI function, so it cannot be the exception"
+            },
+            {
+              "key": "C",
+              "text": "Acting as banker to the government.",
+              "misconception": "This actually is an RBI function, so it cannot be the exception"
+            },
+            {
+              "key": "D",
+              "text": "Licensing commercial banks.",
+              "misconception": "This actually is an RBI function, so it cannot be the exception"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Recognising and regulating stock exchanges is SEBI's job, not RBI's, so it is the odd one out. Issuing currency, being banker to the government, and licensing banks are all genuine RBI functions.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "SEBI as Securities Market Regulator",
+      "description": "SEBI, set up under the SEBI Act of 1992, is the chief regulator of India's securities markets. It registers and supervises intermediaries, oversees the primary and secondary markets, prohibits insider trading, and can investigate market abuse and impose penalties.",
+      "difficulty": 2,
+      "prerequisites": [],
+      "keywords": [
+        "SEBI",
+        "SEBI Act 1992",
+        "insider trading",
+        "intermediaries",
+        "investor protection",
+        "ICDR"
+      ],
+      "misconceptions": [
+        "Thinking SEBI regulates banking or insurance",
+        "Believing SEBI issues government securities",
+        "Confusing SEBI (the regulator) with a stock exchange (a marketplace)"
+      ],
+      "source_pages": [
+        23,
+        24
+      ],
+      "objectives": [
+        {
+          "text": "Learner can identify activities that fall within SEBI's remit.",
+          "bloom": "understand",
+          "assessment_style": "regulator-id"
+        },
+        {
+          "text": "Learner can recall the statute under which SEBI was established.",
+          "bloom": "remember",
+          "assessment_style": "definition"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "An analyst trades in a listed company's shares using confidential, price-sensitive information before it is made public. Which regulator is empowered to investigate and penalise this insider trading?",
+          "options": [
+            {
+              "key": "A",
+              "text": "SEBI.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "RBI, because it controls credit in the economy.",
+              "misconception": "Assigns a securities-market offence to the banking regulator"
+            },
+            {
+              "key": "C",
+              "text": "IRDA.",
+              "misconception": "Names the insurance regulator for a securities offence"
+            },
+            {
+              "key": "D",
+              "text": "The Registrar of Companies.",
+              "misconception": "Confuses company registration with insider-trading enforcement"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Insider trading is a securities-market offence, and SEBI is empowered to investigate it and impose penalties such as fines, prosecution, or barring a person from the market. RBI, IRDA and the RoC have no role in policing insider trading.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Under which statute was SEBI established as a statutory regulator?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The SEBI Act, 1992.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "The Companies Act, 2013.",
+              "misconception": "Confuses general company law with SEBI's founding charter"
+            },
+            {
+              "key": "C",
+              "text": "The Forward Contracts (Regulation) Act, 1952.",
+              "misconception": "Names the FMC's founding statute"
+            },
+            {
+              "key": "D",
+              "text": "The IRDA Act, 1999.",
+              "misconception": "Names the insurance regulator's founding statute"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "SEBI was made a statutory body by the SEBI Act of 1992. The Companies Act governs companies, the Forward Contracts Act established the FMC, and the IRDA Act created the insurance regulator.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Which activity falls squarely within SEBI's remit?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Registering and regulating stock brokers, merchant bankers and mutual funds.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Licensing life-insurance companies.",
+              "misconception": "This is IRDA's job, not SEBI's"
+            },
+            {
+              "key": "C",
+              "text": "Fixing the Cash Reserve Ratio for banks.",
+              "misconception": "This is RBI's job, not SEBI's"
+            },
+            {
+              "key": "D",
+              "text": "Designing the structure of the National Pension System.",
+              "misconception": "This is PFRDA's job, not SEBI's"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "SEBI registers and regulates securities-market intermediaries such as brokers, merchant bankers and mutual funds. Insurance licensing is IRDA's, monetary tools like CRR are RBI's, and the NPS structure is PFRDA's.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Matching Regulators to Their Domains",
+      "description": "India uses domain-specific regulators. RBI covers banking and the money market; SEBI covers securities and capital markets; IRDA covers insurance; PFRDA covers pensions and the NPS; the Forward Markets Commission (in 2014) covered commodity futures. The Ministry of Finance oversees these sectors at the policy level.",
+      "difficulty": 2,
+      "prerequisites": [
+        "SEBI as Securities Market Regulator",
+        "Role of the Reserve Bank of India"
+      ],
+      "keywords": [
+        "RBI",
+        "SEBI",
+        "IRDA",
+        "PFRDA",
+        "FMC",
+        "regulator mapping",
+        "Ministry of Finance"
+      ],
+      "misconceptions": [
+        "Mixing up IRDA (insurance) with PFRDA (pensions)",
+        "Assuming SEBI regulated commodity futures in 2014",
+        "Thinking the FMC regulated the foreign exchange market"
+      ],
+      "source_pages": [
+        24,
+        25
+      ],
+      "objectives": [
+        {
+          "text": "Learner can map a financial activity to its correct regulator.",
+          "bloom": "apply",
+          "assessment_style": "regulator-id"
+        },
+        {
+          "text": "Learner can identify the policy-level role of the Ministry of Finance.",
+          "bloom": "understand",
+          "assessment_style": "regulator-id"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "An insurer wants to launch a new unit-linked life insurance plan (which combines protection with market-linked investment). Which authority must clear the product?",
+          "options": [
+            {
+              "key": "A",
+              "text": "IRDA.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "SEBI, because part of the premium is invested in the market.",
+              "misconception": "Assumes the investment component shifts the product to the securities regulator"
+            },
+            {
+              "key": "C",
+              "text": "PFRDA, because it involves long-term savings.",
+              "misconception": "Confuses long-term life insurance with a pension product"
+            },
+            {
+              "key": "D",
+              "text": "RBI, because premiums are collected as money.",
+              "misconception": "Treats any collection of money as a banking matter"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "IRDA regulates all insurance products, including unit-linked plans, and clears them before sale. The market-linked investment inside a ULIP does not move it to SEBI; it remains an insurance product. PFRDA handles pensions and RBI handles banking.",
+          "difficulty": 2
+        },
+        {
+          "stem": "In 2014, futures contracts on commodities such as gold and agricultural produce in India were overseen by which body?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The Forward Markets Commission (FMC).",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "SEBI, since futures are securities.",
+              "misconception": "Assumes SEBI covered all derivatives, including commodities, in 2014"
+            },
+            {
+              "key": "C",
+              "text": "RBI, because commodities have prices.",
+              "misconception": "Names the banking regulator for commodity oversight"
+            },
+            {
+              "key": "D",
+              "text": "IRDA.",
+              "misconception": "Names the insurance regulator for commodity oversight"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "As of the 2014 workbook, commodity futures and forward trading were regulated by the Forward Markets Commission, set up under the Forward Contracts (Regulation) Act, 1952. SEBI, RBI and IRDA had no role over commodity futures then.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which pairing of regulator and its domain is correct?",
+          "options": [
+            {
+              "key": "A",
+              "text": "PFRDA — the pension market.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "IRDA — the stock exchange.",
+              "misconception": "Swaps the insurance regulator into securities"
+            },
+            {
+              "key": "C",
+              "text": "FMC — the foreign exchange market.",
+              "misconception": "Confuses commodity futures with foreign exchange"
+            },
+            {
+              "key": "D",
+              "text": "RBI — the insurance market.",
+              "misconception": "Swaps the banking regulator into insurance"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "PFRDA regulates pensions, including the NPS. Stock exchanges fall under SEBI, forex is not the FMC's domain (it dealt with commodity futures), and insurance is IRDA's, not RBI's.",
+          "difficulty": 2
+        },
+        {
+          "stem": "The Ministry of Finance's Department of Economic Affairs is chiefly concerned with which area?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The capital markets and their participants.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Licensing individual insurance agents.",
+              "misconception": "Describes an IRDA-level function"
+            },
+            {
+              "key": "C",
+              "text": "Setting commodity warehouse and delivery standards.",
+              "misconception": "Describes a commodity-exchange/FMC function"
+            },
+            {
+              "key": "D",
+              "text": "Registering newly incorporated companies.",
+              "misconception": "Describes the Registrar of Companies' function"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Within the Ministry of Finance, the Department of Economic Affairs oversees the capital markets and their participants at the policy level. Agent licensing is IRDA's, warehouse standards belong to commodity exchanges, and company registration is the RoC's.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Roles of Market Intermediaries",
+      "description": "Different intermediaries do different jobs. A depository participant (DP) opens investor demat accounts and acts as an agent of the depository. A custodian holds securities and cash for large institutional investors. A stock broker is a registered exchange member who executes trades. An asset management company pools many investors' money into units of a mutual fund, whereas a portfolio manager manages accounts without pooling the money.",
+      "difficulty": 2,
+      "prerequisites": [],
+      "keywords": [
+        "depository participant",
+        "custodian",
+        "stock broker",
+        "asset management company",
+        "portfolio manager",
+        "mutual fund units"
+      ],
+      "misconceptions": [
+        "Treating a depository participant as the same thing as the depository",
+        "Believing portfolio managers pool money the way mutual funds do",
+        "Confusing a custodian with a stock broker"
+      ],
+      "source_pages": [
+        16,
+        17,
+        20,
+        21
+      ],
+      "objectives": [
+        {
+          "text": "Learner can match an intermediary to the service it provides.",
+          "bloom": "understand",
+          "assessment_style": "scenario"
+        },
+        {
+          "text": "Learner can contrast an asset management company with a portfolio manager.",
+          "bloom": "analyze",
+          "assessment_style": "definition"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "A salaried investor wants to hold her shares in electronic form. Which intermediary opens and maintains this demat account, acting as an agent of the depository?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A depository participant (DP).",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "The depository itself, dealing with her directly.",
+              "misconception": "Assumes investors open accounts directly with the depository rather than through a DP"
+            },
+            {
+              "key": "C",
+              "text": "A custodian.",
+              "misconception": "Assigns a role meant for large institutions to a retail account"
+            },
+            {
+              "key": "D",
+              "text": "The clearing corporation.",
+              "misconception": "Confuses the trade-settlement guarantor with the account keeper"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Investors open demat accounts with a depository participant, who acts as an agent of the depository and maintains the investor-level records. The depository holds company-level records but does not deal with each retail investor directly. Custodians serve institutions, and the clearing corporation only guarantees trades.",
+          "difficulty": 2
+        },
+        {
+          "stem": "What is the key difference between an asset management company (AMC) and a portfolio manager?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The AMC pools money from many investors into units of a scheme; the portfolio manager does not pool investors' money.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "The AMC never charges a fee, unlike the portfolio manager.",
+              "misconception": "Assumes only one of them charges fees, when both do"
+            },
+            {
+              "key": "C",
+              "text": "The portfolio manager issues units to the public.",
+              "misconception": "Attributes the AMC's unit-issuing power to the portfolio manager"
+            },
+            {
+              "key": "D",
+              "text": "The AMC serves only institutions and the portfolio manager only retail clients.",
+              "misconception": "Invents a client split that does not define the difference"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "An AMC pools investors' money and issues units representing a share in a common pool (a mutual fund). A portfolio manager runs each investor's portfolio separately and is not allowed to pool the money. Both charge fees, and the distinction is about pooling, not client type.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A large mutual fund needs an intermediary to safe-keep its securities and settle its trades. Which intermediary typically performs this role?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A custodian.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "A sub-broker.",
+              "misconception": "Confuses extending a broker's reach with holding and settling institutional assets"
+            },
+            {
+              "key": "C",
+              "text": "A depository participant that only serves retail clients.",
+              "misconception": "Assigns an institutional custody role to a retail-only DP"
+            },
+            {
+              "key": "D",
+              "text": "The Registrar of Companies.",
+              "misconception": "Names a company-registration body for an operational custody role"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Custodians hold securities and cash for large institutional investors like mutual funds and settle their trades; they are usually large banks. Sub-brokers only widen a broker's reach, and the RoC merely registers companies.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Commodity Forwards versus Futures",
+      "description": "A commodity can be sold for immediate delivery in the cash market, or for future settlement. A forward contract is privately customised between two parties on quantity, quality, price and delivery. A futures contract is standardised by the exchange, and the exchange's clearing house steps in as the counterparty (novation), which reduces the risk that the other side defaults.",
+      "difficulty": 2,
+      "prerequisites": [],
+      "keywords": [
+        "forward contract",
+        "futures contract",
+        "standardised",
+        "counterparty risk",
+        "clearing house",
+        "hedging"
+      ],
+      "misconceptions": [
+        "Treating forwards and futures as identical",
+        "Believing futures carry higher default risk than forwards",
+        "Assuming both forwards and futures trade on an exchange"
+      ],
+      "source_pages": [
+        18,
+        19
+      ],
+      "objectives": [
+        {
+          "text": "Learner can distinguish a forward contract from a futures contract.",
+          "bloom": "understand",
+          "assessment_style": "definition"
+        },
+        {
+          "text": "Learner can explain why exchange-traded futures reduce counterparty risk.",
+          "bloom": "understand",
+          "assessment_style": "scenario"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "Two parties privately agree to trade 5 tonnes of a specific grade of cotton at a fixed price in three months, with delivery terms tailored to their own needs. This arrangement is a:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Forward contract.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Futures contract.",
+              "misconception": "Assumes any future-dated deal is a standardised futures contract"
+            },
+            {
+              "key": "C",
+              "text": "Spot (cash) transaction.",
+              "misconception": "Ignores that settlement is set for a future date"
+            },
+            {
+              "key": "D",
+              "text": "Rights issue.",
+              "misconception": "Applies an unrelated equity term to a commodity trade"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A forward contract is a private, customised agreement between two parties on quantity, quality, price and delivery for future settlement. A futures contract, by contrast, is standardised by an exchange. A spot deal settles immediately, and a rights issue is an equity concept.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Why does an exchange-traded commodity futures contract carry lower counterparty (default) risk than an equivalent private forward contract?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The exchange's clearing house becomes the counterparty to both sides and guarantees settlement.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Futures are never actually settled, so no one can default.",
+              "misconception": "Assumes futures avoid settlement altogether"
+            },
+            {
+              "key": "C",
+              "text": "The government personally guarantees every futures trade.",
+              "misconception": "Invents a sovereign guarantee behind futures"
+            },
+            {
+              "key": "D",
+              "text": "Futures are always for much smaller quantities.",
+              "misconception": "Confuses contract size with credit risk"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "On an exchange, the clearing house interposes itself as the counterparty to every trade (novation) and guarantees settlement using margins and guarantee funds, so a single defaulting party does not hurt the other side. Futures are settled; there is no government guarantee; and size is unrelated to default risk.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A defining feature of a futures contract, compared with a forward, is that:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Its quantity, quality and delivery terms are standardised by the exchange.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Its terms are fully customised to suit the two parties.",
+              "misconception": "Describes a forward, not a futures contract"
+            },
+            {
+              "key": "C",
+              "text": "It cannot be used to hedge against price movements.",
+              "misconception": "Denies futures a core hedging use"
+            },
+            {
+              "key": "D",
+              "text": "It can only ever be settled in cash, never by delivery.",
+              "misconception": "Assumes futures can never settle by delivery"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The exchange standardises a futures contract's quantity, quality and delivery terms. Customised terms describe a forward. Futures are widely used to hedge price risk, and depending on the contract they can settle by cash or by delivery.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Currency Pairs in the Foreign Exchange Market",
+      "description": "A foreign-exchange quote states the value of one currency against another as a currency pair. The first currency is the base currency and the second is the quoting currency; the price shows how many units of the quoting currency equal one unit of the base. Spot forex trades in India settle two business days later (T+2).",
+      "difficulty": 3,
+      "prerequisites": [],
+      "keywords": [
+        "currency pair",
+        "base currency",
+        "quoting currency",
+        "USDINR",
+        "spot",
+        "T+2"
+      ],
+      "misconceptions": [
+        "Reading the quote in the wrong direction (dividing instead of multiplying)",
+        "Thinking the second currency in the pair is the base",
+        "Confusing spot settlement timing with same-day or future settlement"
+      ],
+      "source_pages": [
+        19,
+        20
+      ],
+      "objectives": [
+        {
+          "text": "Learner can convert an amount using a currency-pair quote.",
+          "bloom": "apply",
+          "assessment_style": "calculation"
+        },
+        {
+          "text": "Learner can identify the base and quoting currency in a pair.",
+          "bloom": "understand",
+          "assessment_style": "definition"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "The pair USDINR is quoted at 62. An importer must pay a supplier USD 4,000. Ignoring bank charges, how many rupees does the importer need?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs 2,48,000.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs 64.52.",
+              "misconception": "Divides 4,000 by 62, reading the quote backwards"
+            },
+            {
+              "key": "C",
+              "text": "Rs 4,000.",
+              "misconception": "Treats USD and INR as if they were 1:1"
+            },
+            {
+              "key": "D",
+              "text": "Rs 62.",
+              "misconception": "Uses the quote as the answer, ignoring the USD amount"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "USDINR = 62 means one US dollar is worth 62 rupees. So USD 4,000 costs 4,000 x 62 = Rs 2,48,000. Dividing (4,000 / 62 = 64.52) reverses the quote; treating them as 1:1 or using the bare quote ignores the conversion.",
+          "difficulty": 3
+        },
+        {
+          "stem": "In the pair USDINR, which currency is the base and which is the quoting currency?",
+          "options": [
+            {
+              "key": "A",
+              "text": "USD is the base currency; INR is the quoting currency.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "INR is the base currency; USD is the quoting currency.",
+              "misconception": "Reverses the base and quoting currency"
+            },
+            {
+              "key": "C",
+              "text": "Both USD and INR are base currencies.",
+              "misconception": "Misunderstands that a pair has exactly one base"
+            },
+            {
+              "key": "D",
+              "text": "Whichever currency has the higher value is the base.",
+              "misconception": "Invents a value-based rule for the base currency"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "By convention the currency quoted first is the base and the one quoted next is the quoting currency. In USDINR, USD is the base and INR is the quoting currency, so the price is stated in rupees per one dollar. Value or size does not decide which is the base.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A spot foreign-exchange trade in India is settled with actual delivery of currency on which day?",
+          "options": [
+            {
+              "key": "A",
+              "text": "T+2, the second business day after the trade date.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "The same day the trade is struck (T+0).",
+              "misconception": "Assumes 'spot' means instant settlement"
+            },
+            {
+              "key": "C",
+              "text": "Exactly one year after the trade.",
+              "misconception": "Confuses a spot trade with a long forward"
+            },
+            {
+              "key": "D",
+              "text": "On the last working day of the month.",
+              "misconception": "Applies the currency-futures settlement rule to a spot trade"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Indian spot forex settles on the value date, which is T+2 (two business days after the trade). 'Spot' does not mean same-day here, one year would be a forward, and month-end settlement is the rule for exchange-traded currency futures.",
+          "difficulty": 3
+        }
+      ]
+    }
+  ],
+  "caselets": [
+    {
+      "scenario": "Meera, a salaried professional in Pune, has about Rs 6 lakh in savings. She opens a demat account through her bank, which provides this service as a depository participant, so she can hold shares in electronic form. She then subscribes to a manufacturing company's very first public share sale, buying 1,000 shares at Rs 50 each; the money raised goes to the company to build a new plant. A few weeks later she buys 200 shares of an already-listed IT firm from another investor on the stock exchange at Rs 400 each. Meera's friend Arjun is a cotton exporter. Arjun uses exchange-traded currency futures to protect himself against the rupee moving unfavourably, and he also trades commodity futures to lock in cotton prices for his next shipment. Meera is told that, as of 2014, SEBI oversees her share dealings, RBI supervises the banking side, and the Forward Markets Commission oversees Arjun's commodity futures. Meera wants to understand which activity sits in which market segment and under which regulator.",
+      "concept_titles": [
+        "Primary and Secondary Market Segments",
+        "Roles of Market Intermediaries",
+        "Matching Regulators to Their Domains",
+        "Commodity Forwards versus Futures",
+        "Currency Pairs in the Foreign Exchange Market"
+      ],
+      "questions": [
+        {
+          "stem": "Meera's subscription to the manufacturing company's first-time public share sale, where the money reaches the company, is a transaction in the:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Primary market.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Secondary market, because she used a broker.",
+              "misconception": "Assumes any broker-routed purchase is a secondary trade"
+            },
+            {
+              "key": "C",
+              "text": "Money market.",
+              "misconception": "Confuses a long-term equity issue with short-term borrowing"
+            },
+            {
+              "key": "D",
+              "text": "Commodities market.",
+              "misconception": "Confuses a share issue with a commodity trade"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The company is issuing shares for the first time and receiving the money, which is a primary-market (new issue) transaction. Using a broker does not make it secondary, and it is neither a money-market nor a commodities transaction.",
+          "difficulty": 1,
+          "case_position": 1,
+          "marks": 1
+        },
+        {
+          "stem": "Meera's bank opened her demat account, and she is told SEBI oversees her share dealings. In providing the demat account, the bank is acting as:",
+          "options": [
+            {
+              "key": "A",
+              "text": "A depository participant, an intermediary that comes under SEBI's securities framework.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "A custodian appointed for her personal holdings.",
+              "misconception": "Assigns an institution-focused role to a retail demat account"
+            },
+            {
+              "key": "C",
+              "text": "The depository itself.",
+              "misconception": "Treats the participant as the depository"
+            },
+            {
+              "key": "D",
+              "text": "A corporate insurance agent.",
+              "misconception": "Confuses a securities intermediary with an insurance role"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Combining two facts from the scenario: the bank opened her demat account (a depository-participant role) and SEBI oversees her share dealings (securities regulation). So the bank acts as a depository participant regulated under SEBI's framework, not as a custodian, the depository, or an insurance agent.",
+          "difficulty": 2,
+          "case_position": 2,
+          "marks": 1
+        },
+        {
+          "stem": "When Meera buys 200 shares of the already-listed IT firm from another investor, how much fresh capital does that IT firm receive?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Nothing; the money goes to the investor who sold the shares.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs 80,000, credited to the IT firm.",
+              "misconception": "Assumes the trade value (200 x 400) reaches the company"
+            },
+            {
+              "key": "C",
+              "text": "A small listing fee deducted from the trade.",
+              "misconception": "Invents a company cut on a secondary trade"
+            },
+            {
+              "key": "D",
+              "text": "Rs 40,000, half the trade value.",
+              "misconception": "Assumes the company shares in the resale proceeds"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "This is a secondary-market trade between two investors, so the listed IT firm receives no new capital; the Rs 80,000 goes to the selling investor. The company only raised money earlier, in its own primary issue.",
+          "difficulty": 2,
+          "case_position": 3,
+          "marks": 1
+        },
+        {
+          "stem": "Arjun uses exchange-traded currency futures against rupee movements and commodity futures on cotton. As of 2014, which statement about the regulators is correct?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The Forward Markets Commission oversees his commodity (cotton) futures, while his currency futures trade on a SEBI-recognised stock exchange.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "SEBI oversees both the cotton futures and the currency futures.",
+              "misconception": "Assumes SEBI regulated commodity futures in 2014"
+            },
+            {
+              "key": "C",
+              "text": "RBI oversees both, because both involve prices.",
+              "misconception": "Assigns both futures to the banking regulator"
+            },
+            {
+              "key": "D",
+              "text": "The Forward Markets Commission oversees the currency futures and SEBI the cotton futures.",
+              "misconception": "Swaps the two regulators' domains"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Combining two facts: cotton futures are commodity futures, overseen by the FMC in 2014, while exchange-traded currency futures trade on stock exchanges under SEBI. The other options either misplace commodities under SEBI, put everything under RBI, or swap the domains.",
+          "difficulty": 3,
+          "case_position": 4,
+          "marks": 1
+        },
+        {
+          "stem": "Arjun trades futures mainly to reduce the risk that prices move against him before his shipment. In market terms, he is acting as a:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hedger.",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Speculator.",
+              "misconception": "Confuses reducing risk with betting on price movements"
+            },
+            {
+              "key": "C",
+              "text": "Arbitrageur.",
+              "misconception": "Confuses risk reduction with exploiting price gaps across markets"
+            },
+            {
+              "key": "D",
+              "text": "Issuer.",
+              "misconception": "Confuses a trader with a party that issues securities"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A hedger uses derivatives to reduce or eliminate exposure to adverse price moves, which is exactly what Arjun does. A speculator bets on price movements, an arbitrageur profits from price differences across markets, and an issuer raises capital by issuing securities.",
+          "difficulty": 2,
+          "case_position": 5,
+          "marks": 1
+        }
+      ]
+    }
+  ]
+}

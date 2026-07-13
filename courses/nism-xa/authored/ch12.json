@@ -1,0 +1,580 @@
+{
+  "chapter_ordinal": 12,
+  "chapter_title": "REGULATORY ENVIRONMENT AND ETHICAL ISSUES",
+  "concepts": [
+    {
+      "title": "SEBI (Investment Advisers) Regulations, 2013: Registration",
+      "description": "SEBI notified the Investment Advisers Regulations in January 2013 to bring the activity of giving investment advice under a formal licence. Anyone who proposes to provide investment advice, as defined, must obtain a certificate of registration from SEBI before continuing that activity. The certificate is valid for five years from issue, and an adviser must apply for renewal three months before it expires; existing advisers were given a six-month window to apply when the rules came into force.",
+      "difficulty": 2,
+      "prerequisites": [],
+      "keywords": ["SEBI", "Investment Advisers Regulations 2013", "certificate of registration", "five years", "renewal", "investment advice"],
+      "misconceptions": ["Thinking the registration is issued by AMFI rather than SEBI", "Believing the certificate is permanent rather than five years", "Assuming renewal can be sought after expiry rather than three months before"],
+      "source_pages": ["12.1", "12.1.1"],
+      "objectives": [
+        {"text": "State who must register as an investment adviser and with which regulator", "bloom": "Remember", "assessment_style": "recall"},
+        {"text": "Recall the validity period and renewal timeline of the registration certificate", "bloom": "Remember", "assessment_style": "recall"}
+      ],
+      "questions": [
+        {
+          "stem": "Under the SEBI (Investment Advisers) Regulations, 2013, from which body must a person obtain a certificate of registration to provide investment advice?",
+          "options": [
+            {"key": "A", "text": "SEBI", "misconception": null},
+            {"key": "B", "text": "AMFI", "misconception": "Confusing the mutual fund industry body with the securities regulator"},
+            {"key": "C", "text": "RBI", "misconception": "Confusing the banking regulator with the securities regulator"},
+            {"key": "D", "text": "PFRDA", "misconception": "Confusing the pension regulator with the securities regulator"}
+          ],
+          "correct_key": "A",
+          "explanation": "The Investment Advisers Regulations require registration with SEBI, the securities market regulator. AMFI is an industry association, RBI regulates banking, and PFRDA regulates pensions, none of which issue the investment adviser certificate.",
+          "difficulty": 1
+        },
+        {
+          "stem": "For how long is the certificate of registration granted by SEBI to an investment adviser valid?",
+          "options": [
+            {"key": "A", "text": "Five years from the date of its issue", "misconception": null},
+            {"key": "B", "text": "It is valid permanently once granted", "misconception": "Believing the registration never expires"},
+            {"key": "C", "text": "One year, renewable annually", "misconception": "Confusing the validity with the capital-adequacy compliance window"},
+            {"key": "D", "text": "Ten years from the date of issue", "misconception": "Confusing validity with the PMLA record-retention period"}
+          ],
+          "correct_key": "A",
+          "explanation": "The certificate is valid for five years from the date of issue. One year is the period existing advisers had to meet capital-adequacy norms, and ten years is the PMLA record-keeping period, not the certificate validity.",
+          "difficulty": 1
+        },
+        {
+          "stem": "When must an investment adviser apply for renewal of the registration certificate?",
+          "options": [
+            {"key": "A", "text": "Three months before the expiry of the original certificate", "misconception": null},
+            {"key": "B", "text": "Any time after the certificate has already expired", "misconception": "Assuming renewal is retroactive after lapse"},
+            {"key": "C", "text": "Six months after the certificate is issued", "misconception": "Confusing renewal with the initial application window for existing advisers"},
+            {"key": "D", "text": "On the exact date of expiry", "misconception": "Ignoring the advance-application requirement"}
+          ],
+          "correct_key": "A",
+          "explanation": "Renewal must be applied for three months before the original certificate expires. The six-month window was the one-time period given to existing advisers to apply for certification, not the renewal rule.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Exemptions from Investment Adviser Registration",
+      "description": "Not everyone who mentions investments needs an adviser licence. The regulations exempt several categories, including those who only give general comments on economic or market trends without being stock- or product-specific, insurance agents advising solely on insurance products, pension advisers dealing only in pension products, and mutual fund distributors whose advice is merely incidental to distribution. Professionals such as advocates, solicitors and chartered accountants practising their profession are also outside the registration net.",
+      "difficulty": 2,
+      "prerequisites": ["SEBI (Investment Advisers) Regulations, 2013: Registration"],
+      "keywords": ["exemption", "mutual fund distributor", "incidental advice", "insurance agent", "chartered accountant", "general comments"],
+      "misconceptions": ["Thinking a mutual fund distributor who advises incidentally must register", "Believing an adviser who charges a separate fee is exempt", "Assuming general market commentators need registration"],
+      "source_pages": ["12.1.1"],
+      "objectives": [
+        {"text": "Identify who is exempt from the investment adviser registration requirement", "bloom": "Understand", "assessment_style": "identification"},
+        {"text": "Distinguish incidental advice from fee-charging advice that triggers registration", "bloom": "Analyze", "assessment_style": "scenario"}
+      ],
+      "questions": [
+        {
+          "stem": "Which of the following persons is required to comply with the registration requirement under the SEBI (Investment Advisers) Regulations, 2013?",
+          "options": [
+            {"key": "A", "text": "An independent financial adviser who charges advisory fees to investors", "misconception": null},
+            {"key": "B", "text": "A mutual fund distributor who only receives commission from the AMC", "misconception": "Overlooking that distributor commission with incidental advice is exempt"},
+            {"key": "C", "text": "A chartered accountant practising his profession", "misconception": "Ignoring the exemption for practising professionals"},
+            {"key": "D", "text": "A person who only gives general comments on economic trends", "misconception": "Ignoring the exemption for non-specific general commentary"}
+          ],
+          "correct_key": "A",
+          "explanation": "An adviser who charges advisory fees to investors is providing investment advice as a business and must register. A distributor earning only commission (advice incidental to distribution), a practising CA, and a general commentator are all specifically exempt.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A mutual fund distributor gives a client advice that is purely incidental to distributing mutual fund products and earns only commission from the AMC. What is his position on registration?",
+          "options": [
+            {"key": "A", "text": "He is exempt from the requirement to register as an investment adviser", "misconception": null},
+            {"key": "B", "text": "He must register because he gives any advice at all", "misconception": "Ignoring the incidental-advice exemption for distributors"},
+            {"key": "C", "text": "He must register because he earns commission", "misconception": "Treating commission income as a trigger for registration"},
+            {"key": "D", "text": "He must register with AMFI as an investment adviser", "misconception": "Confusing distributor registration with adviser registration"}
+          ],
+          "correct_key": "A",
+          "explanation": "A mutual fund distributor whose advice is incidental to distribution is exempt from the adviser registration requirement. Neither giving incidental advice nor earning commission triggers registration.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which entity is exempt from investment adviser registration for advice given only within its own product line?",
+          "options": [
+            {"key": "A", "text": "An insurance agent providing investment advice only on insurance products", "misconception": null},
+            {"key": "B", "text": "An adviser managing a portfolio of securities for a fee", "misconception": "Treating fee-based securities advice as exempt"},
+            {"key": "C", "text": "A financial planner charging clients for financial planning", "misconception": "Ignoring that financial planning advice for a fee requires registration"},
+            {"key": "D", "text": "An adviser giving buy/sell calls on specific stocks for a subscription", "misconception": "Assuming stock-specific paid advice is exempt"}
+          ],
+          "correct_key": "A",
+          "explanation": "Insurance agents advising only on insurance products are exempt. Advising on a portfolio of securities, financial planning and stock-specific paid calls all fall within 'investment advice' and require registration.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Net Worth Requirements and Obligations of Investment Advisers",
+      "description": "The regulations set capital-adequacy floors and conduct obligations for advisers. A body corporate must maintain a net worth of at least Rs. 25 lakhs, while an individual or partnership firm needs net tangible assets of at least Rs. 1 lakh; existing advisers had one year to comply. Beyond capital, advisers must disclose all conflicts of interest as they arise and must not accept any consideration except from the client in respect of the securities or products advised on.",
+      "difficulty": 2,
+      "prerequisites": ["SEBI (Investment Advisers) Regulations, 2013: Registration"],
+      "keywords": ["net worth", "25 lakhs", "1 lakh", "net tangible assets", "conflict of interest", "only advisory income"],
+      "misconceptions": ["Swapping the Rs. 25 lakh corporate figure with the Rs. 1 lakh individual figure", "Believing an adviser may take commissions from a product manufacturer in addition to client fees", "Thinking conflicts of interest need not be disclosed if immaterial"],
+      "source_pages": ["12.1.3", "12.1.4"],
+      "objectives": [
+        {"text": "State the net-worth thresholds for corporate and individual investment advisers", "bloom": "Remember", "assessment_style": "recall"},
+        {"text": "Apply the conflict-of-interest and only-advisory-income obligations to a scenario", "bloom": "Apply", "assessment_style": "scenario"}
+      ],
+      "questions": [
+        {
+          "stem": "What minimum net tangible assets must an investment adviser who is an individual maintain under the regulations?",
+          "options": [
+            {"key": "A", "text": "Rs. 1 lakh", "misconception": null},
+            {"key": "B", "text": "Rs. 25 lakhs", "misconception": "Applying the body-corporate net-worth figure to an individual"},
+            {"key": "C", "text": "Rs. 5 lakhs", "misconception": "Recalling an incorrect intermediate figure"},
+            {"key": "D", "text": "Rs. 10 lakhs", "misconception": "Recalling an incorrect intermediate figure"}
+          ],
+          "correct_key": "A",
+          "explanation": "An individual or partnership-firm adviser must have net tangible assets of at least Rs. 1 lakh. The Rs. 25 lakh figure is the net-worth requirement for advisers that are body corporates.",
+          "difficulty": 1
+        },
+        {
+          "stem": "An investment adviser advises a client to buy a product and, separately, receives a commission from the product's manufacturer for that same recommendation. Does this comply with the adviser's obligations?",
+          "options": [
+            {"key": "A", "text": "No; an adviser must not receive consideration from anyone except the client in respect of the products advised on", "misconception": null},
+            {"key": "B", "text": "Yes, as long as the client is not told about the commission", "misconception": "Believing non-disclosure legitimises third-party payment"},
+            {"key": "C", "text": "Yes, because commissions are a normal part of advisory income", "misconception": "Treating manufacturer commission as permissible advisory income"},
+            {"key": "D", "text": "Yes, provided the advice was technically sound", "misconception": "Assuming sound advice cures the prohibited payment"}
+          ],
+          "correct_key": "A",
+          "explanation": "An investment adviser must not receive any consideration or remuneration from anyone except the client in respect of the securities or investment products advised on. Taking a manufacturer's commission breaches this obligation, regardless of disclosure or advice quality.",
+          "difficulty": 2
+        },
+        {
+          "stem": "What must an investment adviser do about conflicts of interest under the general obligations?",
+          "options": [
+            {"key": "A", "text": "Disclose all conflicts of interest to the client as and when they arise", "misconception": null},
+            {"key": "B", "text": "Disclose them only at the end of the financial year", "misconception": "Deferring disclosure to a periodic report rather than as they arise"},
+            {"key": "C", "text": "Keep them confidential to protect the adviser's business", "misconception": "Treating conflicts as confidential rather than disclosable"},
+            {"key": "D", "text": "Disclose them only if the client specifically asks", "misconception": "Making disclosure contingent on a client request"}
+          ],
+          "correct_key": "A",
+          "explanation": "The adviser must disclose all conflicts of interest to the client as and when they arise. Disclosure is proactive and continuous, not deferred, hidden, or dependent on the client asking.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Code of Conduct and Suitability for Investment Advisers",
+      "description": "The 2013 regulations set out a code of conduct binding on every investment adviser at all times, built on principles such as honesty and fairness, diligence, capabilities, gathering information about clients, and making disclosures to clients. Suitability is central: the adviser must ensure advice matches the client's risk profile, follow a documented process for selecting investments, understand the products recommended, and have a reasonable basis to believe the client can bear the related risks. Risk-profiling tools used must be fit for purpose and not too complex for the client to understand.",
+      "difficulty": 2,
+      "prerequisites": ["Net Worth Requirements and Obligations of Investment Advisers"],
+      "keywords": ["code of conduct", "honesty and fairness", "diligence", "suitability", "risk profile", "risk-profiling tools", "confidentiality"],
+      "misconceptions": ["Thinking suitability means recommending the highest-return product", "Believing a complex risk tool is always better", "Assuming client information may be freely shared"],
+      "source_pages": ["12.1.4", "12.1.5"],
+      "objectives": [
+        {"text": "Recall the principles in the investment adviser code of conduct", "bloom": "Remember", "assessment_style": "recall"},
+        {"text": "Apply the suitability obligation to an advice scenario", "bloom": "Apply", "assessment_style": "scenario"}
+      ],
+      "questions": [
+        {
+          "stem": "An adviser recommends a high-risk product to a conservative client purely because it has delivered the highest recent returns. Which code-of-conduct obligation does this most directly breach?",
+          "options": [
+            {"key": "A", "text": "Suitability: advice must be appropriate to the client's risk profile", "misconception": null},
+            {"key": "B", "text": "Confidentiality of client information", "misconception": "Confusing a suitability failure with an information-secrecy breach"},
+            {"key": "C", "text": "The capital-adequacy net-worth requirement", "misconception": "Confusing a conduct duty with a capital rule"},
+            {"key": "D", "text": "The five-year certificate renewal rule", "misconception": "Confusing a conduct duty with a registration timeline"}
+          ],
+          "correct_key": "A",
+          "explanation": "Suitability requires that advice and related investments be appropriate to the client's risk profile, with a reasonable basis to believe the client can bear the risks. Recommending a high-risk product to a conservative client on returns alone breaches suitability, not confidentiality, capital or renewal rules.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Under the code of conduct, an investment adviser gathers information about a client's financial situation and objectives. How must the adviser treat that information?",
+          "options": [
+            {"key": "A", "text": "Maintain its confidentiality", "misconception": null},
+            {"key": "B", "text": "Share it freely with product manufacturers to get better deals", "misconception": "Treating client data as freely shareable for commercial gain"},
+            {"key": "C", "text": "Publish it as a testimonial with the client's name", "misconception": "Assuming client information can be used for marketing"},
+            {"key": "D", "text": "Discard it once the first advice is given", "misconception": "Believing client information need not be retained or protected"}
+          ],
+          "correct_key": "A",
+          "explanation": "The code requires the adviser to seek relevant client information and maintain its confidentiality. Sharing, publishing, or carelessly discarding it violates the duty of confidentiality.",
+          "difficulty": 1
+        },
+        {
+          "stem": "When an adviser uses a questionnaire or proprietary tool for risk profiling, what does the code require of that tool?",
+          "options": [
+            {"key": "A", "text": "It must be fit for purpose, with limitations identified and mitigated, and not too complex for the client to understand", "misconception": null},
+            {"key": "B", "text": "It must be as complex as possible to capture every nuance", "misconception": "Assuming greater complexity always improves a risk tool"},
+            {"key": "C", "text": "It may be any off-the-shelf tool regardless of suitability to purpose", "misconception": "Ignoring the fit-for-purpose requirement"},
+            {"key": "D", "text": "It must be kept secret from the client", "misconception": "Assuming the client should not understand the profiling tool"}
+          ],
+          "correct_key": "A",
+          "explanation": "Risk-profiling tools must be fit for purpose, with any limitations identified and mitigated, and must not be so complex or misleading that the client cannot understand and express a fair opinion. Complexity for its own sake is discouraged.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "SEBI: Role, Powers and Appellate Structure",
+      "description": "SEBI is the regulator of the securities market. It registers and regulates market intermediaries such as stock brokers, merchant bankers, portfolio managers, depositories and mutual funds, and it prohibits fraudulent and unfair trade practices, including insider trading, which is dealing in securities using material information not available to the public. Orders of SEBI can be challenged before the Securities Appellate Tribunal (SAT), and SAT rulings can in turn be challenged in the Supreme Court of India.",
+      "difficulty": 2,
+      "prerequisites": [],
+      "keywords": ["SEBI", "intermediaries", "insider trading", "unfair trade practices", "SAT", "Securities Appellate Tribunal", "Supreme Court"],
+      "misconceptions": ["Thinking a civil court hears appeals against SEBI orders", "Confusing SAT with the Supreme Court as the first appeal", "Believing insider trading refers to any trading by employees"],
+      "source_pages": ["12.2", "12.3"],
+      "objectives": [
+        {"text": "Describe SEBI's core regulatory functions in the securities market", "bloom": "Understand", "assessment_style": "recall"},
+        {"text": "Identify the appellate route against a SEBI order", "bloom": "Remember", "assessment_style": "identification"}
+      ],
+      "questions": [
+        {
+          "stem": "Registration and regulation of securities market intermediaries is the function of which body?",
+          "options": [
+            {"key": "A", "text": "SEBI", "misconception": null},
+            {"key": "B", "text": "AMFI", "misconception": "Mistaking an industry association for the statutory regulator"},
+            {"key": "C", "text": "PFRDA", "misconception": "Confusing the pension regulator with the securities regulator"},
+            {"key": "D", "text": "An SRO", "misconception": "Treating a self-regulatory organisation as the registering authority"}
+          ],
+          "correct_key": "A",
+          "explanation": "SEBI registers and regulates securities market intermediaries such as brokers, merchant bankers and portfolio managers. AMFI is an industry body, PFRDA regulates pensions, and an SRO represents a market segment under SEBI's recognition rather than registering intermediaries itself.",
+          "difficulty": 1
+        },
+        {
+          "stem": "A person aggrieved by an order passed by SEBI wishes to challenge it. Where should the appeal first go?",
+          "options": [
+            {"key": "A", "text": "The Securities Appellate Tribunal (SAT)", "misconception": null},
+            {"key": "B", "text": "A civil court in the person's district", "misconception": "Believing ordinary civil courts hear SEBI appeals"},
+            {"key": "C", "text": "The Supreme Court of India directly", "misconception": "Skipping SAT and going straight to the apex court"},
+            {"key": "D", "text": "The Reserve Bank of India", "misconception": "Confusing the banking regulator with the securities appellate body"}
+          ],
+          "correct_key": "A",
+          "explanation": "A SEBI order is challenged before the Securities Appellate Tribunal, whose rulings can then be challenged in the Supreme Court. No civil court entertains such matters, and RBI has no appellate role over SEBI.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which practice does SEBI specifically prohibit as detrimental to investors?",
+          "options": [
+            {"key": "A", "text": "Insider trading using material information not available to the public", "misconception": null},
+            {"key": "B", "text": "Any purchase of shares by a company's employees", "misconception": "Equating all employee share dealing with insider trading"},
+            {"key": "C", "text": "Investing in mutual funds through SIPs", "misconception": "Confusing a legitimate investment method with a prohibited practice"},
+            {"key": "D", "text": "Charging advisory fees to clients", "misconception": "Confusing a permitted fee model with a prohibited practice"}
+          ],
+          "correct_key": "A",
+          "explanation": "SEBI prohibits insider trading, which is dealing in securities by persons connected with a company using material information not yet public. Ordinary employee investing, SIPs and charging advisory fees are not, in themselves, prohibited.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "RBI: Role and Functions",
+      "description": "The Reserve Bank of India administers the country's monetary policy and supervises the financial system. Its own functioning is governed by the Reserve Bank of India Act 1934, while banking is governed by the Banking Regulation Act 1949. RBI acts as the monetary authority formulating policy for price stability and credit flow, as the regulator and supervisor of the financial system protecting depositors, as the manager of foreign exchange under the Foreign Exchange Management Act 1999, and as the issuer of currency and coins.",
+      "difficulty": 2,
+      "prerequisites": [],
+      "keywords": ["RBI", "monetary policy", "RBI Act 1934", "Banking Regulation Act 1949", "FEMA 1999", "issuer of currency", "depositors"],
+      "misconceptions": ["Thinking RBI regulates the securities market", "Confusing the RBI Act 1934 with the Banking Regulation Act 1949", "Believing FEMA is administered by SEBI"],
+      "source_pages": ["12.3"],
+      "objectives": [
+        {"text": "List the principal functions of the RBI", "bloom": "Remember", "assessment_style": "recall"},
+        {"text": "Match each RBI function to its governing statute", "bloom": "Understand", "assessment_style": "identification"}
+      ],
+      "questions": [
+        {
+          "stem": "As the manager of foreign exchange, RBI administers which Act?",
+          "options": [
+            {"key": "A", "text": "The Foreign Exchange Management Act, 1999", "misconception": null},
+            {"key": "B", "text": "The Banking Regulation Act, 1949", "misconception": "Confusing the banking statute with the foreign-exchange statute"},
+            {"key": "C", "text": "The Reserve Bank of India Act, 1934", "misconception": "Confusing the RBI's constituting Act with the foreign-exchange statute"},
+            {"key": "D", "text": "The Prevention of Money-Laundering Act, 2002", "misconception": "Confusing anti-money-laundering law with foreign-exchange management"}
+          ],
+          "correct_key": "A",
+          "explanation": "RBI administers the Foreign Exchange Management Act 1999 to facilitate external trade and develop the foreign exchange market. The RBI Act 1934 governs RBI's own functioning, the Banking Regulation Act 1949 governs banking, and PMLA 2002 addresses money laundering.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which of the following is a primary function of the Reserve Bank of India?",
+          "options": [
+            {"key": "A", "text": "Issuing currency and coins and formulating monetary policy", "misconception": null},
+            {"key": "B", "text": "Registering investment advisers and stock brokers", "misconception": "Attributing SEBI's registration role to RBI"},
+            {"key": "C", "text": "Regulating pension funds and the NPS", "misconception": "Attributing PFRDA's role to RBI"},
+            {"key": "D", "text": "Controlling the terms of general insurance products", "misconception": "Attributing IRDA's role to RBI"}
+          ],
+          "correct_key": "A",
+          "explanation": "RBI issues currency and coins and formulates and monitors monetary policy for price stability. Registering advisers and brokers is SEBI's role, regulating pensions is PFRDA's, and controlling insurance terms is IRDA's.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Which statute governs the banking and financial sector that RBI supervises, as distinct from the Act that governs RBI's own functioning?",
+          "options": [
+            {"key": "A", "text": "The Banking Regulation Act, 1949", "misconception": null},
+            {"key": "B", "text": "The Reserve Bank of India Act, 1934", "misconception": "Confusing RBI's constituting Act with the banking-sector statute"},
+            {"key": "C", "text": "The SEBI Act, 1992", "misconception": "Attributing a securities-market statute to banking supervision"},
+            {"key": "D", "text": "The PFRDA Act, 2013", "misconception": "Attributing a pension statute to banking supervision"}
+          ],
+          "correct_key": "A",
+          "explanation": "The financial sector is governed by the Banking Regulation Act 1949, whereas RBI's own functions are governed by the RBI Act 1934. The SEBI Act and PFRDA Act govern securities and pensions respectively.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Other Regulators: IRDA, PFRDA and the Ministry of Finance",
+      "description": "Besides SEBI and RBI, the financial system has specialised regulators. IRDA oversees insurance, including controlling the rates and terms offered on general insurance not covered by the Tariff Advisory Committee and regulating insurers' investments. PFRDA, under the PFRDA Act 2013, promotes old-age income security and regulates pension funds and the National Pension System, which is contribution-based and mandatory for new central government recruits except the armed forces. The Ministry of Finance oversees macroeconomic policy through departments such as the Department of Economic Affairs.",
+      "difficulty": 2,
+      "prerequisites": [],
+      "keywords": ["IRDA", "insurance", "PFRDA", "PFRDA Act 2013", "NPS", "Ministry of Finance", "Department of Economic Affairs"],
+      "misconceptions": ["Confusing IRDA (insurance) with PFRDA (pensions)", "Thinking the NPS is mandatory for the armed forces", "Believing SEBI regulates insurance"],
+      "source_pages": ["12.3", "12.3.1"],
+      "objectives": [
+        {"text": "Match each specialised regulator to the sector it oversees", "bloom": "Remember", "assessment_style": "identification"},
+        {"text": "Recall the key features of the NPS under PFRDA", "bloom": "Understand", "assessment_style": "recall"}
+      ],
+      "questions": [
+        {
+          "stem": "Which authority regulates pension funds and the National Pension System under the PFRDA Act, 2013?",
+          "options": [
+            {"key": "A", "text": "PFRDA", "misconception": null},
+            {"key": "B", "text": "IRDA", "misconception": "Confusing the insurance regulator with the pension regulator"},
+            {"key": "C", "text": "SEBI", "misconception": "Confusing the securities regulator with the pension regulator"},
+            {"key": "D", "text": "RBI", "misconception": "Confusing the banking regulator with the pension regulator"}
+          ],
+          "correct_key": "A",
+          "explanation": "PFRDA regulates pension funds and the NPS under the PFRDA Act 2013 and protects subscribers' interests. IRDA handles insurance, SEBI the securities market, and RBI banking and monetary policy.",
+          "difficulty": 1
+        },
+        {
+          "stem": "The National Pension System is described in the workbook as mandatory for which group?",
+          "options": [
+            {"key": "A", "text": "New recruits to the Central Government, except the armed forces", "misconception": null},
+            {"key": "B", "text": "All citizens of India without exception", "misconception": "Overstating NPS coverage to the whole population"},
+            {"key": "C", "text": "New recruits to the armed forces specifically", "misconception": "Reversing the armed-forces exception"},
+            {"key": "D", "text": "Only self-employed professionals", "misconception": "Confusing the voluntary self-employed segment with mandatory coverage"}
+          ],
+          "correct_key": "A",
+          "explanation": "Though voluntary for others, the NPS is mandatory for new recruits to the Central Government except the armed forces. It is available to self-employed professionals and others on a voluntary basis.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Controlling the rates and terms and conditions offered by insurers for general insurance (not covered by the Tariff Advisory Committee) is a function of which regulator?",
+          "options": [
+            {"key": "A", "text": "IRDA", "misconception": null},
+            {"key": "B", "text": "SEBI", "misconception": "Attributing insurance oversight to the securities regulator"},
+            {"key": "C", "text": "PFRDA", "misconception": "Attributing insurance oversight to the pension regulator"},
+            {"key": "D", "text": "AMFI", "misconception": "Attributing a regulatory function to a mutual fund industry body"}
+          ],
+          "correct_key": "A",
+          "explanation": "IRDA controls the rates, terms and conditions offered on general insurance not covered by the Tariff Advisory Committee, and regulates insurers' investments. SEBI, PFRDA and AMFI have no such role over insurance pricing.",
+          "difficulty": 1
+        }
+      ]
+    },
+    {
+      "title": "Investor Protection: KYC, PMLA, Grievance Redressal and Codes of Conduct",
+      "description": "Several mechanisms protect investors and keep tainted money out of the markets. KYC, mandated by SEBI for all mutual fund investors regardless of the amount invested, requires proof of identity and address through a centralised platform. The Prevention of Money-Laundering Act 2002 requires intermediaries to record and report prescribed transactions and to keep records for ten years. Grievances are routed through channels such as SCORES for securities, IGMS for insurance, and the Banking Ombudsman scheme for banks, while codes of conduct issued by SEBI, IRDA and AMFI bar misrepresentation, exaggeration and breach of client confidentiality.",
+      "difficulty": 2,
+      "prerequisites": [],
+      "keywords": ["KYC", "PMLA 2002", "ten years", "SCORES", "IGMS", "Banking Ombudsman", "AMFI code of conduct", "SRO"],
+      "misconceptions": ["Thinking KYC applies only above a certain investment amount", "Confusing SCORES (securities) with IGMS (insurance)", "Believing PMLA records are kept for a shorter period"],
+      "source_pages": ["12.2", "12.4"],
+      "objectives": [
+        {"text": "Match each grievance channel to its sector", "bloom": "Remember", "assessment_style": "identification"},
+        {"text": "State the KYC applicability rule and the PMLA record-retention period", "bloom": "Remember", "assessment_style": "recall"}
+      ],
+      "questions": [
+        {
+          "stem": "A person who has a complaint against an insurance company should lodge it with which system?",
+          "options": [
+            {"key": "A", "text": "IGMS", "misconception": null},
+            {"key": "B", "text": "SCORES", "misconception": "Confusing the securities-market grievance system with the insurance one"},
+            {"key": "C", "text": "The Banking Ombudsman", "misconception": "Confusing the banking grievance channel with the insurance one"},
+            {"key": "D", "text": "SAT", "misconception": "Confusing a securities appellate tribunal with an insurance grievance system"}
+          ],
+          "correct_key": "A",
+          "explanation": "Insurance grievances are lodged through IGMS. SCORES handles securities-market complaints, the Banking Ombudsman handles bank complaints, and SAT is the appellate tribunal for SEBI orders, not a grievance channel.",
+          "difficulty": 2
+        },
+        {
+          "stem": "For how long must an intermediary maintain records of transactions under Section 12 of the PMLA, 2002, after the cessation of transactions with a client?",
+          "options": [
+            {"key": "A", "text": "Ten years", "misconception": null},
+            {"key": "B", "text": "Five years", "misconception": "Confusing the PMLA retention period with the IA certificate validity"},
+            {"key": "C", "text": "Three years", "misconception": "Confusing the retention period with the 54EC bond lock-in"},
+            {"key": "D", "text": "One year", "misconception": "Confusing the retention period with the capital-adequacy compliance window"}
+          ],
+          "correct_key": "A",
+          "explanation": "PMLA requires records to be maintained for ten years from the date of cessation of transactions between the client and the intermediary. Five years is the adviser certificate validity, three years the 54EC lock-in, and one year the capital-adequacy window.",
+          "difficulty": 2
+        },
+        {
+          "stem": "For whom is KYC compliance mandatory when investing in a mutual fund scheme?",
+          "options": [
+            {"key": "A", "text": "All investors, individuals and non-individuals, irrespective of the amount invested", "misconception": null},
+            {"key": "B", "text": "Only investors putting in more than a specified large amount", "misconception": "Believing KYC has a minimum-amount threshold"},
+            {"key": "C", "text": "Only non-individual investors such as companies", "misconception": "Restricting KYC to non-individuals"},
+            {"key": "D", "text": "Only investors using SIPs, not lump-sum investors", "misconception": "Restricting KYC to a particular mode of investing"}
+          ],
+          "correct_key": "A",
+          "explanation": "KYC is mandatory for all investors, individual and non-individual, irrespective of the amount invested and whether lump sum or SIP. There is no minimum-amount threshold and it is not limited to any investor type.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Under the codes of conduct for intermediaries, which action is prohibited?",
+          "options": [
+            {"key": "A", "text": "Divulging confidential client information without permission, except where required by law", "misconception": null},
+            {"key": "B", "text": "Considering the investor's interest as paramount", "misconception": "Mislabelling a required duty as prohibited"},
+            {"key": "C", "text": "Obtaining NISM certification and AMFI registration", "misconception": "Mislabelling a required qualification as prohibited"},
+            {"key": "D", "text": "Helping a client complete a suitability assessment", "misconception": "Mislabelling a proper advisory step as prohibited"}
+          ],
+          "correct_key": "A",
+          "explanation": "An intermediary must not divulge confidential client information without prior permission, except where disclosure is required by law. Putting the investor first, holding NISM certification and AMFI registration, and helping with suitability are all required or proper conduct.",
+          "difficulty": 2
+        }
+      ]
+    }
+  ],
+  "caselets": [
+    {
+      "scenario": "Priya has just set up a practice giving investment advice to retail clients for a fee. She reads the SEBI (Investment Advisers) Regulations, 2013 to understand her obligations. As an individual adviser she wants to confirm the capital she must maintain and how her registration will work. She also employs an associate who is only a mutual fund distributor earning commission from AMCs, and she wonders whether he too must register. One client complains that Priya recommended a high-risk equity product to his elderly, risk-averse father simply because it had recently outperformed. Another asks Priya whether she may accept a commission from a product manufacturer in addition to the fee he pays her. Priya wants clear answers grounded in the regulations before she responds.",
+      "concept_titles": ["SEBI (Investment Advisers) Regulations, 2013: Registration", "Exemptions from Investment Adviser Registration", "Net Worth Requirements and Obligations of Investment Advisers", "Code of Conduct and Suitability for Investment Advisers"],
+      "questions": [
+        {
+          "stem": "As an individual investment adviser, what minimum net tangible assets must Priya maintain?",
+          "options": [
+            {"key": "A", "text": "Rs. 1 lakh", "misconception": null},
+            {"key": "B", "text": "Rs. 25 lakhs", "misconception": "Applying the body-corporate net-worth figure to an individual"},
+            {"key": "C", "text": "Rs. 5 lakhs", "misconception": "Recalling an incorrect intermediate figure"},
+            {"key": "D", "text": "Rs. 10 lakhs", "misconception": "Recalling an incorrect intermediate figure"}
+          ],
+          "correct_key": "A",
+          "explanation": "An individual adviser must maintain net tangible assets of at least Rs. 1 lakh. Rs. 25 lakhs is the net-worth requirement for a body corporate.",
+          "difficulty": 1,
+          "case_position": 1,
+          "marks": 1
+        },
+        {
+          "stem": "Priya's associate is only a mutual fund distributor earning commission, giving advice incidental to distribution. Must he register as an investment adviser?",
+          "options": [
+            {"key": "A", "text": "No; a mutual fund distributor whose advice is incidental to distribution is exempt", "misconception": null},
+            {"key": "B", "text": "Yes, because he interacts with investors", "misconception": "Ignoring the incidental-advice exemption for distributors"},
+            {"key": "C", "text": "Yes, because he earns commission", "misconception": "Treating commission income as a registration trigger"},
+            {"key": "D", "text": "Yes, and he must also maintain Rs. 25 lakhs net worth", "misconception": "Applying adviser capital norms to an exempt distributor"}
+          ],
+          "correct_key": "A",
+          "explanation": "A mutual fund distributor who gives advice incidental to distribution is exempt from investment adviser registration. Neither client interaction nor commission income triggers registration for such a distributor.",
+          "difficulty": 2,
+          "case_position": 2,
+          "marks": 1
+        },
+        {
+          "stem": "Considering both the suitability rule and the client's profile, was Priya's recommendation of a high-risk product to the risk-averse elderly investor appropriate?",
+          "options": [
+            {"key": "A", "text": "No; suitability requires advice to fit the client's risk profile and a reasonable basis that he can bear the risk, not past returns alone", "misconception": null},
+            {"key": "B", "text": "Yes, because the product had the best recent returns", "misconception": "Prioritising returns over the client's risk profile"},
+            {"key": "C", "text": "Yes, because any equity product suits any investor over time", "misconception": "Ignoring risk profiling entirely"},
+            {"key": "D", "text": "Yes, as long as Priya maintains confidentiality of his data", "misconception": "Confusing confidentiality with the suitability obligation"}
+          ],
+          "correct_key": "A",
+          "explanation": "This combines suitability with the client's risk profile: advice must be appropriate to the client's risk profile, with a reasonable basis to believe he can bear the related risks. Recommending a high-risk product to a risk-averse investor on past returns alone breaches suitability.",
+          "difficulty": 3,
+          "case_position": 3,
+          "marks": 1
+        },
+        {
+          "stem": "May Priya accept a commission from a product manufacturer in addition to the fee her client pays her, for the same recommendation?",
+          "options": [
+            {"key": "A", "text": "No; an adviser must not receive consideration from anyone except the client for the products advised on", "misconception": null},
+            {"key": "B", "text": "Yes, provided she discloses it later at year-end", "misconception": "Believing delayed disclosure legitimises third-party payment"},
+            {"key": "C", "text": "Yes, because commissions are ordinary advisory income", "misconception": "Treating manufacturer commission as permitted advisory income"},
+            {"key": "D", "text": "Yes, as long as the client's KYC is complete", "misconception": "Confusing an unrelated KYC formality with the payment restriction"}
+          ],
+          "correct_key": "A",
+          "explanation": "An investment adviser must not receive any consideration from anyone except the client in respect of the products advised on. Taking a manufacturer's commission on top of the client's fee is not permitted, regardless of disclosure timing or KYC status.",
+          "difficulty": 2,
+          "case_position": 4,
+          "marks": 1
+        },
+        {
+          "stem": "Once SEBI grants Priya her certificate of registration, for how long is it valid and when must she seek renewal?",
+          "options": [
+            {"key": "A", "text": "Valid five years; renewal must be applied for three months before expiry", "misconception": null},
+            {"key": "B", "text": "Valid permanently; no renewal is ever needed", "misconception": "Believing the registration never expires"},
+            {"key": "C", "text": "Valid five years; renewal can be sought any time after it lapses", "misconception": "Assuming renewal is retroactive after lapse"},
+            {"key": "D", "text": "Valid one year; renewal each year on the anniversary", "misconception": "Confusing validity with the capital-adequacy compliance window"}
+          ],
+          "correct_key": "A",
+          "explanation": "The certificate is valid for five years from issue, and renewal must be applied for three months before it expires. It is neither permanent nor renewable only after lapse, and one year relates to capital-adequacy compliance, not validity.",
+          "difficulty": 2,
+          "case_position": 5,
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "scenario": "Ramesh is a retail investor sorting out complaints and compliance across his financial products. He is unhappy with how a mutual fund handled a query and separately has a grievance against his life insurer; he is also disputing a service charge with his bank. His nephew, newly employed at a distribution firm, mentions that all clients must complete KYC before investing in mutual funds and that the firm keeps transaction records for many years to comply with anti-money-laundering law. Ramesh also wants to understand who ultimately regulates his stock-market intermediaries and where an appeal against that regulator's order would go. He asks a knowledgeable friend to walk him through the correct channels and rules.",
+      "concept_titles": ["Investor Protection: KYC, PMLA, Grievance Redressal and Codes of Conduct", "SEBI: Role, Powers and Appellate Structure"],
+      "questions": [
+        {
+          "stem": "Where should Ramesh lodge his grievance against the life insurer?",
+          "options": [
+            {"key": "A", "text": "IGMS", "misconception": null},
+            {"key": "B", "text": "SCORES", "misconception": "Confusing the securities grievance system with the insurance one"},
+            {"key": "C", "text": "The Banking Ombudsman", "misconception": "Confusing the banking grievance channel with the insurance one"},
+            {"key": "D", "text": "SAT", "misconception": "Confusing an appellate tribunal with an insurance grievance system"}
+          ],
+          "correct_key": "A",
+          "explanation": "Complaints against an insurance company are lodged through IGMS. SCORES is for securities-market complaints, the Banking Ombudsman for bank complaints, and SAT is an appellate tribunal, not a grievance channel.",
+          "difficulty": 1,
+          "case_position": 1,
+          "marks": 1
+        },
+        {
+          "stem": "Ramesh's bank dispute over a service charge remains unresolved by the bank. Which channel covers customers of scheduled commercial banks and primary cooperative banks?",
+          "options": [
+            {"key": "A", "text": "The Banking Ombudsman scheme", "misconception": null},
+            {"key": "B", "text": "IGMS", "misconception": "Applying the insurance grievance channel to a bank dispute"},
+            {"key": "C", "text": "SCORES", "misconception": "Applying the securities grievance channel to a bank dispute"},
+            {"key": "D", "text": "PFRDA", "misconception": "Treating the pension regulator as a banking grievance channel"}
+          ],
+          "correct_key": "A",
+          "explanation": "The Banking Ombudsman scheme covers customers of scheduled commercial banks and primary cooperative banks whose complaints are not addressed by the bank. IGMS and SCORES cover insurance and securities respectively.",
+          "difficulty": 2,
+          "case_position": 2,
+          "marks": 1
+        },
+        {
+          "stem": "The nephew says all clients must complete KYC before investing in mutual funds. For which investors is KYC actually mandatory?",
+          "options": [
+            {"key": "A", "text": "All investors, individual and non-individual, irrespective of the amount invested", "misconception": null},
+            {"key": "B", "text": "Only those investing large lump sums", "misconception": "Believing KYC has a minimum-amount threshold"},
+            {"key": "C", "text": "Only first-time investors, not repeat investors", "misconception": "Restricting KYC to first-time investors"},
+            {"key": "D", "text": "Only non-individual investors such as companies and trusts", "misconception": "Restricting KYC to non-individuals"}
+          ],
+          "correct_key": "A",
+          "explanation": "KYC is mandatory for all investors, individual and non-individual, irrespective of the amount invested. There is no minimum threshold and it is not limited to first-time or non-individual investors.",
+          "difficulty": 1,
+          "case_position": 3,
+          "marks": 1
+        },
+        {
+          "stem": "The firm keeps transaction records to comply with anti-money-laundering law. Under the PMLA, 2002, combining the retention rule with the reason, for how long and why are records kept?",
+          "options": [
+            {"key": "A", "text": "Ten years from cessation of transactions, to enable tracing of money-laundering", "misconception": null},
+            {"key": "B", "text": "Five years, matching the adviser's certificate validity", "misconception": "Confusing PMLA retention with adviser registration validity"},
+            {"key": "C", "text": "Three years, matching a bond lock-in", "misconception": "Confusing PMLA retention with the 54EC lock-in period"},
+            {"key": "D", "text": "One year, matching a capital-adequacy compliance window", "misconception": "Confusing PMLA retention with a capital-adequacy timeline"}
+          ],
+          "correct_key": "A",
+          "explanation": "This combines the retention period with its purpose: PMLA requires records to be kept for ten years from cessation of transactions so that transactions connected with money-laundering can be traced and reported. The other periods relate to unrelated rules.",
+          "difficulty": 3,
+          "case_position": 4,
+          "marks": 1
+        },
+        {
+          "stem": "Ramesh wants to know who regulates his stock-market intermediaries and where an appeal against that regulator's order goes first. What is the correct pairing?",
+          "options": [
+            {"key": "A", "text": "SEBI regulates them; an appeal against a SEBI order goes first to the Securities Appellate Tribunal", "misconception": null},
+            {"key": "B", "text": "RBI regulates them; an appeal goes to the Banking Ombudsman", "misconception": "Assigning securities regulation to RBI and a banking channel for appeals"},
+            {"key": "C", "text": "SEBI regulates them; an appeal goes directly to the Supreme Court", "misconception": "Skipping SAT and going straight to the apex court"},
+            {"key": "D", "text": "AMFI regulates them; an appeal goes to a civil court", "misconception": "Treating an industry body as regulator and civil courts as the appeal forum"}
+          ],
+          "correct_key": "A",
+          "explanation": "SEBI regulates securities market intermediaries, and an appeal against a SEBI order goes first to the Securities Appellate Tribunal, whose rulings may then be challenged in the Supreme Court. RBI regulates banking, AMFI is an industry body, and civil courts do not entertain such matters.",
+          "difficulty": 2,
+          "case_position": 5,
+          "marks": 1
+        }
+      ]
+    }
+  ]
+}

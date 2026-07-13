@@ -1,0 +1,391 @@
+{
+  "chapter_ordinal": 5,
+  "chapter_title": "MANAGING INVESTMENT RISK",
+  "concepts": [
+    {
+      "title": "Defining Investment Risk",
+      "description": "In investing, risk is the possibility that the return actually earned turns out to be different from the return that was expected. If an outcome were fixed and certain, there would be no risk at all, but no real-world investment behaves that way. Even instruments widely regarded as very safe, such as the Public Provident Fund, have seen their rates of return revised over the years, so an investor's expected return can be undercut by changes outside their control. Crucially, a deviation in either direction counts as risk: earning far more than expected is as much a departure from the forecast as earning far less. This framing separates 'risk' from the everyday sense of 'loss' and sets up why measurement of risk focuses on how widely outcomes can scatter around what was anticipated.",
+      "difficulty": 1,
+      "prerequisites": [],
+      "keywords": ["risk", "expected return", "actual return", "deviation", "uncertainty"],
+      "misconceptions": ["risk means only the chance of losing money", "government-guaranteed products carry no risk"],
+      "source_pages": [142, 143, 144],
+      "objectives": [
+        {"text": "Define investment risk as the deviation of actual returns from expected returns.", "bloom": "Understand", "assessment_style": "recall"},
+        {"text": "Explain why both favourable and unfavourable deviations are treated as risk.", "bloom": "Understand", "assessment_style": "conceptual"}
+      ],
+      "questions": [
+        {
+          "stem": "In the context of investment decisions, which statement best captures what 'risk' means?",
+          "options": [
+            {"key": "A", "text": "The possibility that the return actually earned differs from the return that was expected.", "misconception": null},
+            {"key": "B", "text": "The certainty that an investor will eventually lose a portion of their capital.", "misconception": "Treats risk as guaranteed loss rather than uncertainty of outcome."},
+            {"key": "C", "text": "Only the chance that returns fall below zero and produce a cash loss.", "misconception": "Restricts risk to downside outcomes and ignores unexpected gains."},
+            {"key": "D", "text": "The total absence of any return from an investment over its life.", "misconception": "Confuses risk with zero return rather than variability of return."}
+          ],
+          "correct_key": "A",
+          "explanation": "Risk is defined as the gap between what is actually earned and what was expected, in either direction. B is wrong because risk is about uncertainty, not a guaranteed loss. C is wrong because an unexpectedly high return is also a deviation and therefore also risk. D confuses risk with earning nothing, which is just one possible outcome.",
+          "difficulty": 1
+        },
+        {
+          "stem": "An investor started putting money into the Public Provident Fund in 1999 expecting a 12% return, but by a few years later the notified rate had fallen to 8%. What does this best illustrate?",
+          "options": [
+            {"key": "A", "text": "Even a government-guaranteed product carries risk because its expected return can change over time.", "misconception": null},
+            {"key": "B", "text": "The PPF had defaulted on its promised interest payments.", "misconception": "Confuses a downward revision of rates with default (failure to pay)."},
+            {"key": "C", "text": "Government-backed products are entirely free of risk once you invest.", "misconception": "Assumes a sovereign guarantee removes all forms of return uncertainty."},
+            {"key": "D", "text": "The investor's principal amount was eroded by the rate cut.", "misconception": "Assumes a lower rate reduces the invested principal rather than the return earned on it."}
+          ],
+          "correct_key": "A",
+          "explanation": "A rate that is revised from 12% down to 8% means the actual return departs from what was expected, which is exactly the definition of risk, even for a safe product. B is wrong because a lower notified rate is not a missed payment. C is wrong because the example shows the guarantee did not lock in the return. D is wrong because the principal was not reduced; only the rate of return on it changed.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Priya expected her equity fund to return about 15% in a year but it actually returned 32%. Under the investment definition of risk, how is this outcome classified?",
+          "options": [
+            {"key": "A", "text": "It is still a manifestation of risk, because the actual return deviated from the expected return.", "misconception": null},
+            {"key": "B", "text": "It involved no risk at all, since the investor made a profit.", "misconception": "Assumes only losses count as risk, ignoring upside deviation."},
+            {"key": "C", "text": "It shows the investment had become risk-free after the gain.", "misconception": "Treats a single good outcome as removing future uncertainty."},
+            {"key": "D", "text": "It is a default event because the fund overshot its target.", "misconception": "Misapplies the term default to an unexpectedly favourable result."}
+          ],
+          "correct_key": "A",
+          "explanation": "Because the realised 32% is different from the expected 15%, the outcome is a deviation and therefore a form of risk, even though it favoured the investor. B and C wrongly limit risk to losses. D misuses 'default', which refers to a borrower failing to pay, not to a surprise gain.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Inflation Risk",
+      "description": "Inflation risk is the danger that the money received from an investment buys less than expected once rising prices are taken into account. It bites hardest on fixed-return instruments such as bonds, deposits and debentures, where both the periodic interest and the principal repaid at maturity are fixed in rupee terms and cannot rise with prices. The measure that matters here is the real rate of return, roughly the stated (nominal) rate minus the inflation rate. A bond paying 8% when inflation is 7% leaves a real return of only about 1%, and if inflation climbs to 9% the real return turns negative even though every payment is made in full. Retired investors, whose incomes are often fixed, are especially exposed. It can be managed by tilting part of a debt portfolio to shorter maturities that reprice as rates rise, or by holding inflation-hedging assets such as equity or commodities.",
+      "difficulty": 2,
+      "prerequisites": ["Defining Investment Risk"],
+      "keywords": ["inflation risk", "real rate of return", "nominal return", "purchasing power", "fixed-income"],
+      "misconceptions": ["a bond that pays every coupon in full has no risk", "inflation risk affects equities more than fixed deposits"],
+      "source_pages": [143, 145],
+      "objectives": [
+        {"text": "Describe inflation risk as the erosion of an investment's purchasing power.", "bloom": "Understand", "assessment_style": "conceptual"},
+        {"text": "Compute an approximate real rate of return from a nominal rate and an inflation rate.", "bloom": "Apply", "assessment_style": "calculation"},
+        {"text": "Identify which investors and instruments are most exposed to inflation risk.", "bloom": "Analyze", "assessment_style": "scenario"}
+      ],
+      "questions": [
+        {
+          "stem": "A debenture pays a fixed coupon of 9% per annum. During the year, inflation runs at 6%. Using the simple approximation, what is the investor's real rate of return?",
+          "options": [
+            {"key": "A", "text": "About 3%.", "misconception": null},
+            {"key": "B", "text": "About 15%.", "misconception": "Adds the inflation rate to the coupon instead of subtracting it."},
+            {"key": "C", "text": "About 9%, because the coupon is fixed and paid in full.", "misconception": "Ignores inflation entirely and reports the nominal rate as the real rate."},
+            {"key": "D", "text": "About 1.5%, by halving the coupon.", "misconception": "Applies an arbitrary halving instead of subtracting inflation."}
+          ],
+          "correct_key": "A",
+          "explanation": "The approximate real rate is the nominal rate minus inflation: 9% - 6% = 3%. B wrongly adds the two rates. C reports the nominal coupon and ignores the loss of purchasing power. D uses an unrelated halving rule.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which type of investment is generally most exposed to inflation risk?",
+          "options": [
+            {"key": "A", "text": "Fixed-return instruments such as bonds and deposits, whose interest and principal are fixed in rupee terms.", "misconception": null},
+            {"key": "B", "text": "Equity shares, because their prices move up and down the most.", "misconception": "Confuses price volatility (market risk) with inflation risk."},
+            {"key": "C", "text": "Commodities such as gold, because they have no coupon.", "misconception": "Overlooks that real assets tend to hedge, not amplify, inflation risk."},
+            {"key": "D", "text": "All investments equally, since inflation affects everyone.", "misconception": "Ignores that fixed nominal payouts are hit hardest by inflation."}
+          ],
+          "correct_key": "A",
+          "explanation": "Fixed-return instruments lock in rupee payments that cannot rise with prices, so inflation erodes their real value the most. B describes market risk, not inflation risk. C is wrong because commodities are often used to hedge inflation. D is wrong because instruments with fixed nominal cash flows suffer disproportionately.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A retiree holds a five-year fixed deposit whose interest is his main income. If inflation rises sharply during those five years, what is the primary concern?",
+          "options": [
+            {"key": "A", "text": "His fixed rupee income buys progressively less, so its real value falls even though every payment arrives on time.", "misconception": null},
+            {"key": "B", "text": "The bank is likely to default on the deposit because of inflation.", "misconception": "Conflates inflation risk with default (credit) risk."},
+            {"key": "C", "text": "The deposit's principal will automatically increase to match inflation.", "misconception": "Assumes fixed-return principal is inflation-indexed when it is not."},
+            {"key": "D", "text": "There is no concern because the interest rate is contractually fixed.", "misconception": "Treats a fixed nominal rate as protection against loss of purchasing power."}
+          ],
+          "correct_key": "A",
+          "explanation": "A fixed income is especially vulnerable because rising prices reduce what that income can buy, which is why inflation risk hits retirees hard. B confuses inflation with default. C is wrong because the principal is fixed, not indexed. D is wrong precisely because a fixed rate offers no protection when inflation climbs.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "title": "Default (Credit) Risk",
+      "description": "Default risk, also called credit risk, is the probability that a borrower will fail to meet its commitment to pay interest and/or repay principal on schedule. It applies specifically to debt instruments such as bonds and debentures, because those instruments carry pre-committed payouts that the issuer has promised to make. The issuer's ability to service that debt can change over the life of the instrument as its financial condition shifts, and that changing ability is what creates credit risk for the investor. Sovereign governments are generally treated as the least risky borrowers. Credit rating is the tool used to measure how much credit risk sits in a particular instrument, so investors can compare issuers and can lower this risk by holding a larger proportion of highly rated bonds.",
+      "difficulty": 2,
+      "prerequisites": ["Defining Investment Risk"],
+      "keywords": ["default risk", "credit risk", "credit rating", "issuer", "debt instrument"],
+      "misconceptions": ["equity shares carry default risk", "a credit rating measures how much return a bond will give"],
+      "source_pages": [143, 145],
+      "objectives": [
+        {"text": "Define default (credit) risk and identify the instruments it applies to.", "bloom": "Understand", "assessment_style": "recall"},
+        {"text": "Explain the role of credit rating in measuring credit risk.", "bloom": "Understand", "assessment_style": "conceptual"}
+      ],
+      "questions": [
+        {
+          "stem": "Default risk on an investment refers to the probability that:",
+          "options": [
+            {"key": "A", "text": "The borrower will fail to pay interest and/or repay principal as scheduled.", "misconception": null},
+            {"key": "B", "text": "The market price of the instrument will fall when interest rates rise.", "misconception": "Describes interest rate risk rather than default risk."},
+            {"key": "C", "text": "Inflation will reduce the purchasing power of the payments received.", "misconception": "Describes inflation risk rather than default risk."},
+            {"key": "D", "text": "The investor will be unable to sell the instrument quickly.", "misconception": "Describes liquidity risk rather than default risk."}
+          ],
+          "correct_key": "A",
+          "explanation": "Default (credit) risk is precisely the chance that the issuer does not honour its promised interest or principal payments on time. B, C and D each describe a different risk (interest rate, inflation and liquidity respectively), not the failure of the borrower to pay.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Which of the following instruments is directly subject to default risk?",
+          "options": [
+            {"key": "A", "text": "A corporate debenture, because it carries pre-committed interest and principal payments.", "misconception": null},
+            {"key": "B", "text": "An equity share, because its dividend is promised each year.", "misconception": "Assumes equity dividends are contractual obligations like debt payouts."},
+            {"key": "C", "text": "A gold holding, because its price can fall.", "misconception": "Confuses price movement of a real asset with a borrower failing to pay."},
+            {"key": "D", "text": "A bank savings balance, because interest rates can be revised.", "misconception": "Confuses a change in interest rate with the issuer defaulting on payments."}
+          ],
+          "correct_key": "A",
+          "explanation": "Default risk attaches to debt instruments with pre-committed payouts, so a debenture is directly exposed. B is wrong because equity dividends are not a fixed contractual commitment. C describes price risk on a commodity, not default. D describes a rate revision, not a failure to pay.",
+          "difficulty": 2
+        },
+        {
+          "stem": "What does an instrument's credit rating primarily measure?",
+          "options": [
+            {"key": "A", "text": "The degree of credit (default) risk in that instrument.", "misconception": null},
+            {"key": "B", "text": "The total return the investor is guaranteed to earn.", "misconception": "Treats a rating as a promise of return rather than a risk measure."},
+            {"key": "C", "text": "How easily the instrument can be sold in the market.", "misconception": "Confuses credit rating with a measure of liquidity."},
+            {"key": "D", "text": "The expected rate of inflation over the instrument's life.", "misconception": "Confuses a credit assessment with an inflation forecast."}
+          ],
+          "correct_key": "A",
+          "explanation": "A credit rating is the standard yardstick for the credit risk embedded in an instrument, letting investors compare issuers. B is wrong because a rating does not guarantee returns. C confuses it with liquidity. D confuses it with an inflation estimate.",
+          "difficulty": 1
+        }
+      ]
+    },
+    {
+      "title": "Interest Rate Risk and Reinvestment Risk",
+      "description": "Interest rate risk is the risk that a bond's market price moves when prevailing interest rates change. The relationship is inverse: if rates fall, existing bonds paying older, higher coupons become more attractive, so their prices rise until their yield lines up with the new market rate; if rates rise, new bonds offer higher coupons, so investors sell the older, lower-coupon bonds and their prices fall until yields realign. This price volatility affects bonds directly and also debt funds that hold them. Reinvestment risk is a related but distinct danger: the periodic cash flows (coupons) received may have to be reinvested at a lower rate than the original, dragging down total return. The two move oppositely with rates: when interest rates fall, bond prices rise but reinvestment risk increases; when rates rise, prices fall but reinvestment risk reduces or disappears. Choosing a cumulative option, which reinvests income within the instrument, is one way to blunt reinvestment risk.",
+      "difficulty": 3,
+      "prerequisites": ["Default (Credit) Risk"],
+      "keywords": ["interest rate risk", "reinvestment risk", "bond price", "coupon", "yield"],
+      "misconceptions": ["bond prices move in the same direction as interest rates", "reinvestment risk rises when interest rates rise"],
+      "source_pages": [145, 147],
+      "objectives": [
+        {"text": "State the inverse relationship between interest rates and bond prices.", "bloom": "Understand", "assessment_style": "conceptual"},
+        {"text": "Distinguish reinvestment risk from interest rate risk and relate each to rate movements.", "bloom": "Analyze", "assessment_style": "scenario"}
+      ],
+      "questions": [
+        {
+          "stem": "Interest rates in the market fall after an investor has bought a bond. What happens to the market price of that existing bond?",
+          "options": [
+            {"key": "A", "text": "Its price rises, because its older, higher coupon is now more attractive than newly issued bonds.", "misconception": null},
+            {"key": "B", "text": "Its price falls, because bond prices move in the same direction as interest rates.", "misconception": "Assumes bond prices move with rates rather than inversely to them."},
+            {"key": "C", "text": "Its price is unaffected, because the coupon is fixed.", "misconception": "Assumes a fixed coupon insulates the market price from rate changes."},
+            {"key": "D", "text": "Its price falls, because the issuer will now default.", "misconception": "Confuses a rate change with a rise in default risk."}
+          ],
+          "correct_key": "A",
+          "explanation": "When rates fall, the bond's higher fixed coupon looks attractive versus new lower-coupon issues, so buyers bid its price up until its yield matches the new market rate. B has the direction backwards. C ignores that market price adjusts even when the coupon is fixed. D wrongly links a rate move to default.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Reinvestment risk on a coupon-paying bond is best described as the risk that:",
+          "options": [
+            {"key": "A", "text": "The periodic income received has to be reinvested at a lower rate than the original.", "misconception": null},
+            {"key": "B", "text": "The issuer will fail to pay the coupons at all.", "misconception": "Confuses reinvestment risk with default risk."},
+            {"key": "C", "text": "The bond's price will fall before maturity.", "misconception": "Confuses reinvestment risk with interest rate (price) risk."},
+            {"key": "D", "text": "Inflation will erode the real value of the coupons.", "misconception": "Confuses reinvestment risk with inflation risk."}
+          ],
+          "correct_key": "A",
+          "explanation": "Reinvestment risk is specifically about the rate at which the coupons already received can be put back to work; if that rate is lower, total return suffers. B is default risk, C is interest rate risk and D is inflation risk.",
+          "difficulty": 2
+        },
+        {
+          "stem": "As market interest rates fall, what happens to reinvestment risk for a bondholder receiving periodic coupons?",
+          "options": [
+            {"key": "A", "text": "It increases, because incoming coupons must be reinvested at the new, lower rates.", "misconception": null},
+            {"key": "B", "text": "It decreases, because falling rates always help bondholders.", "misconception": "Assumes falling rates reduce every risk, ignoring reinvestment at lower rates."},
+            {"key": "C", "text": "It is eliminated, because the coupon amount itself does not change.", "misconception": "Confuses the fixed coupon amount with the rate available on reinvesting it."},
+            {"key": "D", "text": "It stays constant, because reinvestment risk does not depend on interest rates.", "misconception": "Ignores that reinvestment risk is driven precisely by prevailing rates."}
+          ],
+          "correct_key": "A",
+          "explanation": "Falling rates mean each coupon received can only be reinvested at a lower return, so reinvestment risk rises, even though bond prices rise. B overgeneralises the benefit of falling rates. C confuses the fixed coupon with the rate earned on redeploying it. D is wrong because reinvestment risk is entirely rate-driven.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "title": "Systematic and Unsystematic Risk",
+      "description": "Risks are grouped by whether diversification can remove them. Unsystematic risk is specific to a company or a narrow set of investments and is also called diversifiable risk: business (operating) risk, credit risk and liquidity risk fall here, and spreading money across different companies or sectors reduces them. Business risk is the risk inherent in a company's own operations, driven by factors such as raw-material costs, employee costs and competition. Systematic risk, by contrast, affects the whole market and cannot be diversified away, market risk being the prime example, where an economy-wide slowdown drags down almost all companies at once. A single investment usually carries both: an equity investor in one infrastructure firm faces company-specific business risk (reducible by holding other sectors) plus market risk (not reducible), while a bondholder faces issuer-specific credit risk (reducible by holding higher-rated bonds) plus interest rate risk common to all debt.",
+      "difficulty": 2,
+      "prerequisites": ["Interest Rate Risk and Reinvestment Risk"],
+      "keywords": ["systematic risk", "unsystematic risk", "diversifiable risk", "business risk", "market risk"],
+      "misconceptions": ["diversification can remove market risk", "business risk cannot be reduced by holding other companies"],
+      "source_pages": [147, 148, 150],
+      "objectives": [
+        {"text": "Classify a given risk as systematic or unsystematic.", "bloom": "Analyze", "assessment_style": "scenario"},
+        {"text": "Explain why diversification reduces unsystematic but not systematic risk.", "bloom": "Understand", "assessment_style": "conceptual"}
+      ],
+      "questions": [
+        {
+          "stem": "Which of the following is classified as unsystematic (diversifiable) risk?",
+          "options": [
+            {"key": "A", "text": "Business risk arising from one company's rising raw-material costs.", "misconception": null},
+            {"key": "B", "text": "Market risk from an economy-wide recession.", "misconception": "Classifies market-wide risk as diversifiable when it is systematic."},
+            {"key": "C", "text": "Interest rate risk that moves the prices of all bonds together.", "misconception": "Treats a market-wide bond risk as company-specific."},
+            {"key": "D", "text": "A broad fall in equity prices during a downturn.", "misconception": "Treats a market-wide decline as diversifiable unsystematic risk."}
+          ],
+          "correct_key": "A",
+          "explanation": "Business, credit and liquidity risks are company-specific and therefore unsystematic and diversifiable. B, C and D are all market-wide (systematic) risks that hit most investments at once and cannot be diversified away.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Ajay holds shares of a single infrastructure company. He can reduce the company-specific part of his risk by:",
+          "options": [
+            {"key": "A", "text": "Adding shares of companies operating in different sectors to his portfolio.", "misconception": null},
+            {"key": "B", "text": "Buying more shares of the same infrastructure company.", "misconception": "Concentrating in one firm increases rather than diversifies unsystematic risk."},
+            {"key": "C", "text": "Waiting, because an economic slowdown would only affect his company.", "misconception": "Assumes market risk is company-specific and will pass by diversification-free."},
+            {"key": "D", "text": "Nothing, because business risk cannot be reduced at all.", "misconception": "Denies that unsystematic risk is diversifiable."}
+          ],
+          "correct_key": "A",
+          "explanation": "Business risk is unsystematic, so holding companies across different sectors dilutes the impact of any one firm's problems. B increases concentration. C is wrong because a slowdown is market risk affecting all firms. D is wrong because unsystematic risk is precisely the part that diversification can reduce.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Why can market risk not be removed by diversification?",
+          "options": [
+            {"key": "A", "text": "Because it stems from economy-wide factors that reduce the profitability of almost all companies at once.", "misconception": null},
+            {"key": "B", "text": "Because it only ever affects a single company that cannot be avoided.", "misconception": "Describes company-specific risk while labelling it market risk."},
+            {"key": "C", "text": "Because it can be removed simply by holding more of the same stock.", "misconception": "Suggests concentration eliminates a market-wide risk."},
+            {"key": "D", "text": "Because it is the same thing as credit risk.", "misconception": "Conflates market (systematic) risk with issuer-specific credit risk."}
+          ],
+          "correct_key": "A",
+          "explanation": "Market risk is systematic: it arises from broad forces such as an economic slowdown that hit the whole market together, so spreading across companies does not escape it. B and C describe or imply company-specific effects. D wrongly equates market risk with credit risk, which is unsystematic.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "title": "Measuring Risk with Standard Deviation",
+      "description": "To measure risk, we need data on the returns an investment has produced and how much they scatter. Standard deviation quantifies that scatter around the average return: the wider the spread of past returns around their own average, the more volatile, and therefore more risky, the investment. If investment A has a standard deviation of 8% and investment B one of 6%, A is the riskier of the two because its returns bounced around their average more. Standard deviation is normally computed from a past series of returns, so it is historical and indicative rather than a guarantee of future risk, since the drivers of risk cannot all be forecast. Many return series approximately follow a normal (bell-shaped) distribution, which lets an investor use the average and standard deviation to form expectations about the range within which future returns are likely to fall.",
+      "difficulty": 2,
+      "prerequisites": ["Systematic and Unsystematic Risk"],
+      "keywords": ["standard deviation", "volatility", "average return", "normal distribution", "scatter"],
+      "misconceptions": ["a higher average return means higher standard deviation", "historical standard deviation guarantees future risk"],
+      "source_pages": [150, 152, 153],
+      "objectives": [
+        {"text": "Interpret standard deviation as a measure of the scatter of returns around their average.", "bloom": "Understand", "assessment_style": "conceptual"},
+        {"text": "Compare the riskiness of two investments using their standard deviations.", "bloom": "Apply", "assessment_style": "scenario"}
+      ],
+      "questions": [
+        {
+          "stem": "Investment A has a standard deviation of returns of 8% and investment B has 6%, while both share the same average return. Which is riskier and why?",
+          "options": [
+            {"key": "A", "text": "A is riskier, because its returns scatter more widely around the average.", "misconception": null},
+            {"key": "B", "text": "B is riskier, because a lower standard deviation means more risk.", "misconception": "Reverses the relationship between standard deviation and risk."},
+            {"key": "C", "text": "They are equally risky, because their average returns are the same.", "misconception": "Uses the average return to judge risk instead of the dispersion."},
+            {"key": "D", "text": "A is riskier, but only because it must have a higher average return.", "misconception": "Assumes higher standard deviation implies a higher average return."}
+          ],
+          "correct_key": "A",
+          "explanation": "A larger standard deviation means returns are more spread out around the average, which is greater volatility and hence greater risk, so A is riskier. B reverses the relationship. C wrongly uses the average rather than the scatter. D wrongly ties standard deviation to the level of average return, which is given as equal here.",
+          "difficulty": 2
+        },
+        {
+          "stem": "What does a smaller standard deviation of an investment's returns indicate?",
+          "options": [
+            {"key": "A", "text": "The returns cluster more tightly around their average, so the investment is less volatile.", "misconception": null},
+            {"key": "B", "text": "The investment is guaranteed to earn a higher return.", "misconception": "Confuses low dispersion with a promise of higher return."},
+            {"key": "C", "text": "The returns are more widely scattered around the average.", "misconception": "Reverses the meaning of a small standard deviation."},
+            {"key": "D", "text": "The average return itself must be zero.", "misconception": "Confuses low dispersion with a zero average."}
+          ],
+          "correct_key": "A",
+          "explanation": "A smaller standard deviation means the return series stays closer to its average, indicating lower volatility and lower risk. B confuses dispersion with return level. C reverses the meaning. D wrongly infers that the average is zero.",
+          "difficulty": 1
+        },
+        {
+          "stem": "An adviser computes standard deviation from ten years of an investment's past returns. What is the correct caveat about using this number?",
+          "options": [
+            {"key": "A", "text": "It is historical and indicative, so the same level of risk may not apply in the future.", "misconception": null},
+            {"key": "B", "text": "It is a precise guarantee of the risk the investment will carry next year.", "misconception": "Treats a historical estimate as a certain forecast of future risk."},
+            {"key": "C", "text": "It tells the investor exactly what return will be earned next year.", "misconception": "Confuses a dispersion measure with a point forecast of return."},
+            {"key": "D", "text": "It becomes meaningless once more than five years of data are used.", "misconception": "Invents an arbitrary data-length limit on standard deviation."}
+          ],
+          "correct_key": "A",
+          "explanation": "Because it is built from past returns, standard deviation is best treated as indicative, not conclusive; future risk drivers cannot all be forecast. B overstates its reliability. C confuses dispersion with a return forecast. D invents a rule that does not exist.",
+          "difficulty": 3
+        }
+      ]
+    }
+  ],
+  "caselets": [
+    {
+      "scenario": "Rohan, a 34-year-old software engineer in Pune, builds a portfolio with three holdings. First, he buys a AA-rated corporate bond paying an 8% annual coupon, planning to reinvest each coupon. Second, he invests in equity shares of a single cement manufacturer, expecting strong demand. Third, he keeps a five-year bank fixed deposit at 7% as his 'safe' money, from which his parents draw income. Over the year, the Reserve Bank cuts policy rates sharply, inflation climbs to 8%, and a broad market downturn drags down almost every listed company. Rohan is puzzled: his 'safe' deposit still pays exactly 7%, yet he feels poorer, and his cement shares have fallen even though the company itself is performing well. He asks his adviser to explain what kinds of risk each holding is really exposed to and why diversification did not protect the equity portion during the downturn.",
+      "concept_titles": ["Inflation Risk", "Interest Rate Risk and Reinvestment Risk", "Systematic and Unsystematic Risk", "Default (Credit) Risk", "Defining Investment Risk"],
+      "questions": [
+        {
+          "stem": "Rohan's fixed deposit pays exactly 7% as promised, yet he feels poorer when inflation reaches 8%. Which risk has materialised, and what is the approximate real return?",
+          "options": [
+            {"key": "A", "text": "Inflation risk; the real return is about -1%.", "misconception": null},
+            {"key": "B", "text": "Default risk; the real return is about 7%.", "misconception": "Confuses inflation eroding purchasing power with the bank failing to pay."},
+            {"key": "C", "text": "Inflation risk; the real return is about 15%.", "misconception": "Adds inflation to the nominal rate instead of subtracting it."},
+            {"key": "D", "text": "No risk at all; the return is contractually fixed at 7%.", "misconception": "Treats a fixed nominal rate as protection against loss of purchasing power."}
+          ],
+          "correct_key": "A",
+          "explanation": "The deposit pays in full, so it is not default risk; the problem is that 7% nominal minus 8% inflation gives roughly -1% real, meaning purchasing power falls. B misnames the risk. C adds instead of subtracting. D ignores that a fixed nominal rate offers no inflation protection.",
+          "difficulty": 3,
+          "case_position": 1,
+          "marks": 1
+        },
+        {
+          "stem": "After the policy rate cut, what happens to the market price of Rohan's existing 8% bond, and why?",
+          "options": [
+            {"key": "A", "text": "Its price rises, because its 8% coupon is now more attractive than newly issued lower-coupon bonds.", "misconception": null},
+            {"key": "B", "text": "Its price falls, because bond prices move in the same direction as rates.", "misconception": "Assumes bond prices move with rates instead of inversely."},
+            {"key": "C", "text": "Its price is unchanged, because the coupon is fixed.", "misconception": "Assumes a fixed coupon shields the market price from rate changes."},
+            {"key": "D", "text": "Its price falls, because a rate cut signals the issuer will default.", "misconception": "Links a rate cut to a rise in default risk."}
+          ],
+          "correct_key": "A",
+          "explanation": "When rates fall, existing higher-coupon bonds become more valuable, so their prices are bid up until yields realign with the market. B has the direction backwards, C ignores price adjustment on fixed-coupon bonds, and D wrongly connects a rate cut to default.",
+          "difficulty": 2,
+          "case_position": 2,
+          "marks": 1
+        },
+        {
+          "stem": "Rohan plans to reinvest each 8% coupon. Given the sharp rate cut, what happens to his reinvestment risk on the bond?",
+          "options": [
+            {"key": "A", "text": "It increases, because the coupons must now be reinvested at lower prevailing rates.", "misconception": null},
+            {"key": "B", "text": "It decreases, because falling rates always benefit bondholders.", "misconception": "Assumes falling rates reduce every risk, ignoring reinvestment at lower rates."},
+            {"key": "C", "text": "It is eliminated, because the coupon amount stays at 8%.", "misconception": "Confuses the fixed coupon amount with the rate available on reinvesting it."},
+            {"key": "D", "text": "It is unaffected, because reinvestment risk does not depend on rates.", "misconception": "Ignores that reinvestment risk is entirely rate-driven."}
+          ],
+          "correct_key": "A",
+          "explanation": "Falling rates mean each coupon received can only be redeployed at a lower return, so reinvestment risk rises even as bond prices rise. B overgeneralises. C confuses the coupon amount with the reinvestment rate. D denies the rate dependence that defines this risk.",
+          "difficulty": 3,
+          "case_position": 3,
+          "marks": 1
+        },
+        {
+          "stem": "Rohan's cement shares fell during the broad downturn even though the company performed well. Which risk explains this, and is it diversifiable?",
+          "options": [
+            {"key": "A", "text": "Market (systematic) risk, which cannot be diversified away.", "misconception": null},
+            {"key": "B", "text": "Business (unsystematic) risk, which he could have diversified away.", "misconception": "Attributes a market-wide fall to company-specific business risk."},
+            {"key": "C", "text": "Credit risk, which is reduced by holding higher-rated bonds.", "misconception": "Applies a debt-specific risk to an equity price fall."},
+            {"key": "D", "text": "Liquidity risk, because he could not sell the shares.", "misconception": "Blames inability to sell for a price fall caused by a market downturn."}
+          ],
+          "correct_key": "A",
+          "explanation": "A downturn that drags down almost all companies is market (systematic) risk, which diversification cannot remove, so a well-run firm can still fall. B is wrong because company-specific risk would not explain a market-wide fall. C and D describe risks that do not fit an equity price decline driven by the whole market.",
+          "difficulty": 3,
+          "case_position": 4,
+          "marks": 1
+        },
+        {
+          "stem": "Combining the cement holding and the bond, which pairing correctly matches a diversifiable risk that Rohan could still reduce?",
+          "options": [
+            {"key": "A", "text": "The cement shares' business risk and the bond's credit risk are both unsystematic and reducible by holding more issuers.", "misconception": null},
+            {"key": "B", "text": "The cement shares' market risk and the bond's interest rate risk are both reducible by holding more issuers.", "misconception": "Claims systematic risks can be diversified away by adding issuers."},
+            {"key": "C", "text": "The bond's credit risk is systematic and cannot be reduced at all.", "misconception": "Misclassifies issuer-specific credit risk as systematic."},
+            {"key": "D", "text": "The cement shares' business risk is systematic and the bond's credit risk is systematic.", "misconception": "Labels two clearly unsystematic risks as systematic."}
+          ],
+          "correct_key": "A",
+          "explanation": "Business risk on the equity and credit risk on the bond are both company-specific (unsystematic) and shrink as more issuers are added. B wrongly calls systematic risks diversifiable. C and D misclassify unsystematic risks as systematic. The reducible risks are precisely the issuer-specific ones.",
+          "difficulty": 3,
+          "case_position": 5,
+          "marks": 1
+        }
+      ]
+    }
+  ]
+}

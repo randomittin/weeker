@@ -1,0 +1,1451 @@
+{
+  "chapter_ordinal": 4,
+  "chapter_title": "INVESTMENT PRODUCTS",
+  "concepts": [
+    {
+      "title": "Small Saving Instruments and Their Tax Status",
+      "description": "The government runs several safe, fixed-return savings products. The Public Provident Fund (PPF) is a 15-year account whose interest is cumulated (not paid out), qualifies for a Section 80C deduction, and enjoys exempt-exempt-exempt (EEE) status meaning contribution, interest and maturity withdrawal are all tax-free; the 2014-15 rate was 8.7%. The National Savings Certificate (NSC) allows a nominee and can now be held in demat (electronic) form, and can be pledged as loan collateral. The Senior Citizens' Saving Scheme (SCSS) is only for those aged 60+ (55+ on retirement/VRS within a month), runs 5 years (extendable once by 3), caps investment at Rs.15 lakh, and excludes NRIs, PIOs and HUFs. Post Office Time Deposits (POTD) work like bank FDs over 1/2/3/5-year terms, with interest compounded quarterly and taxable; only the 5-year term gets an 80C benefit. Post Office Recurring Deposits take small monthly instalments. A key idea: qualifying for an 80C deduction is not the same as the interest being tax-free.",
+      "difficulty": 2,
+      "prerequisites": [],
+      "keywords": [
+        "PPF",
+        "EEE",
+        "80C",
+        "NSC",
+        "SCSS",
+        "POTD",
+        "recurring deposit",
+        "senior citizen"
+      ],
+      "misconceptions": [
+        "Thinking every 80C-eligible instrument also has tax-free interest",
+        "Believing all Post Office Time Deposit tenors get the 80C benefit",
+        "Assuming NRIs can open a Senior Citizens' Saving Scheme account"
+      ],
+      "source_pages": [],
+      "objectives": [
+        {
+          "text": "Distinguish an 80C deduction from tax-free (EEE) treatment of interest and maturity.",
+          "bloom": "Understand",
+          "assessment_style": "conceptual"
+        },
+        {
+          "text": "State the eligibility and term rules for SCSS and POTD.",
+          "bloom": "Remember",
+          "assessment_style": "recall"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "What does the PPF's exempt-exempt-exempt (EEE) status mean for an investor?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The contribution, the interest earned and the maturity withdrawal are all free of tax",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Only the contribution gets a deduction, while interest and maturity are taxed",
+              "misconception": "Reducing EEE to a mere 80C deduction with taxable returns"
+            },
+            {
+              "key": "C",
+              "text": "The interest is taxed but the maturity amount is exempt",
+              "misconception": "Mistaking EEE for a partly-taxed structure"
+            },
+            {
+              "key": "D",
+              "text": "The scheme is exempt from any lock-in or maturity period",
+              "misconception": "Confusing tax exemption with absence of a maturity term"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "EEE means all three stages are tax-exempt: the money put in earns an 80C deduction, the interest accrues tax-free, and the maturity withdrawal is not taxed. This is stronger than instruments that give only an 80C deduction but tax the returns. EEE refers to tax stages, not to the 15-year term.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A Post Office Time Deposit (POTD) is offered in 1-, 2-, 3- and 5-year terms. Which enjoys a Section 80C tax benefit?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Only the 5-year term deposit",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "All four terms equally",
+              "misconception": "Assuming every POTD tenor is 80C-eligible"
+            },
+            {
+              "key": "C",
+              "text": "Only the 1-year term, as the most liquid",
+              "misconception": "Attributing the benefit to the shortest tenor"
+            },
+            {
+              "key": "D",
+              "text": "None, because POTD interest is taxable",
+              "misconception": "Confusing taxable interest with absence of any 80C benefit"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Only the 5-year Post Office Time Deposit qualifies for the Section 80C deduction; the shorter tenors do not. Note that the interest on POTDs is itself taxable, but that does not stop the 5-year term from being 80C-eligible.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Who is eligible to open a Senior Citizens' Saving Scheme (SCSS) account?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Resident individuals aged 60 or above (or 55+ if retiring under superannuation/VRS, opened within a month), but not NRIs, PIOs or HUFs",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Any resident of any age looking for a safe deposit",
+              "misconception": "Ignoring the senior-citizen age condition"
+            },
+            {
+              "key": "C",
+              "text": "NRIs and PIOs, since it is a government-backed scheme",
+              "misconception": "Wrongly including NRIs/PIOs whom the scheme excludes"
+            },
+            {
+              "key": "D",
+              "text": "HUFs investing on behalf of elderly members",
+              "misconception": "Wrongly allowing HUFs, which are excluded"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "SCSS is limited to senior citizens (60+, or 55+ on superannuation/VRS if opened within a month of receiving retirement benefits). NRIs, PIOs and HUFs are specifically not eligible. Younger residents cannot open it either.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Ramesh notes that both his 5-year POTD and his PPF give an 80C deduction. Why is the PPF still more tax-favourable overall?",
+          "options": [
+            {
+              "key": "A",
+              "text": "PPF interest and maturity are tax-free (EEE), whereas POTD interest is taxable",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "PPF gives a larger 80C deduction than any other instrument",
+              "misconception": "Assuming PPF has a uniquely higher deduction limit"
+            },
+            {
+              "key": "C",
+              "text": "POTD interest is also tax-free, so they are identical",
+              "misconception": "Denying that POTD interest is taxable"
+            },
+            {
+              "key": "D",
+              "text": "PPF has no lock-in while POTD does",
+              "misconception": "Reversing the liquidity picture between PPF and POTD"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Both qualify under 80C, but the PPF's interest and maturity proceeds are tax-free (EEE), while POTD interest is taxable. The 80C deduction limit is the same ceiling for both, and PPF actually has a long 15-year term, so liquidity is not the reason.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "title": "Bank Fixed Deposits and Deposit Insurance",
+      "description": "A bank fixed deposit (FD) locks a lump sum with a bank for a chosen term (commonly 14 days to 10 years, though beyond 5 years is uncommon) in return for a fixed interest rate; the bank issues an FD receipt. Interest can be paid periodically into the savings account or accumulated and paid at maturity, when the principal is returned or renewed. FDs are seen as safe partly because each depositor is insured up to Rs.1 lakh by the Deposit Insurance and Credit Guarantee Corporation (DICGC); this cover counts all deposits plus interest a depositor holds across the branches of one bank together, not per account. Rates depend on the term (longer usually pays more), the amount, the bank's own need for funds, and the economic cycle; senior citizens (over 60) often get special higher rates. Interest on bank FDs is taxable and subject to TDS (tax deducted at source).",
+      "difficulty": 1,
+      "prerequisites": [],
+      "keywords": [
+        "fixed deposit",
+        "DICGC",
+        "deposit insurance",
+        "TDS",
+        "FD receipt",
+        "tenor"
+      ],
+      "misconceptions": [
+        "Thinking DICGC insures Rs.1 lakh per FD account rather than per depositor per bank",
+        "Believing FD interest is tax-free",
+        "Assuming shorter deposits always pay higher rates than longer ones"
+      ],
+      "source_pages": [],
+      "objectives": [
+        {
+          "text": "Explain the scope and limit of DICGC deposit insurance.",
+          "bloom": "Understand",
+          "assessment_style": "conceptual"
+        },
+        {
+          "text": "State how FD interest is taxed and what drives the rate offered.",
+          "bloom": "Remember",
+          "assessment_style": "recall"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "Sita holds three fixed deposits totalling Rs.4 lakh, all at different branches of the same bank. If that bank fails, how much is guaranteed under DICGC cover?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs.1 lakh in total, because the cover is per depositor per bank across all branches",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs.3 lakh, one lakh for each of the three deposits",
+              "misconception": "Applying the cover per deposit instead of per depositor per bank"
+            },
+            {
+              "key": "C",
+              "text": "Rs.4 lakh, the full amount, since it is a bank deposit",
+              "misconception": "Assuming full-amount protection regardless of the cap"
+            },
+            {
+              "key": "D",
+              "text": "Rs.1 lakh per branch, so Rs.3 lakh across three branches",
+              "misconception": "Treating branches as separate for the insurance limit"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "DICGC insures each depositor up to Rs.1 lakh (deposits plus interest) per bank, adding together all deposits across that bank's branches. So Sita's cover is Rs.1 lakh in total, not per deposit and not per branch.",
+          "difficulty": 2
+        },
+        {
+          "stem": "How is the interest earned on a bank fixed deposit treated for tax?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It is taxable and subject to TDS (tax deducted at source)",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "It is fully tax-free like PPF interest",
+              "misconception": "Extending the PPF's tax-free status to FD interest"
+            },
+            {
+              "key": "C",
+              "text": "It is taxable but never subject to TDS",
+              "misconception": "Denying that TDS applies to FD interest"
+            },
+            {
+              "key": "D",
+              "text": "It is taxed only if the deposit is broken before maturity",
+              "misconception": "Inventing a break-only tax condition"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Bank FD interest is taxable, and banks deduct TDS on it. Unlike PPF, FD interest is not tax-free; TDS does apply; and the tax is on the interest earned, not triggered only by premature closure.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Generally, how do bank FD interest rates vary with the deposit term?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Longer-term deposits usually pay a higher rate than shorter-term ones",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Shorter-term deposits always pay more, to reward liquidity",
+              "misconception": "Reversing the usual term-rate relationship"
+            },
+            {
+              "key": "C",
+              "text": "The rate is fixed by law and identical across all banks and terms",
+              "misconception": "Assuming a single legally-fixed rate for all"
+            },
+            {
+              "key": "D",
+              "text": "The rate never changes over time for new deposits",
+              "misconception": "Ignoring that deposit rates move with the economic cycle"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "In general longer-term deposits pay a higher rate than shorter ones, though the exact rate also depends on the amount, the bank's need for funds and the economic cycle, and rates change over time. Rates are not uniform across banks nor fixed by law.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Government Securities and Corporate Bonds",
+      "description": "Bonds are loans to an issuer that pay periodic interest (coupon) and return principal at maturity. Government securities (G-secs) carry no default risk, are benchmark bonds, and therefore pay a lower interest rate than other borrowers of the same tenor; retail investors need a constituent SGL account, the minimum is Rs.10,000, non-competitive retail bids are allotted at the weighted-average price of the auction's successful bids, there is no cumulative option, interest is fully taxable but not subject to TDS, and small lots have limited secondary liquidity. Corporate bonds, issued by companies and PSUs (commonly for tenors up to about 7 years, popularly 5- and 7-year), must be credit-rated and issued in demat form and fall under SEBI's purview; they pay a higher coupon than G-secs to compensate for credit (default) risk, with AAA the safest and lower ratings like BBB riskier. For any bond, when market interest rates rise the price of existing bonds falls (and vice versa), and the longer the tenor the larger that price move.",
+      "difficulty": 2,
+      "prerequisites": [],
+      "keywords": [
+        "G-sec",
+        "corporate bond",
+        "credit rating",
+        "coupon",
+        "default risk",
+        "SGL account",
+        "interest-rate risk",
+        "AAA"
+      ],
+      "misconceptions": [
+        "Thinking a G-sec pays a higher coupon than a corporate bond of the same tenor",
+        "Believing a rising interest rate raises the price of existing bonds",
+        "Assuming a lower-rated bond is safer because it pays more"
+      ],
+      "source_pages": [],
+      "objectives": [
+        {
+          "text": "Explain why a G-sec pays less than a corporate bond of the same tenor.",
+          "bloom": "Understand",
+          "assessment_style": "conceptual"
+        },
+        {
+          "text": "Predict the direction of a bond's price when interest rates change.",
+          "bloom": "Apply",
+          "assessment_style": "scenario"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "Why does a government security typically pay a lower interest rate than a corporate bond of the same tenor?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Because a G-sec has no default risk, so it is treated as the safe benchmark and borrowers with credit risk must pay more",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Because government bonds are shorter in tenor than corporate bonds",
+              "misconception": "Attributing the rate gap to tenor rather than credit risk"
+            },
+            {
+              "key": "C",
+              "text": "Because corporate bonds are guaranteed by the government",
+              "misconception": "Wrongly claiming a government guarantee on corporate bonds"
+            },
+            {
+              "key": "D",
+              "text": "Because G-secs are riskier and compensate by paying less",
+              "misconception": "Self-contradictory: pairing higher risk with a lower rate"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A G-sec carries no default risk and is the market's benchmark, so it offers the lowest rate for a given tenor; a corporate borrower must offer a higher coupon (interest) to compensate lenders for its credit (default) risk. The gap is about risk, not tenor, and corporate bonds are not government-guaranteed.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Market interest rates rise sharply. What happens to the price of an existing bond an investor already holds, and how does tenor matter?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Its price falls, and the fall is larger for a longer-tenor bond",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Its price rises, because higher rates make bonds more valuable",
+              "misconception": "Believing rising rates lift existing-bond prices"
+            },
+            {
+              "key": "C",
+              "text": "Its price is unaffected, since the coupon is fixed",
+              "misconception": "Assuming a fixed coupon shields the price from rate moves"
+            },
+            {
+              "key": "D",
+              "text": "Its price falls, but a longer-tenor bond falls less",
+              "misconception": "Reversing the tenor effect on price sensitivity"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "When market rates rise, the prices of existing bonds fall (their fixed coupons look less attractive), and the longer the tenor the bigger the price drop. A fixed coupon does not protect the price; the price adjusts in the market instead.",
+          "difficulty": 2
+        },
+        {
+          "stem": "An AAA-rated corporate bond and a BBB-rated one are compared. Which statement is correct?",
+          "options": [
+            {
+              "key": "A",
+              "text": "AAA is the highest-safety rating and pays a lower coupon; BBB is seen as riskier and pays more",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "BBB is safer because its higher coupon shows strength",
+              "misconception": "Mistaking a higher coupon for lower risk"
+            },
+            {
+              "key": "C",
+              "text": "Both must pay the same coupon since both are corporate bonds",
+              "misconception": "Ignoring the effect of credit rating on the coupon"
+            },
+            {
+              "key": "D",
+              "text": "AAA bonds are exempt from SEBI's rating requirement",
+              "misconception": "Wrongly exempting AAA bonds from mandatory rating"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "AAA denotes the highest safety for repayment, so such bonds pay a lower coupon; BBB is viewed as having higher default risk and therefore pays a higher coupon to attract investors. The higher coupon signals more risk, not more safety, and all corporate bonds must be credit-rated.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which feature is specific to how a retail investor buys and is taxed on a government security?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A constituent SGL account is needed, the minimum is Rs.10,000, and interest is fully taxable but has no TDS",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "It can be bought only through a stock broker, with interest exempt from tax",
+              "misconception": "Confusing the buying route and wrongly exempting G-sec interest"
+            },
+            {
+              "key": "C",
+              "text": "Interest is tax-free like PPF and needs no special account",
+              "misconception": "Extending PPF's tax-free status and dropping the SGL requirement"
+            },
+            {
+              "key": "D",
+              "text": "It offers a cumulative option that reinvests interest automatically",
+              "misconception": "Wrongly attributing a cumulative option to G-secs"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A retail G-sec buyer needs a constituent SGL account, with a Rs.10,000 minimum; interest is paid out (there is no cumulative option), is fully taxable, but is not subject to TDS. G-sec interest is not tax-free like PPF.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "title": "Derivatives: Futures and Options",
+      "description": "A derivative is a product whose value comes from an underlying asset (like an index or a stock); it is used for hedging, speculation and arbitrage. Hedging means protecting an existing position from adverse price moves. A futures contract commits two parties to buy/sell a specific underlying on a future date at a price fixed today, through an exchange. Options give a right, not an obligation: a call option is the right to buy the underlying at a set strike price; a put option is the right to sell. The buyer pays the seller (writer) a premium for this right and can walk away; the writer must honour the deal if exercised. A call is 'in the money' when the market price is above the strike (worth exercising) and 'out of the money' when below (not worth exercising). Arbitrage locks in a risk-free gain from a price gap between the cash and futures markets: e.g. buy in the cheaper market and sell the same quantity in the dearer one, netting the gap minus the cost of borrowing.",
+      "difficulty": 3,
+      "prerequisites": [],
+      "keywords": [
+        "derivative",
+        "futures",
+        "call option",
+        "put option",
+        "strike price",
+        "premium",
+        "in the money",
+        "hedging",
+        "arbitrage"
+      ],
+      "misconceptions": [
+        "Thinking the buyer of an option is obliged to exercise it",
+        "Confusing a call (right to buy) with a put (right to sell)",
+        "Believing arbitrage profit ignores the cost of borrowing"
+      ],
+      "source_pages": [],
+      "objectives": [
+        {
+          "text": "Distinguish a call from a put and describe the rights and obligations of buyer vs writer.",
+          "bloom": "Understand",
+          "assessment_style": "conceptual"
+        },
+        {
+          "text": "Compute an option buyer's payoff and an arbitrage gain net of borrowing cost.",
+          "bloom": "Apply",
+          "assessment_style": "calculation"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "Arjun buys a call option on an index with a strike price of 6,300, paying a premium of Rs.85. On settlement day the index is at 6,450. What is his net profit per unit of the index?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs.65",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs.150",
+              "misconception": "Counting the intrinsic gain but forgetting to subtract the premium paid"
+            },
+            {
+              "key": "C",
+              "text": "Rs.235",
+              "misconception": "Adding the premium instead of subtracting it"
+            },
+            {
+              "key": "D",
+              "text": "Rs.85 loss",
+              "misconception": "Assuming the option expires worthless when it is in fact in the money"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A call is the right to buy at the strike. At settlement the index (6,450) is above the strike (6,300), so the option is in the money: intrinsic value = 6,450 - 6,300 = Rs.150. Subtract the premium paid: 150 - 85 = Rs.65 net profit. Forgetting to subtract the premium gives 150; adding it gives 235.",
+          "difficulty": 3
+        },
+        {
+          "stem": "Using the same call (strike 6,300, premium Rs.85), suppose on settlement day the index is instead at 6,250. What does Arjun do and what is his outcome?",
+          "options": [
+            {
+              "key": "A",
+              "text": "He lets the option lapse (it is out of the money) and loses only the Rs.85 premium",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "He exercises and buys at 6,300, losing Rs.50",
+              "misconception": "Exercising an out-of-the-money call, ignoring that buying above market is pointless"
+            },
+            {
+              "key": "C",
+              "text": "He gains Rs.50 because the index is near the strike",
+              "misconception": "Inventing a gain from an out-of-the-money position"
+            },
+            {
+              "key": "D",
+              "text": "He is obliged to exercise because he is the buyer",
+              "misconception": "Believing the option buyer must exercise"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "At 6,250 the index is below the strike of 6,300, so exercising (paying 6,300 for something worth 6,250) makes no sense; the call is out of the money. As the buyer Arjun has a right, not an obligation, so he lets it lapse and loses only the Rs.85 premium.",
+          "difficulty": 3
+        },
+        {
+          "stem": "What is the key difference between a call option and a put option?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A call is the right to buy the underlying at the strike; a put is the right to sell it at the strike",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "A call is the right to sell and a put is the right to buy",
+              "misconception": "Swapping the definitions of call and put"
+            },
+            {
+              "key": "C",
+              "text": "Both give the right to buy, differing only in expiry date",
+              "misconception": "Ignoring the buy/sell distinction between calls and puts"
+            },
+            {
+              "key": "D",
+              "text": "A call obliges the buyer to trade while a put does not",
+              "misconception": "Wrongly assigning an obligation to the call buyer"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A call option grants the right to buy the underlying at the strike price; a put option grants the right to sell at the strike. In both, the buyer holds a right (not an obligation) and pays a premium; the writer takes on the matching obligation.",
+          "difficulty": 3
+        },
+        {
+          "stem": "An arbitrageur sees a stock at Rs.100 in the cash market and its future at Rs.110, with a borrowing cost of Rs.6 over the period. If both legs settle at the same price on expiry, what is the risk-free gain per share?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs.4",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs.10",
+              "misconception": "Taking the raw price gap and ignoring the cost of borrowing"
+            },
+            {
+              "key": "C",
+              "text": "Rs.16",
+              "misconception": "Adding the borrowing cost to the gap instead of subtracting it"
+            },
+            {
+              "key": "D",
+              "text": "Rs.0, because arbitrage cannot be profitable",
+              "misconception": "Denying that a gap above borrowing cost yields a profit"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The arbitrageur borrows Rs.100 to buy in the cash market and simultaneously sells the future at Rs.110. On expiry both legs settle at the same price, locking in the Rs.10 gap; subtracting the Rs.6 borrowing cost leaves a risk-free gain of Rs.4 per share. Ignoring the cost gives 10; adding it gives 16.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "title": "Direct Equity: Features of Shares",
+      "description": "Buying shares directly makes an investor a part-owner of the company. Investors can buy in the primary market through an Initial Public Offer (IPO) or Follow-on Public Offer (FPO), available only for a limited window, or in the secondary market on the exchange where shares are listed and traded. Three defining features matter. First, returns are not fixed or guaranteed: dividends are not promised and share prices can rise or fall, so the investor bears the risk of both income and capital. Second, limited liability: a shareholder can lose at most what they put in as capital and cannot be forced to cover the company's debts if it goes bankrupt. Third, reserves and net worth: profits a company keeps rather than paying out as dividend become reserves that still belong to shareholders and lift the company's net worth and the book value of the shares. A loss-making company that cannot even pay interest may not declare a dividend, and on returning to profit must clear interest dues before paying any dividend. Direct equity demands skill in analysing and valuing companies.",
+      "difficulty": 2,
+      "prerequisites": [],
+      "keywords": [
+        "primary market",
+        "secondary market",
+        "IPO",
+        "FPO",
+        "limited liability",
+        "reserves",
+        "net worth",
+        "dividend"
+      ],
+      "misconceptions": [
+        "Thinking equity shares guarantee a fixed dividend or protected capital",
+        "Believing shareholders can be forced to pay a bankrupt company's debts beyond their investment",
+        "Assuming retained profits (reserves) no longer belong to shareholders"
+      ],
+      "source_pages": [],
+      "objectives": [
+        {
+          "text": "Explain limited liability and the (lack of) guarantee on equity returns.",
+          "bloom": "Understand",
+          "assessment_style": "conceptual"
+        },
+        {
+          "text": "Distinguish primary-market from secondary-market equity purchases.",
+          "bloom": "Remember",
+          "assessment_style": "recall"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "A company Mahesh has invested in goes bankrupt with debts exceeding its assets. As an equity shareholder, what is his maximum loss?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The amount he contributed as capital, because shareholder liability is limited",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "His investment plus a proportionate share of the unpaid company debts",
+              "misconception": "Denying limited liability by extending loss to company debts"
+            },
+            {
+              "key": "C",
+              "text": "Nothing, because shareholders are always repaid first",
+              "misconception": "Wrongly placing shareholders ahead of creditors"
+            },
+            {
+              "key": "D",
+              "text": "Twice his investment, as a penalty for ownership",
+              "misconception": "Inventing a multiple-of-capital liability"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Limited liability means a shareholder's obligation is capped at the capital they agreed to contribute; they cannot be made to cover the company's shortfall to creditors. So Mahesh can lose his investment but no more, and shareholders rank behind creditors, not first.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which statement about the returns from equity shares is accurate?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Neither dividends nor capital are guaranteed; the investor bears the risk of both income and price",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Dividends are fixed and must be paid every year",
+              "misconception": "Assuming a guaranteed, fixed annual dividend"
+            },
+            {
+              "key": "C",
+              "text": "The purchase price is always protected against loss",
+              "misconception": "Assuming capital protection on shares"
+            },
+            {
+              "key": "D",
+              "text": "A minimum return is guaranteed by SEBI",
+              "misconception": "Inventing a regulatory return guarantee"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Equity comes with no guarantee of income or of the principal invested. Dividends are not promised or fixed, and share prices can fall, so the investor carries both the income and the capital risk. There is no regulatory or built-in protection of the invested amount.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A profitable company decides to keep this year's profits inside the business instead of paying a dividend. What happens to those retained profits?",
+          "options": [
+            {
+              "key": "A",
+              "text": "They become reserves that still belong to shareholders and raise the company's net worth and the shares' book value",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "They become the property of the company's managers",
+              "misconception": "Assuming retained profits stop belonging to shareholders"
+            },
+            {
+              "key": "C",
+              "text": "They must be returned to the government as unpaid dividend",
+              "misconception": "Inventing a forfeiture of retained profits to the state"
+            },
+            {
+              "key": "D",
+              "text": "They reduce the net worth of the company",
+              "misconception": "Reversing the effect of reserves on net worth"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Undistributed profits are retained as reserves, which still belong to the equity shareholders and increase the company's net worth and the book value of its shares. They are not the managers' property, are not forfeited, and add to rather than reduce net worth.",
+          "difficulty": 2
+        },
+        {
+          "stem": "How does buying shares in the primary market differ from the secondary market?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The primary market is the company's own IPO/FPO for a limited window; the secondary market is trading listed shares among investors on the exchange",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "The primary market is daily exchange trading, while the secondary market is the IPO",
+              "misconception": "Swapping the definitions of primary and secondary markets"
+            },
+            {
+              "key": "C",
+              "text": "Both refer to the same continuous trading on the exchange",
+              "misconception": "Collapsing the two distinct markets into one"
+            },
+            {
+              "key": "D",
+              "text": "The primary market is only for government securities, not shares",
+              "misconception": "Wrongly restricting the primary equity market to G-secs"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "In the primary market investors subscribe to a company's own new issue (IPO or FPO) during a limited offer period; the secondary market is where already-issued shares are bought and sold among investors on the stock exchange. They are distinct, and the primary market for equity is company share issues, not only G-secs.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Valuing Shares: PE, Price-to-Book and Dividend Yield",
+      "description": "Investors estimate whether a share is fairly priced using valuation ratios. The Price-Earnings (PE) multiple is market price per share divided by earnings per share, showing how much the market pays per rupee of earnings; a stock 'trading at 12x' costs twelve times its earnings. Because reported earnings update only quarterly while prices move constantly, analysts focus on prospective (future-earnings) PE, and a company whose earnings are expected to grow commands a higher multiple. Price-to-Book Value (PBV) compares price to the book value (net worth per share); but a low PBV is not automatically a bargain, since it may reflect past bad investments being written down. Dividend yield is dividend per share divided by market price: a high yield can mean the income potential is not yet reflected in the price, while a low yield goes with a higher valuation; falling yields mark a bull market and rising yields a bear market. Value investors typically look for a combination of low PE, low PBV and high dividend yield.",
+      "difficulty": 2,
+      "prerequisites": [
+        "Direct Equity: Features of Shares"
+      ],
+      "keywords": [
+        "PE multiple",
+        "earnings per share",
+        "price to book",
+        "dividend yield",
+        "value investing",
+        "prospective PE"
+      ],
+      "misconceptions": [
+        "Thinking a low PBV always means the share is a bargain",
+        "Confusing the PE multiple with the dividend yield",
+        "Assuming a high dividend yield always signals an over-priced share"
+      ],
+      "source_pages": [],
+      "objectives": [
+        {
+          "text": "Compute a PE multiple and interpret what it says about market expectations.",
+          "bloom": "Apply",
+          "assessment_style": "calculation"
+        },
+        {
+          "text": "Explain why a low PBV is not automatically a signal to buy.",
+          "bloom": "Understand",
+          "assessment_style": "conceptual"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "A share trades at Rs.240 and its earnings per share (EPS) is Rs.12. What is its PE multiple?",
+          "options": [
+            {
+              "key": "A",
+              "text": "20x",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "0.05x",
+              "misconception": "Dividing EPS by price, i.e. inverting the ratio"
+            },
+            {
+              "key": "C",
+              "text": "2,880x",
+              "misconception": "Multiplying price by EPS instead of dividing"
+            },
+            {
+              "key": "D",
+              "text": "228x",
+              "misconception": "Subtracting EPS from price instead of dividing"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "PE multiple = market price per share / earnings per share = 240 / 12 = 20x, meaning the market pays twenty rupees for each rupee of the company's earnings. Inverting the division, multiplying, or subtracting all give wrong figures.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A stock trades well below its book value (a low price-to-book ratio). Why should an investor not treat this alone as proof of a bargain?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A low PBV can reflect poor past investments being written down, so the low price may be justified rather than a discount",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "A low PBV always guarantees the stock is undervalued and will rise",
+              "misconception": "Treating a low PBV as an automatic buy signal"
+            },
+            {
+              "key": "C",
+              "text": "Book value is irrelevant to a company's worth",
+              "misconception": "Dismissing book value entirely instead of interpreting it"
+            },
+            {
+              "key": "D",
+              "text": "A low PBV means the company pays no dividend",
+              "misconception": "Confusing the book-value ratio with dividend policy"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A price below book value may exist because the company's past investments are being written down, so the market is pricing in real weakness, not offering a free discount. Investors should not rely on PBV alone; a low ratio does not guarantee a rise or say anything directly about dividends.",
+          "difficulty": 2
+        },
+        {
+          "stem": "What does the dividend yield of a share tell an investor?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It is dividend per share divided by market price; a high yield can mean the income potential is not yet reflected in the price",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "It is the market price divided by the dividend, showing how expensive the share is",
+              "misconception": "Inverting the dividend-yield formula"
+            },
+            {
+              "key": "C",
+              "text": "It is the same thing as the PE multiple",
+              "misconception": "Confusing dividend yield with the PE ratio"
+            },
+            {
+              "key": "D",
+              "text": "A high dividend yield always means the share is over-priced",
+              "misconception": "Reversing the link between yield and valuation"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Dividend yield = dividend per share / market price per share. A relatively high yield can signal that the market has not yet priced in the share's income potential, while a low yield accompanies a higher valuation. It is not the inverse formula and is distinct from the PE multiple.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A value investor is screening shares. Which combination of signals do they typically favour?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Low PE, low PBV and high dividend yield",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "High PE, high PBV and low dividend yield",
+              "misconception": "Describing a growth/expensive profile, the opposite of value screening"
+            },
+            {
+              "key": "C",
+              "text": "High PE, low PBV and low dividend yield",
+              "misconception": "Mixing a costly PE with value-style book and yield signals"
+            },
+            {
+              "key": "D",
+              "text": "Low PE, high PBV and low dividend yield",
+              "misconception": "Pairing a cheap PE with an expensive book ratio inconsistently"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Value investors look to buy below intrinsic worth, so they favour a low PE (cheap per rupee of earnings), a low PBV (cheap relative to net worth) and a high dividend yield (income not yet fully priced in). The opposite mix describes a growth/expensive stock.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Stock Market Indices",
+      "description": "A stock market index is a single number that tracks the overall market or a segment of it. A naive index that just averages share prices would be distorted by a big price move in one stock, even a relatively small company. To fix this, modern indices weight each stock by its market capitalisation (share price times number of shares), so the index reflects the combined market value of its constituents. Every index is measured against a base period and a base index value, so movements are always read relative to that base. Indices serve several uses: they are widely reported so real-time market data reaches the public, they act as a leading indicator of economic or sector health, and they serve as performance benchmarks against which mutual funds and other vehicles are judged. India's most tracked indices are the S&P BSE Sensex (computed since 1 April 1979, base value 100 on that date) and the CNX Nifty.",
+      "difficulty": 2,
+      "prerequisites": [],
+      "keywords": [
+        "index",
+        "market capitalisation",
+        "weighting",
+        "base value",
+        "benchmark",
+        "Sensex",
+        "Nifty"
+      ],
+      "misconceptions": [
+        "Thinking a modern index is a simple average of share prices",
+        "Believing every constituent affects the index equally regardless of size",
+        "Assuming an index has no base reference point"
+      ],
+      "source_pages": [],
+      "objectives": [
+        {
+          "text": "Explain why indices weight constituents by market capitalisation rather than price.",
+          "bloom": "Understand",
+          "assessment_style": "conceptual"
+        },
+        {
+          "text": "List the main uses of a stock market index.",
+          "bloom": "Remember",
+          "assessment_style": "recall"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "Why do modern stock indices weight their constituents by market capitalisation instead of just averaging share prices?",
+          "options": [
+            {
+              "key": "A",
+              "text": "So the index reflects each company's overall market value, preventing a big price move in one small company from dominating",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Because market-cap weighting makes every stock count equally",
+              "misconception": "Confusing cap-weighting with equal weighting"
+            },
+            {
+              "key": "C",
+              "text": "Because share prices cannot be added together at all",
+              "misconception": "Denying that prices can be summed, which a naive index does"
+            },
+            {
+              "key": "D",
+              "text": "Because larger companies are legally required to carry more weight",
+              "misconception": "Inventing a legal mandate for the weighting method"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A simple price average would let a large price change in one stock, even a small company's, swing the index unfairly. Weighting by market capitalisation (price times shares) makes the index represent the combined market value of its constituents, so bigger companies naturally count for more, by economic size, not by legal rule, and not equally.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which of these is a genuine use of a stock market index?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Serving as a performance benchmark against which fund returns are compared",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Guaranteeing the future returns of the stocks it contains",
+              "misconception": "Confusing a measuring benchmark with a return guarantee"
+            },
+            {
+              "key": "C",
+              "text": "Fixing the price at which each constituent share must trade",
+              "misconception": "Mistaking an index for a price-setting mechanism"
+            },
+            {
+              "key": "D",
+              "text": "Replacing the need for companies to report earnings",
+              "misconception": "Assuming an index substitutes for company disclosures"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "An index acts as a benchmark for judging the returns of mutual funds and other vehicles, is a leading indicator of market/sector health, and spreads real-time market data to the public. It does not guarantee returns, set share prices, or remove the need for company reporting.",
+          "difficulty": 2
+        },
+        {
+          "stem": "What does it mean that the Sensex had a base value of 100 on 1 April 1979?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Index movements are always measured relative to that starting reference point and value",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "The Sensex can never fall below 100",
+              "misconception": "Treating the base value as a permanent floor"
+            },
+            {
+              "key": "C",
+              "text": "100 companies make up the Sensex",
+              "misconception": "Confusing the base value with the number of constituents"
+            },
+            {
+              "key": "D",
+              "text": "The index is recalculated from scratch to 100 every year",
+              "misconception": "Assuming the base resets annually"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "An index is always computed against a base period and base value, here 100 on 1 April 1979, so its level tells you how the market has moved relative to that reference. The base is not a floor, is not the count of constituent companies, and does not reset each year.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Alternate Investments: Gold, Real Estate, PE/VC and Structured Products",
+      "description": "Beyond mainstream products lie alternate investments. Gold can be held as physical gold or via a Gold ETF; the ETF is more divisible (even one unit is sellable), more liquid, and more tax-efficient, since gains on gold ETF held over a year are long-term while physical gold must be held three years to qualify. A Gold Savings Fund (a fund-of-funds holding a gold ETF) lets even non-demat investors do a gold SIP, at a higher expense ratio. A strategic gold allocation is usually kept under 10%, mainly for gold's low correlation with other assets. In real estate, the self-occupied home is not counted as an investment asset (no rent earned, unlikely to be sold). Private equity/venture capital funds invest in unlisted companies across growth stages (seed, early, expansion, mezzanine, buyout); the manager earns carried interest (a performance share, typically up to 20% of profits) only after a minimum return is met, while investors take about 80%; these are illiquid with long horizons. Alternative Investment Funds (AIFs) are private-placement pooled vehicles with a minimum investor commitment of Rs.1 crore and a maximum of 1,000 investors. Structured products (market-linked debentures, prefixed 'PP-MLD') must be credit-rated with a Rs.10 lakh minimum allotment.",
+      "difficulty": 3,
+      "prerequisites": [
+        "Direct Equity: Features of Shares"
+      ],
+      "keywords": [
+        "gold ETF",
+        "physical gold",
+        "carried interest",
+        "private equity",
+        "AIF",
+        "PP-MLD",
+        "self-occupied property",
+        "fund of funds"
+      ],
+      "misconceptions": [
+        "Thinking a self-occupied home counts as an investment asset",
+        "Believing physical gold and gold ETF have the same holding period for long-term gains",
+        "Assuming the PE manager takes carried interest before any minimum return is met"
+      ],
+      "source_pages": [],
+      "objectives": [
+        {
+          "text": "Compare gold ETF with physical gold on liquidity, divisibility and tax holding period.",
+          "bloom": "Understand",
+          "assessment_style": "conceptual"
+        },
+        {
+          "text": "Explain how carried interest works and why a self-occupied home is excluded from a portfolio.",
+          "bloom": "Understand",
+          "assessment_style": "conceptual"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "Why is a Gold ETF generally more tax-efficient than physical gold for gains?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Gains on a gold ETF are long-term after one year, whereas physical gold must be held three years to qualify as long-term",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Gold ETF gains are entirely exempt from tax",
+              "misconception": "Confusing greater tax-efficiency with full exemption"
+            },
+            {
+              "key": "C",
+              "text": "Physical gold qualifies as long-term after only six months",
+              "misconception": "Inventing a shorter holding period for physical gold"
+            },
+            {
+              "key": "D",
+              "text": "Both require the same three-year holding, so there is no difference",
+              "misconception": "Denying the shorter ETF holding period"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A gold ETF's gains become long-term (more favourably taxed) after one year of holding, while physical gold must be held for three years before it qualifies as a long-term asset. That shorter holding period is why the ETF is more tax-efficient, though its gains are not fully exempt.",
+          "difficulty": 3
+        },
+        {
+          "stem": "Why is an investor's self-occupied home generally not counted as part of the investment portfolio?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Because it earns no rental income and is unlikely to be sold for gain, so its income or realisable capital gain is limited",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Because homes always lose value over time",
+              "misconception": "Assuming a home is always a depreciating asset"
+            },
+            {
+              "key": "C",
+              "text": "Because real estate can never be an investment",
+              "misconception": "Over-generalising to all real estate rather than the occupied home"
+            },
+            {
+              "key": "D",
+              "text": "Because SEBI prohibits counting property as an asset",
+              "misconception": "Inventing a regulatory ban on counting property"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A self-occupied home yields no rent (the owner may instead spend on upkeep) and is unlikely to be sold unless replaced, so its scope for income or realisable capital gain is limited and it is left out of the investment portfolio. Investment real estate (for rent or growth) is still a valid asset; the exclusion is specific to the occupied home.",
+          "difficulty": 3
+        },
+        {
+          "stem": "In a private equity fund, when does the management company earn its carried interest (performance share of profits)?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Only after a fixed minimum rate of return is achieved for investors; it is then typically up to 20% of profits",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Immediately on investment, regardless of returns",
+              "misconception": "Assuming carried interest is paid upfront irrespective of performance"
+            },
+            {
+              "key": "C",
+              "text": "Before investors receive anything, as a first claim on all profits",
+              "misconception": "Placing the manager's carried interest ahead of the minimum-return condition"
+            },
+            {
+              "key": "D",
+              "text": "Only if the fund makes a loss, as compensation",
+              "misconception": "Inventing a loss-triggered payout"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Carried interest is a performance incentive paid to the PE fund's management company, typically up to 20% of profits, but only after a fixed minimum return has first been delivered to investors (who take the remaining ~80%). It is not paid upfront, ahead of the hurdle, or on losses.",
+          "difficulty": 3
+        },
+        {
+          "stem": "Ritu wants to invest small, regular amounts in gold but has no demat account. Which route fits, and what is the trade-off?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A Gold Savings Fund (a fund-of-funds holding a gold ETF), which allows an SIP but carries a higher expense ratio",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Buying a Gold ETF directly through an SIP, which needs no demat account",
+              "misconception": "Assuming a gold ETF SIP works without a demat account"
+            },
+            {
+              "key": "C",
+              "text": "A private equity fund, which specialises in small monthly gold purchases",
+              "misconception": "Confusing PE funds with gold accumulation vehicles"
+            },
+            {
+              "key": "D",
+              "text": "Physical gold jewellery, which is the most divisible and cost-free to sell",
+              "misconception": "Ignoring wastage/making-charge deductions and low divisibility of jewellery"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A Gold Savings Fund is a fund-of-funds that holds a gold ETF, so even an investor without a demat account can run a systematic gold SIP through it; the trade-off is a higher expense ratio because of the fund-of-funds layer. A gold ETF itself needs a demat account, PE funds are unrelated, and jewellery suffers wastage/making-charge deductions.",
+          "difficulty": 3
+        }
+      ]
+    }
+  ],
+  "caselets": [
+    {
+      "scenario": "Colonel Rao retired from the Army last month at the age of 58 under a voluntary retirement scheme and received his retirement benefits. He wants safe places to park his money and to earn some income he can rely on. He is drawn to the Senior Citizens' Saving Scheme because of its attractive rate, and also plans to place a large sum in bank fixed deposits spread across several branches of the same bank, believing this multiplies his deposit-insurance protection. For a portion he wants the steadiest, default-free income possible, so he is considering government securities and wonders why their interest looks lower than a similarly dated corporate bond's. His nephew Karan, a young NRI working in Dubai, hears about the Senior Citizens' Saving Scheme and asks whether he too can open one to help the family. The Colonel also wants to know whether the interest on his fixed deposits will reach him untouched or whether tax will be deducted before it is paid.",
+      "concept_titles": [
+        "Small Saving Instruments and Their Tax Status",
+        "Bank Fixed Deposits and Deposit Insurance",
+        "Government Securities and Corporate Bonds"
+      ],
+      "questions": [
+        {
+          "stem": "Can Colonel Rao open a Senior Citizens' Saving Scheme (SCSS) account even though he is only 58?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Yes, because the age limit drops to 55 for someone retiring under VRS, if the account is opened within a month of receiving retirement benefits",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "No, because SCSS is strictly limited to those aged 60 and above with no exceptions",
+              "misconception": "Ignoring the reduced age limit for VRS/superannuation retirees"
+            },
+            {
+              "key": "C",
+              "text": "Yes, but only if he first surrenders his pension",
+              "misconception": "Inventing a pension-surrender condition"
+            },
+            {
+              "key": "D",
+              "text": "No, because retired defence personnel are barred from SCSS",
+              "misconception": "Reversing the actual eligibility of retired defence personnel"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The normal SCSS age is 60, but it falls to 55 for a person retiring under superannuation or a voluntary retirement scheme, provided the account is opened within one month of receiving retirement benefits. Colonel Rao, at 58 and just retired under VRS, therefore qualifies.",
+          "difficulty": 2,
+          "case_position": 1
+        },
+        {
+          "stem": "Karan, the NRI nephew, wants to open an SCSS account. Is he eligible?",
+          "options": [
+            {
+              "key": "A",
+              "text": "No, because NRIs are not eligible to invest in the Senior Citizens' Saving Scheme",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Yes, because SCSS is open to all Indians including NRIs",
+              "misconception": "Ignoring the explicit exclusion of NRIs from SCSS"
+            },
+            {
+              "key": "C",
+              "text": "Yes, provided he is over 60 years old",
+              "misconception": "Applying only the age test and missing the NRI exclusion"
+            },
+            {
+              "key": "D",
+              "text": "Yes, if he invests jointly with a resident",
+              "misconception": "Inventing a joint-holding workaround for NRI eligibility"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "NRIs (along with PIOs and HUFs) are specifically not eligible to invest in the SCSS, regardless of age or joint holding. So Karan cannot open one.",
+          "difficulty": 2,
+          "case_position": 2
+        },
+        {
+          "stem": "Colonel Rao spreads Rs.5 lakh of fixed deposits across several branches of the same bank, thinking this multiplies his DICGC insurance. Combining how the cover is scoped with what he has done, how much is actually insured if the bank fails?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs.1 lakh in total, because DICGC cover is per depositor per bank, adding all branches together",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs.5 lakh, since each branch provides separate cover",
+              "misconception": "Treating each branch as a separate insured entity"
+            },
+            {
+              "key": "C",
+              "text": "Rs.1 lakh per branch, so several lakh in total",
+              "misconception": "Multiplying the per-bank cap by the number of branches"
+            },
+            {
+              "key": "D",
+              "text": "The full Rs.5 lakh, because deposits are always fully guaranteed",
+              "misconception": "Assuming unlimited deposit protection"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "DICGC insures a depositor only up to Rs.1 lakh per bank, combining all deposits across that bank's branches. Spreading money across branches of the same bank does not multiply the cover, so only Rs.1 lakh is insured, not Rs.5 lakh.",
+          "difficulty": 2,
+          "case_position": 3
+        },
+        {
+          "stem": "Will the interest on Colonel Rao's bank fixed deposits reach him without any tax being deducted first?",
+          "options": [
+            {
+              "key": "A",
+              "text": "No, because FD interest is taxable and the bank deducts TDS (tax at source) before paying it",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Yes, because bank FD interest is completely tax-free",
+              "misconception": "Assuming FD interest is tax-exempt"
+            },
+            {
+              "key": "C",
+              "text": "Yes, because TDS never applies to senior citizens",
+              "misconception": "Wrongly treating seniors as universally exempt from TDS"
+            },
+            {
+              "key": "D",
+              "text": "No, because the entire interest is forfeited to tax",
+              "misconception": "Confusing partial TDS with total forfeiture"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Interest on a bank FD is taxable, and the bank deducts TDS on it before crediting the interest. So the interest does not reach him untouched. It is neither tax-free nor entirely forfeited; only tax is deducted at source.",
+          "difficulty": 2,
+          "case_position": 4
+        },
+        {
+          "stem": "For his default-free income portion, the Colonel finds a government security yields less than a corporate bond of the same tenor. Combining the safety of a G-sec with how the bond market prices risk, why is that?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A G-sec has no default risk and is the market's benchmark, so it pays the lowest rate; a corporate borrower must offer more to compensate for its credit risk",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "The corporate bond is government-guaranteed, so it can afford to pay more",
+              "misconception": "Wrongly assuming a government guarantee behind corporate bonds"
+            },
+            {
+              "key": "C",
+              "text": "The G-sec is riskier, and riskier bonds pay less",
+              "misconception": "Self-contradictory: pairing higher risk with a lower rate"
+            },
+            {
+              "key": "D",
+              "text": "The difference is only because the G-sec has a shorter tenor",
+              "misconception": "Attributing the rate gap to tenor rather than credit risk"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A government security carries no default risk and serves as the market's benchmark, so it offers the lowest rate for a given tenor; a corporate issuer must pay a higher coupon to compensate lenders for its credit (default) risk. The gap reflects risk, not a corporate guarantee or a tenor difference.",
+          "difficulty": 2,
+          "case_position": 5
+        }
+      ]
+    },
+    {
+      "scenario": "Naina, an analyst in Mumbai, is studying a large company's shares. The company reports earnings per share (EPS) of Rs.20 and its shares trade at Rs.300. She is also watching the index derivatives market: she buys one call option on the Nifty index with a strike price of 8,000, paying a premium of Rs.120. Separately, she spots that a stock trades at Rs.500 in the cash market while its one-month future trades at Rs.540, and her cost of borrowing for the month would be Rs.25. Naina wants to work out precisely what each position is worth. She also reminds herself that the index she is trading is weighted by the market value of its constituents, not by a simple average of their prices, so a small company's price swing will not distort it.",
+      "concept_titles": [
+        "Valuing Shares: PE, Price-to-Book and Dividend Yield",
+        "Derivatives: Futures and Options",
+        "Stock Market Indices"
+      ],
+      "questions": [
+        {
+          "stem": "What is the PE multiple of the company Naina is studying (price Rs.300, EPS Rs.20)?",
+          "options": [
+            {
+              "key": "A",
+              "text": "15x",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "0.067x",
+              "misconception": "Dividing EPS by price, inverting the ratio"
+            },
+            {
+              "key": "C",
+              "text": "6,000x",
+              "misconception": "Multiplying price by EPS instead of dividing"
+            },
+            {
+              "key": "D",
+              "text": "280x",
+              "misconception": "Subtracting EPS from price"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "PE multiple = price / EPS = 300 / 20 = 15x, meaning the market pays fifteen rupees for each rupee of the company's earnings. Inverting, multiplying or subtracting give the wrong answers.",
+          "difficulty": 2,
+          "case_position": 1,
+          "marks": 2
+        },
+        {
+          "stem": "On settlement day the Nifty is at 8,180. Combining the strike, the settlement level and the premium, what is Naina's net profit on her call (strike 8,000, premium Rs.120)?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs.60",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs.180",
+              "misconception": "Counting the intrinsic gain but forgetting to subtract the premium"
+            },
+            {
+              "key": "C",
+              "text": "Rs.300",
+              "misconception": "Adding the premium instead of subtracting it"
+            },
+            {
+              "key": "D",
+              "text": "Rs.120 loss",
+              "misconception": "Assuming the in-the-money call expires worthless"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The index (8,180) is above the strike (8,000), so the call is in the money: intrinsic value = 8,180 - 8,000 = 180. Net profit = intrinsic value minus premium paid = 180 - 120 = Rs.60. Forgetting the premium gives 180; adding it gives 300.",
+          "difficulty": 3,
+          "case_position": 2,
+          "marks": 2
+        },
+        {
+          "stem": "Suppose instead the Nifty settled at 7,900. Contrasting this with the in-the-money case, what would Naina rationally do and what is her outcome?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Let the call lapse, since it is out of the money, losing only the Rs.120 premium",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Exercise the call and buy at 8,000, losing Rs.100",
+              "misconception": "Exercising an out-of-the-money call needlessly"
+            },
+            {
+              "key": "C",
+              "text": "Gain Rs.100 because the index is close to the strike",
+              "misconception": "Inventing a gain from an out-of-the-money position"
+            },
+            {
+              "key": "D",
+              "text": "Be forced to exercise because she is the option buyer",
+              "misconception": "Believing the buyer must exercise the option"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "At 7,900 the index is below the strike of 8,000, so buying at 8,000 makes no sense; the call is out of the money. As the buyer she has a right, not an obligation, so she lets it lapse and loses only the Rs.120 premium.",
+          "difficulty": 3,
+          "case_position": 3,
+          "marks": 1
+        },
+        {
+          "stem": "For the arbitrage Naina spotted (cash Rs.500, future Rs.540, borrowing cost Rs.25 if both legs settle at the same price on expiry), what is the risk-free gain per share?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs.15",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs.40",
+              "misconception": "Taking the raw price gap and ignoring the borrowing cost"
+            },
+            {
+              "key": "C",
+              "text": "Rs.65",
+              "misconception": "Adding the borrowing cost instead of subtracting it"
+            },
+            {
+              "key": "D",
+              "text": "Rs.0, because arbitrage is never profitable",
+              "misconception": "Denying a profit when the gap exceeds the borrowing cost"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "She borrows Rs.500 to buy in the cash market and simultaneously sells the future at Rs.540. On expiry both legs settle at the same price, locking in the Rs.40 gap; subtracting the Rs.25 borrowing cost leaves a risk-free gain of Rs.15 per share. Ignoring the cost gives 40; adding it gives 65.",
+          "difficulty": 3,
+          "case_position": 4,
+          "marks": 1
+        },
+        {
+          "stem": "Naina notes her index is weighted by market capitalisation. What practical effect does this have?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A price swing in a relatively small company will not distort the index, because larger companies carry proportionally more weight",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Every constituent moves the index equally regardless of size",
+              "misconception": "Confusing cap-weighting with equal weighting"
+            },
+            {
+              "key": "C",
+              "text": "The index is simply the average of all constituent prices",
+              "misconception": "Reverting to the naive simple-average index"
+            },
+            {
+              "key": "D",
+              "text": "Only the single highest-priced share determines the index",
+              "misconception": "Assuming one price dominates the whole index"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Market-cap weighting (price times shares outstanding) means each company counts in proportion to its overall market value, so a big price move in a small company has little effect. It is neither equal weighting, nor a simple price average, nor driven by a single share.",
+          "difficulty": 2,
+          "case_position": 5,
+          "marks": 1
+        }
+      ]
+    }
+  ]
+}

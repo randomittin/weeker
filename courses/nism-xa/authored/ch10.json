@@ -1,0 +1,1387 @@
+{
+  "chapter_ordinal": 10,
+  "chapter_title": "RETIREMENT PLANNING",
+  "concepts": [
+    {
+      "title": "Retirement Planning Process and the Two Stages",
+      "description": "Retirement planning ensures there is enough income to meet expenses after a person stops earning. That income comes from a pension, from drawing down a corpus built during the working years, or from a combination of the two. The process runs: estimate the expenses or income needed in retirement, compute the corpus that will generate it, assess current savings capacity, choose products to build the corpus, and then choose products to draw income from it. There are two stages: the accumulation stage, when saving and investing build the corpus and the focus is on growth, and the distribution stage, when the corpus is drawn down for income and the focus shifts to safety, because a corpus lost in retirement cannot be rebuilt from fresh earnings.",
+      "difficulty": 1,
+      "prerequisites": [],
+      "keywords": [
+        "retirement planning",
+        "accumulation stage",
+        "distribution stage",
+        "corpus",
+        "pension",
+        "income security"
+      ],
+      "misconceptions": [
+        "Retirement income can come only from an employer pension",
+        "High risk is appropriate in the distribution stage",
+        "A depleted corpus can be rebuilt after retirement"
+      ],
+      "source_pages": [
+        246,
+        247,
+        248,
+        249
+      ],
+      "objectives": [
+        {
+          "text": "Describe the steps and the two stages of the retirement planning process",
+          "bloom": "remember",
+          "assessment_style": "recall"
+        },
+        {
+          "text": "Contrast the risk stance of the accumulation and distribution stages",
+          "bloom": "understand",
+          "assessment_style": "comparison"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "The accumulation stage of retirement planning is the period when:",
+          "options": [
+            {
+              "key": "A",
+              "text": "savings are invested to build up the retirement corpus",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "the corpus is drawn down to provide income",
+              "misconception": "Swaps the accumulation stage with the distribution stage"
+            },
+            {
+              "key": "C",
+              "text": "the pension annuity is finally exhausted",
+              "misconception": "Confuses building the corpus with depleting it"
+            },
+            {
+              "key": "D",
+              "text": "the individual first begins earning a salary",
+              "misconception": "Equates the start of accumulation with the start of a career rather than saving for retirement"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The accumulation stage is when a person saves and invests to build the retirement corpus, so the emphasis is on growth. Drawing the corpus down for income is the later distribution stage.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Why is risk-taking generally kept lower in the distribution stage of retirement?",
+          "options": [
+            {
+              "key": "A",
+              "text": "a loss of capital in retirement cannot be replaced by fresh earnings",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "interest rates are always zero during retirement",
+              "misconception": "Invents a zero-rate assumption"
+            },
+            {
+              "key": "C",
+              "text": "annuities are banned after age 60",
+              "misconception": "Fabricates a rule against annuities"
+            },
+            {
+              "key": "D",
+              "text": "taxes are always at their highest in retirement",
+              "misconception": "Attributes the caution to taxation rather than to irreplaceable capital"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "In the distribution stage the retiree lives off the corpus and can no longer earn to make up losses, so the priority is protecting capital with lower-risk, income-oriented investments.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Income in retirement can be drawn from:",
+          "options": [
+            {
+              "key": "A",
+              "text": "a pension, a self-built corpus, or a combination of the two",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "only an employer-provided pension",
+              "misconception": "Limits the income sources to an employer pension"
+            },
+            {
+              "key": "C",
+              "text": "only the sale of one's home",
+              "misconception": "Narrows retirement income to a property sale"
+            },
+            {
+              "key": "D",
+              "text": "only government subsidies",
+              "misconception": "Restricts income to state support"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Retirement income may come from a pension, from drawing down a corpus accumulated during working life, or from both together. It is not confined to any single one of these sources.",
+          "difficulty": 1
+        }
+      ]
+    },
+    {
+      "title": "Estimating Retirement Income - Income Replacement Method",
+      "description": "One way to size the income needed in retirement is to grow the person's current income to the retirement date and apply a replacement ratio. Take the current annual income, compound it at the expected income-growth rate over the years to retirement, and multiply by the replacement ratio, which is the share of pre-retirement income needed afterwards. This ratio is often below 100% because some costs, such as commuting and a home-loan EMI, fall away after retirement.",
+      "difficulty": 2,
+      "prerequisites": [
+        "Retirement Planning Process and the Two Stages"
+      ],
+      "keywords": [
+        "income replacement",
+        "replacement ratio",
+        "income growth",
+        "compounding",
+        "income at retirement"
+      ],
+      "misconceptions": [
+        "Apply the replacement ratio to today's income rather than to the grown income",
+        "Grow income by simple interest instead of compounding",
+        "Ignore the replacement ratio altogether"
+      ],
+      "source_pages": [
+        249,
+        250,
+        251
+      ],
+      "objectives": [
+        {
+          "text": "Compute the required retirement income using the income-replacement method",
+          "bloom": "apply",
+          "assessment_style": "calculation"
+        },
+        {
+          "text": "Interpret the meaning of a replacement ratio below 100%",
+          "bloom": "understand",
+          "assessment_style": "conceptual-mcq"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "Ishaan earns Rs 8,00,000 a year, is 30, and will retire at 50, that is, in 20 years. His income is expected to grow 8% a year, and he estimates he will need 70% of his final income in retirement. His required first-year retirement income is closest to:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs 26.1 lakh",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs 37.3 lakh",
+              "misconception": "Forgets to apply the 70% replacement ratio"
+            },
+            {
+              "key": "C",
+              "text": "Rs 5.6 lakh",
+              "misconception": "Applies 70% to today's income and forgets to grow it to retirement"
+            },
+            {
+              "key": "D",
+              "text": "Rs 14.6 lakh",
+              "misconception": "Uses simple growth (8% x 20) instead of compounding"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Grow the income: Rs 8,00,000 x (1.08)^20 = Rs 37.3 lakh at retirement. Apply the 70% replacement ratio: 0.70 x Rs 37.3 lakh = about Rs 26.1 lakh. Forgetting the ratio leaves Rs 37.3 lakh; applying 70% to today's income gives Rs 5.6 lakh; using simple growth understates the compounded figure.",
+          "difficulty": 3
+        },
+        {
+          "stem": "A replacement ratio below 100% is used because:",
+          "options": [
+            {
+              "key": "A",
+              "text": "some pre-retirement costs, such as commuting and loan EMIs, usually stop after retirement",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "retirees are legally barred from receiving their full income",
+              "misconception": "Invents a legal cap on retirement income"
+            },
+            {
+              "key": "C",
+              "text": "inflation is zero during retirement",
+              "misconception": "Assumes no inflation, which is unrelated to the ratio"
+            },
+            {
+              "key": "D",
+              "text": "a pension is always exactly half of the final salary",
+              "misconception": "Fixes an arbitrary universal ratio"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The replacement ratio is below 100% because certain working-life expenses fall away in retirement, such as commuting and a home-loan EMI, so a retiree typically needs only a portion of the final income to maintain the same standard of living.",
+          "difficulty": 1
+        },
+        {
+          "stem": "If income growth is compounded rather than added by simple interest, the income at retirement will be:",
+          "options": [
+            {
+              "key": "A",
+              "text": "higher, because compounding grows the base each year",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "lower than under simple growth",
+              "misconception": "Believes compounding yields less than simple growth"
+            },
+            {
+              "key": "C",
+              "text": "identical to simple growth",
+              "misconception": "Ignores the effect of compounding over many years"
+            },
+            {
+              "key": "D",
+              "text": "negative after 20 years",
+              "misconception": "Confuses growth with erosion"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Compounding applies each year's growth to a larger base, so over many years it produces a higher figure than simple interest, which only ever grows the original amount. The gap widens the longer the horizon.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Estimating Retirement Income - Expense Protection Method",
+      "description": "The expense-protection method starts from the expenses expected in retirement rather than from income. It usually takes the person's expenses just before retirement and adjusts them: costs that fall away, such as transport, a home-loan EMI or children's education, are removed, while costs that rise, such as healthcare, are added. The resulting expense figure, then inflated to the retirement date, is what the corpus must fund. The assumption is that post-retirement spending is a portion of pre-retirement spending, reshaped by which needs continue and which change.",
+      "difficulty": 2,
+      "prerequisites": [
+        "Estimating Retirement Income - Income Replacement Method"
+      ],
+      "keywords": [
+        "expense protection",
+        "retirement expenses",
+        "healthcare rise",
+        "EMI ends",
+        "inflation adjustment"
+      ],
+      "misconceptions": [
+        "All current expenses continue unchanged in retirement",
+        "Healthcare costs fall after retirement",
+        "No inflation adjustment to the retirement date is needed"
+      ],
+      "source_pages": [
+        249,
+        250,
+        251
+      ],
+      "objectives": [
+        {
+          "text": "Explain the logic of the expense-protection method",
+          "bloom": "understand",
+          "assessment_style": "conceptual-mcq"
+        },
+        {
+          "text": "Adjust individual expense heads for the retirement stage",
+          "bloom": "analyze",
+          "assessment_style": "scenario"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "Under the expense-protection method, which cost typically rises after retirement?",
+          "options": [
+            {
+              "key": "A",
+              "text": "healthcare and medical expenses",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "the cost of commuting to work",
+              "misconception": "Keeps a work-linked cost that ceases in retirement"
+            },
+            {
+              "key": "C",
+              "text": "the home-loan EMI on a loan being cleared",
+              "misconception": "Retains a liability payment that ends"
+            },
+            {
+              "key": "D",
+              "text": "school fees for children who are now grown",
+              "misconception": "Keeps an expense that has lapsed"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Healthcare needs generally increase with age, so medical spending is a cost that rises in retirement. Commuting, a cleared home-loan EMI and school fees for grown children all fall away and are removed from the estimate.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A common error in applying the expense-protection method is to:",
+          "options": [
+            {
+              "key": "A",
+              "text": "assume every current expense continues unchanged in retirement",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "remove healthcare costs from the estimate",
+              "misconception": "Drops a cost that in fact rises"
+            },
+            {
+              "key": "C",
+              "text": "inflate the expenses to the retirement date",
+              "misconception": "Labels a correct step as an error"
+            },
+            {
+              "key": "D",
+              "text": "remove commuting costs that will stop",
+              "misconception": "Labels a correct adjustment as an error"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The method requires reshaping expenses: dropping those that cease and adding for those that rise. Assuming every expense simply continues unchanged skips that reshaping and misstates the need. Inflating to the retirement date and removing commuting are both correct steps.",
+          "difficulty": 2
+        },
+        {
+          "stem": "The expense figure used to size the retirement corpus should be:",
+          "options": [
+            {
+              "key": "A",
+              "text": "the retirement-age expense, adjusted upward for inflation to that date",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "today's expense with no inflation adjustment",
+              "misconception": "Ignores inflation between now and the retirement date"
+            },
+            {
+              "key": "C",
+              "text": "the expense discounted below today's value",
+              "misconception": "Deflates the figure instead of inflating it"
+            },
+            {
+              "key": "D",
+              "text": "zero, since the corpus covers everything anyway",
+              "misconception": "Treats expenses as irrelevant to sizing the corpus"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Prices rise over the years to retirement, so the expense must be inflated to its value at the retirement date before the corpus is sized. Using today's un-inflated figure understates the need, and deflating it is the wrong direction entirely.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Inflation and the Real (Inflation-adjusted) Rate of Return",
+      "description": "Inflation erodes purchasing power: as prices rise, the same rupees buy less over time. In retirement planning it bites twice. First, it raises the expense to be funded at the retirement date, so a cost of Rs 100 today might be much higher by the time one retires. Second, it keeps pushing that expense up through the retirement years, so the income drawn cannot stay flat. To handle a corpus that must keep pace with rising costs, planners discount using the real (inflation-adjusted) rate, computed as (1 + return) / (1 + inflation) minus 1, which is the return earned over and above inflation.",
+      "difficulty": 2,
+      "prerequisites": [
+        "Retirement Planning Process and the Two Stages"
+      ],
+      "keywords": [
+        "inflation",
+        "purchasing power",
+        "real rate",
+        "inflation-adjusted return",
+        "future cost"
+      ],
+      "misconceptions": [
+        "The real rate is simply return minus inflation",
+        "Inflation matters only at the retirement date, not afterwards",
+        "The nominal return can be used to size the corpus"
+      ],
+      "source_pages": [
+        251,
+        252,
+        253
+      ],
+      "objectives": [
+        {
+          "text": "Compute the future value of a cost after inflation",
+          "bloom": "apply",
+          "assessment_style": "calculation"
+        },
+        {
+          "text": "Derive the real (inflation-adjusted) rate of return",
+          "bloom": "apply",
+          "assessment_style": "calculation"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "If a monthly expense of Rs 40,000 today rises with inflation of 6% a year, its value at retirement 20 years away is closest to:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs 1,28,285",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs 88,000",
+              "misconception": "Uses simple inflation (6% x 20) instead of compounding"
+            },
+            {
+              "key": "C",
+              "text": "Rs 12,472",
+              "misconception": "Deflates by dividing instead of inflating"
+            },
+            {
+              "key": "D",
+              "text": "Rs 40,000",
+              "misconception": "Assumes prices stay flat over 20 years"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Compound the expense forward: Rs 40,000 x (1.06)^20 = about Rs 1,28,285. Adding 6% x 20 as simple interest understates it, dividing deflates it in the wrong direction, and leaving it at Rs 40,000 ignores inflation entirely.",
+          "difficulty": 2
+        },
+        {
+          "stem": "With an expected return of 9% and inflation of 6%, the real (inflation-adjusted) rate used to discount retirement income is closest to:",
+          "options": [
+            {
+              "key": "A",
+              "text": "2.83%",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "3.00%",
+              "misconception": "Subtracts inflation from the return (9% - 6%) rather than using the ratio"
+            },
+            {
+              "key": "C",
+              "text": "15.00%",
+              "misconception": "Adds the return and inflation together"
+            },
+            {
+              "key": "D",
+              "text": "9.00%",
+              "misconception": "Uses the nominal return, ignoring inflation entirely"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The real rate is (1 + return) / (1 + inflation) - 1 = (1.09 / 1.06) - 1 = about 2.83%. The simple subtraction 9% - 6% = 3% is close but not exact; adding the two or using 9% is clearly wrong.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Inflation affects the retirement corpus by:",
+          "options": [
+            {
+              "key": "A",
+              "text": "raising the starting expense at retirement and pushing it higher each year afterwards",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "mattering only in the single year of retirement",
+              "misconception": "Limits inflation's effect to one point in time"
+            },
+            {
+              "key": "C",
+              "text": "reducing the level of expenses over time",
+              "misconception": "Reverses the direction of inflation"
+            },
+            {
+              "key": "D",
+              "text": "affecting only the accumulation stage",
+              "misconception": "Confines inflation to the years before retirement"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Inflation both lifts the expense to be met at the start of retirement and continues to raise the cost of living through the retirement years, so the corpus must be sized to cover a rising, not a flat, stream of expenses.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Retirement Corpus Calculation",
+      "description": "Building on the income and real-rate steps, the corpus is found in two moves. Step 1: inflate today's required income to its value at the retirement date. Step 2: find the present value, as at retirement, of that income drawn through the retirement years, discounting at the real rate so the corpus keeps pace with rising costs. Because retirees draw at the start of each period, an annuity-due present value is used. The corpus is the lump sum that, invested at the assumed return, is drawn down to exactly zero by the end of the retirement period.",
+      "difficulty": 3,
+      "prerequisites": [
+        "Inflation and the Real (Inflation-adjusted) Rate of Return",
+        "Estimating Retirement Income - Income Replacement Method"
+      ],
+      "keywords": [
+        "retirement corpus",
+        "two-step calculation",
+        "present value",
+        "annuity due",
+        "real rate",
+        "drawdown"
+      ],
+      "misconceptions": [
+        "Skip inflating the income to the retirement date",
+        "Discount at the nominal return rather than the real rate",
+        "Use today's expense to size the corpus"
+      ],
+      "source_pages": [
+        253,
+        254,
+        255,
+        256
+      ],
+      "objectives": [
+        {
+          "text": "Compute the retirement corpus using the two-step method",
+          "bloom": "apply",
+          "assessment_style": "calculation"
+        },
+        {
+          "text": "Explain why the corpus is designed to draw down to zero",
+          "bloom": "understand",
+          "assessment_style": "conceptual-mcq"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "Suresh needs Rs 40,000 a month at today's value, retires in 20 years at 60, and expects to live to 85, a 25-year (300-month) retirement. His return is 9% and inflation is 6%. His income at retirement is Rs 1,28,285 a month and the real monthly rate is 2.8302% / 12. Using an annuity-due present value over 300 months, the corpus he needs is closest to:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs 2.76 crore",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs 86.1 lakh",
+              "misconception": "Uses today's Rs 40,000 without inflating it to the retirement date"
+            },
+            {
+              "key": "C",
+              "text": "Rs 1.54 crore",
+              "misconception": "Discounts at the nominal 9% instead of the inflation-adjusted real rate"
+            },
+            {
+              "key": "D",
+              "text": "Rs 3.85 crore",
+              "misconception": "Multiplies the monthly income by 300 months with no discounting"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Step 1 inflates Rs 40,000 to Rs 1,28,285 at retirement. Step 2 takes the present value of that monthly income for 300 months at the real rate (2.8302%/12), as an annuity due, giving about Rs 2.76 crore. Using today's Rs 40,000, the nominal 9% rate, or a plain multiplication by 300 all give wrong figures.",
+          "difficulty": 3
+        },
+        {
+          "stem": "The retirement corpus is defined so that, invested at the assumed return, it is:",
+          "options": [
+            {
+              "key": "A",
+              "text": "fully drawn down to zero by the end of the retirement period",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "left untouched, with only its interest spent forever",
+              "misconception": "Confuses corpus drawdown with a perpetuity that spends interest only"
+            },
+            {
+              "key": "C",
+              "text": "doubled by the end of retirement",
+              "misconception": "Assumes the corpus should grow rather than deplete"
+            },
+            {
+              "key": "D",
+              "text": "equal to just the first year's income",
+              "misconception": "Confuses the whole corpus with one year's need"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The two-step present-value calculation sizes the corpus so that the drawdowns, together with the return earned, exhaust it precisely by the end of the retirement period. It is not meant to last forever or to grow, and it is far larger than a single year's income.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Why is the real rate, not the 9% nominal return, used to discount the retirement income stream?",
+          "options": [
+            {
+              "key": "A",
+              "text": "because the income drawn must rise with inflation each year, so only the return above inflation is available to sustain it",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "because the corpus earns nothing after retirement",
+              "misconception": "Assumes a zero return in retirement"
+            },
+            {
+              "key": "C",
+              "text": "because inflation stops at retirement",
+              "misconception": "Denies that inflation continues during retirement"
+            },
+            {
+              "key": "D",
+              "text": "because the nominal rate applies only before retirement",
+              "misconception": "Arbitrarily restricts the nominal rate to the accumulation stage"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Retirement withdrawals must keep growing with inflation, so part of the corpus's return is consumed just to maintain purchasing power. Only the return net of inflation, the real rate, is genuinely available to fund the drawdowns, which is why it is used for discounting.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "title": "Periodic Savings Required and the Corpus Trade-offs",
+      "description": "Once the corpus target is known, the saver must find the periodic amount to invest during the accumulation years to reach it. This depends on three levers: the size of the corpus target, the time available to save, and the return the savings will earn. A higher return or a longer saving period lowers the required periodic saving; a lower return or a shorter period raises it. If the required saving is unaffordable, the options are to save for longer by delaying retirement, to seek a higher-yielding investment, or to trim the corpus target.",
+      "difficulty": 3,
+      "prerequisites": [
+        "Retirement Corpus Calculation"
+      ],
+      "keywords": [
+        "periodic savings",
+        "future value",
+        "investment return",
+        "time horizon",
+        "trade-off",
+        "delay retirement"
+      ],
+      "misconceptions": [
+        "A lower-return investment needs a smaller periodic saving",
+        "Delaying retirement raises the required saving",
+        "The time horizon does not affect the saving needed"
+      ],
+      "source_pages": [
+        255,
+        256,
+        257,
+        258
+      ],
+      "objectives": [
+        {
+          "text": "Compute the periodic saving needed to reach a corpus target",
+          "bloom": "apply",
+          "assessment_style": "calculation"
+        },
+        {
+          "text": "Reason about the trade-offs among target, time and return",
+          "bloom": "analyze",
+          "assessment_style": "scenario"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "To accumulate a corpus of Rs 2.76 crore over 20 years (240 months), with savings earning 12% a year, the required monthly saving is closest to:",
+          "options": [
+            {
+              "key": "A",
+              "text": "about Rs 27,900",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "about Rs 46,900",
+              "misconception": "Uses an 8% return instead of the stated 12%, overstating the saving needed"
+            },
+            {
+              "key": "C",
+              "text": "about Rs 1,15,100",
+              "misconception": "Divides the corpus by 240 months, ignoring investment growth"
+            },
+            {
+              "key": "D",
+              "text": "about Rs 7,900",
+              "misconception": "Assumes a 30-year (360-month) horizon instead of 20 years"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Solving for the monthly contribution that grows to Rs 2.76 crore over 240 months at 1% a month (12% a year) gives about Rs 27,900. Using 8% raises it to about Rs 46,900, dividing the corpus by 240 (about Rs 1,15,100) ignores compounding, and a longer 30-year horizon lowers it to about Rs 7,900.",
+          "difficulty": 3
+        },
+        {
+          "stem": "If the required monthly saving comes out too high, which action would reduce it?",
+          "options": [
+            {
+              "key": "A",
+              "text": "delaying retirement to lengthen the saving period",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "shortening the saving period",
+              "misconception": "Believes less time to save lowers the monthly amount"
+            },
+            {
+              "key": "C",
+              "text": "choosing a lower-yielding investment",
+              "misconception": "Thinks a lower return reduces the saving needed"
+            },
+            {
+              "key": "D",
+              "text": "raising the corpus target",
+              "misconception": "Assumes a bigger goal is easier to fund"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A longer saving period spreads the accumulation over more contributions and gives more time for returns to compound, lowering the amount needed each month. Shortening the period, lowering the return, or raising the target all push the required saving up.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Holding the corpus target fixed, moving savings from an 8% investment to a 12% one makes the required monthly saving:",
+          "options": [
+            {
+              "key": "A",
+              "text": "smaller, because higher returns do more of the work",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "larger, because higher returns cost more to obtain",
+              "misconception": "Confuses a higher return with a higher required contribution"
+            },
+            {
+              "key": "C",
+              "text": "unchanged, because returns do not matter",
+              "misconception": "Ignores the role of return in accumulation"
+            },
+            {
+              "key": "D",
+              "text": "zero, because returns build the entire corpus",
+              "misconception": "Assumes returns alone fund the whole goal"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A higher return means each rupee saved grows more, so less needs to be contributed to reach the same target. In the earlier example, an 8% return required roughly Rs 46,900 a month, while 12% brought it down to about Rs 27,900.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Retirement Products: Defined Benefit, Defined Contribution and Mandatory Benefits",
+      "description": "Retirement products fall into two families. In a defined-benefit (DB) plan, the pension amount, or the formula for it, is fixed in advance regardless of how the fund performs. In a defined-contribution (DC) plan, the contributions are fixed but the final benefit depends on the returns earned. India's mandatory benefits for covered employees include the Employees Provident Fund (a lump sum built from employee and employer contributions), the Employees Pension Scheme (funded from part of the employer's share, paying a lifelong pension from age 58), the deposit-linked insurance benefit on death in service, gratuity on a qualifying exit, and the National Pension System, a DC scheme in which at least 40% of the corpus at age 60 must be used to buy an annuity, while an early exit before 60 requires annuitising 80%.",
+      "difficulty": 2,
+      "prerequisites": [
+        "Retirement Planning Process and the Two Stages"
+      ],
+      "keywords": [
+        "defined benefit",
+        "defined contribution",
+        "EPF",
+        "EPS",
+        "gratuity",
+        "NPS",
+        "annuitisation"
+      ],
+      "misconceptions": [
+        "A defined-contribution plan guarantees the pension amount",
+        "The whole NPS corpus can be withdrawn as cash at 60",
+        "The NPS early-exit rule matches the age-60 rule"
+      ],
+      "source_pages": [
+        258,
+        260,
+        261,
+        263,
+        264,
+        265,
+        266
+      ],
+      "objectives": [
+        {
+          "text": "Distinguish defined-benefit from defined-contribution plans",
+          "bloom": "understand",
+          "assessment_style": "comparison"
+        },
+        {
+          "text": "Recall the NPS annuitisation rules at retirement and on early exit",
+          "bloom": "remember",
+          "assessment_style": "recall"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "In a defined-contribution plan, what is fixed in advance?",
+          "options": [
+            {
+              "key": "A",
+              "text": "the contributions, not the final pension",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "the pension amount, not the contributions",
+              "misconception": "Swaps a defined-contribution plan with a defined-benefit plan"
+            },
+            {
+              "key": "C",
+              "text": "both the contributions and the pension",
+              "misconception": "Assumes a defined-contribution plan guarantees the outcome"
+            },
+            {
+              "key": "D",
+              "text": "neither the contributions nor the pension",
+              "misconception": "Denies that a defined-contribution plan fixes the contributions"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "In a defined-contribution plan the amount paid in is set, but the eventual pension depends on the returns the fund earns, so it is not known beforehand. Fixing the pension itself would make it a defined-benefit plan.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Under the National Pension System, on retiring at age 60 the subscriber must:",
+          "options": [
+            {
+              "key": "A",
+              "text": "use at least 40% of the corpus to buy an annuity",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "withdraw the whole corpus as a tax-free lump sum",
+              "misconception": "Ignores the compulsory annuitisation floor"
+            },
+            {
+              "key": "C",
+              "text": "annuitise 80%, as required on early exit",
+              "misconception": "Applies the pre-60 exit rule to normal retirement"
+            },
+            {
+              "key": "D",
+              "text": "surrender the entire corpus to the government",
+              "misconception": "Invents a forfeiture rule"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "On retiring at 60, the NPS rule requires a minimum of 40% of the built-up corpus to be converted into an annuity, leaving the balance available for lump-sum withdrawal. The 80% figure applies only to an early exit before 60.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which of these is a defined-benefit-style arrangement, where the pension formula is known beforehand?",
+          "options": [
+            {
+              "key": "A",
+              "text": "the Employees Pension Scheme, paying a lifelong pension from age 58",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "a mutual-fund SIP with a market-linked value",
+              "misconception": "Labels a market-linked defined-contribution vehicle as defined benefit"
+            },
+            {
+              "key": "C",
+              "text": "a unit-linked plan whose value tracks its funds",
+              "misconception": "Treats a unit-linked plan as defined benefit"
+            },
+            {
+              "key": "D",
+              "text": "an NPS Tier-I account",
+              "misconception": "Classifies the defined-contribution NPS as defined benefit"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The Employees Pension Scheme pays a pension worked out from a known formula, independent of market returns, which is the hallmark of a defined-benefit arrangement. A SIP, a unit-linked plan and the NPS are all defined-contribution, where the outcome depends on returns.",
+          "difficulty": 2
+        },
+        {
+          "stem": "On an early exit from the National Pension System before age 60, the subscriber must:",
+          "options": [
+            {
+              "key": "A",
+              "text": "annuitise 80% of the corpus and may withdraw 20%",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "withdraw the entire corpus freely",
+              "misconception": "Ignores the early-exit annuitisation rule"
+            },
+            {
+              "key": "C",
+              "text": "annuitise only 40%, as at normal retirement",
+              "misconception": "Applies the age-60 rule to an early exit"
+            },
+            {
+              "key": "D",
+              "text": "wait until age 70 with no access at all",
+              "misconception": "Invents a lock rule"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "An exit before 60 requires 80% of the accumulated savings to be used to buy an annuity, with only 20% available for withdrawal. This is stricter than the 40% annuitisation required at the normal retirement age of 60.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Voluntary Schemes, Distribution Products, Annuities and Reverse Mortgage",
+      "description": "People without mandatory cover, or wanting to supplement it, use voluntary schemes: the Voluntary Provident Fund (contributions to the EPF above the mandatory 12%), the Public Provident Fund, and retirement plans of mutual funds and insurers. In the distribution stage, income comes from lower-risk, income-oriented avenues such as deposits, bonds and rental real estate, and from annuities bought from insurers. A fixed annuity pays a guaranteed, constant amount, while a variable annuity's payout moves with its underlying investments, offering a better chance to outpace inflation but carrying more risk. A reverse mortgage lets a senior citizen borrow against a home, receiving payments while continuing to live in it, with the loan settled from the sale of the property later.",
+      "difficulty": 2,
+      "prerequisites": [
+        "Retirement Products: Defined Benefit, Defined Contribution and Mandatory Benefits"
+      ],
+      "keywords": [
+        "VPF",
+        "PPF",
+        "annuity",
+        "fixed annuity",
+        "variable annuity",
+        "reverse mortgage",
+        "distribution stage"
+      ],
+      "misconceptions": [
+        "A variable annuity guarantees its payout",
+        "A reverse mortgage forces the owner to vacate the home",
+        "Equity is the safe choice for the distribution stage"
+      ],
+      "source_pages": [
+        261,
+        266,
+        268,
+        269,
+        271,
+        272,
+        274,
+        277
+      ],
+      "objectives": [
+        {
+          "text": "Distinguish a fixed annuity from a variable annuity",
+          "bloom": "analyze",
+          "assessment_style": "comparison"
+        },
+        {
+          "text": "Explain how a reverse mortgage provides retirement income",
+          "bloom": "understand",
+          "assessment_style": "conceptual-mcq"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "A variable annuity differs from a fixed annuity because its payout:",
+          "options": [
+            {
+              "key": "A",
+              "text": "varies with the performance of the underlying investments",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "is guaranteed and constant",
+              "misconception": "Describes a fixed annuity, not a variable one"
+            },
+            {
+              "key": "C",
+              "text": "is always higher than a fixed annuity's",
+              "misconception": "Assumes higher risk guarantees a higher payout"
+            },
+            {
+              "key": "D",
+              "text": "is paid only as a single lump sum",
+              "misconception": "Confuses an annuity stream with a lump sum"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A variable annuity pays according to the value of its chosen underlying investments, so it can rise or fall, whereas a fixed annuity pays a guaranteed constant amount. Higher potential returns come with higher risk, not a guaranteed larger payout.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A reverse mortgage lets a senior citizen:",
+          "options": [
+            {
+              "key": "A",
+              "text": "borrow against the home while continuing to live in it",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "sell the home and move out immediately",
+              "misconception": "Confuses a reverse mortgage with an outright sale"
+            },
+            {
+              "key": "C",
+              "text": "receive a pension guaranteed by an employer",
+              "misconception": "Confuses a home-loan product with an employer pension"
+            },
+            {
+              "key": "D",
+              "text": "avoid ever repaying the loan by any means",
+              "misconception": "Ignores that the loan is eventually settled from the property"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "In a reverse mortgage the borrower stays the owner and lives in the house, drawing payments against it; the loan is settled later from the sale of the property, with any surplus going to the borrower or heirs. It is neither an immediate sale nor an employer pension.",
+          "difficulty": 2
+        },
+        {
+          "stem": "For the distribution stage of retirement, the more appropriate emphasis is on:",
+          "options": [
+            {
+              "key": "A",
+              "text": "lower-risk, income-generating avenues to protect the corpus",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "maximum equity exposure for growth",
+              "misconception": "Applies an accumulation-stage strategy to the drawdown stage"
+            },
+            {
+              "key": "C",
+              "text": "illiquid assets that generate no income",
+              "misconception": "Chooses assets unsuited to income needs"
+            },
+            {
+              "key": "D",
+              "text": "speculative derivatives for quick gains",
+              "misconception": "Selects high-risk instruments in retirement"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "In the distribution stage the retiree lives off the corpus and cannot afford large losses, so the focus is on lower-risk investments that generate income. Aggressive equity, illiquid non-income assets and speculation are unsuited to this stage.",
+          "difficulty": 2
+        },
+        {
+          "stem": "The Voluntary Provident Fund allows a covered employee to:",
+          "options": [
+            {
+              "key": "A",
+              "text": "contribute above the mandatory 12% into the EPF account",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "replace the mandatory EPF entirely",
+              "misconception": "Treats the VPF as a substitute rather than a top-up"
+            },
+            {
+              "key": "C",
+              "text": "contribute only after age 60",
+              "misconception": "Invents an age restriction"
+            },
+            {
+              "key": "D",
+              "text": "invest the money solely in equity",
+              "misconception": "Confuses the VPF with a market-linked plan"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The Voluntary Provident Fund lets an EPF member pay more than the mandatory 12% of basic and dearness allowance into the same account. It supplements, rather than replaces, the mandatory EPF and is not a separate equity plan.",
+          "difficulty": 2
+        }
+      ]
+    }
+  ],
+  "caselets": [
+    {
+      "scenario": "Neha, 35, is a software professional in Bengaluru who plans to retire at 55, twenty years away, and expects to live to 80. In today's money she would need about Rs 50,000 a month to maintain her lifestyle. She expects long-term inflation of 6%, and believes her retirement savings can earn 12% while she is still working and 9% once she retires and shifts to safer income products. Neha has not yet started a dedicated retirement fund and wants to know both the corpus she must build by 55 and how the return she earns while working affects the monthly saving it will take. She is also deciding how to invest the corpus once she stops earning.",
+      "concept_titles": [
+        "Retirement Planning Process and the Two Stages",
+        "Inflation and the Real (Inflation-adjusted) Rate of Return",
+        "Retirement Corpus Calculation",
+        "Periodic Savings Required and the Corpus Trade-offs"
+      ],
+      "questions": [
+        {
+          "stem": "For Neha, the accumulation stage covers:",
+          "options": [
+            {
+              "key": "A",
+              "text": "the 20 years during which she saves and invests before turning 55",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "the years after 55 when she draws income",
+              "misconception": "Labels the drawdown years as accumulation"
+            },
+            {
+              "key": "C",
+              "text": "only the single year in which she retires",
+              "misconception": "Shrinks the stage to a point in time"
+            },
+            {
+              "key": "D",
+              "text": "her entire life expectancy up to 80",
+              "misconception": "Merges both stages into one"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The accumulation stage is the period of saving and investing to build the corpus, which for Neha is the 20 years until she retires at 55. The years from 55 to 80, when she draws on the corpus, are the distribution stage.",
+          "difficulty": 1,
+          "case_position": 1,
+          "marks": 1
+        },
+        {
+          "stem": "Growing Neha's Rs 50,000 monthly need at 6% inflation over 20 years, her monthly expense at retirement is closest to:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs 1,60,357",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs 1,10,000",
+              "misconception": "Uses simple inflation (6% x 20) rather than compounding"
+            },
+            {
+              "key": "C",
+              "text": "Rs 15,590",
+              "misconception": "Deflates the figure instead of inflating it"
+            },
+            {
+              "key": "D",
+              "text": "Rs 50,000",
+              "misconception": "Ignores inflation over the 20 years"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Compounding the need forward: Rs 50,000 x (1.06)^20 = about Rs 1,60,357 a month at retirement. Simple inflation understates it, deflating goes the wrong way, and leaving it at Rs 50,000 ignores 20 years of rising prices.",
+          "difficulty": 2,
+          "case_position": 2,
+          "marks": 1
+        },
+        {
+          "stem": "Using a distribution-stage return of 9% and 6% inflation (a real rate of 2.83%), the corpus at 55 that funds Rs 1,60,357 a month, drawn at the start of each month for 25 years (300 months), is closest to:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs 3.45 crore",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs 1.93 crore",
+              "misconception": "Discounts at the nominal 9% instead of the inflation-adjusted real rate"
+            },
+            {
+              "key": "C",
+              "text": "Rs 1.08 crore",
+              "misconception": "Uses today's Rs 50,000 without inflating it to the retirement date"
+            },
+            {
+              "key": "D",
+              "text": "Rs 4.81 crore",
+              "misconception": "Multiplies the monthly income by 300 months with no discounting"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Take the present value at 55 of Rs 1,60,357 a month for 300 months at the real rate (2.83%/12), as an annuity due, giving about Rs 3.45 crore. Using the nominal 9%, or today's un-inflated Rs 50,000, or a plain multiplication by 300 all produce wrong figures.",
+          "difficulty": 3,
+          "case_position": 3,
+          "marks": 2
+        },
+        {
+          "stem": "To build that corpus over her 20 saving years, using savings that earn 12% rather than 8% will:",
+          "options": [
+            {
+              "key": "A",
+              "text": "lower the monthly saving required, since higher returns build more of the corpus",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "raise the monthly saving required, since higher returns cost more",
+              "misconception": "Confuses a higher return with a higher required contribution"
+            },
+            {
+              "key": "C",
+              "text": "have no effect, since only the corpus size matters",
+              "misconception": "Ignores the role of return in accumulation"
+            },
+            {
+              "key": "D",
+              "text": "remove the need to save at all",
+              "misconception": "Assumes returns alone fund the goal"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A higher return means each rupee saved grows more, so a smaller monthly contribution reaches the same corpus. This combines two facts from her plan: the fixed corpus target and the return earned during accumulation.",
+          "difficulty": 2,
+          "case_position": 4,
+          "marks": 1
+        },
+        {
+          "stem": "Once Neha retires, shifting her corpus toward deposits and bonds rather than mostly equity reflects that:",
+          "options": [
+            {
+              "key": "A",
+              "text": "the distribution stage favours lower-risk income to protect an irreplaceable corpus",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "retirement is the time to take on the most equity risk",
+              "misconception": "Reverses the risk stance appropriate to the stage"
+            },
+            {
+              "key": "C",
+              "text": "returns no longer matter once she has retired",
+              "misconception": "Denies that the corpus earns any return in distribution"
+            },
+            {
+              "key": "D",
+              "text": "the corpus can be rebuilt if it is lost",
+              "misconception": "Assumes lost capital can be replaced after retirement"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "In the distribution stage Neha lives off the corpus and cannot earn to replace losses, so lower-risk, income-generating investments are appropriate. This is the opposite of the growth-focused, higher-risk stance of the accumulation stage.",
+          "difficulty": 2,
+          "case_position": 5,
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "scenario": "Ramesh, 52, will retire at 60 from a private company. He has an Employees Provident Fund balance, is enrolled in the National Pension System, and owns a fully paid house in Nagpur. His employer-linked Employees Pension Scheme will pay him a lifelong pension. His adviser is helping him plan the distribution stage: how much of the NPS corpus must convert to an annuity, whether a fixed or a variable annuity suits his wish for steady, guaranteed income, and how his house might supplement income if his corpus falls short. His current monthly expense is Rs 60,000, but his home-loan EMI of Rs 20,000 will end by retirement while his health costs are expected to rise.",
+      "concept_titles": [
+        "Retirement Products: Defined Benefit, Defined Contribution and Mandatory Benefits",
+        "Voluntary Schemes, Distribution Products, Annuities and Reverse Mortgage",
+        "Estimating Retirement Income - Expense Protection Method"
+      ],
+      "questions": [
+        {
+          "stem": "The lifelong pension Ramesh will receive from the Employees Pension Scheme is best classified as:",
+          "options": [
+            {
+              "key": "A",
+              "text": "a defined-benefit-style arrangement with a known pension formula",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "a defined-contribution plan with a market-linked value",
+              "misconception": "Treats the EPS as market-dependent defined contribution"
+            },
+            {
+              "key": "C",
+              "text": "a pure life-insurance term cover",
+              "misconception": "Confuses a pension with term insurance"
+            },
+            {
+              "key": "D",
+              "text": "a bank fixed deposit",
+              "misconception": "Confuses a pension with a bank deposit"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The EPS pays a pension calculated from a known formula, independent of market returns, which makes it a defined-benefit-style arrangement rather than a defined-contribution, insurance or deposit product.",
+          "difficulty": 2,
+          "case_position": 1,
+          "marks": 1
+        },
+        {
+          "stem": "At age 60, what fraction of his NPS corpus must Ramesh use to buy an annuity?",
+          "options": [
+            {
+              "key": "A",
+              "text": "at least 40%",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "0%, since he can take it all as cash",
+              "misconception": "Ignores the compulsory annuitisation floor"
+            },
+            {
+              "key": "C",
+              "text": "80%, as required on an early exit",
+              "misconception": "Applies the pre-60 exit rule to normal retirement"
+            },
+            {
+              "key": "D",
+              "text": "100% of the corpus",
+              "misconception": "Overstates the annuitisation floor"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "At the retirement age of 60, the NPS requires at least 40% of the corpus to be annuitised, with the balance available as a lump sum. The 80% rule applies only to an early exit before 60.",
+          "difficulty": 2,
+          "case_position": 2,
+          "marks": 1
+        },
+        {
+          "stem": "In estimating Ramesh's retirement expense from today's Rs 60,000, using the expense-protection method the adviser should:",
+          "options": [
+            {
+              "key": "A",
+              "text": "drop the Rs 20,000 EMI that ends and add for the higher health costs",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "keep the Rs 20,000 EMI unchanged in the estimate",
+              "misconception": "Retains an expense that ceases at retirement"
+            },
+            {
+              "key": "C",
+              "text": "remove the health costs, as they will fall",
+              "misconception": "Assumes healthcare falls in retirement"
+            },
+            {
+              "key": "D",
+              "text": "assume every current expense stays exactly the same",
+              "misconception": "Ignores all expense adjustments"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The expense-protection method reshapes current spending: the Rs 20,000 EMI ends at retirement and is removed, while rising health costs are added. This combines two facts from his situation, the ending EMI and the rising healthcare need.",
+          "difficulty": 2,
+          "case_position": 3,
+          "marks": 1
+        },
+        {
+          "stem": "Ramesh wants a guaranteed, steady payout and worries his corpus may fall short. The adviser's most fitting combination is:",
+          "options": [
+            {
+              "key": "A",
+              "text": "a fixed annuity for a guaranteed payout, plus a reverse mortgage on his paid-up house to supplement income if needed",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "a variable annuity for guaranteed steady income, and selling the house at once",
+              "misconception": "Calls a variable annuity guaranteed and confuses a reverse mortgage with a forced sale"
+            },
+            {
+              "key": "C",
+              "text": "a variable annuity plus taking maximum equity risk in retirement",
+              "misconception": "Chooses market-risk options against a need for stable income"
+            },
+            {
+              "key": "D",
+              "text": "no annuity, keeping the whole NPS corpus in cash",
+              "misconception": "Ignores the compulsory NPS annuitisation and the need for lifelong income"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A fixed annuity gives the guaranteed, constant payout Ramesh wants, and a reverse mortgage lets him draw on his paid-up house without selling it if the corpus falls short. A variable annuity is not guaranteed, and holding all the NPS corpus in cash ignores the mandatory annuitisation. This combines the annuity choice with the property-backed backup.",
+          "difficulty": 3,
+          "case_position": 4,
+          "marks": 2
+        },
+        {
+          "stem": "The reverse mortgage on Ramesh's house would:",
+          "options": [
+            {
+              "key": "A",
+              "text": "pay him while he keeps living there, settling the loan from the property later",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "require him to vacate the house at once",
+              "misconception": "Confuses a reverse mortgage with a sale requiring vacation"
+            },
+            {
+              "key": "C",
+              "text": "pay a pension to his former employer",
+              "misconception": "Misassigns the payout"
+            },
+            {
+              "key": "D",
+              "text": "be repayable only within his lifetime through monthly EMIs",
+              "misconception": "Imposes lifetime EMI servicing, contrary to the product"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Under a reverse mortgage Ramesh remains the owner and continues to live in the house while receiving payments; the loan is settled later from the sale of the property. He is not required to move out or to service it with monthly EMIs during his lifetime.",
+          "difficulty": 2,
+          "case_position": 5,
+          "marks": 1
+        }
+      ]
+    }
+  ]
+}

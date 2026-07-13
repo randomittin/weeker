@@ -1,0 +1,492 @@
+{
+  "chapter_ordinal": 7,
+  "chapter_title": "CONCEPT OF FINANCIAL PLANNING",
+  "concepts": [
+    {
+      "title": "What Financial Planning Is",
+      "description": "Financial planning is the ongoing process of organising a household's income, expenses, assets and liabilities so that both current living needs and future money requirements are met on time. A portion of today's income is deliberately set aside and put to work in assets, because the household must also provide for phases of low or no income (such as retirement), unexpected large costs (such as a medical emergency), and planned future goals (such as a child's education or a home). It is not a one-off calculation but a continuing exercise of streamlining money flows around the household's regular income.",
+      "difficulty": 1,
+      "prerequisites": [],
+      "keywords": ["financial planning", "household needs", "current and future expenses", "savings", "goals"],
+      "misconceptions": ["financial planning is only about picking investments", "financial planning is a one-time activity", "only wealthy households need a financial plan"],
+      "source_pages": [],
+      "objectives": [
+        {"text": "Define financial planning in terms of matching household resources to current and future needs.", "bloom": "understand", "assessment_style": "conceptual"},
+        {"text": "Explain why part of current income must be saved rather than fully spent.", "bloom": "understand", "assessment_style": "conceptual"}
+      ],
+      "questions": [
+        {
+          "stem": "Which statement best captures the central purpose of financial planning for a household?",
+          "options": [
+            {"key": "A", "text": "Organising income, expenses, assets and liabilities so both current and future needs for funds are met.", "misconception": null},
+            {"key": "B", "text": "Choosing the single highest-returning investment product available in the market.", "misconception": "financial planning equals return maximisation"},
+            {"key": "C", "text": "Spending the entire monthly income efficiently so that nothing is left idle.", "misconception": "no need to save if income is fully utilised"},
+            {"key": "D", "text": "Filing the household's income-tax return correctly each year.", "misconception": "financial planning is just tax compliance"}
+          ],
+          "correct_key": "A",
+          "explanation": "Financial planning streamlines income, expenses, assets and liabilities so a household can meet both today's routine expenses and tomorrow's needs. It is broader than picking one product (B), it requires saving rather than spending everything (C), and tax filing (D) is only one narrow piece.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Why must a household's current income provide for more than just this month's routine expenses?",
+          "options": [
+            {"key": "A", "text": "Because there will be future periods of low or no income and possible large or unexpected needs to fund.", "misconception": null},
+            {"key": "B", "text": "Because regulators require every household to hold a minimum level of investments.", "misconception": "saving is a legal requirement rather than a planning choice"},
+            {"key": "C", "text": "Because income earned today loses its legal validity if not spent within the month.", "misconception": "income must be used up in the period earned"},
+            {"key": "D", "text": "Because routine expenses always fall over time, freeing up money automatically.", "misconception": "expenses decline on their own without planning"}
+          ],
+          "correct_key": "A",
+          "explanation": "Income today must also cover retirement, emergencies and planned goals, so a part of it is saved and invested. There is no regulatory minimum (B), income does not expire (C), and expenses do not shrink automatically (D).",
+          "difficulty": 1
+        },
+        {
+          "stem": "A household says it does not need a financial plan because it 'invests in shares whenever it has spare cash'. What is the flaw in this reasoning?",
+          "options": [
+            {"key": "A", "text": "Ad-hoc investing is not the same as planning income, expenses, assets and liabilities toward defined future needs.", "misconception": null},
+            {"key": "B", "text": "Shares are prohibited from being held by households without a plan document.", "misconception": "investing legally requires a formal plan"},
+            {"key": "C", "text": "Spare cash should never be invested; it must stay in a bank at all times.", "misconception": "surplus cash should not be invested"},
+            {"key": "D", "text": "A financial plan only matters after retirement, so the household is correct for now.", "misconception": "planning is only relevant late in life"}
+          ],
+          "correct_key": "A",
+          "explanation": "Occasional share purchases do not organise the household's finances toward specific goals, which is what planning does. There is no legal bar (B), surplus can sensibly be invested (C), and planning matters across the whole life cycle, not only at retirement (D).",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Income, Savings and Asset Creation",
+      "description": "A household's income comes broadly from two streams: income from profession, business or employment, and income from assets or investments such as rent, bank interest, dividends and interest on debentures. During working years the first stream dominates; as that period ends, dependence shifts to income from accumulated assets. Current income first covers current expenses; the surplus left over is called savings, and savings are channelled into assets that generate future income or fund future goals. Large-ticket purchases such as property or a car often need surplus accumulated over time, and are frequently funded by a mix of own money and loans, where the loan creates a liability to be repaid from current and future income.",
+      "difficulty": 1,
+      "prerequisites": ["What Financial Planning Is"],
+      "keywords": ["income sources", "savings", "surplus", "assets", "liabilities", "loans"],
+      "misconceptions": ["savings means unspent cash left in a wallet", "income from investments and income from work are the same stream", "loans are free money rather than a future claim on income"],
+      "source_pages": [],
+      "objectives": [
+        {"text": "Distinguish income from employment/business from income generated by assets.", "bloom": "understand", "assessment_style": "conceptual"},
+        {"text": "Explain how savings become the source of future-income-generating assets.", "bloom": "apply", "assessment_style": "scenario"}
+      ],
+      "questions": [
+        {
+          "stem": "In household finance, 'savings' is most precisely defined as:",
+          "options": [
+            {"key": "A", "text": "The surplus of current income that remains after current expenses are met.", "misconception": null},
+            {"key": "B", "text": "The total income earned by the household before any expenses.", "misconception": "confusing gross income with savings"},
+            {"key": "C", "text": "The cash physically kept at home rather than in a bank.", "misconception": "savings means idle cash on hand"},
+            {"key": "D", "text": "The amount borrowed through loans to buy assets.", "misconception": "treating borrowings as savings"}
+          ],
+          "correct_key": "A",
+          "explanation": "Savings is what is left after current expenses are paid from current income; it is then used to build assets. It is not gross income (B), not merely cash at home (C), and certainly not borrowed money, which is a liability (D).",
+          "difficulty": 1
+        },
+        {
+          "stem": "Rohit, aged 30, earns a salary and also receives rent from a small flat he owns. As he approaches retirement, how is the mix of his income streams expected to change?",
+          "options": [
+            {"key": "A", "text": "Dependence shifts away from salary toward income from assets like the rental flat and investments.", "misconception": null},
+            {"key": "B", "text": "Both salary and rent stop entirely, leaving him with no income sources.", "misconception": "all income ceases at retirement"},
+            {"key": "C", "text": "Salary continues to grow fastest because employment income never falls.", "misconception": "employment income persists undiminished after working years"},
+            {"key": "D", "text": "Rental income must be reclassified as employment income after retirement.", "misconception": "asset income and employment income are interchangeable labels"}
+          ],
+          "correct_key": "A",
+          "explanation": "Once the gainful-employment period ends, a household leans more on income from assets built up earlier, such as rent and investment income. Salary does not persist after working years (B and C), and rent remains asset income regardless of age (D).",
+          "difficulty": 2
+        },
+        {
+          "stem": "A family buys a car using part own funds and part loan. Which consequence of the loan is most important for financial planning?",
+          "options": [
+            {"key": "A", "text": "It creates a liability whose repayments must be met from current and future income.", "misconception": null},
+            {"key": "B", "text": "It permanently increases the family's income because loans are a source of earnings.", "misconception": "loans are treated as income"},
+            {"key": "C", "text": "It removes any need to save, since the loan already covers all future costs.", "misconception": "borrowing eliminates the need to save"},
+            {"key": "D", "text": "It converts the car into an appreciating asset that generates rent.", "misconception": "assuming every purchased asset appreciates and yields income"}
+          ],
+          "correct_key": "A",
+          "explanation": "A loan is a claim on future income; a slice of that income must be set aside to repay it, reducing future saving ability. A loan is not income (B), does not remove the need to save (C), and a car is typically a depreciating asset, not a rent-yielding one (D).",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Household Budgeting",
+      "description": "A budget is built by working downward from income. First, list and total the regular, definite incomes for the period. Deduct mandatory expenses (such as loan repayments and taxes) to arrive at disposable income. Then deduct essential living expenses, and finally deduct discretionary expenses; what remains is savings. Because income cannot usually be stretched much beyond a point, the practical lever for improving savings is managing expenses. If mandatory outflows are too high because of loan burdens, a debt-rationalisation exercise can ease them; discretionary and, to some extent, living expenses are the areas a household can cut back or postpone without compromising required savings.",
+      "difficulty": 2,
+      "prerequisites": ["Income, Savings and Asset Creation"],
+      "keywords": ["budget", "disposable income", "mandatory expenses", "discretionary expenses", "debt rationalisation"],
+      "misconceptions": ["savings should be whatever is left after all spending, if anything", "the best way to raise savings is always to raise income", "mandatory and discretionary expenses are equally easy to cut"],
+      "source_pages": [],
+      "objectives": [
+        {"text": "Order the steps of building a household budget from income to savings.", "bloom": "understand", "assessment_style": "conceptual"},
+        {"text": "Identify which expense category a household can most realistically reduce to lift savings.", "bloom": "apply", "assessment_style": "scenario"}
+      ],
+      "questions": [
+        {
+          "stem": "In the budgeting steps, what does a household arrive at immediately after deducting mandatory expenses from total regular income?",
+          "options": [
+            {"key": "A", "text": "Disposable income.", "misconception": null},
+            {"key": "B", "text": "Final savings for the period.", "misconception": "treating disposable income as the end result"},
+            {"key": "C", "text": "Discretionary expenses.", "misconception": "confusing an expense category with a residual amount"},
+            {"key": "D", "text": "Gross income before tax.", "misconception": "reversing the direction of the budgeting steps"}
+          ],
+          "correct_key": "A",
+          "explanation": "Total income minus mandatory expenses gives disposable income. Savings come only after essential living and discretionary expenses are also deducted (B). Discretionary expenses are a category, not a residual (C), and gross income comes before, not after, deductions (D).",
+          "difficulty": 1
+        },
+        {
+          "stem": "Meena finds her monthly savings too low. Her income is fixed by her salary. Where should she most realistically focus first to raise savings?",
+          "options": [
+            {"key": "A", "text": "Cutting back or postponing discretionary expenses.", "misconception": null},
+            {"key": "B", "text": "Increasing her salary immediately, since income can always be expanded.", "misconception": "assuming income can be raised on demand"},
+            {"key": "C", "text": "Stopping all essential living expenses such as food and utilities.", "misconception": "treating essential expenses as freely cuttable"},
+            {"key": "D", "text": "Ignoring the budget, since low savings will correct themselves over time.", "misconception": "expecting savings to improve without action"}
+          ],
+          "correct_key": "A",
+          "explanation": "Since income cannot be stretched much, the practical lever is expenses, and discretionary spending is the easiest to trim or defer. Income cannot simply be raised at will (B), essentials cannot be stopped (C), and inaction does not fix a savings gap (D).",
+          "difficulty": 2
+        },
+        {
+          "stem": "A household's mandatory expenses are unusually high, squeezing its savings. The workbook suggests this often points to which cause, and which remedy?",
+          "options": [
+            {"key": "A", "text": "Heavy loan repayments; a debt-rationalisation exercise with a planner can reduce the burden.", "misconception": null},
+            {"key": "B", "text": "Excessive dining out; the family should simply stop eating out entirely.", "misconception": "attributing high mandatory expenses to discretionary spending"},
+            {"key": "C", "text": "Too much money in savings; the family should save less to free up cash.", "misconception": "reducing savings to solve a savings problem"},
+            {"key": "D", "text": "High investment returns; the family should sell all its investments.", "misconception": "misidentifying investments as the cause of an expense squeeze"}
+          ],
+          "correct_key": "A",
+          "explanation": "High mandatory outflows usually reflect loan-repayment pressure, which debt rationalisation can ease. Dining out is discretionary, not mandatory (B); cutting savings defeats the purpose (C); and investments are not the source of the squeeze (D).",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Areas of Financial Planning",
+      "description": "Comprehensive financial planning spans several inter-linked areas. Debt counselling helps a household borrow and repay efficiently, recognising that borrowing spends tomorrow's income today and that the asset funded may appreciate (property, which can also earn rent) or depreciate (a car). Insurance planning estimates losses from unexpected events and matches them with the right cover. Investment planning gauges how much the household can save and where to invest it so goals are met. Tax planning weighs the post-tax return of products, since income heads such as rent, interest and dividends, and gains held for different periods, are taxed differently. Estate planning arranges the efficient, tax-aware transfer of wealth to heirs and other beneficiaries using tools such as gifts (during life) and wills (after death).",
+      "difficulty": 2,
+      "prerequisites": ["What Financial Planning Is"],
+      "keywords": ["debt counselling", "insurance planning", "investment planning", "tax planning", "estate planning", "post-tax return"],
+      "misconceptions": ["financial planning is only investment planning", "pre-tax return is the right basis for comparing products", "estate planning tools can only be used after death"],
+      "source_pages": [],
+      "objectives": [
+        {"text": "Match each planning area to the household problem it addresses.", "bloom": "understand", "assessment_style": "conceptual"},
+        {"text": "Explain why post-tax return, not headline return, guides product choice.", "bloom": "apply", "assessment_style": "scenario"}
+      ],
+      "questions": [
+        {
+          "stem": "Which planning area deals with the efficient, tax-aware transfer of wealth to heirs, charity and other beneficiaries?",
+          "options": [
+            {"key": "A", "text": "Estate planning.", "misconception": null},
+            {"key": "B", "text": "Insurance planning.", "misconception": "confusing wealth transfer with loss protection"},
+            {"key": "C", "text": "Debt counselling.", "misconception": "confusing wealth transfer with liability management"},
+            {"key": "D", "text": "Investment planning.", "misconception": "confusing wealth transfer with asset selection"}
+          ],
+          "correct_key": "A",
+          "explanation": "Estate planning focuses on intergenerational transfer of wealth using tools like gifts and wills. Insurance covers losses (B), debt counselling manages borrowing (C), and investment planning selects assets to meet goals (D).",
+          "difficulty": 1
+        },
+        {
+          "stem": "Two deposit products quote the same headline interest rate, but their interest is taxed differently in the investor's hands. On what basis should the adviser compare them?",
+          "options": [
+            {"key": "A", "text": "The post-tax return, because tax treatment changes what the investor actually keeps.", "misconception": null},
+            {"key": "B", "text": "The headline pre-tax rate, since both quote the same number.", "misconception": "ignoring tax when comparing products"},
+            {"key": "C", "text": "Whichever product has the longer name recognition, regardless of returns.", "misconception": "choosing by brand rather than net return"},
+            {"key": "D", "text": "The rate of inflation alone, ignoring how each is taxed.", "misconception": "substituting inflation for tax analysis"}
+          ],
+          "correct_key": "A",
+          "explanation": "Because income heads and holding periods are taxed differently, the post-tax return decides what the investor keeps and is the correct comparison. Equal headline rates can still leave different net amounts (B); brand (C) and inflation alone (D) do not address the tax difference.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A client funds a home partly with a loan and expects to let it out. Under which planning area does the adviser assess whether this borrowing helps or strains the household, and why does the nature of the asset matter?",
+          "options": [
+            {"key": "A", "text": "Debt counselling; a property can appreciate and earn rent, unlike a depreciating asset such as a car.", "misconception": null},
+            {"key": "B", "text": "Tax planning; the loan is judged solely on the interest deduction it allows.", "misconception": "reducing a borrowing decision to a tax deduction"},
+            {"key": "C", "text": "Insurance planning; the loan is treated as an insurable loss event.", "misconception": "mislabelling a liability as an insurable loss"},
+            {"key": "D", "text": "Estate planning; the loan is analysed only for how it passes to heirs.", "misconception": "confusing current borrowing with wealth transfer"}
+          ],
+          "correct_key": "A",
+          "explanation": "Debt counselling helps a household borrow and repay efficiently and considers whether the funded asset appreciates and earns income (property) or depreciates (a car). Tax (B), insurance (C) and estate (D) angles are secondary to whether the borrowing itself suits the household.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "title": "Role and Types of Financial Advisers",
+      "description": "Financial advisers are useful because personal money management demands time, expertise and research that many households lack, and because asset allocation is a technical discipline. Advisers operate under different models. Some provide comprehensive planning and advice for a fee but do not execute the plan. Some offer planning and also execute the recommended transactions, earning both fees and commissions, and they disclose their commissions and let clients transact elsewhere. Some offer execution-only services, charging nothing for advice that is incidental to distributing products and earning from commissions. Institutional advisers such as banks and brokers must keep a Separately Identifiable Division or Department (SIDD) for advice, run independently of pure execution, with full disclosure.",
+      "difficulty": 2,
+      "prerequisites": ["What Financial Planning Is"],
+      "keywords": ["financial adviser", "fee-only", "execution", "commission", "SIDD", "disclosure"],
+      "misconceptions": ["all advisers charge only a fee and take no commission", "advisers who execute transactions never disclose their commissions", "a bank can mix advice and execution freely without separation"],
+      "source_pages": [],
+      "objectives": [
+        {"text": "Distinguish fee-only, fee-plus-commission and execution-only adviser models.", "bloom": "understand", "assessment_style": "conceptual"},
+        {"text": "Explain the disclosure and separation obligations of institutional advisers.", "bloom": "understand", "assessment_style": "conceptual"}
+      ],
+      "questions": [
+        {
+          "stem": "An adviser charges a client a fee for a comprehensive plan and also earns a commission when executing the recommended products. Which obligation applies to this model?",
+          "options": [
+            {"key": "A", "text": "Disclosing the commissions earned and letting the client execute through other providers if preferred.", "misconception": null},
+            {"key": "B", "text": "Hiding the commission, since the client already pays a fee.", "misconception": "believing a fee removes the duty to disclose commissions"},
+            {"key": "C", "text": "Refusing to let the client transact anywhere else.", "misconception": "assuming advisers can lock clients into their own execution"},
+            {"key": "D", "text": "Charging no fee at all because commissions are being earned.", "misconception": "assuming fee and commission models are mutually exclusive here"}
+          ],
+          "correct_key": "A",
+          "explanation": "In the plan-plus-execution model the adviser earns both fee and commission, and must disclose the commission and offer the client the option to execute elsewhere. A fee does not excuse non-disclosure (B), clients are free to go elsewhere (C), and this model deliberately combines fee and commission (D).",
+          "difficulty": 2
+        },
+        {
+          "stem": "Why must an institutional adviser such as a bank keep a Separately Identifiable Division or Department (SIDD)?",
+          "options": [
+            {"key": "A", "text": "So its financial-advice function operates independently of its pure execution services, with transparency to clients.", "misconception": null},
+            {"key": "B", "text": "So it can avoid giving any advice and only sell products.", "misconception": "treating SIDD as a way to drop advisory duties"},
+            {"key": "C", "text": "So it can pool advice and execution together to cut costs.", "misconception": "believing SIDD permits mixing advice and execution"},
+            {"key": "D", "text": "So it is exempt from disclosing anything to clients.", "misconception": "assuming SIDD reduces disclosure obligations"}
+          ],
+          "correct_key": "A",
+          "explanation": "A SIDD keeps advice distinct from execution, with both run independently and with full disclosure. It does not let the institution avoid advice (B), mix the two verticals (C), or escape disclosure (D).",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which of the following is a genuine reason a household benefits from a professional financial adviser?",
+          "options": [
+            {"key": "A", "text": "Asset allocation and product comparison require expertise and research most households lack the time for.", "misconception": null},
+            {"key": "B", "text": "Advisers can legally guarantee that investments will never lose value.", "misconception": "assuming advisers eliminate investment risk"},
+            {"key": "C", "text": "Using an adviser removes the household's need to save at all.", "misconception": "believing advice replaces the need to save"},
+            {"key": "D", "text": "Advisers are required to hand over their commissions to the client.", "misconception": "misunderstanding how advisers are compensated"}
+          ],
+          "correct_key": "A",
+          "explanation": "Advisers add value because analysing goals, comparing products and setting asset allocation take specific skills and time. They cannot guarantee against losses (B), do not remove the need to save (C), and are not required to surrender commissions, only to disclose them (D).",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Financial Goals: Future Value and Investment Horizon",
+      "description": "A financial goal is defined by a monetary value and the future date the money is needed. Because prices rise, today's cost must be inflated to a future value using Future Value = Current Value x (1 + Inflation Rate) ^ Years to Goal; it is this future value the household must accumulate. The time to goal, or investment horizon, drives the type of investment chosen: for short-term goals low-risk instruments are preferred to protect principal, while longer horizons let an investor accept more risk for higher returns. A longer accumulation period also lowers the monthly saving needed, because the savings have more time to earn returns and compound toward the target.",
+      "difficulty": 2,
+      "prerequisites": ["What Financial Planning Is"],
+      "keywords": ["financial goal", "future value", "inflation", "investment horizon", "compounding", "risk"],
+      "misconceptions": ["the goal amount stays at today's cost regardless of inflation", "inflation is added once linearly rather than compounded", "a longer horizon raises the monthly saving required"],
+      "source_pages": [],
+      "objectives": [
+        {"text": "Apply the future-value formula to inflate a goal to its target date.", "bloom": "apply", "assessment_style": "calculation"},
+        {"text": "Explain how the investment horizon shapes the choice of instrument.", "bloom": "understand", "assessment_style": "suitability"}
+      ],
+      "questions": [
+        {
+          "stem": "A goal costs Rs 4,00,000 today. Inflation is expected at 10% a year and the goal is 5 years away. Using Future Value = Current Value x (1 + Inflation) ^ Years, the target amount is closest to:",
+          "options": [
+            {"key": "A", "text": "Rs 6,44,204.", "misconception": null},
+            {"key": "B", "text": "Rs 6,00,000.", "misconception": "adding 10% per year linearly instead of compounding"},
+            {"key": "C", "text": "Rs 4,40,000.", "misconception": "applying inflation only once for a single year"},
+            {"key": "D", "text": "Rs 4,00,000.", "misconception": "ignoring inflation and using today's cost as the target"}
+          ],
+          "correct_key": "A",
+          "explanation": "4,00,000 x (1.10)^5 = 4,00,000 x 1.61051 = 6,44,204. Option B adds a flat 10% x 5 = 50% linearly, C inflates for one year only, and D ignores inflation entirely.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Farida is building an emergency fund she may need at short notice. Which instrument choice best suits this goal?",
+          "options": [
+            {"key": "A", "text": "A short-term, low-risk debt option, to protect the principal for near-term access.", "misconception": null},
+            {"key": "B", "text": "An equity fund, to maximise returns regardless of when she may need the money.", "misconception": "matching a short-term need with a high-volatility asset"},
+            {"key": "C", "text": "A long-lock-in product, because emergencies can always wait for maturity.", "misconception": "assuming emergency funds can be illiquid"},
+            {"key": "D", "text": "Whatever asset gave the highest return last year.", "misconception": "choosing by past return rather than horizon and risk"}
+          ],
+          "correct_key": "A",
+          "explanation": "An emergency fund is short-term and must protect principal and stay accessible, so a low-risk short-term debt option fits. Equity is too volatile for near-term needs (B), lock-ins defeat emergency access (C), and last year's return does not determine suitability (D).",
+          "difficulty": 2
+        },
+        {
+          "stem": "Madhur can save toward a fixed goal over either 5 years or 7 years, at the same expected return. How does extending the horizon to 7 years affect the monthly saving needed, assuming the goal value is unchanged?",
+          "options": [
+            {"key": "A", "text": "The required monthly saving falls, because the money has longer to earn returns and compound.", "misconception": null},
+            {"key": "B", "text": "The required monthly saving rises, because more months means more total contribution.", "misconception": "assuming a longer horizon always costs more per month"},
+            {"key": "C", "text": "The required monthly saving is unchanged, since returns do not depend on time.", "misconception": "ignoring the compounding effect of a longer horizon"},
+            {"key": "D", "text": "No saving is needed at all once the horizon exceeds 5 years.", "misconception": "assuming a long horizon removes the need to contribute"}
+          ],
+          "correct_key": "A",
+          "explanation": "A longer horizon gives contributions more time to compound toward the same target, so the monthly amount needed is lower. It does not rise (B), returns do depend on time invested (C), and saving is still required (D).",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Risk Tolerance: Capacity and Attitude",
+      "description": "Risk tolerance is the level of risk a client is willing to accept, and it splits into two parts. Risk capacity is the ability to take risk, shaped by financial circumstances and goals: higher wealth and income relative to liabilities, and a longer investment term, generally mean greater capacity. Risk attitude is the willingness to take risk, driven more by psychology than by finances, so some clients find volatility and possible losses distressing while others stay relaxed. Risk tolerance is usually measured through questionnaires that convert responses into a score and classify investors into categories, such as conservative investors who dislike risk, are often new to risky instruments, and prefer safe income-yielding options.",
+      "difficulty": 2,
+      "prerequisites": ["Financial Goals: Future Value and Investment Horizon"],
+      "keywords": ["risk tolerance", "risk capacity", "risk attitude", "conservative investor", "risk profiling"],
+      "misconceptions": ["risk capacity and risk attitude are the same thing", "a wealthy client is automatically willing to take high risk", "risk profiling is guesswork rather than a scored questionnaire"],
+      "source_pages": [],
+      "objectives": [
+        {"text": "Distinguish risk capacity (ability) from risk attitude (willingness).", "bloom": "understand", "assessment_style": "conceptual"},
+        {"text": "Apply the capacity/attitude split to classify an investor's situation.", "bloom": "apply", "assessment_style": "suitability"}
+      ],
+      "questions": [
+        {
+          "stem": "Which pairing correctly matches the two components of risk tolerance?",
+          "options": [
+            {"key": "A", "text": "Risk capacity = the ability to take risk; risk attitude = the willingness to take risk.", "misconception": null},
+            {"key": "B", "text": "Risk capacity = the willingness to take risk; risk attitude = the ability to take risk.", "misconception": "swapping the definitions of capacity and attitude"},
+            {"key": "C", "text": "Both terms mean exactly the same psychological comfort with losses.", "misconception": "collapsing capacity and attitude into one idea"},
+            {"key": "D", "text": "Risk capacity depends only on age; risk attitude depends only on income.", "misconception": "mis-assigning the drivers of each component"}
+          ],
+          "correct_key": "A",
+          "explanation": "Capacity is the financial ability to bear risk; attitude is the psychological willingness to do so. B swaps them, C merges two distinct ideas, and D wrongly ties each to a single factor when capacity reflects wealth, liabilities and horizon together.",
+          "difficulty": 1
+        },
+        {
+          "stem": "A client has high wealth and income relative to few liabilities and a long horizon, yet says market swings keep her awake at night. How is she best described?",
+          "options": [
+            {"key": "A", "text": "High risk capacity but low risk attitude, so willingness constrains how much risk she should take.", "misconception": null},
+            {"key": "B", "text": "High risk tolerance overall, so she should be placed in the most aggressive portfolio.", "misconception": "assuming financial ability overrides psychological willingness"},
+            {"key": "C", "text": "Low risk capacity, because anyone who worries must lack the ability to take risk.", "misconception": "confusing attitude with capacity"},
+            {"key": "D", "text": "No risk tolerance at all, so she should hold only cash forever.", "misconception": "assuming any discomfort means zero risk tolerance"}
+          ],
+          "correct_key": "A",
+          "explanation": "Her finances give high capacity, but her discomfort signals low attitude; risk tolerance must respect both, so willingness limits the risk taken. Ability does not override willingness (B), worry is about attitude not capacity (C), and some risk-taking can still suit her (D).",
+          "difficulty": 3
+        },
+        {
+          "stem": "How is an investor's risk tolerance typically measured in practice?",
+          "options": [
+            {"key": "A", "text": "Through questionnaires whose responses are scored and mapped to risk-preference categories.", "misconception": null},
+            {"key": "B", "text": "Purely by the size of the investor's current bank balance.", "misconception": "reducing risk profiling to a single wealth figure"},
+            {"key": "C", "text": "By the adviser's personal guess after a brief chat, with no scoring.", "misconception": "treating profiling as informal guesswork"},
+            {"key": "D", "text": "By last year's market return, applied to every client equally.", "misconception": "using market performance instead of client responses"}
+          ],
+          "correct_key": "A",
+          "explanation": "Risk tolerance is usually captured via questionnaires that estimate ability and willingness, then scored to classify the investor. A bank balance alone (B), an unstructured guess (C) and market returns (D) do not measure an individual's tolerance.",
+          "difficulty": 1
+        }
+      ]
+    },
+    {
+      "title": "Asset Allocation and Diversification",
+      "description": "Concentrating a portfolio in a single category, whether all equity, all real estate or all gold, exposes the investor to a sharp fall if that one market drops. Asset allocation is the process of dividing a portfolio across different assets so that a fall in one is cushioned by a rise or stability in another, because not all asset values move together. The right allocation depends on the person's specific situation: someone near retirement leans toward safer assets like debt with less equity, while a high-earner with distant goals prefers higher-return assets like equity. Assets themselves come in two broad forms: physical assets (such as real estate and gold) have intrinsic value, act as inflation hedges and are growth-oriented but are illiquid and large-ticket, while financial assets represent a claim on benefits, such as a bank deposit's interest and principal or an equity share's dividend and price change.",
+      "difficulty": 2,
+      "prerequisites": ["Risk Tolerance: Capacity and Attitude"],
+      "keywords": ["asset allocation", "diversification", "concentration risk", "physical assets", "financial assets", "inflation hedge"],
+      "misconceptions": ["holding one asset that has done well is safe diversification", "all asset classes rise and fall together anyway", "physical and financial assets carry the same liquidity"],
+      "source_pages": [],
+      "objectives": [
+        {"text": "Explain how asset allocation reduces the impact of a single market's fall.", "bloom": "understand", "assessment_style": "conceptual"},
+        {"text": "Recommend a suitable allocation stance given an investor's life stage.", "bloom": "apply", "assessment_style": "suitability"}
+      ],
+      "questions": [
+        {
+          "stem": "Latika holds her entire portfolio in equities. What is the core risk she faces, and how would asset allocation help?",
+          "options": [
+            {"key": "A", "text": "Concentration risk; spreading across assets means a fall in one can be cushioned by others that do not move together.", "misconception": null},
+            {"key": "B", "text": "No real risk, because equities always recover, so allocation is unnecessary.", "misconception": "assuming a single asset carries no concentration risk"},
+            {"key": "C", "text": "Only tax risk; allocation is purely a tax-saving technique.", "misconception": "reducing diversification to tax planning"},
+            {"key": "D", "text": "Currency risk only, which allocation cannot address.", "misconception": "misidentifying the risk of a single-asset portfolio"}
+          ],
+          "correct_key": "A",
+          "explanation": "An all-equity portfolio suffers concentration risk: if equities fall, the whole portfolio falls. Allocation spreads holdings so a drop in one asset is offset by others, since not all move together. Equities do not always recover on cue (B), and the issue is concentration, not tax (C) or currency (D).",
+          "difficulty": 2
+        },
+        {
+          "stem": "A person very close to retirement is deciding on an allocation stance. Which is most suitable, and why?",
+          "options": [
+            {"key": "A", "text": "A higher allocation to safer assets like debt and lower to equity, given the short horizon and reliance on investment income.", "misconception": null},
+            {"key": "B", "text": "A near-total equity allocation, to chase the highest possible return before retiring.", "misconception": "matching a short horizon with maximum equity risk"},
+            {"key": "C", "text": "All gold, because physical assets never fall in value.", "misconception": "believing physical assets carry no downside"},
+            {"key": "D", "text": "Whatever a distant-goal high earner would choose, since allocation is the same for everyone.", "misconception": "ignoring how life stage changes suitable allocation"}
+          ],
+          "correct_key": "A",
+          "explanation": "Near retirement, the horizon is short and income dependence high, so safer debt-heavy allocation with less equity suits. Heavy equity is too risky here (B), gold can and does fall (C), and allocation must reflect the individual's situation, not a one-size rule (D).",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which statement correctly contrasts physical assets with financial assets?",
+          "options": [
+            {"key": "A", "text": "Physical assets have intrinsic value and are often illiquid and large-ticket, while financial assets represent a claim on benefits like interest or dividends.", "misconception": null},
+            {"key": "B", "text": "Physical assets are always more liquid than financial assets.", "misconception": "reversing the liquidity comparison"},
+            {"key": "C", "text": "Financial assets have intrinsic physical value, whereas physical assets are only paper claims.", "misconception": "swapping the definitions of the two asset types"},
+            {"key": "D", "text": "Both types are identical in ticket size and require the same skills to manage.", "misconception": "ignoring the large-ticket, skill-heavy nature of physical assets"}
+          ],
+          "correct_key": "A",
+          "explanation": "Physical assets (real estate, gold) carry intrinsic value, hedge inflation and are growth-oriented but illiquid and large-ticket; financial assets are claims on benefits such as a deposit's interest or a share's dividend. B and C reverse the definitions, and D ignores the differences in liquidity and ticket size.",
+          "difficulty": 2
+        }
+      ]
+    }
+  ],
+  "caselets": [
+    {
+      "scenario": "Anil, aged 38, is a salaried IT manager in Pune earning Rs 1,80,000 a month. After paying an EMI on his home loan and taxes (his mandatory expenses), he is left with disposable income; from that he covers essential living costs for his wife and two children, and the family also spends on frequent weekend dining and short trips. His monthly savings have been thin. Anil owns the flat the family lives in and also earns Rs 20,000 a month as rent from an inherited shop. His elder child will need funds for college in 6 years, costing Rs 8,00,000 at today's prices, with education inflation assumed at 8% a year. Anil dislikes seeing his money swing in value and keeps almost everything in bank deposits, though his adviser notes his stable salary, rental income and long horizon give him room to take more risk than he does.",
+      "concept_titles": ["Income, Savings and Asset Creation", "Household Budgeting", "Financial Goals: Future Value and Investment Horizon", "Risk Tolerance: Capacity and Attitude", "Areas of Financial Planning"],
+      "questions": [
+        {
+          "stem": "Anil's home-loan EMI and taxes are best classified in his budget as:",
+          "options": [
+            {"key": "A", "text": "Mandatory expenses, deducted from total income to reach disposable income.", "misconception": null},
+            {"key": "B", "text": "Discretionary expenses, deducted last before savings.", "misconception": "treating fixed obligations as discretionary"},
+            {"key": "C", "text": "Savings, since the EMI builds an asset.", "misconception": "confusing a loan repayment with savings"},
+            {"key": "D", "text": "Income from assets, because the flat is an asset.", "misconception": "confusing an expense with asset income"}
+          ],
+          "correct_key": "A",
+          "explanation": "EMIs and taxes are mandatory outflows removed first to arrive at disposable income. They are not discretionary (B), not savings even though a loan funds an asset (C), and certainly not income (D).",
+          "difficulty": 1,
+          "case_position": 1,
+          "marks": 1
+        },
+        {
+          "stem": "Anil's rent of Rs 20,000 and his salary of Rs 1,80,000 illustrate which point about household income?",
+          "options": [
+            {"key": "A", "text": "Income comes from two streams, employment and assets, and the asset stream will matter more as his working years end.", "misconception": null},
+            {"key": "B", "text": "Both are employment income, since Anil receives them monthly.", "misconception": "treating asset income as employment income"},
+            {"key": "C", "text": "The rent is savings, because it is money he did not have to work for.", "misconception": "confusing asset income with savings"},
+            {"key": "D", "text": "Only the salary counts as income; rent is ignored in planning.", "misconception": "excluding asset income from the household's income"}
+          ],
+          "correct_key": "A",
+          "explanation": "Salary is employment income and rent is income from an asset; as employment ends, dependence shifts to asset income. Rent is not employment income (B), not savings (C), and cannot be ignored (D). This combines the two income streams with the life-cycle shift.",
+          "difficulty": 2,
+          "case_position": 2,
+          "marks": 1
+        },
+        {
+          "stem": "Given today's cost of Rs 8,00,000, education inflation of 8% and 6 years to the goal, the future amount Anil must accumulate is closest to (Future Value = Current Value x (1 + Inflation) ^ Years):",
+          "options": [
+            {"key": "A", "text": "Rs 12,69,500.", "misconception": null},
+            {"key": "B", "text": "Rs 11,84,000.", "misconception": "adding 8% per year linearly (48%) instead of compounding"},
+            {"key": "C", "text": "Rs 8,64,000.", "misconception": "applying 8% inflation for one year only"},
+            {"key": "D", "text": "Rs 8,00,000.", "misconception": "ignoring inflation and using today's cost"}
+          ],
+          "correct_key": "A",
+          "explanation": "8,00,000 x (1.08)^6 = 8,00,000 x 1.586874 = 12,69,499, about Rs 12,69,500. B adds a flat 48% linearly, C inflates for one year, and D ignores inflation. This requires both the formula and multi-year compounding.",
+          "difficulty": 3,
+          "case_position": 3,
+          "marks": 2
+        },
+        {
+          "stem": "Anil keeps almost all his money in deposits despite a stable salary, steady rent and a 6-year horizon. How should his adviser read this in risk-tolerance terms?",
+          "options": [
+            {"key": "A", "text": "His risk capacity is fairly high, but his risk attitude is low, so his behaviour is driven by willingness rather than ability.", "misconception": null},
+            {"key": "B", "text": "His risk capacity must be low, which is why he avoids risk.", "misconception": "inferring low capacity from cautious behaviour"},
+            {"key": "C", "text": "His risk attitude is high because he holds many deposits.", "misconception": "misreading conservative holdings as high willingness"},
+            {"key": "D", "text": "Capacity and attitude are the same, so nothing can be separated.", "misconception": "collapsing the two components of risk tolerance"}
+          ],
+          "correct_key": "A",
+          "explanation": "Stable income, rent and a multi-year horizon indicate solid capacity, while his aversion to seeing value swing indicates low attitude; the gap shows willingness, not ability, is driving him. His caution does not prove low capacity (B), deposits signal low not high attitude (C), and the two components are distinct (D). This combines his financial situation with his stated discomfort.",
+          "difficulty": 3,
+          "case_position": 4,
+          "marks": 1
+        },
+        {
+          "stem": "To lift his thin savings without a pay rise, which budgeting move should Anil consider first?",
+          "options": [
+            {"key": "A", "text": "Trimming or postponing the weekend dining and trips, which are discretionary.", "misconception": null},
+            {"key": "B", "text": "Cutting the children's essential living expenses such as food.", "misconception": "treating essentials as the first thing to cut"},
+            {"key": "C", "text": "Reducing his savings target so the budget balances.", "misconception": "lowering savings to solve a savings shortfall"},
+            {"key": "D", "text": "Assuming his salary will rise soon and changing nothing.", "misconception": "relying on income growth instead of managing expenses"}
+          ],
+          "correct_key": "A",
+          "explanation": "With income fixed, discretionary spending like dining and trips is the easiest lever to raise savings. Essentials should not be the first cut (B), lowering the savings target defeats the purpose (C), and waiting for a raise is not a plan (D).",
+          "difficulty": 2,
+          "case_position": 5,
+          "marks": 1
+        }
+      ]
+    }
+  ]
+}

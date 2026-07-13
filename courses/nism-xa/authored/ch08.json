@@ -1,0 +1,402 @@
+{
+  "chapter_ordinal": 8,
+  "chapter_title": "ASSET ALLOCATION AND INVESTMENT STRATEGIES",
+  "concepts": [
+    {
+      "title": "What Is an Asset Class",
+      "description": "Every investment option can be described by its risk and return characteristics. Investments that share similar risk and return behaviour and respond in a similar way to economic and market events are grouped together as an asset class. Equity shares, for example, may deliver higher long-term returns if a company performs well but show marked short-term volatility as the market re-prices expectations; bonds of the same company instead tend to give steady periodic interest with limited capital appreciation, even when profits are thin. Because these behave differently, they belong to different asset classes. Broadly, investments are classified into equity, debt and cash, with additional classes such as real estate, gold, commodities and other alternatives.",
+      "difficulty": 1,
+      "prerequisites": [],
+      "keywords": ["asset class", "risk and return", "equity", "debt", "cash", "market events"],
+      "misconceptions": ["an asset class is defined by the industry a company operates in", "equity and debt of the same firm are the same asset class", "cash is not an asset class"],
+      "source_pages": [],
+      "objectives": [
+        {"text": "Define an asset class by the risk-return and market-response behaviour its members share.", "bloom": "understand", "assessment_style": "conceptual"},
+        {"text": "Explain why equity and debt of one company sit in different asset classes.", "bloom": "understand", "assessment_style": "conceptual"}
+      ],
+      "questions": [
+        {
+          "stem": "Investments are grouped into the same asset class primarily because they:",
+          "options": [
+            {"key": "A", "text": "Exhibit similar risk and return characteristics and respond similarly to economic and market events.", "misconception": null},
+            {"key": "B", "text": "Are issued by companies in the same industry sector.", "misconception": "defining an asset class by industry rather than risk-return behaviour"},
+            {"key": "C", "text": "Are all bought and sold on the same stock exchange.", "misconception": "confusing trading venue with asset class"},
+            {"key": "D", "text": "Were purchased by the investor in the same calendar year.", "misconception": "grouping by purchase date rather than behaviour"}
+          ],
+          "correct_key": "A",
+          "explanation": "An asset class is a group of investments with similar risk-return features that react similarly to market events. Industry (B), trading venue (C) and purchase timing (D) do not define an asset class.",
+          "difficulty": 1
+        },
+        {
+          "stem": "A company issues both equity shares and bonds. Why are these treated as different asset classes?",
+          "options": [
+            {"key": "A", "text": "Equity offers volatile, potentially higher long-term returns, while the bonds give steady periodic interest with limited appreciation.", "misconception": null},
+            {"key": "B", "text": "They are identical in behaviour, so classifying them separately is only a formality.", "misconception": "assuming equity and debt of one issuer behave identically"},
+            {"key": "C", "text": "Bonds are riskier than the company's equity in every scenario.", "misconception": "reversing the relative risk of equity and debt"},
+            {"key": "D", "text": "Equity pays fixed interest while bonds pay a variable dividend.", "misconception": "swapping the return features of equity and debt"}
+          ],
+          "correct_key": "A",
+          "explanation": "The equity's returns swing with company performance and market sentiment but can be higher long-term, while the bonds pay steady interest with little capital gain, so their risk-return profiles differ. They are not identical (B), equity is generally riskier than the firm's debt (C), and equity pays dividends while bonds pay interest, not the reverse (D).",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which of the following is the broad three-way classification of investment options by risk and return?",
+          "options": [
+            {"key": "A", "text": "Equity, debt and cash.", "misconception": null},
+            {"key": "B", "text": "Large-cap, mid-cap and small-cap.", "misconception": "mistaking an equity sub-classification for the broad asset classes"},
+            {"key": "C", "text": "Short-term, medium-term and long-term.", "misconception": "confusing investment horizon with asset class"},
+            {"key": "D", "text": "Domestic, foreign and hybrid.", "misconception": "confusing geography with asset class"}
+          ],
+          "correct_key": "A",
+          "explanation": "The broad classes are equity, debt and cash, with others such as real estate, gold and commodities added. Large/mid/small-cap (B) sits inside equity, term (C) is a horizon idea, and geography (D) is not the risk-return classification.",
+          "difficulty": 1
+        }
+      ]
+    },
+    {
+      "title": "Characteristics of Major Asset Classes",
+      "description": "Each asset class carries a primary objective of either income or growth. Bonds provide fixed coupon or interest income; they can appreciate when interest rates fall but face interest-rate risk when rates rise, and corporate bonds carry the issuer's credit risk, while government securities are treated as near risk-free. Debt is therefore suited to investors seeking regular income with minimal risk. Stocks represent ownership in a company and have historically delivered higher returns over the long run, but with higher volatility than cash or bonds and exposure to market and business risk, making them growth assets. Real estate is a growth asset that also brings management issues such as tenancy, maintenance and legal clearances. In the workbook's objective grid, short-term bills and long-term bonds target income, while gold, commodities, large-cap equity, mid-cap equity and real estate target growth.",
+      "difficulty": 2,
+      "prerequisites": ["What Is an Asset Class"],
+      "keywords": ["bonds", "stocks", "real estate", "gold", "income", "growth", "interest-rate risk", "credit risk"],
+      "misconceptions": ["bonds carry no risk at all", "gold is primarily an income-generating asset", "government securities carry the same credit risk as corporate bonds"],
+      "source_pages": [],
+      "objectives": [
+        {"text": "Classify major asset classes by their primary objective of income or growth.", "bloom": "understand", "assessment_style": "conceptual"},
+        {"text": "Identify the specific risks attached to bonds and equity.", "bloom": "understand", "assessment_style": "conceptual"}
+      ],
+      "questions": [
+        {
+          "stem": "An investor wants regular income with minimal risk. Which asset class is most suited, and why?",
+          "options": [
+            {"key": "A", "text": "Bonds, because they provide fixed coupon/interest income with relatively lower risk than equity.", "misconception": null},
+            {"key": "B", "text": "Large-cap equity, because ownership guarantees a steady dividend.", "misconception": "assuming equity guarantees regular income"},
+            {"key": "C", "text": "Gold, because it pays periodic interest to holders.", "misconception": "believing gold generates income"},
+            {"key": "D", "text": "Real estate, because it is free of any management issues.", "misconception": "ignoring real estate's management burden and growth orientation"}
+          ],
+          "correct_key": "A",
+          "explanation": "Bonds pay fixed interest with lower risk than equity, matching a regular-income, low-risk need. Equity dividends are not guaranteed (B), gold is a growth asset that pays no interest (C), and real estate is growth-oriented with management issues (D).",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which risk specifically affects a bond's price when market interest rates rise?",
+          "options": [
+            {"key": "A", "text": "Interest-rate risk, which can push the bond's price down as rates rise.", "misconception": null},
+            {"key": "B", "text": "Business risk, tied to the profits of the issuing company's operations.", "misconception": "confusing equity business risk with a bond's rate sensitivity"},
+            {"key": "C", "text": "Tenancy risk, arising from managing tenants.", "misconception": "applying a real-estate risk to bonds"},
+            {"key": "D", "text": "No risk at all, since all bonds have fixed prices.", "misconception": "assuming bond prices never move"}
+          ],
+          "correct_key": "A",
+          "explanation": "Bonds appreciate when rates fall and lose value when rates rise, which is interest-rate risk. Business risk (B) is an equity concept, tenancy risk (C) belongs to real estate, and bond prices do move (D).",
+          "difficulty": 2
+        },
+        {
+          "stem": "In the workbook's grid of asset classes and primary objectives, which asset is classified under 'income' rather than 'growth'?",
+          "options": [
+            {"key": "A", "text": "Long-term bonds.", "misconception": null},
+            {"key": "B", "text": "Gold.", "misconception": "misclassifying gold as an income asset"},
+            {"key": "C", "text": "Mid-cap equity.", "misconception": "misclassifying equity as an income asset"},
+            {"key": "D", "text": "Real estate.", "misconception": "misclassifying real estate as an income asset"}
+          ],
+          "correct_key": "A",
+          "explanation": "Short-term bills and long-term bonds are grouped under income, while gold, commodities, large- and mid-cap equity, and real estate are grouped under growth. So B, C and D are growth assets in that grid.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Why are government securities generally regarded as near risk-free compared with corporate bonds?",
+          "options": [
+            {"key": "A", "text": "A government is not expected to default on obligations towards its own citizens, so they carry negligible credit risk.", "misconception": null},
+            {"key": "B", "text": "They are immune to interest-rate movements of any kind.", "misconception": "assuming government bonds have no interest-rate risk"},
+            {"key": "C", "text": "They deliver higher returns than every other asset class.", "misconception": "equating low risk with the highest return"},
+            {"key": "D", "text": "They are backed by the equity shares of large companies.", "misconception": "misunderstanding what backs a government security"}
+          ],
+          "correct_key": "A",
+          "explanation": "Government securities are seen as near risk-free on credit grounds, as a government is not expected to default on its citizens. They still face interest-rate risk (B), low risk usually means lower not higher return (C), and they are government-backed, not equity-backed (D).",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Goal-Based Asset Allocation",
+      "description": "The most appropriate way to set asset allocation is to link it to the investor's financial goals. First the goal's monetary value and the future date it is needed are defined, usually including an inflation assumption, which fixes the target amount to be accumulated. Then, after gauging how much the investor can save, the return the portfolio must earn to reach that target can be worked out. The desired mix of assets cannot be chosen from the required return alone, however: the investor's risk tolerance constrains the portfolio. An investor unwilling to hold risky assets for a goal needing a 15% return may instead choose to raise the amount invested rather than accept the higher risk needed to chase that return.",
+      "difficulty": 2,
+      "prerequisites": ["Characteristics of Major Asset Classes"],
+      "keywords": ["goal-based allocation", "target amount", "required return", "risk tolerance", "constraint"],
+      "misconceptions": ["asset mix should be set by required return alone", "if a goal needs a high return the investor must always take high risk", "the goal amount is fixed without any inflation assumption"],
+      "source_pages": [],
+      "objectives": [
+        {"text": "Sequence the steps of goal-based asset allocation from goal definition to required return.", "bloom": "understand", "assessment_style": "conceptual"},
+        {"text": "Explain how risk tolerance overrides a return-only choice of asset mix.", "bloom": "apply", "assessment_style": "suitability"}
+      ],
+      "questions": [
+        {
+          "stem": "Why is asset allocation linked to financial goals considered the most appropriate allocation strategy?",
+          "options": [
+            {"key": "A", "text": "It ties the asset mix directly to the investor's specific goals, their target amounts and their timing.", "misconception": null},
+            {"key": "B", "text": "It always produces the single highest possible return in the market.", "misconception": "equating goal-based allocation with return maximisation"},
+            {"key": "C", "text": "It removes the need to consider the investor's risk tolerance.", "misconception": "assuming goals override risk tolerance"},
+            {"key": "D", "text": "It uses the same fixed mix for every investor and every goal.", "misconception": "believing goal-based allocation is one-size-fits-all"}
+          ],
+          "correct_key": "A",
+          "explanation": "Goal-based allocation is preferred because it connects the asset mix to defined goals, their values and horizons. It is not about maximising return (B), it still respects risk tolerance (C), and it varies by investor and goal (D).",
+          "difficulty": 2
+        },
+        {
+          "stem": "A goal requires a 15% portfolio return, but the investor is unwilling to hold the risky assets that could deliver it. What is the sound response under goal-based allocation?",
+          "options": [
+            {"key": "A", "text": "Increase the amount invested toward the goal rather than accept a risk level the investor cannot tolerate.", "misconception": null},
+            {"key": "B", "text": "Force the investor into high-risk equity anyway, since the required return dictates the mix.", "misconception": "letting required return override risk tolerance"},
+            {"key": "C", "text": "Abandon the goal entirely because a 15% return is impossible.", "misconception": "assuming the goal cannot be reached by any means"},
+            {"key": "D", "text": "Ignore the required return and pick assets at random.", "misconception": "disregarding the goal's return requirement altogether"}
+          ],
+          "correct_key": "A",
+          "explanation": "Risk tolerance constrains the portfolio, so an unwilling investor can raise the amount saved instead of taking on intolerable risk. The required return does not override tolerance (B), the goal need not be abandoned (C), and the return requirement is not ignored (D).",
+          "difficulty": 3
+        },
+        {
+          "stem": "In goal-based asset allocation, what is determined first, before the portfolio's required return can be worked out?",
+          "options": [
+            {"key": "A", "text": "The goal's monetary value and the future date it is needed, usually with an inflation assumption.", "misconception": null},
+            {"key": "B", "text": "The exact list of individual shares to be bought.", "misconception": "jumping to security selection before defining the goal"},
+            {"key": "C", "text": "The commission the adviser will earn on the plan.", "misconception": "confusing adviser compensation with goal setting"},
+            {"key": "D", "text": "Last year's best-performing asset class.", "misconception": "starting from past performance rather than the goal"}
+          ],
+          "correct_key": "A",
+          "explanation": "The goal's value and timing (with inflation) are set first, fixing the target; only then, given how much can be saved, is the required return derived. Security selection (B), commissions (C) and past performance (D) do not come first.",
+          "difficulty": 1
+        }
+      ]
+    },
+    {
+      "title": "Life-Cycle Based Asset Allocation",
+      "description": "Risk and return preferences tend to follow an investor's life cycle, and a needs hierarchy: people cover survival needs first, then contingencies, and only then seek investment and speculative returns. Younger investors seek growth, can take a long-term view and tolerate more risk, while older investors, with shorter horizons and dependence on investment income, are less willing to take risk. In the childhood stage, parents plan for a child's education and start early with an aggressive mix of around 80% equity and 20% debt, shifting toward debt as the goal nears. A young single professional in the wealth-accumulation stage, with a 10-year-plus horizon and high tolerance for volatility, holds a largely equity, aggressive portfolio. As responsibilities such as a couple with children arrive, the balance gradually tilts toward stability.",
+      "difficulty": 2,
+      "prerequisites": ["Goal-Based Asset Allocation"],
+      "keywords": ["life cycle", "needs hierarchy", "young investor", "childhood stage", "aggressive allocation", "horizon"],
+      "misconceptions": ["all investors should hold the same equity-debt mix regardless of age", "older investors should hold the most aggressive portfolios", "a childhood education goal should stay in equity right up to the deadline"],
+      "source_pages": [],
+      "objectives": [
+        {"text": "Relate life-cycle stage to suitable equity-debt allocation.", "bloom": "understand", "assessment_style": "suitability"},
+        {"text": "Apply the needs hierarchy to explain why survival needs precede speculative returns.", "bloom": "apply", "assessment_style": "scenario"}
+      ],
+      "questions": [
+        {
+          "stem": "For a child's education goal begun early in the childhood stage, which starting allocation and later adjustment fit the life-cycle approach?",
+          "options": [
+            {"key": "A", "text": "Start aggressive at around 80% equity / 20% debt, then shift toward debt as the goal approaches.", "misconception": null},
+            {"key": "B", "text": "Start at 80% debt / 20% equity and move toward equity as the goal nears.", "misconception": "reversing the direction of the life-cycle glide"},
+            {"key": "C", "text": "Hold 100% equity right up to the admission date to maximise growth.", "misconception": "keeping full equity exposure at the deadline"},
+            {"key": "D", "text": "Keep a fixed 50/50 mix that never changes over the child's life.", "misconception": "ignoring the shift toward safety as the goal nears"}
+          ],
+          "correct_key": "A",
+          "explanation": "Starting early allows an aggressive 80/20 equity-debt mix, which is moved toward debt as the goal nears to protect the accumulated amount. B reverses the glide path, C leaves too much risk at the deadline, and D never de-risks (D).",
+          "difficulty": 2
+        },
+        {
+          "stem": "A single young professional with a 10-year-plus horizon and high tolerance for volatility is in the wealth-accumulation stage. What portfolio suits this stage?",
+          "options": [
+            {"key": "A", "text": "An aggressive portfolio, primarily equity with a very small fixed-income portion, since capital growth is paramount.", "misconception": null},
+            {"key": "B", "text": "A mostly cash portfolio, to keep everything perfectly safe.", "misconception": "matching a long-horizon growth stage with cash"},
+            {"key": "C", "text": "A debt-heavy portfolio like someone near retirement.", "misconception": "applying a near-retirement stance to a young accumulator"},
+            {"key": "D", "text": "Equal thirds of gold, real estate and cash to avoid equity.", "misconception": "avoiding equity despite a long horizon and high tolerance"}
+          ],
+          "correct_key": "A",
+          "explanation": "With a long horizon and high risk tolerance, capital growth dominates, so the portfolio is aggressive and mainly equity with a small fixed-income share. Cash (B), debt-heavy (C) and equity-avoiding mixes (D) all sacrifice the growth this stage calls for.",
+          "difficulty": 2
+        },
+        {
+          "stem": "According to the needs-hierarchy view of risk preferences, in what order does an investor typically address their needs?",
+          "options": [
+            {"key": "A", "text": "Basic survival needs first, then contingencies, then investment and speculative returns.", "misconception": null},
+            {"key": "B", "text": "Speculative returns first, then survival needs, then contingencies.", "misconception": "placing speculative goals ahead of survival needs"},
+            {"key": "C", "text": "Contingencies first, then speculative returns, then survival needs.", "misconception": "deferring survival needs to last"},
+            {"key": "D", "text": "All needs are addressed simultaneously with equal priority.", "misconception": "ignoring the ordering in the needs hierarchy"}
+          ],
+          "correct_key": "A",
+          "explanation": "The needs hierarchy has investors secure survival, then provide for contingencies, and only then seek investment and speculative returns. The other orders (B, C, D) contradict this sequence.",
+          "difficulty": 1
+        }
+      ]
+    },
+    {
+      "title": "Strategic and Tactical Asset Allocation",
+      "description": "Strategic asset allocation sets a stable long-run mix based on each asset class's long-run expected returns; if those returns hold, the strategic allocation stays put. Tactical asset allocation (TAA) adds market timing: because asset classes perform well at different times and actual returns deviate from long-run expectations, TAA makes short-term shifts to add value. It actively raises exposure to asset classes judged relatively attractive and cuts exposure to those seen as overvalued, aiming to outperform the asset-class indices and the benchmarks aligned to the strategic allocation. TAA is favoured by advisers and managers precisely because it seeks to beat those benchmarks, but it depends on a view of relative asset-class performance being correct.",
+      "difficulty": 3,
+      "prerequisites": ["Goal-Based Asset Allocation"],
+      "keywords": ["strategic asset allocation", "tactical asset allocation", "market timing", "relative performance", "benchmark", "overvalued"],
+      "misconceptions": ["strategic and tactical allocation mean the same thing", "tactical allocation increases exposure to overvalued assets", "strategic allocation changes constantly with the market"],
+      "source_pages": [],
+      "objectives": [
+        {"text": "Distinguish strategic from tactical asset allocation by their use of market timing.", "bloom": "understand", "assessment_style": "conceptual"},
+        {"text": "Explain how TAA adjusts exposures to attractive versus overvalued assets.", "bloom": "apply", "assessment_style": "scenario"}
+      ],
+      "questions": [
+        {
+          "stem": "What distinguishes tactical asset allocation (TAA) from strategic asset allocation?",
+          "options": [
+            {"key": "A", "text": "TAA adds market timing, making short-term shifts based on a view of relative asset-class performance.", "misconception": null},
+            {"key": "B", "text": "TAA fixes a mix permanently, while strategic allocation changes daily.", "misconception": "reversing which strategy is stable and which is active"},
+            {"key": "C", "text": "TAA ignores asset-class performance entirely.", "misconception": "assuming TAA disregards relative performance"},
+            {"key": "D", "text": "TAA only ever holds cash, unlike strategic allocation.", "misconception": "mischaracterising TAA as a cash-only approach"}
+          ],
+          "correct_key": "A",
+          "explanation": "TAA introduces market timing through short-term shifts based on relative asset-class views, whereas strategic allocation is the stable long-run mix. B reverses the two, C is the opposite of what TAA does, and D is not what TAA means.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Under tactical asset allocation, how does a manager act on a view that one asset class is overvalued and another is relatively attractive?",
+          "options": [
+            {"key": "A", "text": "Reduce exposure to the overvalued asset and increase exposure to the relatively attractive one.", "misconception": null},
+            {"key": "B", "text": "Increase exposure to the overvalued asset because it has risen recently.", "misconception": "buying more of an asset judged overvalued"},
+            {"key": "C", "text": "Hold both exposures fixed, since TAA never changes weights.", "misconception": "treating TAA as a static strategy"},
+            {"key": "D", "text": "Sell everything and move fully to a single asset class.", "misconception": "overstating TAA as an all-or-nothing switch"}
+          ],
+          "correct_key": "A",
+          "explanation": "TAA tactically increases exposure to relatively attractive assets and reduces exposure to overvalued ones. It does not add to overvalued assets (B), it does change weights (C), and it makes adjustments rather than an all-in switch (D).",
+          "difficulty": 2
+        },
+        {
+          "stem": "Under strategic asset allocation, when will the long-run target mix tend to stay stable?",
+          "options": [
+            {"key": "A", "text": "When each asset class's expected returns are equal to their long-run expected returns.", "misconception": null},
+            {"key": "B", "text": "Only when the manager actively times the market each week.", "misconception": "confusing strategic stability with active timing"},
+            {"key": "C", "text": "When actual returns deviate sharply from long-run expectations.", "misconception": "assuming deviations keep the strategic mix stable"},
+            {"key": "D", "text": "When the portfolio holds no equity at all.", "misconception": "tying strategic stability to a specific asset holding"}
+          ],
+          "correct_key": "A",
+          "explanation": "If expected returns match long-run expectations, the strategic allocation is stable; deviations are what create the opportunities TAA exploits. Active timing is TAA, not strategic stability (B), deviations disturb rather than preserve the mix (C), and stability is not about holding no equity (D).",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "title": "Portfolio Rebalancing",
+      "description": "Over time, market movements pull a portfolio's actual weights away from its target allocation, and rebalancing restores them. There are three main ways to rebalance: sell investments from over-weighted asset categories and buy under-weighted ones; buy new investments only in the under-weighted categories; or, if contributions are ongoing, steer more of each new contribution into under-weighted categories until balance returns. Before rebalancing, the investor should weigh whether the action triggers transaction fees or tax consequences, and a financial planner's role is to minimise those costs. Rebalancing works best when done on a periodic but relatively infrequent basis.",
+      "difficulty": 2,
+      "prerequisites": ["Life-Cycle Based Asset Allocation"],
+      "keywords": ["rebalancing", "target allocation", "over-weighted", "under-weighted", "transaction costs", "tax"],
+      "misconceptions": ["rebalancing means buying more of the asset that has already grown", "rebalancing should be done as frequently as possible", "rebalancing never has any tax or cost consequence"],
+      "source_pages": [],
+      "objectives": [
+        {"text": "Describe the methods available to rebalance a portfolio to target.", "bloom": "understand", "assessment_style": "conceptual"},
+        {"text": "Compute the trade needed to restore a target allocation.", "bloom": "apply", "assessment_style": "calculation"}
+      ],
+      "questions": [
+        {
+          "stem": "Which of the following is a valid way to rebalance a portfolio back toward its target allocation?",
+          "options": [
+            {"key": "A", "text": "Sell from over-weighted asset categories and use the proceeds to buy under-weighted ones.", "misconception": null},
+            {"key": "B", "text": "Buy more of the over-weighted category because it has been performing well.", "misconception": "adding to the over-weighted asset instead of trimming it"},
+            {"key": "C", "text": "Sell the under-weighted category to lock in its lower weight.", "misconception": "selling the asset that is already below target"},
+            {"key": "D", "text": "Do nothing and let the drift continue indefinitely.", "misconception": "treating drift as self-correcting"}
+          ],
+          "correct_key": "A",
+          "explanation": "Rebalancing trims over-weighted categories and adds to under-weighted ones (or directs new contributions there). Buying more of the over-weighted asset (B) worsens the drift, selling the under-weighted asset (C) is backwards, and ignoring drift (D) is not rebalancing.",
+          "difficulty": 1
+        },
+        {
+          "stem": "What should an investor consider before rebalancing, and what is the planner's role there?",
+          "options": [
+            {"key": "A", "text": "Whether the action triggers transaction fees or tax; the planner's role is to minimise these costs.", "misconception": null},
+            {"key": "B", "text": "Nothing, because rebalancing is always free of costs and taxes.", "misconception": "assuming rebalancing has no cost or tax impact"},
+            {"key": "C", "text": "Only the weather, since markets follow seasonal patterns.", "misconception": "introducing an irrelevant factor"},
+            {"key": "D", "text": "Whether to rebalance every single day for precision.", "misconception": "favouring maximum-frequency rebalancing"}
+          ],
+          "correct_key": "A",
+          "explanation": "Rebalancing can trigger transaction fees and tax, so these must be weighed, and the planner works to minimise them. Costs and taxes are real (B), weather is irrelevant (C), and rebalancing works best periodically and infrequently, not daily (D).",
+          "difficulty": 2
+        },
+        {
+          "stem": "A portfolio worth Rs 10,00,000 has a target of 60% equity and 40% debt. After a rally, equity is now Rs 7,00,000 and debt Rs 3,00,000. How much equity must be sold to restore the target?",
+          "options": [
+            {"key": "A", "text": "Rs 1,00,000 of equity, moving it into debt.", "misconception": null},
+            {"key": "B", "text": "Rs 70,000 of equity.", "misconception": "rebalancing to 63% by trimming only part of the drift"},
+            {"key": "C", "text": "Nothing, since equity rising means the portfolio is fine.", "misconception": "ignoring drift because the over-weighted asset grew"},
+            {"key": "D", "text": "Rs 3,00,000 of equity, to equalise equity and debt at 50/50.", "misconception": "rebalancing to the wrong 50/50 target"}
+          ],
+          "correct_key": "A",
+          "explanation": "Target equity = 60% of 10,00,000 = 6,00,000, but equity is now 7,00,000, so 1,00,000 must be sold and moved to debt (making debt 4,00,000 = 40%). B undershoots the required trim, C ignores the drift, and D rebalances to a 50/50 mix that is not the target.",
+          "difficulty": 2
+        }
+      ]
+    }
+  ],
+  "caselets": [
+    {
+      "scenario": "Sunita, aged 29, is a single software engineer in Bengaluru with no dependants and a 25-year-plus horizon to retirement. She is comfortable with sharp swings in value and wants to build wealth aggressively, so her adviser sets a strategic target of 70% equity and 30% debt. Sunita's portfolio is worth Rs 12,00,000. After a strong equity rally, her holdings now stand at Rs 9,00,000 in equity and Rs 3,00,000 in debt. Her adviser also holds a short-term view that mid-cap equity looks overvalued while government bonds look relatively attractive, and is weighing whether to make a temporary shift on top of the strategic mix. Separately, Sunita has just started saving for a home she hopes to buy in 3 years, and wonders whether that shorter-horizon money should sit in the same aggressive mix as her retirement savings.",
+      "concept_titles": ["Life-Cycle Based Asset Allocation", "Portfolio Rebalancing", "Strategic and Tactical Asset Allocation", "Goal-Based Asset Allocation", "Characteristics of Major Asset Classes"],
+      "questions": [
+        {
+          "stem": "Given Sunita's age, lack of dependants, long horizon and comfort with volatility, which portfolio stance fits her retirement savings?",
+          "options": [
+            {"key": "A", "text": "An aggressive, largely equity portfolio, since capital growth is paramount at this life stage.", "misconception": null},
+            {"key": "B", "text": "A debt-heavy portfolio, as though she were near retirement.", "misconception": "applying a near-retirement stance to a young accumulator"},
+            {"key": "C", "text": "An all-cash portfolio to eliminate every risk.", "misconception": "matching a long growth horizon with cash"},
+            {"key": "D", "text": "An all-gold portfolio because gold never loses value.", "misconception": "assuming gold carries no downside"}
+          ],
+          "correct_key": "A",
+          "explanation": "A young, dependant-free investor with a long horizon and high tolerance is in the accumulation stage, where an aggressive equity-led portfolio suits. Debt-heavy (B) suits the near-retired, cash (C) sacrifices growth, and gold can fall (D).",
+          "difficulty": 1,
+          "case_position": 1,
+          "marks": 1
+        },
+        {
+          "stem": "Sunita's target is 70% equity / 30% debt on a Rs 12,00,000 portfolio, but equity has grown to Rs 9,00,000 and debt sits at Rs 3,00,000. How much equity must be sold and moved to debt to restore the target?",
+          "options": [
+            {"key": "A", "text": "Rs 60,000 of equity, bringing equity to Rs 8,40,000 and debt to Rs 3,60,000.", "misconception": null},
+            {"key": "B", "text": "Rs 90,000 of equity, to reach an even split.", "misconception": "rebalancing toward the wrong target mix"},
+            {"key": "C", "text": "Rs 1,00,000 of equity, ignoring the actual 70/30 target.", "misconception": "applying a 60/40 target instead of 70/30"},
+            {"key": "D", "text": "Nothing, because equity growing means no action is needed.", "misconception": "ignoring drift because the over-weighted asset rose"}
+          ],
+          "correct_key": "A",
+          "explanation": "Target equity = 70% of 12,00,000 = 8,40,000, but equity is now 9,00,000, so 60,000 must be sold and moved to debt (debt becomes 3,60,000 = 30%). B and C rebalance to the wrong targets, and D ignores the drift. This combines the 70/30 target with the current values.",
+          "difficulty": 3,
+          "case_position": 2,
+          "marks": 2
+        },
+        {
+          "stem": "The adviser's plan to temporarily tilt toward government bonds and away from over-valued mid-cap equity, on top of the strategic mix, is an example of:",
+          "options": [
+            {"key": "A", "text": "Tactical asset allocation, a short-term shift based on a view of relative asset-class performance.", "misconception": null},
+            {"key": "B", "text": "Strategic asset allocation, since it changes the long-run mix permanently.", "misconception": "confusing a short-term tilt with a permanent strategic change"},
+            {"key": "C", "text": "Rebalancing back to the strategic target, since weights are being changed.", "misconception": "mistaking a view-driven tilt for restoring the target"},
+            {"key": "D", "text": "Goal-based allocation, because it is driven by Sunita's retirement goal.", "misconception": "attributing a market-timing tilt to goal setting"}
+          ],
+          "correct_key": "A",
+          "explanation": "A temporary, view-driven shift toward attractive assets and away from overvalued ones is tactical asset allocation. It is not a permanent strategic change (B), not a return to target (rebalancing) (C), and not driven by the goal itself (D).",
+          "difficulty": 2,
+          "case_position": 3,
+          "marks": 1
+        },
+        {
+          "stem": "For the home Sunita wants to buy in 3 years, why should that money not sit in the same aggressive mix as her retirement savings?",
+          "options": [
+            {"key": "A", "text": "The shorter horizon means capital must be protected, so a lower-risk mix suits, since a market fall near the goal could force a loss.", "misconception": null},
+            {"key": "B", "text": "Because all goals must always use an identical asset mix.", "misconception": "ignoring how horizon changes the suitable mix"},
+            {"key": "C", "text": "Because a 3-year goal needs even more equity than retirement.", "misconception": "raising risk as the horizon shortens"},
+            {"key": "D", "text": "Because short-term goals cannot be planned for at all.", "misconception": "assuming short-horizon goals are unplannable"}
+          ],
+          "correct_key": "A",
+          "explanation": "Goal-based allocation ties the mix to each goal's horizon; a 3-year goal needs capital protection, so a lower-risk mix suits, unlike the long-horizon retirement pot. The mix is not identical across goals (B), a short horizon calls for less not more equity (C), and short-term goals are plannable (D). This combines horizon with goal-based allocation.",
+          "difficulty": 3,
+          "case_position": 4,
+          "marks": 1
+        },
+        {
+          "stem": "Before executing the rebalancing sale of equity, what should Sunita's adviser weigh?",
+          "options": [
+            {"key": "A", "text": "Whether the sale triggers transaction fees or tax, and how to minimise those costs.", "misconception": null},
+            {"key": "B", "text": "Nothing, because selling equity to rebalance is always cost- and tax-free.", "misconception": "assuming rebalancing has no cost or tax impact"},
+            {"key": "C", "text": "Only whether equity might keep rising, so she should never trim it.", "misconception": "refusing to trim an over-weighted asset"},
+            {"key": "D", "text": "Whether to rebalance daily for maximum precision.", "misconception": "favouring maximum-frequency rebalancing"}
+          ],
+          "correct_key": "A",
+          "explanation": "Selling to rebalance can trigger transaction fees and tax, so the adviser weighs these and works to minimise them. Rebalancing is not automatically free (B), an over-weighted asset should be trimmed toward target (C), and rebalancing works best periodically, not daily (D).",
+          "difficulty": 2,
+          "case_position": 5,
+          "marks": 1
+        }
+      ]
+    }
+  ]
+}

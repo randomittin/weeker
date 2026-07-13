@@ -1,0 +1,492 @@
+{
+  "chapter_ordinal": 6,
+  "chapter_title": "MEASURING INVESTMENT RETURNS",
+  "concepts": [
+    {
+      "title": "Understanding Return: Rupee Return versus Rate of Return",
+      "description": "Return measures the benefit an investor gets by comparing what flows in against what flows out. It can be positive (a profit) or negative (a loss), and it can be expressed two ways. The first is the absolute rupee return: simply inflows minus outflows, for example a share bought for Rs.20,000 and sold for Rs.24,000 gives Rs.4,000. The second is the rate of return, which restates the gain as a percentage of the amount invested, effectively scaling every investment to a base of Rs.100 so different-sized investments can be compared fairly. Rupee return alone is misleading because a larger investment can show a bigger rupee gain while actually earning a lower percentage. Comparing the rate of return, not the rupee amount, tells an investor which use of money worked harder.",
+      "difficulty": 1,
+      "prerequisites": [],
+      "keywords": ["return", "rupee return", "rate of return", "inflow", "outflow"],
+      "misconceptions": ["the investment with the larger rupee gain always earns the better return", "return can only be positive"],
+      "source_pages": [156, 158],
+      "objectives": [
+        {"text": "Distinguish absolute rupee return from the rate of return.", "bloom": "Understand", "assessment_style": "conceptual"},
+        {"text": "Compute and compare rates of return for differently sized investments.", "bloom": "Apply", "assessment_style": "calculation"}
+      ],
+      "questions": [
+        {
+          "stem": "Investment A is bought for Rs.20,000 and sold for Rs.24,000. Investment B is bought for Rs.5,000 and sold for Rs.6,500. Which investment earned the higher rate of return?",
+          "options": [
+            {"key": "A", "text": "Investment B, at 30% versus A's 20%.", "misconception": null},
+            {"key": "B", "text": "Investment A, because its rupee gain of Rs.4,000 is larger.", "misconception": "Judges performance by absolute rupee gain rather than percentage return."},
+            {"key": "C", "text": "They are equal, because both were sold at a profit.", "misconception": "Treats any profit as an identical return regardless of the amount invested."},
+            {"key": "D", "text": "Investment A, at 20% versus B's 15%.", "misconception": "Miscomputes B's return by dividing the gain by the sale price instead of the cost."}
+          ],
+          "correct_key": "A",
+          "explanation": "Rate of return divides the gain by the amount invested: A earns 4,000/20,000 = 20%, while B earns 1,500/5,000 = 30%, so B is better despite a smaller rupee gain. B judges by rupee size, C ignores the base entirely, and D divides B's gain by 6,500 instead of 5,000.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A plot of land is bought for Rs.5 lakh and later sold for Rs.4 lakh. How is this outcome described?",
+          "options": [
+            {"key": "A", "text": "A negative return, because the outflow exceeded the inflow, giving a loss.", "misconception": null},
+            {"key": "B", "text": "A positive return, because land always appreciates.", "misconception": "Assumes an asset class cannot produce a loss."},
+            {"key": "C", "text": "Zero return, because the principal was recovered.", "misconception": "Assumes the sale recovered the full cost when it did not."},
+            {"key": "D", "text": "Not a return at all, since returns must be positive.", "misconception": "Denies that returns can be negative."}
+          ],
+          "correct_key": "A",
+          "explanation": "Selling for less than the purchase price yields a loss, which is a negative return. B wrongly assumes land cannot fall, C wrongly assumes full recovery of Rs.5 lakh, and D denies that returns can be negative.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Why is the rate of return, rather than the rupee return, the preferred basis for comparing two investments of different sizes?",
+          "options": [
+            {"key": "A", "text": "It scales each investment to a common base (per Rs.100 invested), enabling a fair comparison.", "misconception": null},
+            {"key": "B", "text": "It always produces a larger number, which looks better to investors.", "misconception": "Assumes the rate is chosen for cosmetic size rather than comparability."},
+            {"key": "C", "text": "It ignores the amount invested, which is irrelevant to performance.", "misconception": "Wrongly claims the invested amount is irrelevant rather than the denominator."},
+            {"key": "D", "text": "It converts every loss into a gain for easier reporting.", "misconception": "Falsely claims the rate of return hides losses."}
+          ],
+          "correct_key": "A",
+          "explanation": "Expressing return as a percentage of the amount invested puts all investments on the same footing, so a small and a large investment can be compared. B is wrong because the rate can be smaller, not larger. C is wrong because the invested amount is the denominator, not ignored. D is wrong because losses remain negative rates.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Annualized Return",
+      "description": "Absolute return ignores how long the money was tied up, which can be misleading: earning 50% in one year is clearly better than earning 50% over three years, even though the absolute figure is identical. Annualized return fixes this by standardising the gain to a 'per annum' figure. In the workbook's simple form it is calculated as ((End value - Beginning value) / Beginning value) x 100 x (1 / holding period in years). So a house bought for Rs.20 lakh and sold for Rs.30 lakh gives an absolute return of 50%; if that took one year the annualized return is 50%, but if it took three years it is only about 16.7%. The same absolute return spread over a longer period produces a lower annualized number, which is why annualizing is the accepted way to compare investments held for different lengths of time.",
+      "difficulty": 2,
+      "prerequisites": ["Understanding Return: Rupee Return versus Rate of Return"],
+      "keywords": ["annualized return", "absolute return", "holding period", "per annum", "standardization"],
+      "misconceptions": ["a higher absolute return always means a better investment regardless of time", "annualizing means multiplying the absolute return by the number of years"],
+      "source_pages": [158, 159],
+      "objectives": [
+        {"text": "Explain why absolute return must be adjusted for the holding period.", "bloom": "Understand", "assessment_style": "conceptual"},
+        {"text": "Compute the simple annualized return for a given holding period.", "bloom": "Apply", "assessment_style": "calculation"}
+      ],
+      "questions": [
+        {
+          "stem": "An investment is bought for Rs.50,000 and sold for Rs.80,000 after 2 years. Using the simple annualized-return method, what is the annualized return?",
+          "options": [
+            {"key": "A", "text": "30% per annum.", "misconception": null},
+            {"key": "B", "text": "60% per annum.", "misconception": "Reports the absolute return without dividing by the holding period."},
+            {"key": "C", "text": "120% per annum.", "misconception": "Multiplies the absolute return by the years instead of dividing."},
+            {"key": "D", "text": "15% per annum.", "misconception": "Divides the absolute return by an incorrect factor (4 instead of 2)."}
+          ],
+          "correct_key": "A",
+          "explanation": "Absolute return is (80,000 - 50,000)/50,000 = 60%; annualizing over 2 years gives 60% x (1/2) = 30% p.a. B forgets to annualize, C multiplies rather than divides by the years, and D divides by the wrong number.",
+          "difficulty": 2
+        },
+        {
+          "stem": "House P is bought for Rs.20 lakh and sold for Rs.30 lakh after 1 year. House Q is bought for Rs.20 lakh and sold for Rs.30 lakh after 3 years. Which is the better investment and why?",
+          "options": [
+            {"key": "A", "text": "House P, because the same 50% absolute return was earned in a shorter time, giving a higher annualized return.", "misconception": null},
+            {"key": "B", "text": "House Q, because holding longer earns more return overall.", "misconception": "Assumes a longer hold automatically produces a superior return."},
+            {"key": "C", "text": "They are equal, because both earned a 50% absolute return.", "misconception": "Uses absolute return alone and ignores the holding period."},
+            {"key": "D", "text": "House Q, because its annualized return of 50% beats P's.", "misconception": "Fails to divide Q's absolute return by its 3-year holding period."}
+          ],
+          "correct_key": "A",
+          "explanation": "Both earn 50% absolute, but P earns it in one year (50% p.a.) while Q takes three years (about 16.7% p.a.), so P is superior. B wrongly rewards a longer hold, C ignores time, and D fails to annualize Q's return.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Why can absolute return be misleading when comparing investments?",
+          "options": [
+            {"key": "A", "text": "It does not take the holding period into account, so equal absolute returns over different times look the same.", "misconception": null},
+            {"key": "B", "text": "It always overstates losses and understates gains.", "misconception": "Invents a systematic bias in the absolute return figure."},
+            {"key": "C", "text": "It cannot be calculated without knowing the inflation rate.", "misconception": "Confuses absolute return with a real (inflation-adjusted) return."},
+            {"key": "D", "text": "It expresses the result in rupees rather than as a percentage.", "misconception": "Confuses absolute percentage return with rupee return."}
+          ],
+          "correct_key": "A",
+          "explanation": "Absolute return omits time, so the same percentage earned quickly or slowly appears identical, which is why annualizing is needed. B invents a bias, C confuses it with real return, and D confuses it with the rupee measure.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Total Return",
+      "description": "Many investments pay off in more than one way. Equity shares can give a dividend and a capital gain on sale; property can give rentals and a capital gain. Total return is the complete measure that adds up every form of benefit and compares it with the principal invested, then annualizes the result. Its sign depends on its components: if the loss on sale outweighs the income received, total return is negative. For example, a share of face value Rs.10 that pays a 30% dividend gives Rs.3 of income; if it is bought for Rs.200 and sold after a year for Rs.190, the Rs.10 capital loss outweighs the Rs.3 dividend, so total return is -Rs.7, or -3.5% on the Rs.200 invested. Leaving out any component, such as forgetting the dividend or ignoring the capital loss, distorts the picture.",
+      "difficulty": 2,
+      "prerequisites": ["Annualized Return"],
+      "keywords": ["total return", "dividend", "capital gain", "income", "principal"],
+      "misconceptions": ["total return is just the capital gain on sale", "a dividend guarantees a positive total return"],
+      "source_pages": [159, 161],
+      "objectives": [
+        {"text": "Define total return as the sum of all benefits from an investment relative to the principal.", "bloom": "Understand", "assessment_style": "conceptual"},
+        {"text": "Compute total return including both income and capital gain or loss.", "bloom": "Apply", "assessment_style": "calculation"}
+      ],
+      "questions": [
+        {
+          "stem": "A share is bought for Rs.200 and sold one year later for Rs.220. During the year it pays a dividend of Rs.4. What is the total rate of return on the investment?",
+          "options": [
+            {"key": "A", "text": "12%.", "misconception": null},
+            {"key": "B", "text": "10%.", "misconception": "Counts only the capital gain and ignores the dividend income."},
+            {"key": "C", "text": "2%.", "misconception": "Counts only the dividend and ignores the capital gain."},
+            {"key": "D", "text": "20%.", "misconception": "Treats the dividend as a percentage rate and adds it to the capital return incorrectly."}
+          ],
+          "correct_key": "A",
+          "explanation": "Total benefit is the Rs.20 capital gain plus the Rs.4 dividend = Rs.24 on Rs.200 invested = 12%. B omits the dividend, C omits the capital gain, and D mishandles the dividend as a rate.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A share is bought for Rs.100 and sold after a year for Rs.92. It pays a dividend of Rs.3 during the year. What is the total return?",
+          "options": [
+            {"key": "A", "text": "-5%, because the Rs.8 capital loss outweighs the Rs.3 dividend.", "misconception": null},
+            {"key": "B", "text": "-8%, because only the capital loss counts.", "misconception": "Ignores the dividend income when computing total return."},
+            {"key": "C", "text": "+3%, because the dividend makes the return positive.", "misconception": "Assumes any dividend guarantees a positive total return."},
+            {"key": "D", "text": "-11%, by adding the loss and the dividend as both negative.", "misconception": "Treats the positive dividend as a negative amount."}
+          ],
+          "correct_key": "A",
+          "explanation": "Total return combines the -Rs.8 capital loss and the +Rs.3 dividend = -Rs.5 on Rs.100 = -5%. B ignores the dividend, C wrongly assumes a dividend forces a positive result, and D wrongly makes the dividend negative.",
+          "difficulty": 3
+        },
+        {
+          "stem": "What makes 'total return' a more complete measure than the capital gain alone?",
+          "options": [
+            {"key": "A", "text": "It adds every benefit, such as dividends or rentals, to the capital gain before comparing with the principal.", "misconception": null},
+            {"key": "B", "text": "It counts only the largest single benefit and discards the rest.", "misconception": "Assumes total return picks one component rather than summing all."},
+            {"key": "C", "text": "It excludes any losses so the figure is always positive.", "misconception": "Claims total return drops losses, which it does not."},
+            {"key": "D", "text": "It measures only the income and ignores the sale price.", "misconception": "Reduces total return to income alone, omitting capital gain or loss."}
+          ],
+          "correct_key": "A",
+          "explanation": "Total return sums all forms of benefit, income and capital gain, and relates them to the principal. B is wrong because it sums, not selects; C is wrong because losses are included and can make it negative; D is wrong because the capital gain or loss is part of it.",
+          "difficulty": 1
+        }
+      ]
+    },
+    {
+      "title": "Compounding and Time Value of Money",
+      "description": "Money available today is worth more than the same sum in the future, because it can be invested to earn a return and because people prefer consuming now. This is the time value of money. Compounding is the mechanism: interest earned is itself reinvested and goes on to earn further interest. A sum PV grows to a future value FV = PV x (1 + r)^n over n periods. Reinvesting matters greatly: Rs.5 lakh at 8% for five years yields Rs.2 lakh of simple interest if the interest is withdrawn each year, but about Rs.2.35 lakh if it is left to compound annually. The frequency of compounding also matters: the more often interest is credited and reinvested, the higher the maturity value, so quarterly compounding beats annual compounding at the same stated rate. This is the power that lets a longer investment horizon build a much larger corpus.",
+      "difficulty": 2,
+      "prerequisites": ["Understanding Return: Rupee Return versus Rate of Return"],
+      "keywords": ["compounding", "time value of money", "future value", "simple interest", "compounding frequency"],
+      "misconceptions": ["compound interest equals simple interest times the number of years", "the frequency of compounding does not affect the maturity value"],
+      "source_pages": [161, 163],
+      "objectives": [
+        {"text": "Explain the time value of money and why compounding raises the future value.", "bloom": "Understand", "assessment_style": "conceptual"},
+        {"text": "Compute a future value and the interest earned under compounding.", "bloom": "Apply", "assessment_style": "calculation"}
+      ],
+      "questions": [
+        {
+          "stem": "Rs.1,00,000 is deposited at 10% per annum for 2 years, with interest compounded annually and reinvested (cumulative option). How much interest is earned over the two years?",
+          "options": [
+            {"key": "A", "text": "Rs.21,000.", "misconception": null},
+            {"key": "B", "text": "Rs.20,000.", "misconception": "Uses simple interest (10% x 2 years) and ignores compounding."},
+            {"key": "C", "text": "Rs.10,000.", "misconception": "Counts only the first year's interest."},
+            {"key": "D", "text": "Rs.12,100.", "misconception": "Takes 10% of the maturity value instead of the interest earned."}
+          ],
+          "correct_key": "A",
+          "explanation": "Maturity value is 1,00,000 x (1.10)^2 = 1,21,000, so interest earned is Rs.21,000. B uses simple interest and misses the interest-on-interest, C stops after one year, and D applies 10% to the wrong base.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Two deposits carry the same stated rate of 8% per annum for the same term, but one compounds annually and the other quarterly. Which yields the higher maturity value?",
+          "options": [
+            {"key": "A", "text": "The quarterly-compounded deposit, because interest is credited and reinvested more often.", "misconception": null},
+            {"key": "B", "text": "The annually-compounded deposit, because fewer compounding events mean larger each time.", "misconception": "Assumes fewer compounding periods produce a higher total."},
+            {"key": "C", "text": "They are identical, because the stated rate is the same.", "misconception": "Ignores that compounding frequency changes the effective return."},
+            {"key": "D", "text": "It cannot be determined without the exact rupee amounts.", "misconception": "Believes the direction of the effect depends on the principal."}
+          ],
+          "correct_key": "A",
+          "explanation": "More frequent compounding means interest starts earning interest sooner, so the quarterly deposit ends higher at the same stated rate. B has the logic backwards, C ignores the effect of frequency, and D is wrong because the direction of the effect does not depend on the principal.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Why would an investor prefer to receive Rs.100 today rather than Rs.100 one month from now, assuming no uncertainty?",
+          "options": [
+            {"key": "A", "text": "Because the Rs.100 can be invested to earn a return and there is a preference for consuming now.", "misconception": null},
+            {"key": "B", "text": "Because Rs.100 today is a larger nominal amount than Rs.100 in a month.", "misconception": "Assumes the future amount is nominally smaller when it is the same."},
+            {"key": "C", "text": "Because inflation will make the future Rs.100 legally invalid.", "misconception": "Confuses loss of purchasing power with the money becoming invalid."},
+            {"key": "D", "text": "There is no reason to prefer one over the other.", "misconception": "Denies the time value of money."}
+          ],
+          "correct_key": "A",
+          "explanation": "The time value of money rests on being able to invest today's rupee to grow it, plus the natural preference for current consumption. B is wrong because both amounts are the same nominal figure, C misstates the effect of inflation, and D denies the concept entirely.",
+          "difficulty": 1
+        }
+      ]
+    },
+    {
+      "title": "Compound Annual Growth Rate (CAGR)",
+      "description": "CAGR is the single compound interest rate that would grow a beginning value to an ending value over a given number of years. Starting from FV = PV x (1 + r)^n, it is solved as r = (FV / PV)^(1/n) - 1. It answers the question 'at what steady annual rate did this investment grow?' and is used for holding periods longer than one year, where a simple absolute return would ignore compounding. Two cautions apply. First, CAGR is a smoothened average: it does not describe the actual, possibly lumpy, year-by-year growth, only the equivalent constant rate. Second, it must be annualized geometrically, not by dividing the total return by the number of years. For example, growing Rs.1,00,000 to Rs.1,33,100 in three years is a CAGR of 10%, not 33.1% (which forgets time) nor about 11% (which wrongly divides the total return by three).",
+      "difficulty": 3,
+      "prerequisites": ["Compounding and Time Value of Money", "Annualized Return"],
+      "keywords": ["CAGR", "compound growth", "smoothened average", "geometric", "future value"],
+      "misconceptions": ["CAGR is the total return divided by the number of years", "CAGR shows the actual growth achieved in each individual year"],
+      "source_pages": [165, 166],
+      "objectives": [
+        {"text": "State and apply the CAGR formula r = (FV/PV)^(1/n) - 1.", "bloom": "Apply", "assessment_style": "calculation"},
+        {"text": "Explain that CAGR is a smoothened average, not the actual annual growth.", "bloom": "Understand", "assessment_style": "conceptual"}
+      ],
+      "questions": [
+        {
+          "stem": "An investment grows from Rs.1,00,000 to Rs.1,33,100 over 3 years. What is its CAGR?",
+          "options": [
+            {"key": "A", "text": "10%.", "misconception": null},
+            {"key": "B", "text": "33.1%.", "misconception": "Reports the total return over three years without annualizing it."},
+            {"key": "C", "text": "About 11%.", "misconception": "Divides the total return by the number of years instead of taking the geometric root."},
+            {"key": "D", "text": "About 3.3%.", "misconception": "Divides the ending-to-beginning ratio by the years rather than using the root."}
+          ],
+          "correct_key": "A",
+          "explanation": "CAGR = (1,33,100/1,00,000)^(1/3) - 1 = (1.331)^(1/3) - 1 = 1.10 - 1 = 10%. B is the total return, C wrongly divides the 33.1% total by 3, and D misapplies division to the growth ratio.",
+          "difficulty": 3
+        },
+        {
+          "stem": "An amount of Rs.50,000 grows to Rs.86,400 over 3 years. What is the CAGR?",
+          "options": [
+            {"key": "A", "text": "20%.", "misconception": null},
+            {"key": "B", "text": "72.8%.", "misconception": "Reports the total return without annualizing."},
+            {"key": "C", "text": "About 24.3%.", "misconception": "Divides the total return by the number of years instead of using the geometric root."},
+            {"key": "D", "text": "About 6.7%.", "misconception": "Divides the growth ratio by the years rather than taking the cube root."}
+          ],
+          "correct_key": "A",
+          "explanation": "CAGR = (86,400/50,000)^(1/3) - 1 = (1.728)^(1/3) - 1 = 1.20 - 1 = 20%. B is the raw total return, C wrongly divides 72.8% by 3, and D misapplies division to the ratio.",
+          "difficulty": 3
+        },
+        {
+          "stem": "An equity fund reports a three-year CAGR of 12%. What does this figure actually represent?",
+          "options": [
+            {"key": "A", "text": "The single steady annual rate that would have grown the start value to the end value, a smoothened average.", "misconception": null},
+            {"key": "B", "text": "The exact return the fund earned in each of the three years.", "misconception": "Treats the smoothened average as the actual year-by-year return."},
+            {"key": "C", "text": "The total return earned across the whole three-year period.", "misconception": "Confuses the annual compound rate with the cumulative total return."},
+            {"key": "D", "text": "The simple average of the three yearly returns.", "misconception": "Confuses the geometric CAGR with an arithmetic average of annual returns."}
+          ],
+          "correct_key": "A",
+          "explanation": "CAGR is the equivalent constant annual rate linking start and end values; it smooths over the real, uneven yearly returns. B is wrong because actual years differ, C confuses it with the cumulative total, and D confuses the geometric rate with a simple arithmetic mean.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "IRR and NPV",
+      "description": "When an investment produces a series of cash flows at different times, its return is captured by the internal rate of return (IRR): the single rate r at which the initial outflow equals the present value of all future inflows, CO0 = CF1/(1+r) + CF2/(1+r)^2 + ... + CFn/(1+r)^n. Equivalently, it is the discount rate that makes the net present value of the cash flows zero. Computing IRR requires at least one cash outflow and at least one cash inflow. IRR is used to judge whether an investment is worthwhile: if IRR is greater than or equal to a chosen hurdle rate (a benchmark or the investor's cost of funds), the investment clears the bar. Net present value (NPV) frames the same idea in rupees: it is the present value of inflows minus the present value of the outflow. A positive NPV signals a worthwhile investment; a negative NPV says avoid it.",
+      "difficulty": 3,
+      "prerequisites": ["Compound Annual Growth Rate (CAGR)"],
+      "keywords": ["IRR", "NPV", "hurdle rate", "discount rate", "cost of funds"],
+      "misconceptions": ["a positive IRR by itself means the investment should be accepted", "a negative NPV can still mean a worthwhile investment"],
+      "source_pages": [169, 171],
+      "objectives": [
+        {"text": "Define IRR as the rate that equates the outflow with the present value of inflows (NPV = 0).", "bloom": "Understand", "assessment_style": "conceptual"},
+        {"text": "Apply the hurdle-rate and NPV-sign decision rules to accept or reject an investment.", "bloom": "Apply", "assessment_style": "scenario"}
+      ],
+      "questions": [
+        {
+          "stem": "A debt fund shows an IRR of 9%. The investor's benchmark hurdle rate (his cost of funds) is 11%. Based on the IRR rule, what should he conclude?",
+          "options": [
+            {"key": "A", "text": "The investment falls short, because its IRR is below the 11% hurdle rate.", "misconception": null},
+            {"key": "B", "text": "The investment is worthwhile, because a 9% IRR is positive.", "misconception": "Accepts any positive IRR without comparing it to the hurdle rate."},
+            {"key": "C", "text": "The investment is worthwhile, because IRR is always compared to zero.", "misconception": "Uses zero rather than the hurdle rate as the acceptance threshold."},
+            {"key": "D", "text": "The hurdle rate is irrelevant once an IRR is known.", "misconception": "Ignores the hurdle rate, which is the benchmark for the decision."}
+          ],
+          "correct_key": "A",
+          "explanation": "The rule is to accept only if IRR is at least the hurdle rate; 9% is below 11%, so it fails. B and C wrongly test against zero or mere positivity, and D dismisses the hurdle rate that the rule depends on.",
+          "difficulty": 2
+        },
+        {
+          "stem": "The IRR of a set of cash flows is best described as the rate that:",
+          "options": [
+            {"key": "A", "text": "Makes the present value of the inflows equal to the outflow, so the NPV is zero.", "misconception": null},
+            {"key": "B", "text": "Guarantees the investor a fixed annual coupon.", "misconception": "Confuses IRR with a contractual coupon rate."},
+            {"key": "C", "text": "Equals the inflation rate over the investment's life.", "misconception": "Confuses the internal rate of return with an inflation figure."},
+            {"key": "D", "text": "Is always higher than the hurdle rate by definition.", "misconception": "Assumes IRR must exceed the hurdle rate rather than being compared to it."}
+          ],
+          "correct_key": "A",
+          "explanation": "IRR is the discount rate that equates the outflow with the present value of the inflows, i.e. sets NPV to zero. B confuses it with a coupon, C with inflation, and D wrongly assumes it always beats the hurdle instead of being tested against it.",
+          "difficulty": 2
+        },
+        {
+          "stem": "An adviser computes that a proposed investment has a negative net present value. What does this indicate?",
+          "options": [
+            {"key": "A", "text": "The investment should be avoided, because the present value of inflows is less than the outflow.", "misconception": null},
+            {"key": "B", "text": "The investment is worthwhile, since any NPV shows a return exists.", "misconception": "Assumes any NPV, positive or negative, signals a good investment."},
+            {"key": "C", "text": "The NPV sign is irrelevant; only the rupee size matters.", "misconception": "Ignores that the sign of NPV drives the accept/reject decision."},
+            {"key": "D", "text": "The discount rate must have been set too low.", "misconception": "Blames the discount rate instead of reading the negative NPV as a reject signal."}
+          ],
+          "correct_key": "A",
+          "explanation": "A negative NPV means the discounted inflows do not cover the outflow, so the investment should be avoided; a positive NPV would mean accept. B ignores the sign, C dismisses the decisive sign, and D deflects to the discount rate rather than applying the rule.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "title": "Holding Period Return",
+      "description": "Holding period return (HPR) measures what an investment earned over the specific span it was bought and held, using the portfolio value at two chosen points. The simple formula is HPR = [cash inflows during the period + (ending value - beginning value)] / beginning value. In words, add the income received to the capital gain, then divide by the value at the start. Because this gives a simple absolute return, it is appropriate for holding periods shorter than one year; for periods longer than a year the return should instead be estimated as a CAGR so that compounding and time are respected. HPR is a popular way to report portfolio performance, and mutual funds routinely declare it for standard periods ending on the current date. A frequent error is dividing by the ending value instead of the beginning value, or leaving out the income component.",
+      "difficulty": 2,
+      "prerequisites": ["Total Return", "Compound Annual Growth Rate (CAGR)"],
+      "keywords": ["holding period return", "HPR", "beginning value", "ending value", "cash inflows"],
+      "misconceptions": ["HPR is divided by the ending value of the investment", "HPR should be used unchanged for holding periods longer than one year"],
+      "source_pages": [171, 173],
+      "objectives": [
+        {"text": "Apply the holding period return formula including income and capital gain.", "bloom": "Apply", "assessment_style": "calculation"},
+        {"text": "Explain when HPR is appropriate and when CAGR should be used instead.", "bloom": "Understand", "assessment_style": "conceptual"}
+      ],
+      "questions": [
+        {
+          "stem": "An investment with a beginning value of Rs.50,000 pays income of Rs.2,500 during the period and ends worth Rs.54,000. What is the holding period return?",
+          "options": [
+            {"key": "A", "text": "13%.", "misconception": null},
+            {"key": "B", "text": "8%.", "misconception": "Counts only the capital gain and omits the income received."},
+            {"key": "C", "text": "5%.", "misconception": "Counts only the income and omits the capital gain."},
+            {"key": "D", "text": "About 12%.", "misconception": "Divides by the ending value of Rs.54,000 instead of the beginning value."}
+          ],
+          "correct_key": "A",
+          "explanation": "HPR = [2,500 + (54,000 - 50,000)] / 50,000 = 6,500/50,000 = 13%. B omits the income, C omits the capital gain, and D wrongly divides by the ending value.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A mutual fund unit has a beginning value of Rs.10,000, pays Rs.800 of income during the year and ends worth Rs.10,700. What is the holding period return?",
+          "options": [
+            {"key": "A", "text": "15%.", "misconception": null},
+            {"key": "B", "text": "7%.", "misconception": "Counts only the capital gain and omits the income."},
+            {"key": "C", "text": "8%.", "misconception": "Counts only the income and omits the capital gain."},
+            {"key": "D", "text": "About 14%.", "misconception": "Divides by the ending value of Rs.10,700 rather than the beginning value."}
+          ],
+          "correct_key": "A",
+          "explanation": "HPR = [800 + (10,700 - 10,000)] / 10,000 = 1,500/10,000 = 15%. B omits the income, C omits the capital gain, and D uses the wrong denominator.",
+          "difficulty": 2
+        },
+        {
+          "stem": "For an investment held for four years, why is a simple holding period return not the best measure?",
+          "options": [
+            {"key": "A", "text": "Because for periods longer than a year the return should be estimated as a CAGR to respect compounding and time.", "misconception": null},
+            {"key": "B", "text": "Because HPR cannot be calculated when income is received.", "misconception": "Wrongly claims income makes HPR uncomputable."},
+            {"key": "C", "text": "Because HPR only works for equity, not for funds.", "misconception": "Invents an asset-class restriction on HPR."},
+            {"key": "D", "text": "Because HPR ignores the beginning value of the investment.", "misconception": "Misstates the formula, which divides by the beginning value."}
+          ],
+          "correct_key": "A",
+          "explanation": "The simple HPR is an absolute return suited to periods under a year; for longer holds a CAGR should be used so compounding over the years is captured. B is false since income is part of HPR, C invents a restriction, and D misdescribes the formula.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "title": "Real versus Nominal Return and Risk-Adjusted Return",
+      "description": "A return quoted as a plain percentage is the nominal rate; adjusting it for inflation gives the real rate of return, which reflects the actual change in purchasing power. As a quick approximation, real rate is roughly nominal rate minus inflation rate, so 10% nominal with 6% inflation gives about 4% real. The nominal rate is always positive, because investors must be paid something to part with their money, but the real rate can be negative: if inflation exceeds the nominal return, rising prices wipe out the gain. Separately, risk-adjusted return relates the return earned to the risk taken, using the excess return (the return above the risk-free rate). The Sharpe ratio divides excess return by standard deviation, and the Treynor ratio divides it by beta; both are used to rank similar investments, with a higher ratio meaning more return per unit of risk.",
+      "difficulty": 3,
+      "prerequisites": ["Understanding Return: Rupee Return versus Rate of Return"],
+      "keywords": ["real return", "nominal return", "inflation", "risk-adjusted return", "Sharpe ratio", "excess return"],
+      "misconceptions": ["the real rate of return can never be negative", "the Sharpe ratio uses the total return rather than the excess return"],
+      "source_pages": [174, 175, 177],
+      "objectives": [
+        {"text": "Compute an approximate real rate of return from nominal and inflation rates.", "bloom": "Apply", "assessment_style": "calculation"},
+        {"text": "Explain excess return and how the Sharpe and Treynor ratios express risk-adjusted return.", "bloom": "Understand", "assessment_style": "conceptual"}
+      ],
+      "questions": [
+        {
+          "stem": "An investment earns a nominal return of 10% in a year when inflation is 6%. Using the simple approximation, what is the real rate of return?",
+          "options": [
+            {"key": "A", "text": "About 4%.", "misconception": null},
+            {"key": "B", "text": "About 16%.", "misconception": "Adds inflation to the nominal rate instead of subtracting it."},
+            {"key": "C", "text": "About 10%, because the nominal rate is what the investor earns.", "misconception": "Ignores inflation and reports the nominal rate as the real rate."},
+            {"key": "D", "text": "About 1.7%, by dividing the nominal rate by the inflation rate.", "misconception": "Divides nominal by inflation instead of subtracting."}
+          ],
+          "correct_key": "A",
+          "explanation": "The approximate real rate is nominal minus inflation: 10% - 6% = 4%. B adds the two, C ignores inflation, and D divides rather than subtracts.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which statement about nominal and real rates of return is correct?",
+          "options": [
+            {"key": "A", "text": "The nominal rate is always positive, but the real rate can be negative when inflation exceeds the nominal return.", "misconception": null},
+            {"key": "B", "text": "Both the nominal and the real rate must always be positive.", "misconception": "Denies that the real rate can turn negative."},
+            {"key": "C", "text": "The real rate is always higher than the nominal rate.", "misconception": "Reverses the effect of adjusting for inflation."},
+            {"key": "D", "text": "The nominal rate already accounts for inflation.", "misconception": "Assumes the nominal rate is inflation-adjusted when it is not."}
+          ],
+          "correct_key": "A",
+          "explanation": "Investors are paid a positive nominal rate, but once inflation is subtracted the real rate can fall below zero if prices rise faster than the return. B denies a negative real rate, C reverses the adjustment, and D wrongly treats the nominal rate as already real.",
+          "difficulty": 2
+        },
+        {
+          "stem": "In computing the Sharpe ratio for a fund, which 'return' figure is used in the numerator?",
+          "options": [
+            {"key": "A", "text": "The excess return, the fund's return above the risk-free rate.", "misconception": null},
+            {"key": "B", "text": "The fund's total return, without subtracting the risk-free rate.", "misconception": "Uses total return instead of return in excess of the risk-free rate."},
+            {"key": "C", "text": "The fund's return minus the inflation rate.", "misconception": "Confuses the risk-free adjustment with an inflation adjustment."},
+            {"key": "D", "text": "The fund's beta multiplied by its return.", "misconception": "Confuses the Sharpe input with a beta-based calculation."}
+          ],
+          "correct_key": "A",
+          "explanation": "Risk-adjusted ratios use the excess return, the amount by which the investment beat the risk-free rate; Sharpe then divides this by standard deviation (Treynor by beta). B omits the risk-free subtraction, C swaps in inflation, and D confuses it with a beta product.",
+          "difficulty": 3
+        }
+      ]
+    }
+  ],
+  "caselets": [
+    {
+      "scenario": "Meera, an investor in Bengaluru, reviews two holdings for the year. She had bought equity shares for Rs.2,00,000 on 1 April, received dividends of Rs.10,000 during the year, and sold the shares for Rs.2,40,000 on the following 1 April, exactly one year later. Separately, she placed Rs.1,00,000 in a bank fixed deposit paying 10% per annum, compounded annually under the cumulative option, for a term of two years. Over the same period, inflation ran at 6% per annum. Meera wants to judge each investment properly, compare them on a like-for-like annual basis, and understand what her fixed deposit truly earned once rising prices are taken into account. She also wonders how the equity result would look if, hypothetically, the same sale price had come only after four years instead of one.",
+      "concept_titles": ["Holding Period Return", "Annualized Return", "Compounding and Time Value of Money", "Real versus Nominal Return and Risk-Adjusted Return", "Total Return"],
+      "questions": [
+        {
+          "stem": "Including the dividend, what is Meera's holding period return on the equity shares over the one year?",
+          "options": [
+            {"key": "A", "text": "25%.", "misconception": null},
+            {"key": "B", "text": "20%.", "misconception": "Counts only the capital gain and omits the Rs.10,000 dividend."},
+            {"key": "C", "text": "5%.", "misconception": "Counts only the dividend and omits the capital gain."},
+            {"key": "D", "text": "About 20.8%.", "misconception": "Divides by the ending value of Rs.2,40,000 rather than the beginning value."}
+          ],
+          "correct_key": "A",
+          "explanation": "HPR = [10,000 + (2,40,000 - 2,00,000)] / 2,00,000 = 50,000/2,00,000 = 25%. B omits the dividend, C omits the capital gain, and D uses the ending value as the denominator.",
+          "difficulty": 2,
+          "case_position": 1,
+          "marks": 2
+        },
+        {
+          "stem": "Hypothetically, if the same Rs.2,40,000 sale price had come only after four years (dividend ignored), what would the simple annualized capital return be?",
+          "options": [
+            {"key": "A", "text": "5% per annum.", "misconception": null},
+            {"key": "B", "text": "20% per annum.", "misconception": "Reports the absolute return without dividing by the four-year holding period."},
+            {"key": "C", "text": "80% per annum.", "misconception": "Multiplies the absolute return by the years instead of dividing."},
+            {"key": "D", "text": "About 4.7% per annum.", "misconception": "Applies the geometric CAGR where the simple annualized method is asked for."}
+          ],
+          "correct_key": "A",
+          "explanation": "The absolute capital return is (2,40,000 - 2,00,000)/2,00,000 = 20%; annualizing over 4 years by the simple method gives 20% x (1/4) = 5% p.a. B skips annualizing, C multiplies rather than divides, and D uses the geometric CAGR when the simple method was requested.",
+          "difficulty": 3,
+          "case_position": 2,
+          "marks": 2
+        },
+        {
+          "stem": "How much interest does Meera's Rs.1,00,000 fixed deposit earn over its two-year term under annual compounding?",
+          "options": [
+            {"key": "A", "text": "Rs.21,000.", "misconception": null},
+            {"key": "B", "text": "Rs.20,000.", "misconception": "Uses simple interest (10% x 2 years) and ignores compounding."},
+            {"key": "C", "text": "Rs.10,000.", "misconception": "Counts only the first year's interest."},
+            {"key": "D", "text": "Rs.12,100.", "misconception": "Takes 10% of the maturity value instead of the interest earned."}
+          ],
+          "correct_key": "A",
+          "explanation": "Maturity value = 1,00,000 x (1.10)^2 = 1,21,000, so interest = Rs.21,000. B uses simple interest, C stops after one year, and D applies the rate to the wrong base.",
+          "difficulty": 2,
+          "case_position": 3,
+          "marks": 2
+        },
+        {
+          "stem": "Given the fixed deposit's 10% per annum growth and inflation of 6% per annum, what is the approximate real rate of return on the deposit?",
+          "options": [
+            {"key": "A", "text": "About 4% per annum.", "misconception": null},
+            {"key": "B", "text": "About 16% per annum.", "misconception": "Adds inflation to the nominal rate instead of subtracting it."},
+            {"key": "C", "text": "About 10% per annum, because the deposit rate is guaranteed.", "misconception": "Ignores inflation and reports the nominal rate as the real rate."},
+            {"key": "D", "text": "About -4% per annum.", "misconception": "Subtracts the nominal rate from inflation, reversing the calculation."}
+          ],
+          "correct_key": "A",
+          "explanation": "Combining the FD's 10% growth with 6% inflation, the approximate real rate is 10% - 6% = 4%. B adds the rates, C ignores inflation, and D reverses the subtraction to get the wrong sign.",
+          "difficulty": 3,
+          "case_position": 4,
+          "marks": 2
+        },
+        {
+          "stem": "Comparing the two holdings on an annual basis, Meera's one-year equity HPR of 25% against the deposit's 10% per annum growth means the equity, over that year, out-earned the deposit by roughly:",
+          "options": [
+            {"key": "A", "text": "15 percentage points.", "misconception": null},
+            {"key": "B", "text": "2.5 times, so the deposit is the better annual performer.", "misconception": "Correctly notes the ratio but wrongly concludes the deposit won."},
+            {"key": "C", "text": "5 percentage points.", "misconception": "Compares the deposit rate against the equity's capital-only return of 20% rather than its 25% HPR."},
+            {"key": "D", "text": "They earned the same annual return.", "misconception": "Ignores the difference between the two computed annual returns."}
+          ],
+          "correct_key": "A",
+          "explanation": "Both are annual figures here (the equity was held one year), so 25% minus 10% = 15 percentage points in the equity's favour. B misreads the ratio as favouring the deposit, C compares against the wrong equity figure, and D ignores the clear gap between the two returns.",
+          "difficulty": 3,
+          "case_position": 5,
+          "marks": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,604 @@
+{
+  "chapter_ordinal": 11,
+  "chapter_title": "TAX AND ESTATE PLANNING",
+  "concepts": [
+    {
+      "title": "Heads of Income and Computation of Total Income",
+      "description": "Under Indian income tax law, whatever an individual earns in a year is sorted into five defined heads before any tax is worked out: salary, house property, business or profession, capital gains, and other sources. The income falling under each head is computed separately and then added together to arrive at total income, but only to the extent that each item is taxable. Salary requires an employer-employee relationship and is taxed in the year it becomes due or is received, whichever comes first.",
+      "difficulty": 1,
+      "prerequisites": [],
+      "keywords": ["heads of income", "salary", "house property", "capital gains", "other sources", "total income"],
+      "misconceptions": ["Believing all five heads are taxed at one flat rate", "Thinking salary is taxed only when cash is received, ignoring the 'due or received, whichever earlier' rule", "Assuming income from a self-occupied property used for one's own business is taxed under house property"],
+      "source_pages": ["11.1.1"],
+      "objectives": [
+        {"text": "List the five heads under which taxable income is classified", "bloom": "Remember", "assessment_style": "recall"},
+        {"text": "Determine which head a given income item is taxed under", "bloom": "Understand", "assessment_style": "identification"}
+      ],
+      "questions": [
+        {
+          "stem": "Rahul receives a monthly salary from his employer, rent from a flat he lets out, and interest on a fixed deposit. Under how many separate heads of income will these three receipts be classified?",
+          "options": [
+            {"key": "A", "text": "Three heads: salary, house property, and other sources", "misconception": null},
+            {"key": "B", "text": "One head, because all are personal income of the same individual", "misconception": "Believing all income of a person collapses into a single head"},
+            {"key": "C", "text": "Two heads, because rent and interest are both investment income and share one head", "misconception": "Assuming rent and interest fall under the same head as passive income"},
+            {"key": "D", "text": "Five heads, since every taxpayer's income always spans all five", "misconception": "Thinking every taxpayer necessarily has income under all five heads"}
+          ],
+          "correct_key": "A",
+          "explanation": "Salary from an employer is taxed under 'income from salary', rent from a let-out flat under 'income from house property', and fixed-deposit interest under 'income from other sources'. Each head is computed separately, so Rahul's receipts span three distinct heads. Income is classified head-by-head based on its nature, not lumped together.",
+          "difficulty": 1
+        },
+        {
+          "stem": "An employee's annual bonus for the year ending March is declared and becomes due in that year but is actually paid to him in the following year. In which year is it taxed as salary?",
+          "options": [
+            {"key": "A", "text": "The year it becomes due, because salary is taxed on 'due or received, whichever is earlier'", "misconception": null},
+            {"key": "B", "text": "The year it is actually paid, because tax follows the cash", "misconception": "Applying a pure cash-receipt basis to salary"},
+            {"key": "C", "text": "Split equally across both years", "misconception": "Assuming salary income is apportioned between accrual and receipt years"},
+            {"key": "D", "text": "Whichever year the employee chooses on his return", "misconception": "Believing the taxpayer may elect the year of taxation for salary"}
+          ],
+          "correct_key": "A",
+          "explanation": "Salary is charged to tax in the year it is due or received, whichever is earlier. Because the bonus became due in the earlier year, it is taxed then, even though the cash arrived later. The rule prevents deferral by delaying payment.",
+          "difficulty": 2
+        },
+        {
+          "stem": "For income from a property to be taxed under the head 'income from house property', which condition must be met?",
+          "options": [
+            {"key": "A", "text": "The assessee is the owner (or deemed owner) and the property is not used for his own business or profession", "misconception": null},
+            {"key": "B", "text": "The property must be residential; commercial buildings are never taxed under this head", "misconception": "Restricting house property income to residential buildings only"},
+            {"key": "C", "text": "The assessee must be earning rent in cash during the year", "misconception": "Requiring actual rent receipt for the head to apply"},
+            {"key": "D", "text": "The property must be located in an urban area", "misconception": "Adding a location condition that does not exist for this head"}
+          ],
+          "correct_key": "A",
+          "explanation": "Income from house property is chargeable in the hands of the owner or deemed owner of a building or land appurtenant to it, provided the owner does not use it for his own business or profession. If he uses it for his own business, the income is not taxed under this head.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Exemptions, Deductions and Rebates",
+      "description": "The tax law reduces liability through three distinct mechanisms that operate at different stages. An exemption keeps certain income (listed in Section 10) entirely out of total income. A deduction (chiefly Section 80C) subtracts eligible investments or payments from total income before tax is computed, capped at Rs. 1,50,000. A rebate reduces the tax after it has been calculated, such as the Section 87A rebate of Rs. 2,000 for individuals whose income does not exceed Rs. 5,00,000.",
+      "difficulty": 2,
+      "prerequisites": ["Heads of Income and Computation of Total Income"],
+      "keywords": ["Section 10", "Section 80C", "Section 87A", "exemption", "deduction", "rebate", "1,50,000"],
+      "misconceptions": ["Confusing a deduction (reduces income) with a rebate (reduces tax)", "Thinking the 80C ceiling is higher or unlimited", "Believing exempt income must still be added and then subtracted"],
+      "source_pages": ["11.1.2", "11.3"],
+      "objectives": [
+        {"text": "Distinguish between exemption, deduction and rebate", "bloom": "Understand", "assessment_style": "identification"},
+        {"text": "Apply the Section 80C ceiling and the Section 87A rebate to a computation", "bloom": "Apply", "assessment_style": "calculation"}
+      ],
+      "questions": [
+        {
+          "stem": "Meera invests Rs. 1,80,000 in instruments eligible under Section 80C during a financial year. How much can she deduct from her total income under Section 80C?",
+          "options": [
+            {"key": "A", "text": "Rs. 1,50,000, the maximum permitted under Section 80C", "misconception": null},
+            {"key": "B", "text": "Rs. 1,80,000, the full amount she invested", "misconception": "Ignoring the Section 80C ceiling and deducting the whole investment"},
+            {"key": "C", "text": "Rs. 30,000, the amount above the ceiling", "misconception": "Deducting only the excess over the limit rather than the capped amount"},
+            {"key": "D", "text": "Rs. 2,000, treating it as a rebate", "misconception": "Confusing an 80C deduction with the Section 87A rebate figure"}
+          ],
+          "correct_key": "A",
+          "explanation": "Section 80C allows a deduction of 100% of the amount invested or Rs. 1,50,000, whichever is less. Since Meera invested Rs. 1,80,000, the deduction is capped at Rs. 1,50,000. The remaining Rs. 30,000 gives no 80C benefit.",
+          "difficulty": 1
+        },
+        {
+          "stem": "A tax provision reduces the actual tax payable after the tax has already been computed, based on a specified investment. Which mechanism is this?",
+          "options": [
+            {"key": "A", "text": "A rebate", "misconception": null},
+            {"key": "B", "text": "An exemption", "misconception": "Confusing a post-tax rebate with income that is kept out of total income"},
+            {"key": "C", "text": "A deduction", "misconception": "Confusing a reduction in tax with a reduction in taxable income"},
+            {"key": "D", "text": "A surcharge", "misconception": "Mistaking a benefit for an additional levy"}
+          ],
+          "correct_key": "A",
+          "explanation": "A rebate reduces the tax payable after tax is computed. An exemption keeps income out of total income, and a deduction reduces taxable income before tax is calculated. Because the reduction here happens after computation, it is a rebate.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which type of income is kept out of total income altogether under Section 10 of the Income Tax Act?",
+          "options": [
+            {"key": "A", "text": "Agricultural income, subject to conditions", "misconception": null},
+            {"key": "B", "text": "Interest on an ordinary bank fixed deposit", "misconception": "Treating taxable interest income as Section 10 exempt"},
+            {"key": "C", "text": "Salary drawn from a private employer", "misconception": "Assuming salary is exempt rather than fully taxable"},
+            {"key": "D", "text": "Short-term capital gains on equity shares", "misconception": "Confusing taxable STCG with exempt income"}
+          ],
+          "correct_key": "A",
+          "explanation": "Section 10 lists incomes excluded from total income; Section 10(1) exempts agricultural income subject to conditions. Ordinary bank interest and salary are fully taxable, and STCG on equity is taxed at 15%, so none of those are Section 10 exemptions.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Under Section 87A as described in the workbook, an individual assessee gets a rebate of Rs. 2,000 provided total income does not exceed which limit?",
+          "options": [
+            {"key": "A", "text": "Rs. 5,00,000", "misconception": null},
+            {"key": "B", "text": "Rs. 2,50,000", "misconception": "Confusing the rebate income ceiling with the basic exemption slab"},
+            {"key": "C", "text": "Rs. 1,50,000", "misconception": "Confusing the rebate ceiling with the 80C deduction limit"},
+            {"key": "D", "text": "Rs. 10,00,000", "misconception": "Confusing the rebate ceiling with the top tax slab threshold"}
+          ],
+          "correct_key": "A",
+          "explanation": "The workbook states that Section 87A provides a rebate of Rs. 2,000 for all individual assessees whose income does not exceed Rs. 5,00,000. Rs. 2,50,000 is a slab threshold and Rs. 1,50,000 is the 80C limit, not the 87A ceiling.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Capital Gains: Holding Period and Classification",
+      "description": "A gain on sale of a capital asset is either short-term or long-term, and the split depends on how long the asset was held. The general rule treats an asset held for not more than 36 months as short-term. But for listed securities (other than units), units of equity-oriented mutual funds, and zero-coupon bonds, the cut-off is only 12 months. Getting this holding period right matters because short-term and long-term gains are taxed very differently.",
+      "difficulty": 2,
+      "prerequisites": ["Heads of Income and Computation of Total Income"],
+      "keywords": ["capital asset", "STCG", "LTCG", "36 months", "12 months", "Section 111A", "holding period"],
+      "misconceptions": ["Applying the 36-month rule to listed equity where 12 months applies", "Applying the 12-month rule to all assets including property and debt funds", "Taxing all short-term gains at 15% instead of only equity STCG"],
+      "source_pages": ["11.2", "11.2.1"],
+      "objectives": [
+        {"text": "State the holding-period thresholds that separate short-term from long-term assets", "bloom": "Remember", "assessment_style": "recall"},
+        {"text": "Classify a gain as STCG or LTCG given the asset type and holding period", "bloom": "Apply", "assessment_style": "scenario"}
+      ],
+      "questions": [
+        {
+          "stem": "An investor buys units of an equity-oriented mutual fund and sells them after holding for 10 months at a profit. How is the gain classified?",
+          "options": [
+            {"key": "A", "text": "Short-term capital gain, because equity-fund units held for not more than 12 months are short-term", "misconception": null},
+            {"key": "B", "text": "Long-term capital gain, because 10 months is well within a year", "misconception": "Reversing the rule and treating a sub-12-month holding as long-term"},
+            {"key": "C", "text": "Short-term, because units must be held over 36 months to be long-term", "misconception": "Applying the 36-month general rule to equity-fund units"},
+            {"key": "D", "text": "Long-term, because all mutual fund units are treated as long-term regardless of period", "misconception": "Ignoring the holding-period test entirely for fund units"}
+          ],
+          "correct_key": "A",
+          "explanation": "For units of equity-oriented mutual funds, the short-term cut-off is 12 months. Held for only 10 months, the gain is short-term. The 36-month rule applies to assets like property and debt funds, not equity-fund units.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A person sells a residential plot of land after holding it for 30 months. Is the resulting gain short-term or long-term?",
+          "options": [
+            {"key": "A", "text": "Short-term, because land is held for not more than 36 months here", "misconception": null},
+            {"key": "B", "text": "Long-term, because it was held for more than 12 months", "misconception": "Applying the 12-month securities rule to immovable property"},
+            {"key": "C", "text": "Long-term, because any property held over two years is long-term", "misconception": "Inventing a 24-month threshold not stated in the source"},
+            {"key": "D", "text": "Exempt, because land is not a capital asset", "misconception": "Wrongly treating land as outside the capital-gains net"}
+          ],
+          "correct_key": "A",
+          "explanation": "The 12-month cut-off applies only to listed securities, equity-fund units and zero-coupon bonds. Land follows the general 36-month rule, so a 30-month holding is short-term. It becomes long-term only after 36 months.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Short-term capital gains on equity shares and equity-oriented funds are taxed under Section 111A at what rate?",
+          "options": [
+            {"key": "A", "text": "15%", "misconception": null},
+            {"key": "B", "text": "20% after indexation", "misconception": "Applying the long-term debt taxation method to equity STCG"},
+            {"key": "C", "text": "The investor's marginal rate of tax", "misconception": "Applying the non-equity STCG treatment to equity STCG"},
+            {"key": "D", "text": "10% without indexation", "misconception": "Applying a long-term rate to a short-term equity gain"}
+          ],
+          "correct_key": "A",
+          "explanation": "Section 111A taxes short-term capital gains on equity shares and equity-oriented funds at 15%. The marginal-rate treatment applies to STCG on other securities, while 20% with indexation and 10% without indexation are long-term methods for non-equity assets.",
+          "difficulty": 1
+        }
+      ]
+    },
+    {
+      "title": "Indexation and Long-Term Capital Gains Taxation",
+      "description": "For long-term gains on assets other than equity, the law lets an investor inflate the original cost using the Cost of Inflation Index (CII) published by the CBDT, a process called indexation. The indexed cost is the original cost multiplied by the ratio of the CII in the year of sale to the CII in the year of purchase; this larger cost shrinks the taxable gain. LTCG on equity shares and equity-oriented funds is exempt under Section 10(38), while LTCG on other securities is taxed at 10% without indexation or 20% after indexation.",
+      "difficulty": 3,
+      "prerequisites": ["Capital Gains: Holding Period and Classification"],
+      "keywords": ["indexation", "CII", "Cost of Inflation Index", "Section 10(38)", "20% after indexation", "LTCG"],
+      "misconceptions": ["Computing the gain on original cost and forgetting to index", "Dividing purchase-year CII by sale-year CII instead of the reverse", "Believing equity LTCG is taxable when it is exempt under 10(38)"],
+      "source_pages": ["11.2.1"],
+      "objectives": [
+        {"text": "Explain the purpose and formula of indexation", "bloom": "Understand", "assessment_style": "recall"},
+        {"text": "Compute LTCG using indexation and apply the 20% rate", "bloom": "Apply", "assessment_style": "calculation"}
+      ],
+      "questions": [
+        {
+          "stem": "Anil bought a debt mutual fund for Rs. 4,00,000 when the CII was 200 and sold it after 4 years for Rs. 7,00,000 when the CII was 250. Using indexation and the 20% rate, what is his LTCG tax? (Indexed cost = 4,00,000 x 250/200)",
+          "options": [
+            {"key": "A", "text": "Rs. 40,000 (indexed cost Rs. 5,00,000; gain Rs. 2,00,000; 20% of it)", "misconception": null},
+            {"key": "B", "text": "Rs. 60,000 (gain of Rs. 3,00,000 on original cost, taxed at 20%)", "misconception": "Forgetting to index the cost and taxing the raw gain"},
+            {"key": "C", "text": "Rs. 30,000 (Rs. 3,00,000 raw gain taxed at 10% without indexation)", "misconception": "Using the 10% method but on the un-indexed gain"},
+            {"key": "D", "text": "Rs. 1,05,000 (treating the whole Rs. 7,00,000 as gain at 15%)", "misconception": "Ignoring cost entirely and applying an equity STCG rate"}
+          ],
+          "correct_key": "A",
+          "explanation": "Indexed cost = 4,00,000 x 250/200 = Rs. 5,00,000. LTCG = 7,00,000 - 5,00,000 = Rs. 2,00,000. Tax at 20% = Rs. 40,000. Forgetting indexation would wrongly inflate the gain to Rs. 3,00,000.",
+          "difficulty": 3
+        },
+        {
+          "stem": "An investor sells equity shares held for 3 years at a substantial profit on a recognised stock exchange. How is this long-term gain taxed?",
+          "options": [
+            {"key": "A", "text": "It is exempt from tax under Section 10(38)", "misconception": null},
+            {"key": "B", "text": "It is taxed at 20% after indexation", "misconception": "Applying the debt-fund LTCG method to exempt equity LTCG"},
+            {"key": "C", "text": "It is taxed at 15% under Section 111A", "misconception": "Applying the equity STCG rate to a long-term equity gain"},
+            {"key": "D", "text": "It is taxed at 10% without indexation", "misconception": "Applying the non-equity LTCG option to exempt equity gains"}
+          ],
+          "correct_key": "A",
+          "explanation": "Long-term capital gains on equity shares and equity-oriented funds are exempt under Section 10(38). The 20% indexed and 10% non-indexed methods apply to other securities, and 15% is the short-term equity rate.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Why does indexation reduce the tax on a long-term capital gain?",
+          "options": [
+            {"key": "A", "text": "It raises the cost of acquisition for inflation, so the taxable gain becomes smaller", "misconception": null},
+            {"key": "B", "text": "It lowers the applicable tax rate to zero for all assets", "misconception": "Confusing indexation with a rate exemption"},
+            {"key": "C", "text": "It reduces the sale price used in the computation", "misconception": "Believing indexation adjusts the sale value rather than the cost"},
+            {"key": "D", "text": "It defers the gain to a later year automatically", "misconception": "Confusing indexation with deferral of the gain"}
+          ],
+          "correct_key": "A",
+          "explanation": "Indexation adjusts the cost of acquisition upward using the CII to reflect inflation. A higher cost means a smaller gain, and the smaller gain attracts less tax. It does not change the sale price or the rate.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Section 54EC exempts long-term capital gains on transfer of a capital asset if the gains are invested in specified bonds. What is the lock-in period and the investment limit stated in the workbook?",
+          "options": [
+            {"key": "A", "text": "A lock-in of 3 years, up to a limit of Rs. 50 lakhs", "misconception": null},
+            {"key": "B", "text": "A lock-in of 5 years, up to Rs. 1,50,000", "misconception": "Confusing 54EC with the 5-year 80C fixed deposit terms"},
+            {"key": "C", "text": "A lock-in of 6 months, with no upper limit", "misconception": "Confusing the 54 reinvestment window with the 54EC lock-in"},
+            {"key": "D", "text": "A lock-in of 3 years, up to Rs. 30 lakhs", "misconception": "Confusing the 54EC limit with the wealth-tax exemption threshold"}
+          ],
+          "correct_key": "A",
+          "explanation": "Section 54EC exempts LTCG on transfer of any capital asset when invested in specified bonds, up to Rs. 50 lakhs, with a lock-in of 3 years. Rs. 30 lakhs is the wealth-tax threshold and 6 months relates to the Section 54 residential-property purchase window.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Taxation of Dividends and Interest Income",
+      "description": "Dividends and interest, though both returns on investment, are taxed on opposite principles. Dividends from equity shares and mutual funds are exempt in the hands of the investor, but the company or fund pays a dividend distribution tax before handing them over. Interest, by contrast, is generally taxable at the investor's marginal rate unless a specific product or category is exempted, and it may also suffer tax deducted at source (TDS).",
+      "difficulty": 2,
+      "prerequisites": ["Heads of Income and Computation of Total Income"],
+      "keywords": ["dividend", "DDT", "dividend distribution tax", "interest income", "marginal rate", "TDS"],
+      "misconceptions": ["Thinking dividends are taxed again in the investor's hands", "Believing all interest is exempt", "Assuming interest is taxed at a flat 10% rather than the marginal rate"],
+      "source_pages": ["11.2.2", "11.2.3"],
+      "objectives": [
+        {"text": "Contrast the tax treatment of dividends and interest income", "bloom": "Understand", "assessment_style": "identification"},
+        {"text": "Identify the rate at which interest income is taxed for a resident investor", "bloom": "Apply", "assessment_style": "scenario"}
+      ],
+      "questions": [
+        {
+          "stem": "An investor receives a dividend from equity shares she holds. How is that dividend taxed in her hands?",
+          "options": [
+            {"key": "A", "text": "It is exempt in her hands; the company has already paid a distribution tax on it", "misconception": null},
+            {"key": "B", "text": "It is taxed at her marginal rate as income from other sources", "misconception": "Applying the interest-income treatment to dividends"},
+            {"key": "C", "text": "It is taxed at a flat 15% like equity STCG", "misconception": "Confusing dividend treatment with the equity short-term gains rate"},
+            {"key": "D", "text": "It is taxed at 20% after indexation", "misconception": "Applying the long-term debt method to dividend income"}
+          ],
+          "correct_key": "A",
+          "explanation": "Dividends from equity shares and mutual funds are exempt in the hands of the investor because the company or fund pays a dividend distribution tax before distributing them. The marginal-rate and gain-based treatments apply to interest and capital gains, not dividends.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Arun's marginal rate of tax is 30%. He earns interest on an ordinary bank fixed deposit. At what rate is this interest taxed?",
+          "options": [
+            {"key": "A", "text": "30%, his marginal rate of tax", "misconception": null},
+            {"key": "B", "text": "It is exempt, like dividend income", "misconception": "Extending dividend exemption to ordinary interest"},
+            {"key": "C", "text": "15%, the equity short-term rate", "misconception": "Applying an equity capital-gains rate to interest"},
+            {"key": "D", "text": "10% flat, being investment income", "misconception": "Assuming a flat concessional rate on interest"}
+          ],
+          "correct_key": "A",
+          "explanation": "Interest income is taxable at the marginal rate applicable to the investor unless specifically exempt. Arun's interest is therefore taxed at 30%. Dividends are exempt and equity gains carry different rates, but ordinary interest follows the marginal rate.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Interest on bank deposits offered to NRI investors is treated how, compared with the same interest for other investors, per the workbook?",
+          "options": [
+            {"key": "A", "text": "It is exempt from tax for NRIs but taxable for all other categories", "misconception": null},
+            {"key": "B", "text": "It is taxable for NRIs but exempt for residents", "misconception": "Reversing the NRI concession"},
+            {"key": "C", "text": "It is exempt for every category of investor", "misconception": "Over-extending the NRI exemption to all investors"},
+            {"key": "D", "text": "It is taxable for everyone at a flat 15%", "misconception": "Ignoring the NRI exemption and inventing a flat rate"}
+          ],
+          "correct_key": "A",
+          "explanation": "The workbook states that interest on bank deposits offered to NRI investors is exempt from tax, but interest on bank deposits is taxable for all other categories of investors. The concession is specific to NRIs.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Effective Rate of Tax: Surcharge and Cess",
+      "description": "The headline tax rate is not always the amount finally borne, because a surcharge and an education cess can be layered on top. The trap is to add these percentages directly to the base rate; instead each is applied as a percentage of the amount already computed. A 30% base with a 10% surcharge and a 3% cess is therefore worked as 30% x 1.10 x 1.03, giving an effective rate of 33.99% rather than a naive 43%.",
+      "difficulty": 3,
+      "prerequisites": ["Taxation of Dividends and Interest Income"],
+      "keywords": ["effective rate", "surcharge", "cess", "base rate", "33.99%"],
+      "misconceptions": ["Adding surcharge and cess directly to the base rate", "Applying the cess to the base rate instead of to the surcharge-inclusive amount", "Believing surcharge and cess are flat rupee amounts"],
+      "source_pages": ["11.2.1"],
+      "objectives": [
+        {"text": "Explain why surcharge and cess are applied on the computed tax, not added to the base rate", "bloom": "Understand", "assessment_style": "recall"},
+        {"text": "Compute an effective tax rate given base rate, surcharge and cess", "bloom": "Apply", "assessment_style": "calculation"}
+      ],
+      "questions": [
+        {
+          "stem": "A base tax rate of 30% is subject to a surcharge of 10% and an education cess of 3%. What is the effective rate of tax?",
+          "options": [
+            {"key": "A", "text": "33.99%, computed as 30 x 1.10 x 1.03", "misconception": null},
+            {"key": "B", "text": "43%, by adding 30% + 10% + 3% directly", "misconception": "Adding surcharge and cess straight onto the base rate"},
+            {"key": "C", "text": "33%, applying the surcharge but ignoring the cess", "misconception": "Stopping after the surcharge and dropping the cess"},
+            {"key": "D", "text": "30.9%, applying only the 3% cess to the base", "misconception": "Applying the cess directly to the base and skipping the surcharge"}
+          ],
+          "correct_key": "A",
+          "explanation": "Surcharge and cess are percentages of the computed tax, not additions to the base rate. Base 30% plus 10% surcharge gives 33%; adding 3% cess on 33% gives 33.99%. Equivalently 30 x 1.10 x 1.03 = 33.99%. Adding the figures directly to reach 43% is the classic error.",
+          "difficulty": 3
+        },
+        {
+          "stem": "Which statement correctly describes how a surcharge is applied to income tax?",
+          "options": [
+            {"key": "A", "text": "It is charged as a percentage of the base tax already computed", "misconception": null},
+            {"key": "B", "text": "It is added directly to the base rate as extra percentage points", "misconception": "Treating surcharge as additive percentage points on the base rate"},
+            {"key": "C", "text": "It is a fixed rupee amount independent of the tax", "misconception": "Believing surcharge is a flat rupee levy"},
+            {"key": "D", "text": "It is deducted from the base tax to lower liability", "misconception": "Mistaking a surcharge for a reduction in tax"}
+          ],
+          "correct_key": "A",
+          "explanation": "A surcharge increases the effective rate by applying as a percentage of the base tax amount. It is not simply added to the base rate as points, is not a flat rupee sum, and is certainly not a reduction.",
+          "difficulty": 2
+        },
+        {
+          "stem": "If only a 3% education cess (no surcharge) applies to a base rate of 20%, what is the effective rate?",
+          "options": [
+            {"key": "A", "text": "20.6%, computed as 20 x 1.03", "misconception": null},
+            {"key": "B", "text": "23%, by adding 20% + 3%", "misconception": "Adding the cess directly to the base rate"},
+            {"key": "C", "text": "20.06%, misplacing the decimal on the cess", "misconception": "Miscalculating 3% of 20 as 0.06 instead of 0.6"},
+            {"key": "D", "text": "60%, multiplying 20 by 3", "misconception": "Treating the 3% cess as a multiple of three"}
+          ],
+          "correct_key": "A",
+          "explanation": "The cess is 3% of the base tax: 3% of 20 is 0.6, so the effective rate is 20 + 0.6 = 20.6%, or 20 x 1.03. Adding 3 directly to reach 23% is the additive error.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Wealth Tax and Alternate Minimum Tax",
+      "description": "Beyond income tax, the workbook describes two further levies. Wealth tax is charged at 1% on the net wealth exceeding Rs. 30,00,000 on the valuation date, where net wealth is the aggregate value of specified assets (such as extra houses, motor cars, jewellery, and yachts) less related debts. The Alternate Minimum Tax applies to non-company assessees who claim Chapter VI-A deductions: if their regular income tax is lower than the AMT, they pay AMT at 18.5% on adjusted total income, but only when that adjusted total income exceeds Rs. 20 lakhs.",
+      "difficulty": 3,
+      "prerequisites": ["Exemptions, Deductions and Rebates"],
+      "keywords": ["wealth tax", "net wealth", "30,00,000", "AMT", "18.5%", "adjusted total income", "20 lakhs"],
+      "misconceptions": ["Thinking wealth tax applies to all wealth from the first rupee", "Applying AMT to companies", "Believing AMT applies even when adjusted total income is below Rs. 20 lakhs"],
+      "source_pages": ["11.3"],
+      "objectives": [
+        {"text": "State the wealth-tax rate and threshold and the AMT rate and threshold", "bloom": "Remember", "assessment_style": "recall"},
+        {"text": "Determine whether AMT applies in a given scenario", "bloom": "Apply", "assessment_style": "scenario"}
+      ],
+      "questions": [
+        {
+          "stem": "An individual's net wealth on the valuation date is Rs. 50,00,000. At what amount is wealth tax charged, and at what rate?",
+          "options": [
+            {"key": "A", "text": "1% on Rs. 20,00,000, the excess over Rs. 30,00,000", "misconception": null},
+            {"key": "B", "text": "1% on the full Rs. 50,00,000", "misconception": "Charging wealth tax on total net wealth from the first rupee"},
+            {"key": "C", "text": "18.5% on Rs. 20,00,000 above the threshold", "misconception": "Confusing the wealth-tax rate with the AMT rate"},
+            {"key": "D", "text": "Nil, because net wealth below Rs. 1 crore is exempt", "misconception": "Inventing a higher threshold than Rs. 30,00,000"}
+          ],
+          "correct_key": "A",
+          "explanation": "Wealth tax is 1% on the amount by which net wealth exceeds Rs. 30,00,000. Here the excess is 50,00,000 - 30,00,000 = Rs. 20,00,000, so the tax is 1% of that. Only the excess above the threshold is charged, and the rate is 1%, not 18.5%.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A non-company assessee has claimed Chapter VI-A deductions, and his adjusted total income is Rs. 15 lakhs. Does the Alternate Minimum Tax apply?",
+          "options": [
+            {"key": "A", "text": "No, because AMT does not apply when adjusted total income does not exceed Rs. 20 lakhs", "misconception": null},
+            {"key": "B", "text": "Yes, AMT applies to every assessee claiming deductions regardless of amount", "misconception": "Ignoring the Rs. 20 lakh floor for AMT"},
+            {"key": "C", "text": "Yes, because he is a non-company and that alone triggers AMT", "misconception": "Treating non-company status as sufficient to trigger AMT"},
+            {"key": "D", "text": "No, because AMT only ever applies to companies", "misconception": "Wrongly restricting AMT to companies"}
+          ],
+          "correct_key": "A",
+          "explanation": "AMT provisions do not apply if the adjusted total income does not exceed Rs. 20 lakhs. At Rs. 15 lakhs he is below the floor, so AMT does not apply. AMT actually applies to persons other than companies, so the company-only claim is wrong too.",
+          "difficulty": 3
+        },
+        {
+          "stem": "The Alternate Minimum Tax is computed at what rate on the adjusted total income?",
+          "options": [
+            {"key": "A", "text": "18.5%", "misconception": null},
+            {"key": "B", "text": "1%", "misconception": "Confusing the AMT rate with the wealth-tax rate"},
+            {"key": "C", "text": "30%", "misconception": "Confusing the AMT rate with the top marginal income-tax rate"},
+            {"key": "D", "text": "15%", "misconception": "Confusing the AMT rate with the equity STCG rate"}
+          ],
+          "correct_key": "A",
+          "explanation": "AMT is calculated on the adjusted total income at 18.5%. 1% is the wealth-tax rate, 30% is the highest income-tax slab rate, and 15% is the equity short-term capital gains rate.",
+          "difficulty": 1
+        }
+      ]
+    },
+    {
+      "title": "Estate Planning Tools: Wills, Trusts, Gifts and Nomination",
+      "description": "Estate planning organises the transfer of accumulated assets to intended beneficiaries, using tools that operate either during a person's lifetime or after death. Lifetime tools include gifts, joint holding, family settlements, trusts and powers of attorney; post-death tools are the will and nomination. A will, defined under the Indian Succession Act 1925, takes effect only after the testator's death and must be signed by the testator and attested by two witnesses, and a testator can bequeath only what he legally owns.",
+      "difficulty": 2,
+      "prerequisites": [],
+      "keywords": ["estate planning", "will", "testator", "executor", "legatee", "trust", "nomination", "family settlement", "gift"],
+      "misconceptions": ["Thinking a will takes effect while the testator is alive", "Believing a testator can will away jointly owned property", "Confusing a nominee with the legal beneficiary"],
+      "source_pages": ["11.4", "11.4.5"],
+      "objectives": [
+        {"text": "Distinguish lifetime estate-planning tools from post-death tools", "bloom": "Understand", "assessment_style": "identification"},
+        {"text": "Identify the essential features and parties of a valid will", "bloom": "Remember", "assessment_style": "recall"}
+      ],
+      "questions": [
+        {
+          "stem": "Arvind and his wife are joint owners of their house, funded by a joint loan. Arvind's will bequeaths the entire house to his son. What is the legal position?",
+          "options": [
+            {"key": "A", "text": "The wife can contest, because Arvind can only bequeath what he legally owns, not her share", "misconception": null},
+            {"key": "B", "text": "The bequest is fully valid, because a will overrides joint ownership", "misconception": "Believing a will can transfer property the testator does not own"},
+            {"key": "C", "text": "The bequest is valid because Arvind is the husband and head of the family", "misconception": "Assuming spousal seniority overrides co-ownership rights"},
+            {"key": "D", "text": "The son automatically gets the wife's share too once Arvind dies", "misconception": "Ignoring the wife's independent legal title as joint owner"}
+          ],
+          "correct_key": "A",
+          "explanation": "A testator can dispose of only what he legally owns. Since the wife is a joint legal owner having paid valid consideration, Arvind cannot bequeath her share, and she can contest the will. A will cannot transfer property the testator does not own.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which of the following is a post-death estate-planning tool rather than a lifetime one?",
+          "options": [
+            {"key": "A", "text": "A will", "misconception": null},
+            {"key": "B", "text": "A gift", "misconception": "Classifying a lifetime transfer as post-death"},
+            {"key": "C", "text": "A power of attorney", "misconception": "Treating a lifetime authorisation as a post-death tool"},
+            {"key": "D", "text": "A family settlement", "misconception": "Treating a lifetime dispute-resolution instrument as post-death"}
+          ],
+          "correct_key": "A",
+          "explanation": "A will operates only after the testator's death, making it a post-death tool. Gifts, powers of attorney and family settlements all take effect during the individual's lifetime.",
+          "difficulty": 1
+        },
+        {
+          "stem": "In the context of a will, the person named to administer the estate of the deceased is called the:",
+          "options": [
+            {"key": "A", "text": "Executor", "misconception": null},
+            {"key": "B", "text": "Legatee", "misconception": "Confusing the administrator with the beneficiary"},
+            {"key": "C", "text": "Testator", "misconception": "Confusing the administrator with the person making the will"},
+            {"key": "D", "text": "Trustee", "misconception": "Confusing a will's administrator with a trust's manager"}
+          ],
+          "correct_key": "A",
+          "explanation": "The executor is named in a will to administer the deceased's estate. The legatee receives a portion of the estate, the testator is the person making the will, and a trustee manages a trust, not a will.",
+          "difficulty": 1
+        },
+        {
+          "stem": "A family settlement used to resolve a dispute over property carries which tax advantage per the workbook?",
+          "options": [
+            {"key": "A", "text": "It is not treated as a transfer, so capital gains tax does not arise", "misconception": null},
+            {"key": "B", "text": "It is treated as a gift and taxed in the recipient's hands", "misconception": "Wrongly treating a family settlement as a taxable gift"},
+            {"key": "C", "text": "It attracts capital gains tax like any sale of property", "misconception": "Treating a settlement as a taxable transfer"},
+            {"key": "D", "text": "It triggers the clubbing provisions on future income", "misconception": "Believing clubbing applies to family settlements"}
+          ],
+          "correct_key": "A",
+          "explanation": "A family settlement is not treated as a transfer, so no capital gains tax arises; it is also not treated as a gift, and the clubbing provisions do not apply. It may be oral or in writing.",
+          "difficulty": 2
+        }
+      ]
+    }
+  ],
+  "caselets": [
+    {
+      "scenario": "Sundar, a resident individual aged 45, reviews his investments in the year ended March. He holds equity shares bought two years ago that he sells on a stock exchange for a long-term profit of Rs. 3,00,000. He also sells a debt mutual fund he had held for four years: he bought it for Rs. 5,00,000 when the CII was 240 and sells it for Rs. 8,00,000 when the CII was 300. During the year he receives Rs. 40,000 as dividend on his equity shares and Rs. 60,000 as interest on a bank fixed deposit; his marginal rate of tax is 30%. Separately, he invests Rs. 1,70,000 in instruments eligible under Section 80C. Sundar wants to understand how each item is treated so he can estimate his position.",
+      "concept_titles": ["Capital Gains: Holding Period and Classification", "Indexation and Long-Term Capital Gains Taxation", "Taxation of Dividends and Interest Income", "Exemptions, Deductions and Rebates"],
+      "questions": [
+        {
+          "stem": "How is Sundar's Rs. 3,00,000 long-term gain on the listed equity shares taxed?",
+          "options": [
+            {"key": "A", "text": "Exempt under Section 10(38)", "misconception": null},
+            {"key": "B", "text": "Taxed at 20% after indexation", "misconception": "Applying the debt LTCG method to equity"},
+            {"key": "C", "text": "Taxed at 15% under Section 111A", "misconception": "Applying the equity short-term rate to a long-term gain"},
+            {"key": "D", "text": "Taxed at his marginal 30% rate", "misconception": "Treating exempt equity LTCG as ordinary income"}
+          ],
+          "correct_key": "A",
+          "explanation": "Long-term capital gains on equity shares sold on a stock exchange are exempt under Section 10(38), so the Rs. 3,00,000 gain bears no tax.",
+          "difficulty": 2,
+          "case_position": 1,
+          "marks": 1
+        },
+        {
+          "stem": "Compute Sundar's long-term capital gains tax on the debt mutual fund using indexation at 20%. (Indexed cost = 5,00,000 x 300/240)",
+          "options": [
+            {"key": "A", "text": "Rs. 35,000 (indexed cost Rs. 6,25,000; gain Rs. 1,75,000; 20% of it)", "misconception": null},
+            {"key": "B", "text": "Rs. 60,000 (gain of Rs. 3,00,000 on original cost at 20%)", "misconception": "Forgetting indexation and taxing the raw gain"},
+            {"key": "C", "text": "Rs. 30,000 (raw gain of Rs. 3,00,000 taxed at 10% without indexation)", "misconception": "Choosing the 10%-without-indexation route but on the un-indexed gain"},
+            {"key": "D", "text": "Rs. 80,000 (using purchase-year CII over sale-year CII by mistake)", "misconception": "Inverting the CII ratio in the indexation formula"}
+          ],
+          "correct_key": "A",
+          "explanation": "Indexed cost = 5,00,000 x 300/240 = Rs. 6,25,000. LTCG = 8,00,000 - 6,25,000 = Rs. 1,75,000. Tax at 20% = Rs. 35,000. Forgetting indexation would inflate the gain to Rs. 3,00,000, and inverting the CII ratio (240/300) would wrongly cut the cost to Rs. 4,00,000.",
+          "difficulty": 3,
+          "case_position": 2,
+          "marks": 2
+        },
+        {
+          "stem": "How are Sundar's Rs. 40,000 dividend and Rs. 60,000 interest treated together?",
+          "options": [
+            {"key": "A", "text": "The dividend is exempt in his hands; the interest is taxed at his 30% marginal rate", "misconception": null},
+            {"key": "B", "text": "Both are exempt, being investment income", "misconception": "Extending dividend exemption to interest"},
+            {"key": "C", "text": "Both are taxed at his 30% marginal rate", "misconception": "Taxing the exempt dividend along with the interest"},
+            {"key": "D", "text": "The dividend is taxed at 15% and the interest is exempt", "misconception": "Reversing both treatments"}
+          ],
+          "correct_key": "A",
+          "explanation": "Dividends from equity shares are exempt in the investor's hands because the company pays distribution tax, while ordinary bank interest is taxed at the investor's marginal rate, here 30%. This combines two separate rules correctly.",
+          "difficulty": 2,
+          "case_position": 3,
+          "marks": 1
+        },
+        {
+          "stem": "How much can Sundar deduct under Section 80C for his Rs. 1,70,000 investment?",
+          "options": [
+            {"key": "A", "text": "Rs. 1,50,000, the Section 80C ceiling", "misconception": null},
+            {"key": "B", "text": "Rs. 1,70,000, the full amount", "misconception": "Ignoring the 80C ceiling"},
+            {"key": "C", "text": "Rs. 20,000, the excess over the ceiling", "misconception": "Deducting only the excess"},
+            {"key": "D", "text": "Rs. 2,000, treating it as a rebate", "misconception": "Confusing a deduction with the 87A rebate"}
+          ],
+          "correct_key": "A",
+          "explanation": "Section 80C caps the deduction at Rs. 1,50,000, so despite investing Rs. 1,70,000 Sundar can deduct only Rs. 1,50,000.",
+          "difficulty": 1,
+          "case_position": 4,
+          "marks": 1
+        },
+        {
+          "stem": "Had Sundar instead sold the debt mutual fund after holding it for only 8 months, how would the gain have been classified and taxed?",
+          "options": [
+            {"key": "A", "text": "As a short-term capital gain taxed at his marginal 30% rate", "misconception": null},
+            {"key": "B", "text": "As a short-term gain taxed at 15%", "misconception": "Applying the equity STCG rate to a non-equity fund"},
+            {"key": "C", "text": "As a long-term gain taxed at 20% after indexation", "misconception": "Treating an 8-month holding as long-term"},
+            {"key": "D", "text": "As exempt under Section 10(38)", "misconception": "Extending the equity LTCG exemption to a short-term debt gain"}
+          ],
+          "correct_key": "A",
+          "explanation": "A debt fund follows the 36-month rule, so an 8-month holding is short-term. STCG on non-equity funds is taxed at the investor's marginal rate, here 30%. The 15% rate and 10(38) exemption apply only to equity, and indexation applies only to long-term gains.",
+          "difficulty": 3,
+          "case_position": 5,
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "scenario": "Lakshmi, a widow aged 68, is organising her estate. She and her late husband had jointly owned a residential flat; she is now the sole surviving owner. She wants her two children to receive her financial assets smoothly, so she has added her elder son as a nominee on her mutual fund folios and demat account. She is also drafting a will naming her daughter as a beneficiary and appointing a family friend to administer the estate. She has heard that gifts to relatives are tax-free and is considering gifting Rs. 5,00,000 to her son. She asks an adviser to confirm the roles, effects and tax treatment of these steps before she finalises them.",
+      "concept_titles": ["Estate Planning Tools: Wills, Trusts, Gifts and Nomination", "Exemptions, Deductions and Rebates"],
+      "questions": [
+        {
+          "stem": "The family friend Lakshmi appoints to administer her estate under the will is called the:",
+          "options": [
+            {"key": "A", "text": "Executor", "misconception": null},
+            {"key": "B", "text": "Legatee", "misconception": "Confusing the administrator with the beneficiary"},
+            {"key": "C", "text": "Testator", "misconception": "Confusing the administrator with the will-maker"},
+            {"key": "D", "text": "Nominee", "misconception": "Confusing an executor with a nominee on an investment"}
+          ],
+          "correct_key": "A",
+          "explanation": "The person named in a will to administer the estate is the executor. The legatee receives a portion of the estate, the testator (Lakshmi) makes the will, and a nominee is appointed on individual investments.",
+          "difficulty": 1,
+          "case_position": 1,
+          "marks": 1
+        },
+        {
+          "stem": "When does Lakshmi's will take legal effect?",
+          "options": [
+            {"key": "A", "text": "Only after her death", "misconception": null},
+            {"key": "B", "text": "As soon as she signs it", "misconception": "Believing a will operates during the testator's lifetime"},
+            {"key": "C", "text": "As soon as it is attested by two witnesses", "misconception": "Confusing valid execution with the will coming into effect"},
+            {"key": "D", "text": "When the executor accepts the appointment", "misconception": "Tying effect to the executor's acceptance rather than death"}
+          ],
+          "correct_key": "A",
+          "explanation": "A will comes into effect only after the death of the testator. Signing and attestation by two witnesses make it valid, but it does not operate while Lakshmi is alive.",
+          "difficulty": 1,
+          "case_position": 2,
+          "marks": 1
+        },
+        {
+          "stem": "Lakshmi gifts Rs. 5,00,000 to her son. Considering both the gift rule and what happens afterward, which statement is correct?",
+          "options": [
+            {"key": "A", "text": "The gift itself is exempt as it is to a relative, but income the son later earns on it is taxable in his hands", "misconception": null},
+            {"key": "B", "text": "Both the gift and any later income on it are fully exempt forever", "misconception": "Extending gift exemption to all future income on the gifted sum"},
+            {"key": "C", "text": "The gift is taxed as income in the son's hands because it exceeds Rs. 50,000", "misconception": "Ignoring the relative exemption for gifts"},
+            {"key": "D", "text": "The gift is exempt only if made on the occasion of the son's marriage", "misconception": "Restricting the relative exemption to marriage occasions"}
+          ],
+          "correct_key": "A",
+          "explanation": "Gifts received from specified relatives are exempt, so the Rs. 5,00,000 gift to her son is not taxed. However, any income the son earns on that money after the transfer is taxable in his hands. The relative exemption is not limited to marriage occasions.",
+          "difficulty": 3,
+          "case_position": 3,
+          "marks": 1
+        },
+        {
+          "stem": "Lakshmi names her elder son as nominee on her mutual fund folios. What does the nomination confer?",
+          "options": [
+            {"key": "A", "text": "The right to receive the monies on her death; it appoints who collects the investment", "misconception": null},
+            {"key": "B", "text": "Full ownership and the final beneficial title to the units", "misconception": "Equating a nominee with the absolute owner/beneficiary"},
+            {"key": "C", "text": "The power to manage the folios during her lifetime", "misconception": "Confusing nomination with a power of attorney"},
+            {"key": "D", "text": "An automatic equal split with the daughter regardless of the will", "misconception": "Assuming nomination forces an equal division among children"}
+          ],
+          "correct_key": "A",
+          "explanation": "Nomination is the right conferred on the holder of an investment to appoint the person entitled to receive the monies on the holder's death. It designates who receives the proceeds, not who has final beneficial ownership, and it is not a lifetime management power.",
+          "difficulty": 2,
+          "case_position": 4,
+          "marks": 1
+        },
+        {
+          "stem": "Because Lakshmi was a joint owner of the flat with her late husband and is now the sole surviving owner, what can she do with the flat through her will?",
+          "options": [
+            {"key": "A", "text": "She can bequeath the flat, since she now legally owns it in full", "misconception": null},
+            {"key": "B", "text": "She cannot include the flat because a will can never cover immovable property", "misconception": "Believing wills cannot deal with immovable property"},
+            {"key": "C", "text": "She can bequeath only half, as the husband's share can never pass to her", "misconception": "Ignoring that she is now the sole surviving owner"},
+            {"key": "D", "text": "She needs her children's consent before willing the flat", "misconception": "Inventing a consent requirement for a sole owner's bequest"}
+          ],
+          "correct_key": "A",
+          "explanation": "A testator can bequeath what she legally owns. As the sole surviving owner of the flat, Lakshmi owns it in full and can bequeath it through her will. A will can cover immovable property, and a sole owner needs no consent from beneficiaries.",
+          "difficulty": 2,
+          "case_position": 5,
+          "marks": 1
+        }
+      ]
+    }
+  ]
+}

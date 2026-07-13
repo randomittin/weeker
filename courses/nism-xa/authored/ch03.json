@@ -1,0 +1,1464 @@
+{
+  "chapter_ordinal": 3,
+  "chapter_title": "MUTUAL FUNDS",
+  "concepts": [
+    {
+      "title": "What a Mutual Fund Is and Who Runs It",
+      "description": "A mutual fund collects money from many small investors and puts it into one asset class such as company shares (equity), loans/bonds (debt), gold or real estate. Each separate product it offers is called a scheme or fund, and one fund house can run many schemes for different needs. Instead of picking securities themselves, investors hire a professional fund manager who selects securities, decides timing, and rebalances the portfolio, in return for a fee. The fund is promoted by a sponsor; trustees are appointed to safeguard investors' interests; and an asset management company (AMC) actually runs the schemes. Registrars & transfer agents (RTA), custodians, distributors, bankers, brokers and depository participants support the operation. SEBI (the market regulator) licenses every one of these for experience and financial soundness. A brand-new scheme is offered to the public through a New Fund Offer (NFO) once the trustees and SEBI approve it; the Key Information Memorandum (KIM) is the short-form offer document handed to investors.",
+      "difficulty": 1,
+      "prerequisites": [],
+      "keywords": [
+        "sponsor",
+        "trustee",
+        "AMC",
+        "NFO",
+        "KIM",
+        "custodian",
+        "registrar and transfer agent",
+        "SEBI"
+      ],
+      "misconceptions": [
+        "Believing investors directly hold the underlying shares/bonds instead of fund units",
+        "Thinking the sponsor makes the day-to-day buy/sell decisions",
+        "Assuming mutual fund returns are guaranteed by SEBI or the government"
+      ],
+      "source_pages": [],
+      "objectives": [
+        {
+          "text": "List the three principal constituents of a mutual fund and state each one's role.",
+          "bloom": "Remember",
+          "assessment_style": "recall"
+        },
+        {
+          "text": "Explain why an investor might choose a mutual fund over buying securities directly.",
+          "bloom": "Understand",
+          "assessment_style": "conceptual"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "Rekha wants exposure to Indian company shares but has neither the time nor the knowledge to pick individual stocks. She buys units of an equity mutual fund scheme. In legal terms, what does Rekha actually own after this purchase?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Units of the scheme, which represent her proportional share of the pooled portfolio",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "The specific shares the fund manager bought, registered directly in her name",
+              "misconception": "Belief that a mutual fund investor directly holds the underlying securities rather than fund units"
+            },
+            {
+              "key": "C",
+              "text": "A fixed-return deposit receipt issued by the AMC",
+              "misconception": "Confusing a mutual fund scheme with a guaranteed-return bank-style deposit"
+            },
+            {
+              "key": "D",
+              "text": "A membership share in the sponsor company that promoted the fund",
+              "misconception": "Confusing ownership of fund units with owning equity in the sponsor/AMC"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A mutual fund pools money and issues units; each unit is one share of the fund's overall portfolio (all the securities it holds together). Rekha owns units, not the individual shares themselves and not any stake in the company that set the fund up. The fund is not a fixed-return product, so she does not hold a deposit receipt either.",
+          "difficulty": 1
+        },
+        {
+          "stem": "The chapter names three principal constituents of every mutual fund. Which trio is correct?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Sponsor, trustees and the asset management company (AMC)",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Custodian, distributor and registrar & transfer agent",
+              "misconception": "Mistaking the supporting service providers for the three principal constituents"
+            },
+            {
+              "key": "C",
+              "text": "SEBI, RBI and AMFI",
+              "misconception": "Confusing the regulators/industry body with the fund's own constituents"
+            },
+            {
+              "key": "D",
+              "text": "Fund manager, broker and depository participant",
+              "misconception": "Naming operational roles instead of the governing constituents"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The three principal constituents are the sponsor (the promoter who sets the fund up), the trustees (who guard investors' interests), and the AMC (which runs the schemes). Custodians, RTAs, distributors, brokers and depository participants are supporting constituents. SEBI and RBI are regulators and AMFI is the industry body, none of which are the fund's own constituents.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Before a mutual fund can launch a completely new scheme to the public, whose approval must it obtain?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The trustees and SEBI",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Only the sponsor, since it promoted the fund",
+              "misconception": "Assuming the sponsor alone can authorise a new scheme"
+            },
+            {
+              "key": "C",
+              "text": "The RBI, because all investment products need central-bank clearance",
+              "misconception": "Over-extending RBI's limited role to general scheme approval"
+            },
+            {
+              "key": "D",
+              "text": "AMFI, as the body that registers all schemes",
+              "misconception": "Treating the industry association AMFI as an approving authority"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A new scheme is floated through a New Fund Offer (NFO — the first sale of units to the public) only after both the trustees and SEBI approve it. RBI is involved only in narrow areas such as foreign-exchange matters, and AMFI is an industry body that recommends best practice, not an approving regulator.",
+          "difficulty": 1
+        },
+        {
+          "stem": "What is the Key Information Memorandum (KIM)?",
+          "options": [
+            {
+              "key": "A",
+              "text": "An abridged offer document giving investors the essential facts about a scheme",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "The trust deed that appoints the trustees of the fund",
+              "misconception": "Confusing the investor-facing KIM with the internal trust-formation document"
+            },
+            {
+              "key": "C",
+              "text": "A monthly account statement of the investor's holdings",
+              "misconception": "Confusing the pre-investment KIM with the post-transaction statement of account"
+            },
+            {
+              "key": "D",
+              "text": "The custodian's certificate confirming the securities are safely held",
+              "misconception": "Confusing an offer document with a custodial safekeeping record"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The KIM is the short-form version of the full offer document, summarising the essential features of a scheme so an investor can decide. It is not the trust deed, not the periodic account statement, and not any custodial certificate.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Units, NAV and Why Transactions Don't Move the Price",
+      "description": "Each investor's stake in a scheme is measured in units, worked out as amount invested divided by price per unit. Net Asset Value (NAV) is the per-unit value of the fund, and it is calculated every business day so investors can value holdings and transact. Units are first sold in the NFO. A key idea: when an investor buys or sells (redeems) units at the correct NAV, the NAV itself does not change, because the money coming in or going out is matched by units being created or cancelled. NAV only moves when the value of the portfolio's securities changes, or if the fund wrongly allots/redeems units at a price different from NAV, which unfairly affects every other investor. The value of any investor's holding equals number of units held times the current NAV.",
+      "difficulty": 2,
+      "prerequisites": [
+        "What a Mutual Fund Is and Who Runs It"
+      ],
+      "keywords": [
+        "units",
+        "net asset value",
+        "NAV",
+        "portfolio value",
+        "units outstanding"
+      ],
+      "misconceptions": [
+        "Thinking buying or redeeming units at NAV pushes the NAV up or down",
+        "Believing NAV changes daily only because of investor inflows/outflows",
+        "Assuming a higher NAV means a better or more expensive-to-own fund"
+      ],
+      "source_pages": [],
+      "objectives": [
+        {
+          "text": "Compute units allotted and the value of a holding from the amount invested and the NAV.",
+          "bloom": "Apply",
+          "assessment_style": "calculation"
+        },
+        {
+          "text": "Explain why a purchase or redemption transacted at NAV leaves the NAV unchanged.",
+          "bloom": "Understand",
+          "assessment_style": "conceptual"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "Manish invests Rs.20,000 in a scheme when its NAV (per-unit price) is Rs.25. How many units is he allotted?",
+          "options": [
+            {
+              "key": "A",
+              "text": "800 units",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "500,000 units",
+              "misconception": "Multiplying amount by NAV instead of dividing"
+            },
+            {
+              "key": "C",
+              "text": "25 units",
+              "misconception": "Dividing NAV by amount, i.e. inverting the formula"
+            },
+            {
+              "key": "D",
+              "text": "20,000 units",
+              "misconception": "Assuming one rupee buys one unit, ignoring the NAV"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Units = amount invested / NAV. Here 20,000 / 25 = 800 units. Multiplying (20,000 x 25) or inverting the division gives the wrong figures; and the NAV of Rs.25, not Rs.1, is the price of each unit.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A scheme has net assets of Rs.1,00,000 spread over 10,000 units, so NAV is Rs.10. An investor now buys 1,000 fresh units at this NAV of Rs.10. What is the NAV immediately after the purchase?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs.10 — unchanged, because the extra Rs.10,000 of assets is matched by 1,000 extra units",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs.11, because the new money increases the fund's total assets",
+              "misconception": "Thinking inflows raise NAV even when units are issued at NAV"
+            },
+            {
+              "key": "C",
+              "text": "Rs.9.09, because the units outstanding rose",
+              "misconception": "Thinking new units dilute NAV even when matched by equal assets"
+            },
+            {
+              "key": "D",
+              "text": "Rs.10,000, confusing the NAV with the amount the investor brought in",
+              "misconception": "Confusing per-unit NAV with the total transaction value"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "New assets = 1,000 x Rs.10 = Rs.10,000, so assets become Rs.1,10,000 and units become 11,000. NAV = 1,10,000 / 11,000 = Rs.10. Because the money in and the units created are both priced at NAV, they offset exactly and the per-unit value is unchanged. NAV moves only when the underlying securities change in value.",
+          "difficulty": 2
+        },
+        {
+          "stem": "In the same Rs.10-NAV scheme (net assets Rs.1,00,000; 10,000 units), suppose the fund wrongly allots the incoming 1,000 units at the face value of Rs.10 while the true NAV had risen. This distinguishes a fair from an unfair allotment because...",
+          "options": [
+            {
+              "key": "A",
+              "text": "allotting at a price different from the true NAV shifts value between old and new investors, hurting some of them",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "allotting at face value always gives every investor a higher NAV",
+              "misconception": "Believing face-value allotment mechanically raises NAV for all"
+            },
+            {
+              "key": "C",
+              "text": "the number of units outstanding is unaffected by any allotment",
+              "misconception": "Thinking fresh allotments never change units outstanding"
+            },
+            {
+              "key": "D",
+              "text": "redemptions and purchases are the only events that can ever change NAV",
+              "misconception": "Believing investor transactions, not security prices, drive NAV"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "When units are issued (or redeemed) at a price that is not the true NAV, the money brought in no longer matches the value of the units created, so wealth is transferred between existing and new unit-holders and every investor is affected. A transaction done correctly at NAV, by contrast, leaves NAV untouched.",
+          "difficulty": 3
+        },
+        {
+          "stem": "Anita holds 1,000 units bought at NAV Rs.10. The NAV later rises to Rs.12. What is the value of her holding now, and why did it change?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs.12,000, because the value of the portfolio's securities rose, lifting the NAV",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs.10,000, because the value stays fixed until she redeems",
+              "misconception": "Thinking a holding's value is frozen at the purchase price until sale"
+            },
+            {
+              "key": "C",
+              "text": "Rs.12,000, because other investors bought more units",
+              "misconception": "Attributing the NAV rise to inflows rather than security prices"
+            },
+            {
+              "key": "D",
+              "text": "Rs.2,000, counting only the gain and dropping the original capital",
+              "misconception": "Confusing the total value with the profit alone"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Holding value = units x current NAV = 1,000 x 12 = Rs.12,000. The NAV climbed from 10 to 12 because the securities the fund owns gained value, not because of any buying or selling of units. The value is marked to the current NAV every business day, not frozen at cost.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Open-Ended, Closed-Ended and Interval Fund Structures",
+      "description": "A scheme's structure decides how and when an investor can put money in or take it out. Open-ended schemes accept fresh purchases and allow redemptions on any business day at NAV-based prices, so their pool of units keeps changing. Closed-ended schemes sell units only during the NFO for a fixed maturity; after that investors can exit only by selling on a stock exchange where the units are listed, so the number of units stays fixed. Interval funds are a hybrid: they are essentially closed-ended but turn open-ended during pre-announced transaction windows when investors can buy and redeem directly. Each such window must be at least two days long, and consecutive windows must be at least 15 days apart; like closed-ended funds they must be listed on an exchange.",
+      "difficulty": 1,
+      "prerequisites": [
+        "Units, NAV and Why Transactions Don't Move the Price"
+      ],
+      "keywords": [
+        "open-ended",
+        "closed-ended",
+        "interval fund",
+        "transaction period",
+        "stock exchange listing"
+      ],
+      "misconceptions": [
+        "Thinking a closed-ended scheme lets you redeem with the fund any day like an open-ended one",
+        "Believing interval funds are open every day",
+        "Assuming open-ended schemes have a fixed maturity date"
+      ],
+      "source_pages": [],
+      "objectives": [
+        {
+          "text": "Distinguish open-ended, closed-ended and interval schemes by how investors enter and exit.",
+          "bloom": "Understand",
+          "assessment_style": "conceptual"
+        },
+        {
+          "text": "State the SEBI timing rules that govern an interval fund's transaction windows.",
+          "bloom": "Remember",
+          "assessment_style": "recall"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "Vikram wants a scheme he can add to or exit on any business day directly with the fund at NAV. Which structure fits?",
+          "options": [
+            {
+              "key": "A",
+              "text": "An open-ended scheme",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "A closed-ended scheme",
+              "misconception": "Thinking a closed-ended fund allows daily direct redemption with the fund"
+            },
+            {
+              "key": "C",
+              "text": "An interval fund",
+              "misconception": "Overlooking that an interval fund is open only during pre-set windows"
+            },
+            {
+              "key": "D",
+              "text": "A New Fund Offer that never closes",
+              "misconception": "Misreading the NFO as a permanent open subscription"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Only an open-ended scheme takes fresh money and pays out redemptions on any business day at NAV-based prices. A closed-ended scheme can be exited only by selling on the exchange after the NFO; an interval fund is open just during announced windows; and an NFO is a one-time launch period, not an ongoing structure.",
+          "difficulty": 1
+        },
+        {
+          "stem": "After the NFO of a closed-ended scheme has ended, how does an investor exit before maturity?",
+          "options": [
+            {
+              "key": "A",
+              "text": "By selling the units to another buyer on the stock exchange where they are listed",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "By redeeming directly with the fund at NAV on any business day",
+              "misconception": "Applying open-ended redemption to a closed-ended scheme"
+            },
+            {
+              "key": "C",
+              "text": "By waiting for the next interval window to redeem",
+              "misconception": "Confusing a closed-ended scheme with an interval fund"
+            },
+            {
+              "key": "D",
+              "text": "By surrendering units to the sponsor for a refund",
+              "misconception": "Inventing a sponsor buy-back that does not exist"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Closed-ended schemes have a fixed unit count and no direct redemption after the NFO, so they must be listed and investors exit by trading the units on the exchange. Direct daily redemption belongs to open-ended schemes; interval windows belong to interval funds.",
+          "difficulty": 2
+        },
+        {
+          "stem": "An interval fund announces its transaction windows. Which pair of timing rules is correct?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Each window is at least two days long, and consecutive windows are at least 15 days apart",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Each window lasts at least 15 days, with a two-day gap between windows",
+              "misconception": "Swapping the minimum window length with the minimum gap"
+            },
+            {
+              "key": "C",
+              "text": "Windows open every business day, like an open-ended fund",
+              "misconception": "Treating interval funds as continuously open"
+            },
+            {
+              "key": "D",
+              "text": "Windows may be any length the AMC likes, with no minimum gap",
+              "misconception": "Assuming SEBI sets no timing constraints on interval funds"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "SEBI requires each transaction window to run for a minimum of two days, with a minimum gap of 15 days between two windows. The other options either swap the two numbers, or wrongly treat the fund as always open or entirely unregulated on timing.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Categories of Equity Funds",
+      "description": "Equity funds invest mainly in company shares and differ by how they pick stocks. Passive/index funds simply copy an index, so no fund manager judgement selects securities; active funds try to beat the index by choosing stocks. Diversified equity funds spread across sectors and company sizes, lowering the damage if a few stocks do badly. By company size: large-cap funds buy big, stable, easily traded 'blue-chip' firms; mid-cap funds buy medium firms with faster growth but more vulnerability to downturns; small-cap funds buy the smallest firms for potentially higher gains and higher risk. Sector funds concentrate in one industry (higher risk, cyclical returns); theme funds span several sectors tied to one theme. Growth funds pick companies whose earnings should grow faster than average; value funds pick shares trading below their true worth; dividend-yield funds pick high-dividend payers. ELSS (Equity Linked Savings Scheme) is a tax-saving equity fund giving a Section 80C deduction up to Rs.1,50,000 a year, must hold at least 80% in equity, and locks money in for three years.",
+      "difficulty": 2,
+      "prerequisites": [
+        "What a Mutual Fund Is and Who Runs It"
+      ],
+      "keywords": [
+        "index fund",
+        "active fund",
+        "large-cap",
+        "mid-cap",
+        "sector fund",
+        "value fund",
+        "growth fund",
+        "ELSS",
+        "80C"
+      ],
+      "misconceptions": [
+        "Thinking an index fund manager actively picks winning stocks",
+        "Believing a sector fund is well diversified",
+        "Confusing ELSS's three-year lock-in with instant liquidity"
+      ],
+      "source_pages": [],
+      "objectives": [
+        {
+          "text": "Match an investor's need to the appropriate category of equity fund.",
+          "bloom": "Apply",
+          "assessment_style": "scenario"
+        },
+        {
+          "text": "State the defining rules of an ELSS (lock-in, equity minimum, tax benefit).",
+          "bloom": "Remember",
+          "assessment_style": "recall"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "How does an index fund differ from an active equity fund?",
+          "options": [
+            {
+              "key": "A",
+              "text": "An index fund merely mirrors an index with no stock-selection judgement, while an active fund picks stocks to try to beat the index",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "An index fund's manager researches and hand-picks the best stocks to outperform the index",
+              "misconception": "Reversing the roles: attributing active stock-picking to an index fund"
+            },
+            {
+              "key": "C",
+              "text": "An index fund guarantees a higher return than an active fund",
+              "misconception": "Assuming passive management guarantees outperformance"
+            },
+            {
+              "key": "D",
+              "text": "An index fund holds only debt securities, unlike an active equity fund",
+              "misconception": "Confusing the passive/active distinction with the equity/debt distinction"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "An index (passive) fund simply replicates an index, so no manager decides which stocks to buy or when. An active fund selects securities on a strategy meant to beat the index. Neither guarantees a return, and an index equity fund still holds equity, not debt.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Sunil wants tax savings under Section 80C and is comfortable staying invested for a few years. Which equity fund suits him, and what is its lock-in?",
+          "options": [
+            {
+              "key": "A",
+              "text": "An ELSS, with a three-year lock-in",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "A large-cap fund, with a one-year lock-in",
+              "misconception": "Inventing a lock-in and 80C benefit for ordinary large-cap funds"
+            },
+            {
+              "key": "C",
+              "text": "A sector fund, with no lock-in but full 80C benefit",
+              "misconception": "Attributing the 80C tax benefit to sector funds"
+            },
+            {
+              "key": "D",
+              "text": "An index fund, redeemable any day yet still 80C-eligible",
+              "misconception": "Assuming index funds carry the ELSS tax deduction"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "An Equity Linked Savings Scheme (ELSS) gives the Section 80C income-tax deduction (up to Rs.1,50,000 a year) and locks the money in for three years, during which it cannot be redeemed, transferred or pledged. Ordinary large-cap, sector or index funds carry no such 80C benefit or lock-in.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Priya wants to reduce the chance that the failure of a few stocks or one industry sinks her whole equity investment. Which fund type best meets this goal?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A diversified equity fund spread across sectors and company sizes",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "A sector fund concentrated in one industry",
+              "misconception": "Believing a single-sector fund reduces concentration risk"
+            },
+            {
+              "key": "C",
+              "text": "A small-cap fund",
+              "misconception": "Assuming small-cap concentration lowers rather than raises risk"
+            },
+            {
+              "key": "D",
+              "text": "A growth fund focused on the fastest-growing firms",
+              "misconception": "Confusing a growth style with broad diversification"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A diversified equity fund holds stocks across many sectors and sizes, so poor performance in a few names or one sector does less damage. A sector fund is deliberately concentrated (higher risk), and small-cap or growth funds do not, by themselves, spread risk across the market.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A large-cap fund and a mid-cap fund are compared. Which statement is accurate?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Large-cap funds hold big, stable blue-chip firms; mid-cap funds hold medium firms with faster potential growth but more vulnerability in downturns",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Mid-cap funds hold the largest, most liquid companies while large-cap funds hold medium ones",
+              "misconception": "Swapping the definitions of large-cap and mid-cap"
+            },
+            {
+              "key": "C",
+              "text": "Both invest only in the top ten companies by size",
+              "misconception": "Wrongly narrowing both categories to the same tiny set"
+            },
+            {
+              "key": "D",
+              "text": "Large-cap funds are riskier than mid-cap funds because they are bigger",
+              "misconception": "Reversing the usual risk ranking between the two"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Large-cap funds buy large, liquid, blue-chip (well-established) companies with steady returns; mid-cap funds buy medium-sized companies that can grow faster but are more exposed to economic slowdowns, so they generally carry more risk than large-caps.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Debt Funds and Their Two Core Risks",
+      "description": "Debt funds invest in instruments that pay a set income stream: government bonds, corporate bonds and money-market securities. Two risks dominate. Credit risk is the chance the borrower fails to pay interest or repay principal; a credit rating measures it, and a higher rating means lower default risk. Interest-rate risk is the chance bond prices move when market interest rates change; the longer a bond's tenor (time to maturity), the more its price swings when rates move. Fund types sit along these risks: liquid/money-market funds hold very short paper (under 91 days to maturity) and are lowest-risk; ultra-short-term (treasury/cash management) funds go up to 365 days; income funds hold a mix of short and long government and corporate debt and carry both interest-rate and credit risk; gilt funds hold only government securities so there is no default risk, but because they can be long-dated their prices are very sensitive to interest-rate changes.",
+      "difficulty": 2,
+      "prerequisites": [
+        "Units, NAV and Why Transactions Don't Move the Price"
+      ],
+      "keywords": [
+        "debt fund",
+        "credit risk",
+        "interest-rate risk",
+        "credit rating",
+        "tenor",
+        "gilt fund",
+        "liquid fund",
+        "income fund"
+      ],
+      "misconceptions": [
+        "Thinking gilt funds have no interest-rate risk because they carry no default risk",
+        "Believing a longer-tenor bond's price is less sensitive to rate changes",
+        "Assuming all debt funds are equally safe regardless of what they hold"
+      ],
+      "source_pages": [],
+      "objectives": [
+        {
+          "text": "Distinguish credit risk from interest-rate risk in a debt portfolio.",
+          "bloom": "Understand",
+          "assessment_style": "conceptual"
+        },
+        {
+          "text": "Rank debt fund categories by the risks they carry.",
+          "bloom": "Analyze",
+          "assessment_style": "scenario"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "A gilt fund invests only in government securities. Which risk does it essentially avoid, and which does it still carry?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It avoids default (credit) risk but still carries interest-rate risk, especially if long-dated",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "It avoids interest-rate risk but still carries credit risk",
+              "misconception": "Swapping which risk a gilt fund escapes"
+            },
+            {
+              "key": "C",
+              "text": "It avoids both credit and interest-rate risk entirely",
+              "misconception": "Assuming government backing removes price risk too"
+            },
+            {
+              "key": "D",
+              "text": "It carries neither risk but has high default risk",
+              "misconception": "Self-contradictory: denying and asserting default risk at once"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Government securities carry no default risk, so a gilt fund has essentially no credit risk. But their prices are very sensitive to interest-rate moves, and long-term gilt funds have higher interest-rate risk than short-term ones. So the interest-rate risk remains even though credit risk is gone.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Two bonds are identical except that Bond X matures in 1 year and Bond Y in 10 years. Market interest rates move sharply. What happens to their prices?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Bond Y's price moves much more than Bond X's, because a longer tenor means greater interest-rate sensitivity",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Bond X's price moves more because shorter bonds are more sensitive",
+              "misconception": "Reversing the tenor-sensitivity relationship"
+            },
+            {
+              "key": "C",
+              "text": "Both prices move by exactly the same amount, since the coupon is the same",
+              "misconception": "Ignoring tenor's effect on price sensitivity"
+            },
+            {
+              "key": "D",
+              "text": "Neither price moves, because bond prices are fixed until maturity",
+              "misconception": "Believing bond prices never respond to rate changes before maturity"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The longer the tenor (time to maturity), the greater a bond's price swing when interest rates change. So the 10-year Bond Y is far more sensitive than the 1-year Bond X. Bond prices do respond to rate changes in the market before maturity, and tenor, not just coupon, drives the size of the move.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A liquid (money-market) fund is described as the lowest-risk debt category. What feature of its holdings makes this so?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It holds very short-maturity debt securities (less than 91 days to maturity)",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "It holds only long-dated government bonds",
+              "misconception": "Confusing liquid funds with long-dated gilt funds"
+            },
+            {
+              "key": "C",
+              "text": "It holds equity shares to cushion losses",
+              "misconception": "Mistaking a debt fund for a hybrid holding equity"
+            },
+            {
+              "key": "D",
+              "text": "It is guaranteed against loss by SEBI",
+              "misconception": "Assuming a regulatory guarantee that does not exist"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Liquid funds invest in debt maturing in under 91 days. Very short maturities mean small price swings when rates move and quick return of principal, which is why they are the lowest-risk debt category. They are not guaranteed, do not hold equity, and are the opposite of long-dated funds.",
+          "difficulty": 2
+        },
+        {
+          "stem": "An income fund holds a mix of short- and long-term government and corporate debt. Which combination of risks does it face?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Both interest-rate risk and credit risk",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Only credit risk, since government paper removes interest-rate risk",
+              "misconception": "Assuming government paper cancels interest-rate risk in a mixed fund"
+            },
+            {
+              "key": "C",
+              "text": "Only interest-rate risk, since credit ratings remove default risk",
+              "misconception": "Believing a rating eliminates rather than measures credit risk"
+            },
+            {
+              "key": "D",
+              "text": "Neither risk, because diversification cancels them out",
+              "misconception": "Assuming a mixed debt portfolio is risk-free"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Because an income fund holds corporate debt (which can default) as well as long-dated paper (whose price moves with rates), it carries both credit risk and interest-rate risk. A credit rating only measures default risk; it does not remove it, and mixing does not make the portfolio risk-free.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Hybrid Funds, ETFs, Special Funds and How Mutual Funds Are Taxed",
+      "description": "Some schemes go beyond a single asset class. Hybrid funds hold both equity and debt; a debt-oriented hybrid keeps 70-95% in conservatively managed debt with a small equity slice for a little extra return, is taxed as a debt fund, and a Monthly Income Plan is one example. Exchange Traded Funds (ETFs) trade on the exchange like a share, so their price is live and known in real time, unlike NAV which is struck once at end of day; a Gold ETF holds gold (each unit is about one gram of 99.5% purity). Arbitrage funds exploit price gaps between the cash and derivatives markets while staying fully hedged, giving low, liquid-fund-like volatility. International funds hold foreign securities; real-estate mutual funds hold property/related securities. On tax (2014 workbook rules): long-term capital gains (LTCG) from equity-oriented funds are nil and short-term gains (STCG) are taxed at 15%; for non-equity (debt) funds, gains are long-term only if units are held more than 36 months, LTCG is 20% with indexation (adjusting cost for inflation so only the real gain is taxed) and STCG is at the investor's marginal (own slab) rate.",
+      "difficulty": 3,
+      "prerequisites": [
+        "Categories of Equity Funds",
+        "Debt Funds and Their Two Core Risks"
+      ],
+      "keywords": [
+        "hybrid fund",
+        "monthly income plan",
+        "ETF",
+        "gold ETF",
+        "arbitrage fund",
+        "indexation",
+        "LTCG",
+        "STCG",
+        "holding period"
+      ],
+      "misconceptions": [
+        "Thinking an ETF's price is struck only once a day like a normal fund's NAV",
+        "Believing debt-fund gains become long-term after 12 months like equity",
+        "Assuming indexation applies to equity-fund gains"
+      ],
+      "source_pages": [],
+      "objectives": [
+        {
+          "text": "Classify capital gains from equity vs non-equity funds by holding period and tax rate.",
+          "bloom": "Apply",
+          "assessment_style": "calculation"
+        },
+        {
+          "text": "Explain how an ETF's real-time price differs from an ordinary scheme's end-of-day NAV.",
+          "bloom": "Understand",
+          "assessment_style": "conceptual"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "Ravi redeems units of an equity-oriented fund 20 months after buying them, making a gain. Under the workbook's tax rules, how is this gain treated?",
+          "options": [
+            {
+              "key": "A",
+              "text": "As long-term capital gain from an equity fund, which is exempt (nil tax)",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "As short-term capital gain taxed at 15%, because equity gains are always 15%",
+              "misconception": "Ignoring the holding period and applying the STCG rate to a long-term equity gain"
+            },
+            {
+              "key": "C",
+              "text": "As long-term capital gain taxed at 20% with indexation",
+              "misconception": "Applying the debt-fund LTCG rule to an equity fund"
+            },
+            {
+              "key": "D",
+              "text": "As tax-free only if held beyond 36 months",
+              "misconception": "Applying the 36-month debt threshold to equity units"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "For equity-oriented funds, units held more than 12 months give a long-term capital gain, which the workbook treats as nil (exempt). The 15% rate applies only to short-term equity gains, and the 20%-with-indexation and 36-month rules belong to non-equity (debt) funds, not equity.",
+          "difficulty": 3
+        },
+        {
+          "stem": "Meera sells units of a debt fund 20 months after purchase. How is her gain classified and taxed under the workbook's rules?",
+          "options": [
+            {
+              "key": "A",
+              "text": "As short-term capital gain, taxed at her marginal (slab) rate, because a debt gain is long-term only after 36 months",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "As long-term capital gain at 20% with indexation, since 20 months is more than a year",
+              "misconception": "Applying the equity 12-month threshold to a debt fund"
+            },
+            {
+              "key": "C",
+              "text": "As tax-free, like long-term equity gains",
+              "misconception": "Extending the equity LTCG exemption to debt funds"
+            },
+            {
+              "key": "D",
+              "text": "At a flat 15%, the short-term equity rate",
+              "misconception": "Applying the equity STCG rate to a debt fund"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "For non-equity (debt) funds, a gain is long-term only if units are held more than 36 months; 20 months is therefore short-term and taxed at the investor's marginal rate (their own income-tax slab). The 20%-with-indexation rate would apply only beyond 36 months, and the equity exemption/15% rate do not apply to debt funds.",
+          "difficulty": 3
+        },
+        {
+          "stem": "What makes indexation valuable when computing long-term capital gains on a debt fund?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It raises the purchase cost for inflation, so only the real (inflation-adjusted) gain is taxed",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "It exempts the entire gain from tax",
+              "misconception": "Confusing an inflation adjustment with a full exemption"
+            },
+            {
+              "key": "C",
+              "text": "It applies equally to long-term equity-fund gains",
+              "misconception": "Extending indexation to equity gains, which are exempt anyway"
+            },
+            {
+              "key": "D",
+              "text": "It converts a short-term gain into a long-term one",
+              "misconception": "Confusing a tax-computation step with the holding-period test"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Indexation adjusts the purchase price upward using the government's cost-inflation index, so the part of the gain that is merely inflation is not taxed and only the real gain is. It is not a full exemption, does not change the holding period, and is not used for equity funds.",
+          "difficulty": 3
+        },
+        {
+          "stem": "How does the pricing of an ETF differ from an ordinary open-ended scheme?",
+          "options": [
+            {
+              "key": "A",
+              "text": "An ETF trades on the exchange with a live, real-time price, whereas an ordinary scheme's NAV is struck once at end of day",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "An ETF's price is fixed for the whole day, while an ordinary scheme repriced every minute",
+              "misconception": "Reversing which product has the real-time price"
+            },
+            {
+              "key": "C",
+              "text": "Both are priced only once a day at the same NAV",
+              "misconception": "Ignoring the real-time trading feature of an ETF"
+            },
+            {
+              "key": "D",
+              "text": "An ETF has no price because it is not listed",
+              "misconception": "Wrongly claiming ETFs are unlisted"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "An ETF (Exchange Traded Fund) is bought and sold on the stock exchange like a share, so its price is known in real time and moves with the underlying index through the day. An ordinary open-ended scheme has one NAV computed at the end of each business day.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "title": "The Investing Process: PAN, KYC, Cut-off Timing and Plan Choice",
+      "description": "Before investing, every category of investor needs a PAN (Permanent Account Number, the tax ID) and must be KYC-compliant (Know Your Customer identity verification), including an In-Person Verification (IPV) whose details a KYC Registration Agency (KRA) stores for reuse across intermediaries. Which NAV you get depends on the cut-off time. For a normal (non-liquid) purchase received at an official point of acceptance before 3.00 pm on a business day, you get that day's NAV; for a liquid-fund purchase the cut-off is 2.00 pm and, provided clear funds are in, you get the NAV of the day before. For any purchase of Rs.2 lakh or more, the applicable NAV is that of the day the fund actually has clear (usable) funds. Investors also choose a plan: a Direct Plan (no distributor) has a lower expense ratio, while a Regular Plan uses a distributor who earns commission, reflected in a higher expense ratio.",
+      "difficulty": 2,
+      "prerequisites": [
+        "Units, NAV and Why Transactions Don't Move the Price"
+      ],
+      "keywords": [
+        "PAN",
+        "KYC",
+        "IPV",
+        "KRA",
+        "cut-off time",
+        "applicable NAV",
+        "direct plan",
+        "regular plan",
+        "expense ratio"
+      ],
+      "misconceptions": [
+        "Thinking the cut-off time is the same for liquid and non-liquid funds",
+        "Believing a Regular Plan has a lower cost than a Direct Plan",
+        "Assuming the NAV depends only on submission time regardless of when funds clear for large investments"
+      ],
+      "source_pages": [],
+      "objectives": [
+        {
+          "text": "Determine the applicable NAV for a purchase given the fund type, time of receipt and amount.",
+          "bloom": "Apply",
+          "assessment_style": "scenario"
+        },
+        {
+          "text": "Compare Direct and Regular plans on cost and use of a distributor.",
+          "bloom": "Understand",
+          "assessment_style": "conceptual"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "Amit submits a purchase in a non-liquid equity scheme at an official point of acceptance at 1.30 pm on a business day, for Rs.50,000. Which NAV applies?",
+          "options": [
+            {
+              "key": "A",
+              "text": "That same day's NAV, since it was received before the 3.00 pm cut-off",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "The previous day's NAV, as with a liquid fund",
+              "misconception": "Applying the liquid-fund prior-day rule to a non-liquid fund"
+            },
+            {
+              "key": "C",
+              "text": "The next day's NAV, because purchases always settle a day later",
+              "misconception": "Inventing a mandatory next-day rule for ordinary purchases"
+            },
+            {
+              "key": "D",
+              "text": "The NAV of whichever day the units are eventually dispatched",
+              "misconception": "Confusing unit dispatch with the NAV-determination date"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "For a non-liquid purchase received before the 3.00 pm cut-off on a business day, and below Rs.2 lakh, the applicable NAV is that day's NAV. The prior-day rule is specific to liquid funds; there is no automatic next-day rule; and NAV is set by receipt/clear-funds timing, not dispatch.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Neha invests Rs.5 lakh in an equity scheme, well before the 3.00 pm cut-off, but her money reaches the fund as clear funds only the next business day. Which NAV applies?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The NAV of the day on which clear funds are actually available to the fund",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "That day's NAV, because she submitted before 3.00 pm",
+              "misconception": "Ignoring the special Rs.2-lakh-and-above clear-funds rule"
+            },
+            {
+              "key": "C",
+              "text": "The previous day's NAV, as for a liquid fund",
+              "misconception": "Applying the liquid-fund rule to a large equity purchase"
+            },
+            {
+              "key": "D",
+              "text": "The lowest NAV of the two days, to protect the investor",
+              "misconception": "Inventing an investor-favourable rule that does not exist"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "For any investment of Rs.2 lakh and above, the applicable NAV is that of the day the fund receives clear (usable) funds, regardless of submission time. So Neha gets the next day's NAV. The before-cut-off rule and the liquid-fund prior-day rule do not override the large-investment clear-funds condition.",
+          "difficulty": 3
+        },
+        {
+          "stem": "Compared with a Direct Plan, a Regular Plan of the same scheme has...",
+          "options": [
+            {
+              "key": "A",
+              "text": "a higher expense ratio, because the distributor is paid a commission",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "a lower expense ratio, because it skips the distributor",
+              "misconception": "Reversing which plan is cheaper"
+            },
+            {
+              "key": "C",
+              "text": "no expense ratio at all, since the AMC absorbs all costs",
+              "misconception": "Assuming a plan can carry zero expenses"
+            },
+            {
+              "key": "D",
+              "text": "a different NAV rule that ignores cut-off times",
+              "misconception": "Inventing a separate NAV mechanism for regular plans"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A Regular Plan uses a distributor who earns a commission paid by the fund, which shows up as a higher expense ratio (the annual cost charged to the scheme). A Direct Plan skips the distributor, so it has the lower expense ratio. Cut-off rules are the same for both.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Systematic Facilities: SIP, STP, SWP, Switch and Rupee Cost Averaging",
+      "description": "Mutual funds offer facilities to automate investing. A Systematic Investment Plan (SIP) invests a fixed sum at regular intervals; because the same rupee amount buys more units when the NAV is low and fewer when it is high, the average cost per unit is pulled below the simple average of the NAVs. This benefit is called rupee cost averaging, and it works without any market timing. A Systematic Transfer Plan (STP) moves money in instalments from one scheme (source) to another (target) within the same folio, useful to shift gradually from, say, equity to short-term debt as a goal nears. A Systematic Withdrawal Plan (SWP) redeems a fixed amount at intervals to give regular cash flow. A Switch is a single, one-time move of the whole amount from one scheme/option to another. STP and switch redemptions attract exit loads and taxes as applicable.",
+      "difficulty": 2,
+      "prerequisites": [
+        "Units, NAV and Why Transactions Don't Move the Price"
+      ],
+      "keywords": [
+        "SIP",
+        "rupee cost averaging",
+        "STP",
+        "SWP",
+        "switch",
+        "average cost per unit",
+        "exit load"
+      ],
+      "misconceptions": [
+        "Thinking rupee cost averaging requires timing the market",
+        "Confusing an STP (instalments) with a one-time switch",
+        "Believing the average cost per unit equals the simple average of the NAVs"
+      ],
+      "source_pages": [],
+      "objectives": [
+        {
+          "text": "Compute the average cost per unit under a SIP and compare it with the simple average NAV.",
+          "bloom": "Apply",
+          "assessment_style": "calculation"
+        },
+        {
+          "text": "Select the correct systematic facility (SIP/STP/SWP/switch) for a stated need.",
+          "bloom": "Apply",
+          "assessment_style": "scenario"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "Deepa runs a SIP of Rs.3,000 a month for three months at NAVs of Rs.15, Rs.12 and Rs.10. What is her average cost per unit, and how does it compare with the simple average of the three NAVs (Rs.12.33)?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs.12.00 per unit, which is below the simple average of Rs.12.33",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs.12.33 per unit, exactly equal to the simple average of the NAVs",
+              "misconception": "Assuming average cost equals the simple average NAV"
+            },
+            {
+              "key": "C",
+              "text": "Rs.13.00 per unit, above the simple average of the NAVs",
+              "misconception": "Believing SIP raises the average cost above the mean NAV"
+            },
+            {
+              "key": "D",
+              "text": "Rs.9,000 per unit, using total money invested as the per-unit cost",
+              "misconception": "Confusing total invested with cost per unit"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Units each month = amount / NAV: 3000/15 = 200; 3000/12 = 250; 3000/10 = 300; total = 750 units for Rs.9,000 invested. Average cost = 9,000 / 750 = Rs.12.00. That is below the simple average NAV of (15+12+10)/3 = Rs.12.33, because the fixed sum buys more units when the NAV is low. This is rupee cost averaging.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Which statement about rupee cost averaging is correct?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It lowers the average purchase cost simply by investing a fixed sum regularly, with no need to time the market",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "It works only if the investor buys more when prices are high",
+              "misconception": "Reversing the mechanism of cost averaging"
+            },
+            {
+              "key": "C",
+              "text": "It guarantees a profit regardless of how the market moves",
+              "misconception": "Overstating cost averaging as a profit guarantee"
+            },
+            {
+              "key": "D",
+              "text": "It requires predicting market tops and bottoms to succeed",
+              "misconception": "Believing cost averaging depends on market timing"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A fixed rupee amount automatically buys more units when the NAV is low and fewer when it is high, pulling the average cost down, with no forecasting needed. It does not require buying more at high prices, does not guarantee profit, and specifically avoids the need to time the market.",
+          "difficulty": 2
+        },
+        {
+          "stem": "As his son's college fees approach, Ganesh wants to shift his equity-fund corpus gradually into a short-term debt fund over several months rather than in one lump. Which facility fits, and why not a single redemption?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A Systematic Transfer Plan (STP), because moving all at once risks doing so at a low NAV",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "A single Switch, because gradual transfer is not allowed between schemes",
+              "misconception": "Denying that instalment transfers between schemes exist"
+            },
+            {
+              "key": "C",
+              "text": "A Systematic Withdrawal Plan (SWP) into his equity fund",
+              "misconception": "Confusing SWP with transferring between two schemes"
+            },
+            {
+              "key": "D",
+              "text": "A fresh SIP into the equity fund",
+              "misconception": "Choosing an investing plan when the need is to move out gradually"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "An STP moves the corpus in instalments from the source (equity) to the target (short-term debt) fund, averaging out the NAVs and avoiding the risk that a single redemption lands on a low-NAV day. A switch is a one-time move; an SWP is for periodic cash withdrawals; and a fresh SIP would add to equity, not reduce it.",
+          "difficulty": 2
+        },
+        {
+          "stem": "How does a Switch differ from an STP?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A switch is a single one-time transfer of the amount from one scheme/option to another, while an STP does it in instalments over time",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "A switch spreads the transfer over many instalments, while an STP is one-time",
+              "misconception": "Swapping the definitions of switch and STP"
+            },
+            {
+              "key": "C",
+              "text": "A switch avoids all exit loads and taxes, unlike an STP",
+              "misconception": "Assuming a switch is free of loads and taxes"
+            },
+            {
+              "key": "D",
+              "text": "A switch can only move money into a bank account, not another scheme",
+              "misconception": "Confusing a switch with a redemption to bank / SWP"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A switch is a single transfer of the whole amount from one scheme or option to another; an STP performs the transfer in periodic instalments. Both may attract exit loads and taxes as applicable, and a switch moves money between schemes, not to a bank account.",
+          "difficulty": 2
+        }
+      ]
+    }
+  ],
+  "caselets": [
+    {
+      "scenario": "Lakshmi, a 34-year-old schoolteacher in Pune, has never invested in markets before and is nervous about picking shares herself. A friend suggests mutual funds. Lakshmi decides to start a Systematic Investment Plan of Rs.4,000 a month in a diversified equity scheme, choosing the Direct Plan to keep costs down. She also wants a small emergency corpus she can access on any business day, and is separately keen to save income tax under Section 80C this year. Before she can invest, the distributor tells her she must first obtain a PAN and complete the KYC formalities, including an in-person verification. Lakshmi wonders how a fixed monthly amount can possibly help her when share prices keep bouncing around, and whether the emergency money should go into the same equity scheme.",
+      "concept_titles": [
+        "What a Mutual Fund Is and Who Runs It",
+        "Categories of Equity Funds",
+        "The Investing Process: PAN, KYC, Cut-off Timing and Plan Choice",
+        "Systematic Facilities: SIP, STP, SWP, Switch and Rupee Cost Averaging",
+        "Debt Funds and Their Two Core Risks"
+      ],
+      "questions": [
+        {
+          "stem": "Why does Lakshmi need a PAN and KYC completed before her first investment?",
+          "options": [
+            {
+              "key": "A",
+              "text": "They are mandatory regulatory prerequisites for every category of mutual fund investor",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Only investors above a certain age must complete them",
+              "misconception": "Believing PAN/KYC apply only to some investors by age"
+            },
+            {
+              "key": "C",
+              "text": "They are needed only for redemptions, not purchases",
+              "misconception": "Confusing entry requirements with exit formalities"
+            },
+            {
+              "key": "D",
+              "text": "They replace the need to choose a scheme",
+              "misconception": "Confusing identity compliance with scheme selection"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A PAN (tax ID) and KYC compliance, including in-person verification, are required of all categories of investors before investing in a mutual fund. They are entry prerequisites, apply regardless of age, and are separate from choosing a scheme.",
+          "difficulty": 2,
+          "case_position": 1
+        },
+        {
+          "stem": "Lakshmi picks the Direct Plan over the Regular Plan of the same scheme. What is the direct consequence for her costs?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A lower expense ratio, because no distributor commission is built in",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "A higher expense ratio, because direct investors pay extra fees",
+              "misconception": "Reversing which plan costs more"
+            },
+            {
+              "key": "C",
+              "text": "No difference, since expense ratios are identical across plans",
+              "misconception": "Denying the direct/regular cost gap"
+            },
+            {
+              "key": "D",
+              "text": "A guaranteed higher return regardless of the market",
+              "misconception": "Confusing a lower cost with a guaranteed return"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A Direct Plan carries no distributor commission, so its expense ratio (annual cost charged to the scheme) is lower than the Regular Plan's. Lower cost is not the same as a guaranteed return, and the two plans are not identically priced.",
+          "difficulty": 2,
+          "case_position": 2
+        },
+        {
+          "stem": "Given her worry about bouncing share prices, how should the SIP's fixed monthly amount actually help Lakshmi?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Through rupee cost averaging: Rs.4,000 buys more units when the NAV is low and fewer when it is high, lowering her average cost with no market timing",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "By locking in the highest NAV each month",
+              "misconception": "Misreading cost averaging as buying at the highest price"
+            },
+            {
+              "key": "C",
+              "text": "By guaranteeing she never loses money in equity",
+              "misconception": "Treating SIP as a capital guarantee"
+            },
+            {
+              "key": "D",
+              "text": "By requiring her to predict market movements each month",
+              "misconception": "Believing SIP depends on forecasting the market"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A fixed rupee amount automatically buys more units at low NAVs and fewer at high NAVs, so her average cost per unit is pulled down over time, without any need to time the market. It does not guarantee against loss or require forecasting.",
+          "difficulty": 2,
+          "case_position": 3
+        },
+        {
+          "stem": "Lakshmi wants a separate emergency corpus she can access on any business day. Combining what she needs (daily access and low risk) with fund knowledge, which choice fits best, and why not the equity scheme?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A liquid fund, because it holds very short-maturity debt (under 91 days) and allows any-business-day access, unlike volatile equity",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "The same diversified equity scheme, since equity is always liquid and safe",
+              "misconception": "Assuming equity is low-risk and ideal for emergencies"
+            },
+            {
+              "key": "C",
+              "text": "A closed-ended scheme, because it can be exited any day",
+              "misconception": "Wrongly attributing daily exit to a closed-ended scheme"
+            },
+            {
+              "key": "D",
+              "text": "A long-term gilt fund, because government backing makes it emergency-proof",
+              "misconception": "Ignoring the high interest-rate price risk of long gilt funds"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "An emergency corpus needs low risk and ready access. A liquid fund holds sub-91-day debt with minimal price swings and open-ended daily access. Equity is volatile (unsuitable for emergencies), a closed-ended scheme cannot be redeemed daily with the fund, and a long-term gilt fund, though default-free, has high interest-rate price risk.",
+          "difficulty": 2,
+          "case_position": 4
+        },
+        {
+          "stem": "For the Section 80C tax saving she wants this year, which equity product should Lakshmi use, and what must she accept?",
+          "options": [
+            {
+              "key": "A",
+              "text": "An ELSS, accepting a three-year lock-in on the invested amount",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Her ordinary diversified equity SIP, which itself gives an 80C deduction",
+              "misconception": "Assuming ordinary equity funds carry the 80C benefit"
+            },
+            {
+              "key": "C",
+              "text": "A liquid fund, which is 80C-eligible and fully liquid",
+              "misconception": "Attributing the 80C benefit to liquid funds"
+            },
+            {
+              "key": "D",
+              "text": "A gilt fund, since government securities qualify for 80C",
+              "misconception": "Assuming government-security funds give an 80C deduction"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The Section 80C deduction from a mutual fund comes specifically from an ELSS (Equity Linked Savings Scheme), which locks the money in for three years. Ordinary diversified equity, liquid and gilt funds do not carry the 80C benefit.",
+          "difficulty": 1,
+          "case_position": 5
+        }
+      ]
+    },
+    {
+      "scenario": "Rohit, a software engineer in Bengaluru, runs a SIP of Rs.5,000 a month in an equity-oriented fund. Over three consecutive months the scheme's NAV is recorded as Rs.20, Rs.25 and Rs.10. Rohit is comparing his experience with that of his uncle Prakash, who invested a lump sum in a debt fund two years ago and is now deciding whether to redeem. Rohit believes that because he has invested across three different NAVs, his average cost must simply equal the average of the three NAV figures. He also assumes that whether he sells his equity units after ten months or after fifteen months, the tax treatment will be identical. Prakash, meanwhile, thinks his two-year-old debt-fund gain will be taxed as a long-term gain just like his friend's equity fund. The family wants the numbers worked out precisely before anyone redeems.",
+      "concept_titles": [
+        "Systematic Facilities: SIP, STP, SWP, Switch and Rupee Cost Averaging",
+        "Units, NAV and Why Transactions Don't Move the Price",
+        "Hybrid Funds, ETFs, Special Funds and How Mutual Funds Are Taxed"
+      ],
+      "questions": [
+        {
+          "stem": "How many total units does Rohit's three months of Rs.5,000 SIP buy at NAVs of Rs.20, Rs.25 and Rs.10?",
+          "options": [
+            {
+              "key": "A",
+              "text": "850 units",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "750 units",
+              "misconception": "Using an averaged NAV of Rs.20 for all three months instead of month-by-month division"
+            },
+            {
+              "key": "C",
+              "text": "15,000 units",
+              "misconception": "Treating total money invested as the unit count"
+            },
+            {
+              "key": "D",
+              "text": "600 units",
+              "misconception": "Dividing total investment by the highest NAV only"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Units bought each month = amount / that month's NAV: 5000/20 = 250; 5000/25 = 200; 5000/10 = 500. Total = 250 + 200 + 500 = 850 units. Dividing month-by-month (not by an averaged NAV) is essential.",
+          "difficulty": 2,
+          "case_position": 1,
+          "marks": 2
+        },
+        {
+          "stem": "What is Rohit's average cost per unit, and is his belief that it equals the simple average NAV (Rs.18.33) correct?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs.17.65 per unit (approx), which is below Rs.18.33, so his belief is wrong",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs.18.33 per unit, so his belief is correct",
+              "misconception": "Assuming average cost equals the simple average of the NAVs"
+            },
+            {
+              "key": "C",
+              "text": "Rs.20.00 per unit, the first month's NAV",
+              "misconception": "Using the entry NAV as the average cost"
+            },
+            {
+              "key": "D",
+              "text": "Rs.15,000 per unit, the total invested",
+              "misconception": "Confusing total money invested with per-unit cost"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Average cost = total invested / total units = 15,000 / 850 = Rs.17.65 (approx). The simple average NAV is (20+25+10)/3 = Rs.18.33. Because the fixed sum bought many more units at the low Rs.10 NAV, the average cost is pulled below the simple average, so Rohit's belief is wrong.",
+          "difficulty": 3,
+          "case_position": 2,
+          "marks": 2
+        },
+        {
+          "stem": "Rohit assumes selling his equity units after 10 months or 15 months gives the same tax. Combining the holding-period rule with the equity tax rate, what actually happens?",
+          "options": [
+            {
+              "key": "A",
+              "text": "At 10 months it is a short-term gain taxed at 15%; at 15 months it is a long-term gain that is exempt, so the treatments differ",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Both are long-term and exempt, so treatment is identical",
+              "misconception": "Ignoring that under 12 months is short-term for equity"
+            },
+            {
+              "key": "C",
+              "text": "Both are short-term at 15%, so treatment is identical",
+              "misconception": "Ignoring that over 12 months turns equity gains long-term/exempt"
+            },
+            {
+              "key": "D",
+              "text": "At 15 months it is taxed at 20% with indexation",
+              "misconception": "Applying the debt-fund LTCG rule to equity units"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "For equity-oriented funds, units held 12 months or less give a short-term gain taxed at 15%; held more than 12 months they give a long-term gain that is exempt. So 10 months (15% tax) and 15 months (nil tax) are treated differently. The 20%-with-indexation rule is for debt funds, not equity.",
+          "difficulty": 3,
+          "case_position": 3,
+          "marks": 1
+        },
+        {
+          "stem": "Prakash's debt-fund units have been held for 24 months. Contrasting the debt rule with the equity rule his friend enjoyed, how is his gain classified?",
+          "options": [
+            {
+              "key": "A",
+              "text": "As a short-term gain, because a debt-fund gain is long-term only after more than 36 months; it is taxed at his marginal rate",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "As a long-term gain exempt from tax, like his friend's equity fund",
+              "misconception": "Extending the equity exemption to a debt fund"
+            },
+            {
+              "key": "C",
+              "text": "As a long-term gain at 20% with indexation, since 24 months exceeds 12",
+              "misconception": "Applying the equity 12-month threshold to a debt fund"
+            },
+            {
+              "key": "D",
+              "text": "As tax-free because he held it for more than a year",
+              "misconception": "Assuming any one-year holding makes a debt gain tax-free"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "For non-equity (debt) funds the long-term threshold is more than 36 months, so 24 months is short-term, taxed at Prakash's marginal (slab) rate. Unlike equity funds, debt-fund long-term gains are neither exempt nor triggered at 12 months.",
+          "difficulty": 3,
+          "case_position": 4,
+          "marks": 1
+        },
+        {
+          "stem": "If, on a day the scheme's NAV is Rs.10, another investor redeems units at that same NAV of Rs.10, what happens to the NAV for remaining unit-holders?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It stays at Rs.10, because the assets leaving are matched by the units cancelled",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "It falls, because redemptions always reduce the NAV",
+              "misconception": "Believing outflows mechanically lower NAV even at NAV pricing"
+            },
+            {
+              "key": "C",
+              "text": "It rises, because fewer units now share the assets",
+              "misconception": "Assuming fewer units automatically lifts NAV"
+            },
+            {
+              "key": "D",
+              "text": "It becomes Rs.0 for the redeeming investor's share",
+              "misconception": "Confusing an individual's exit with a change in per-unit NAV"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "When units are redeemed at the correct NAV, the drop in net assets is exactly matched by the fall in units outstanding, so the per-unit NAV is unchanged. Redemptions and purchases done at NAV never move the NAV; only changes in the value of the underlying securities do.",
+          "difficulty": 2,
+          "case_position": 5,
+          "marks": 1
+        }
+      ]
+    }
+  ]
+}

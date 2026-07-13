@@ -1,0 +1,1399 @@
+{
+  "chapter_ordinal": 9,
+  "chapter_title": "INSURANCE PLANNING",
+  "concepts": [
+    {
+      "title": "Need for Insurance and Risk Management",
+      "description": "Insurance is a risk-management tool that shifts the financial consequences of an uncertain, harmful event from the person who would otherwise bear the loss to an insurer, in exchange for a periodic fee called premium. The event itself is not prevented; only its economic impact is transferred. The person facing the risk can instead choose to bear the loss themselves (risk retention) rather than pass it on (risk transfer).",
+      "difficulty": 1,
+      "prerequisites": [],
+      "keywords": [
+        "risk transfer",
+        "risk retention",
+        "premium",
+        "insured",
+        "insurer",
+        "economic loss"
+      ],
+      "misconceptions": [
+        "Insurance prevents the insured event from happening",
+        "Every policy refunds premiums if no claim is made",
+        "Insurance is primarily an investment"
+      ],
+      "source_pages": [
+        224,
+        225,
+        226,
+        227
+      ],
+      "objectives": [
+        {
+          "text": "Explain how insurance transfers the financial consequences of a risk from an insured to an insurer",
+          "bloom": "understand",
+          "assessment_style": "conceptual-mcq"
+        },
+        {
+          "text": "Distinguish risk retention from risk transfer in everyday situations",
+          "bloom": "analyze",
+          "assessment_style": "scenario"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "A shopkeeper decides to set aside part of his own savings each year to cover a possible future loss, rather than buying a policy for it. This choice is best described as:",
+          "options": [
+            {
+              "key": "A",
+              "text": "risk retention",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "risk transfer",
+              "misconception": "Confuses self-funding a loss with shifting it to an insurer"
+            },
+            {
+              "key": "C",
+              "text": "indemnity",
+              "misconception": "Treats indemnity, which is reimbursement of a loss, as the act of bearing risk oneself"
+            },
+            {
+              "key": "D",
+              "text": "underwriting",
+              "misconception": "Mislabels a personal financing decision as the insurer's risk-assessment process"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Risk retention means keeping a risk and its financial consequences with yourself, for example by saving to meet a possible loss. Risk transfer, by contrast, is paying an insurer to bear that loss. Since the shopkeeper funds the loss himself, he is retaining the risk.",
+          "difficulty": 1
+        },
+        {
+          "stem": "The regular fee an insured pays to keep insurance protection in force is called the:",
+          "options": [
+            {
+              "key": "A",
+              "text": "premium",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "sum assured",
+              "misconception": "Confuses the periodic cost of cover with the benefit amount payable"
+            },
+            {
+              "key": "C",
+              "text": "bonus",
+              "misconception": "Confuses the price of cover with an addition made to the sum assured"
+            },
+            {
+              "key": "D",
+              "text": "annuity",
+              "misconception": "Confuses the premium with a stream of retirement payouts"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The premium is the periodic charge paid to the insurer in return for protection. The sum assured is the benefit paid on a claim, a bonus is an addition to that benefit, and an annuity is a payout stream, so none of those name the fee paid in.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Which statement correctly captures what insurance does when a covered adverse event occurs?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It compensates for the financial loss but does not stop the event itself",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "It prevents the insured event from occurring",
+              "misconception": "Believes insurance eliminates the event rather than its financial impact"
+            },
+            {
+              "key": "C",
+              "text": "It guarantees the insured a profit over and above the loss",
+              "misconception": "Ignores that insurance restores rather than enriches the insured"
+            },
+            {
+              "key": "D",
+              "text": "It returns all premiums with interest whether or not a loss occurs",
+              "misconception": "Assumes every policy is a savings product that refunds premiums"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Insurance manages the financial fallout of a risk; it cannot stop an accident, illness or fire from happening. It aims to restore the insured to the position they were in before the loss, not to hand them a gain, and most policies do not refund premiums when no claim arises.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Insurable Risk and the Principle of Indemnity",
+      "description": "Not every risk can be insured. An insurable event must be uncertain in whether or when it happens, must be measurable in money, and must belong to a large enough pool of similar risks for the insurer to price it. The principle of indemnity means a claim restores the insured to the financial position held just before the loss, neither better nor worse. Buying too little cover leaves part of the risk with the insured (under-insurance); buying more than the loss wastes premium (over-insurance).",
+      "difficulty": 2,
+      "prerequisites": [
+        "Need for Insurance and Risk Management"
+      ],
+      "keywords": [
+        "indemnity",
+        "insurable risk",
+        "under-insurance",
+        "over-insurance",
+        "measurable loss",
+        "uncertainty"
+      ],
+      "misconceptions": [
+        "A claim should pay more than the actual loss",
+        "Any event at all can be insured",
+        "Over-insurance produces a larger payout"
+      ],
+      "source_pages": [
+        227,
+        228,
+        238,
+        239
+      ],
+      "objectives": [
+        {
+          "text": "Explain the principle of indemnity and why a claim does not enrich the insured",
+          "bloom": "understand",
+          "assessment_style": "conceptual-mcq"
+        },
+        {
+          "text": "Evaluate the consequences of under-insurance and over-insurance",
+          "bloom": "evaluate",
+          "assessment_style": "scenario"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "A factory owner insures a machine against fire under a policy that indemnifies only the machine's value. A fire destroys a machine worth Rs 8 lakh and also causes Rs 2 lakh of lost profit during downtime, which the policy does not cover. The insurer's payout aims to:",
+          "options": [
+            {
+              "key": "A",
+              "text": "restore the Rs 8 lakh asset loss, without creating a gain",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "pay Rs 10 lakh, covering both the asset and the lost profit",
+              "misconception": "Assumes indemnity covers consequential losses not named in the policy"
+            },
+            {
+              "key": "C",
+              "text": "pay more than Rs 8 lakh to reward the insured",
+              "misconception": "Violates indemnity, under which insurance is not meant to profit the insured"
+            },
+            {
+              "key": "D",
+              "text": "pay nothing, since a fire is unavoidable",
+              "misconception": "Confuses the unavoidability of an event with its being uninsurable"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Indemnity restores the insured to their pre-loss financial position. This policy covers only the machine's value, so it pays the Rs 8 lakh asset loss; the Rs 2 lakh of lost profit is a consequential loss that was not insured, and the payout is not increased to hand the owner a profit.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Buying life or asset cover far above the value that would actually need replacing mainly results in:",
+          "options": [
+            {
+              "key": "A",
+              "text": "higher premiums without any larger valid claim",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "a proportionally larger payout when a claim is made",
+              "misconception": "Believes over-insurance increases the amount recoverable beyond the actual loss"
+            },
+            {
+              "key": "C",
+              "text": "an automatic refund of the excess premium",
+              "misconception": "Assumes insurers return premium for cover that exceeds the loss"
+            },
+            {
+              "key": "D",
+              "text": "the policy becoming void from the outset",
+              "misconception": "Overstates the effect; over-insurance is wasteful, not automatically void"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Because indemnity caps recovery at the actual loss, cover bought above that value cannot be claimed in full; it only raises the premium. The excess is not refunded automatically, and the policy is not void, so the practical result is wasted cost.",
+          "difficulty": 2
+        },
+        {
+          "stem": "If a house that would cost Rs 60 lakh to rebuild is insured for only Rs 30 lakh, the owner has effectively:",
+          "options": [
+            {
+              "key": "A",
+              "text": "retained part of the risk himself",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "fully transferred the risk to the insurer",
+              "misconception": "Ignores that under-insurance leaves residual risk with the owner"
+            },
+            {
+              "key": "C",
+              "text": "committed insurance fraud",
+              "misconception": "Confuses honest under-insurance with fraud"
+            },
+            {
+              "key": "D",
+              "text": "guaranteed a full rebuilding payout",
+              "misconception": "Assumes the payout ignores the lower sum insured chosen"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The sum insured caps what the insurer pays. Insuring for half the rebuilding cost means the owner would have to fund the shortfall himself, so he has retained part of the risk rather than transferring all of it.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Term Life Insurance",
+      "description": "Term insurance is the simplest and cheapest form of life cover. For a chosen term of years, the insurer pays the sum assured only if the life insured dies during that term; if the person survives the term, nothing is paid and no cash value accumulates, because the premium buys protection alone with no investment portion. Three variables define any term plan: the sum assured (death benefit), the premium (its cost), and the length of the term. A return-of-premium variant charges a higher premium and refunds premiums if the insured survives.",
+      "difficulty": 1,
+      "prerequisites": [
+        "Need for Insurance and Risk Management"
+      ],
+      "keywords": [
+        "term insurance",
+        "sum assured",
+        "death benefit",
+        "no maturity value",
+        "pure protection",
+        "return of premium"
+      ],
+      "misconceptions": [
+        "A plain term plan pays a maturity benefit on survival",
+        "Term insurance builds cash value",
+        "A higher premium always means better cover"
+      ],
+      "source_pages": [
+        230,
+        231,
+        232
+      ],
+      "objectives": [
+        {
+          "text": "Describe the defining features of term life insurance",
+          "bloom": "remember",
+          "assessment_style": "recall"
+        },
+        {
+          "text": "Contrast term insurance with savings-linked life products",
+          "bloom": "understand",
+          "assessment_style": "comparison"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "Under a plain term life policy, if the insured outlives the chosen term, he receives:",
+          "options": [
+            {
+              "key": "A",
+              "text": "nothing, because there is no maturity benefit",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "the sum assured as a maturity payout",
+              "misconception": "Confuses the death benefit with a survival or maturity benefit"
+            },
+            {
+              "key": "C",
+              "text": "all premiums paid plus a bonus",
+              "misconception": "Assumes term insurance behaves like a participating endowment plan"
+            },
+            {
+              "key": "D",
+              "text": "the accumulated cash value of the policy",
+              "misconception": "Believes a term plan builds cash value like a savings plan"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A plain term policy pays the sum assured only if death occurs within the term. There is no investment component, so it neither builds cash value nor pays anything on survival to the end of the term.",
+          "difficulty": 1
+        },
+        {
+          "stem": "The main reason term insurance premiums are lower than those of most other life products is that:",
+          "options": [
+            {
+              "key": "A",
+              "text": "it covers only the risk of death, with no investment element",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "insurers subsidise it from their equity-market gains",
+              "misconception": "Invents an external subsidy rather than the absence of an investment component"
+            },
+            {
+              "key": "C",
+              "text": "it always runs for a very short one-year term",
+              "misconception": "Wrongly ties the low cost to term length rather than to the pure-risk design"
+            },
+            {
+              "key": "D",
+              "text": "the sum assured is required by rule to be very small",
+              "misconception": "Confuses a low premium with a mandated low cover amount"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Term premiums are low because the money buys protection against death only; there is no savings or investment portion to fund. The term can be for many years and the sum assured can be large, so those are not the reason.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A 'term plan with return of premium' differs from a plain term plan mainly because it:",
+          "options": [
+            {
+              "key": "A",
+              "text": "charges a higher premium and refunds the premiums if the insured survives the term",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "pays the full sum assured even when the insured survives",
+              "misconception": "Confuses return of premium with paying the death benefit on survival"
+            },
+            {
+              "key": "C",
+              "text": "drops the death benefit during the term",
+              "misconception": "Assumes the survival feature removes the core death cover"
+            },
+            {
+              "key": "D",
+              "text": "invests the premium in equity like a unit-linked plan",
+              "misconception": "Confuses a return-of-premium term plan with a market-linked plan"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "In this variant the premium is higher than for a plain term plan, and premiums are refunded if the person lives to the end of the chosen period. The death cover stays in force throughout, and it is not a market-linked investment plan.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Traditional Life Products, Bonuses and Riders",
+      "description": "Beyond term, insurers sell products that combine protection with savings, such as endowment, whole-life and money-back plans, which build a maturity value and may share the insurer's surplus as a bonus, which is added from time to time and expressed as a share of the sum assured. A guaranteed bonus applies over the initial few policy years; a reversionary bonus depends on the company's performance and is not assured every year. Riders are optional add-ons, such as accidental-death or critical-illness cover, that widen protection for an extra premium. A loan-cover plan pays a sum that decreases along with an outstanding loan. Non-payment beyond the grace period lapses the policy, which may be revived within the reinstatement period.",
+      "difficulty": 2,
+      "prerequisites": [
+        "Term Life Insurance"
+      ],
+      "keywords": [
+        "endowment",
+        "bonus",
+        "reversionary bonus",
+        "guaranteed bonus",
+        "rider",
+        "loan cover",
+        "grace period",
+        "lapse",
+        "revival"
+      ],
+      "misconceptions": [
+        "A reversionary bonus is guaranteed every year",
+        "A rider replaces the base policy",
+        "A loan-cover plan pays a fixed sum regardless of the loan balance"
+      ],
+      "source_pages": [
+        228,
+        229,
+        231,
+        233,
+        234,
+        235
+      ],
+      "objectives": [
+        {
+          "text": "Identify the types of bonus in a participating life policy",
+          "bloom": "remember",
+          "assessment_style": "recall"
+        },
+        {
+          "text": "Explain the role of a rider relative to the base policy",
+          "bloom": "understand",
+          "assessment_style": "conceptual-mcq"
+        },
+        {
+          "text": "Evaluate the suitability of a loan-cover plan in a scenario",
+          "bloom": "analyze",
+          "assessment_style": "scenario"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "A bonus in a participating (traditional) life policy is best described as:",
+          "options": [
+            {
+              "key": "A",
+              "text": "an amount added to the sum assured, declared periodically as a percentage of it",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "a fixed interest paid on the premium each month",
+              "misconception": "Confuses a declared bonus with monthly interest on the premium"
+            },
+            {
+              "key": "C",
+              "text": "a rebate applied to the next premium due",
+              "misconception": "Confuses a bonus, added to the benefit, with a premium discount"
+            },
+            {
+              "key": "D",
+              "text": "the market return credited to a unit-linked fund",
+              "misconception": "Confuses a traditional-plan bonus with unit-linked fund growth"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A bonus is an addition to the sum assured, announced from time to time as a percentage of it, and paid out with the maturity or claim amount. It is not monthly interest, a premium rebate, or a market-linked fund return.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A critical-illness rider attached to a life insurance policy:",
+          "options": [
+            {
+              "key": "A",
+              "text": "supplements the base cover for an extra premium and pays on a defined illness",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "replaces the base policy's death benefit",
+              "misconception": "Treats a rider as a standalone replacement rather than an add-on"
+            },
+            {
+              "key": "C",
+              "text": "is provided free with every policy",
+              "misconception": "Assumes riders carry no additional premium"
+            },
+            {
+              "key": "D",
+              "text": "converts the policy into a standalone health plan",
+              "misconception": "Confuses a rider with a separate mediclaim product"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A rider is an add-on that broadens the cover of the base policy for an additional premium; a critical-illness rider pays a benefit on diagnosis of a specified illness. It supplements, rather than replaces, the base policy and is not free.",
+          "difficulty": 2
+        },
+        {
+          "stem": "In a typical loan-cover (mortgage redemption) plan, the sum assured over the term:",
+          "options": [
+            {
+              "key": "A",
+              "text": "decreases roughly in line with the outstanding loan balance",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "stays level for the entire term",
+              "misconception": "Confuses a decreasing loan-cover plan with a level-term plan"
+            },
+            {
+              "key": "C",
+              "text": "increases each year",
+              "misconception": "Reverses the design; cover falls as the loan is repaid"
+            },
+            {
+              "key": "D",
+              "text": "is paid out to the insured on survival at term end",
+              "misconception": "Assumes a survival benefit in a pure decreasing-risk plan"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A loan-cover plan is designed so the sum assured falls as the outstanding loan is paid down, providing just enough to clear the balance on death. It is a pure-risk plan with no survival benefit.",
+          "difficulty": 2
+        },
+        {
+          "stem": "If a policyholder misses a premium and the grace period passes without payment, the policy:",
+          "options": [
+            {
+              "key": "A",
+              "text": "lapses, but may be revived within the reinstatement period by paying the dues and penalty",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "is cancelled permanently with no way to restore it",
+              "misconception": "Ignores the revival or reinstatement provision"
+            },
+            {
+              "key": "C",
+              "text": "continues unaffected with full benefits",
+              "misconception": "Assumes non-payment has no consequence"
+            },
+            {
+              "key": "D",
+              "text": "automatically converts into a paid-up unit-linked plan",
+              "misconception": "Invents an automatic conversion that does not occur"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Failure to pay within the grace period lapses the policy, but it is not necessarily lost forever: it can be brought back within the reinstatement window by clearing the pending premiums along with any penalty.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "ULIPs and Variable Insurance Products",
+      "description": "A unit-linked insurance plan (ULIP) combines protection and investment: each premium is split so that one portion buys life cover while the remainder is placed in funds (equity, debt or a mix) chosen by the policyholder, so the maturity value tracks market performance and is not known in advance, though a minimum guaranteed return applies. ULIPs carry a minimum five-year lock-in. Variable insurance products also blend protection and investment but are not unit-linked; part of the premium covers risk and part earns a declared, guaranteed-style return.",
+      "difficulty": 2,
+      "prerequisites": [
+        "Traditional Life Products, Bonuses and Riders"
+      ],
+      "keywords": [
+        "ULIP",
+        "unit-linked",
+        "market-linked returns",
+        "fund choice",
+        "lock-in",
+        "variable insurance",
+        "asset allocation"
+      ],
+      "misconceptions": [
+        "ULIP maturity returns are a guaranteed fixed sum",
+        "ULIPs and variable insurance products are the same thing",
+        "ULIPs have no lock-in"
+      ],
+      "source_pages": [
+        231,
+        241,
+        242,
+        243,
+        244,
+        245
+      ],
+      "objectives": [
+        {
+          "text": "Explain how a ULIP splits the premium between cover and investment",
+          "bloom": "understand",
+          "assessment_style": "conceptual-mcq"
+        },
+        {
+          "text": "Distinguish a ULIP from a variable insurance product",
+          "bloom": "analyze",
+          "assessment_style": "comparison"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "In a unit-linked insurance plan, the maturity value depends mainly on:",
+          "options": [
+            {
+              "key": "A",
+              "text": "the market performance of the funds in which the premium is invested",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "a fixed rate fixed at the outset regardless of markets",
+              "misconception": "Assumes ULIP maturity is a guaranteed fixed sum"
+            },
+            {
+              "key": "C",
+              "text": "the number of riders attached to the policy",
+              "misconception": "Confuses cover add-ons with the fund value"
+            },
+            {
+              "key": "D",
+              "text": "a reversionary bonus declared by the insurer",
+              "misconception": "Applies a traditional participating-plan bonus to a unit-linked plan"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "In a ULIP the invested portion buys units in chosen funds, so the fund value, and hence the maturity value, moves with the markets. It is not a fixed guaranteed amount, is not set by rider count, and does not depend on a traditional-plan reversionary bonus.",
+          "difficulty": 2
+        },
+        {
+          "stem": "How does a ULIP allocate the premium the policyholder pays?",
+          "options": [
+            {
+              "key": "A",
+              "text": "part funds the life cover and the remainder is invested in the chosen funds",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "the entire premium is invested, with no deduction for cover",
+              "misconception": "Ignores the risk-cover portion of the premium"
+            },
+            {
+              "key": "C",
+              "text": "the entire premium buys cover, with nothing invested",
+              "misconception": "Confuses a ULIP with a pure term plan"
+            },
+            {
+              "key": "D",
+              "text": "it is split equally by regulation into equity and debt",
+              "misconception": "Invents a fixed 50/50 split instead of the policyholder's own choice"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A ULIP bifurcates the premium: one part pays for the life cover while the remainder goes into the fund or mix of funds the policyholder selects. It is neither pure investment nor pure protection, and the fund mix follows the holder's choice.",
+          "difficulty": 2
+        },
+        {
+          "stem": "A variable insurance product differs from a ULIP because it:",
+          "options": [
+            {
+              "key": "A",
+              "text": "blends protection and investment but is not unit-linked",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "provides no life cover at all",
+              "misconception": "Wrongly strips the protection element from a variable insurance product"
+            },
+            {
+              "key": "C",
+              "text": "is simply another name for a ULIP",
+              "misconception": "Treats the two categories as identical"
+            },
+            {
+              "key": "D",
+              "text": "can be bought only by senior citizens",
+              "misconception": "Invents an eligibility rule that does not define the product"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Variable insurance products combine insurance and investment, like ULIPs, but they are not unit-linked; a portion of the premium covers risk and a portion earns a declared return. They do provide cover and are a distinct category from ULIPs.",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "title": "Non-Life Insurance and Sum Insured",
+      "description": "Non-life (general) insurance protects against loss or damage to assets and against large, unexpected expenses that would otherwise drain income. Health policies reimburse hospitalisation up to the sum insured, often only for in-patient or domiciliary treatment, may exclude a pre-existing illness for an initial period, and can offer cashless settlement and family-floater cover across several members. The sum insured is the insurer's maximum liability for claims in the policy period; the premium depends on the sum insured, the age and the medical history of the insured.",
+      "difficulty": 1,
+      "prerequisites": [
+        "Need for Insurance and Risk Management"
+      ],
+      "keywords": [
+        "general insurance",
+        "sum insured",
+        "health insurance",
+        "cashless",
+        "family floater",
+        "pre-existing exclusion",
+        "reimbursement"
+      ],
+      "misconceptions": [
+        "The sum insured is always paid out in full on any claim",
+        "Health cover pays for every treatment from day one",
+        "A family floater gives each member the full sum insured separately"
+      ],
+      "source_pages": [
+        224,
+        235,
+        236
+      ],
+      "objectives": [
+        {
+          "text": "Define the sum insured in a non-life policy",
+          "bloom": "remember",
+          "assessment_style": "recall"
+        },
+        {
+          "text": "Explain key features of a health insurance policy",
+          "bloom": "understand",
+          "assessment_style": "scenario"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "The 'sum insured' in a non-life policy represents:",
+          "options": [
+            {
+              "key": "A",
+              "text": "the insurer's maximum liability for claims during the policy period",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "the exact amount paid on every claim regardless of the loss",
+              "misconception": "Confuses a maximum ceiling with a guaranteed fixed payout"
+            },
+            {
+              "key": "C",
+              "text": "the total premium collected over the term",
+              "misconception": "Confuses the cover ceiling with premiums paid in"
+            },
+            {
+              "key": "D",
+              "text": "the deductible the insured must pay before cover starts",
+              "misconception": "Confuses the maximum cover with an excess or deductible"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The sum insured is the ceiling on what the insurer will pay for claims in the period. Actual claims are settled up to the loss incurred, not automatically at the sum insured, and it is neither the premium nor a deductible.",
+          "difficulty": 1
+        },
+        {
+          "stem": "A 'family floater' health policy means that:",
+          "options": [
+            {
+              "key": "A",
+              "text": "a single sum insured is shared across the covered family members",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "each member independently receives the full sum insured",
+              "misconception": "Assumes the floater multiplies the sum insured for every member"
+            },
+            {
+              "key": "C",
+              "text": "only the eldest member is covered",
+              "misconception": "Misreads a floater as single-life cover"
+            },
+            {
+              "key": "D",
+              "text": "claims are limited to accidents only",
+              "misconception": "Invents a peril restriction not tied to the floater feature"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "In a family floater, one sum insured covers all the insured members together, so claims by any of them draw from the same pool. It does not give each member a separate full sum insured, nor does it restrict cover to one person or to accidents.",
+          "difficulty": 2
+        },
+        {
+          "stem": "When a health policy is bought for the first time, a pre-existing illness is typically:",
+          "options": [
+            {
+              "key": "A",
+              "text": "excluded from cover for a fixed initial period",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "covered fully from the first day",
+              "misconception": "Ignores the standard waiting period for pre-existing conditions"
+            },
+            {
+              "key": "C",
+              "text": "never coverable at any time",
+              "misconception": "Overstates the exclusion as permanent"
+            },
+            {
+              "key": "D",
+              "text": "covered only if the premium is doubled",
+              "misconception": "Invents a premium-loading rule in place of the waiting period"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Pre-existing illnesses are usually excluded for a fixed waiting period at the start of a fresh policy or after a lapse; after that period they come into cover. The exclusion is temporary, not permanent, and is not replaced by simply paying double premium.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Human Life Value - Income Replacement Method",
+      "description": "The human life value (HLV) estimates the life cover a family needs by valuing the insured's future earnings today. Under the income-replacement method, take the net annual income the family would lose (income after the insured's own taxes and personal expenses), the number of remaining earning years (retirement age minus current age), the rate at which that income would have grown, and the return the payout corpus can earn. Because the corpus must keep pace with rising income, discounting uses the adjusted, or real, rate: (1 + return) / (1 + income growth) minus 1. The HLV is the present value of that income stream, taken as an annuity due because support is needed from the start of each year.",
+      "difficulty": 3,
+      "prerequisites": [
+        "Need for Insurance and Risk Management",
+        "Insurable Risk and the Principle of Indemnity"
+      ],
+      "keywords": [
+        "human life value",
+        "income replacement",
+        "present value",
+        "real rate",
+        "earning years",
+        "annuity due"
+      ],
+      "misconceptions": [
+        "Multiply income by years without discounting for time value",
+        "Discount at the nominal return, ignoring income growth",
+        "Use an ordinary annuity when payments begin immediately"
+      ],
+      "source_pages": [
+        237,
+        238,
+        239
+      ],
+      "objectives": [
+        {
+          "text": "Compute the human life value using the income-replacement method",
+          "bloom": "apply",
+          "assessment_style": "calculation"
+        },
+        {
+          "text": "Interpret the adjusted (real) rate used in the calculation",
+          "bloom": "understand",
+          "assessment_style": "conceptual-mcq"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "Meera is 40 and will retire at 60. If she died today, her family would lose Rs 5,00,000 of net income each year. That income would have grown at 6% a year, and the payout corpus can earn 8%, giving an adjusted rate of ((1.08 / 1.06) - 1) = 1.8868%. Support is needed at the start of each year for the 20 remaining earning years. Using the present value of an annuity due, her human life value is closest to:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs 84.2 lakh",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs 82.7 lakh",
+              "misconception": "Uses an ordinary annuity, ignoring that support is needed at the start of each year"
+            },
+            {
+              "key": "C",
+              "text": "Rs 53.0 lakh",
+              "misconception": "Discounts at the nominal 8% return instead of the growth-adjusted real rate"
+            },
+            {
+              "key": "D",
+              "text": "Rs 1.00 crore",
+              "misconception": "Multiplies income by years (Rs 5 lakh x 20) with no discounting for time value"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "First find the real rate: (1.08 / 1.06) - 1 = 1.8868%. Then take the present value of Rs 5,00,000 received at the start of each year for 20 years at that rate (an annuity due), which is about Rs 84.2 lakh. Discounting at the plain 8% gives too low a figure (about Rs 53 lakh), and simply multiplying Rs 5 lakh by 20 years ignores time value and overstates the need at Rs 1 crore.",
+          "difficulty": 3
+        },
+        {
+          "stem": "In the income-replacement HLV method, why is the income discounted at the adjusted rate ((1 + return) / (1 + growth) - 1) rather than at the plain return?",
+          "options": [
+            {
+              "key": "A",
+              "text": "because the income being replaced would itself have risen over time, so both growth and the return matter",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "because inflation and income growth are irrelevant to insurance",
+              "misconception": "Denies the role of income growth in the calculation"
+            },
+            {
+              "key": "C",
+              "text": "because the corpus is assumed to earn nothing until retirement",
+              "misconception": "Assumes a zero return on the corpus"
+            },
+            {
+              "key": "D",
+              "text": "because the premium must always equal the sum assured",
+              "misconception": "Introduces an unrelated premium-equals-cover rule"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The family needs to replace an income that would have grown each year, and the corpus set aside also earns a return. The adjusted rate captures the return net of that growth, so the present value correctly reflects a rising income stream funded by a growing corpus.",
+          "difficulty": 2
+        },
+        {
+          "stem": "Using the income-replacement method with net income of Rs 5,00,000 and 20 earning years, an adviser who simply multiplies income by the number of years and ignores time value obtains:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs 1.00 crore, which overstates the true human life value",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs 84.2 lakh, the correct present value",
+              "misconception": "Confuses the undiscounted total with the discounted human life value"
+            },
+            {
+              "key": "C",
+              "text": "Rs 25 lakh",
+              "misconception": "Divides rather than multiplies, misapplying the shortcut"
+            },
+            {
+              "key": "D",
+              "text": "Rs 5 lakh",
+              "misconception": "Treats one year's income as the entire lifetime value"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Multiplying Rs 5,00,000 by 20 years gives Rs 1 crore, but this ignores that future rupees are worth less today and that the corpus earns a return. The correct present value is lower, about Rs 84.2 lakh, so the shortcut overstates the cover needed.",
+          "difficulty": 2
+        }
+      ]
+    },
+    {
+      "title": "Need-Based Insurance Planning and Suitability",
+      "description": "The need-based approach sizes life cover from the family's actual future needs rather than from the insured's income alone. The steps are: (1) find the annual amount the family must be able to draw and the period it is needed; (2) discount it at the adjusted (real) rate to arrive at a corpus; (3) add outstanding liabilities such as a home loan; and (4) subtract cover and investments already in place, such as existing policies, provident fund or gratuity. What remains is the additional cover required. Suitability further means matching product features and cost to the actual need, avoiding both under-insurance and over-insurance, and reviewing cover as life stages change.",
+      "difficulty": 3,
+      "prerequisites": [
+        "Human Life Value - Income Replacement Method",
+        "Insurable Risk and the Principle of Indemnity"
+      ],
+      "keywords": [
+        "need analysis",
+        "corpus",
+        "outstanding loan",
+        "existing cover",
+        "additional cover",
+        "suitability",
+        "periodic review"
+      ],
+      "misconceptions": [
+        "Forget to add outstanding loans to the need",
+        "Forget to deduct existing cover and investments",
+        "Pick a product for the number of features rather than the need"
+      ],
+      "source_pages": [
+        238,
+        239,
+        241,
+        242
+      ],
+      "objectives": [
+        {
+          "text": "Compute the additional life cover required using the need-based approach",
+          "bloom": "apply",
+          "assessment_style": "calculation"
+        },
+        {
+          "text": "Judge the suitability of an insurance choice against a stated need",
+          "bloom": "evaluate",
+          "assessment_style": "scenario"
+        }
+      ],
+      "questions": [
+        {
+          "stem": "Rohan's family would need Rs 12,00,000 a year for 30 years (his wife is 50 and expected to live to 80), drawn at the start of each year. With a return of 8% and inflation of 6%, the adjusted rate is 1.8868%, giving a corpus of Rs 2,78,13,920. He has a home loan of Rs 30 lakh outstanding, existing life cover of Rs 50 lakh and investments of Rs 20 lakh. The additional cover he needs is:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs 2.38 crore",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs 2.08 crore",
+              "misconception": "Forgets to add the outstanding home loan to the need"
+            },
+            {
+              "key": "C",
+              "text": "Rs 3.08 crore",
+              "misconception": "Forgets to deduct the existing cover and investments already available"
+            },
+            {
+              "key": "D",
+              "text": "Rs 2.78 crore",
+              "misconception": "Stops at the income-replacement corpus without adjusting for the loan and existing assets"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Start with the corpus of Rs 2,78,13,920, add the Rs 30 lakh loan to get Rs 3,08,13,920, then subtract the Rs 50 lakh existing cover and Rs 20 lakh investments (Rs 70 lakh) to get Rs 2,38,13,920, about Rs 2.38 crore. Skipping the loan understates it; skipping the deductions overstates it.",
+          "difficulty": 3
+        },
+        {
+          "stem": "An adviser recommends a policy chiefly because it lists the largest number of add-on features. A sounder basis for the recommendation would be:",
+          "options": [
+            {
+              "key": "A",
+              "text": "the features that match the client's actual need and its cost",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "whichever product advertises the most features",
+              "misconception": "Equates the number of features with suitability"
+            },
+            {
+              "key": "C",
+              "text": "the product carrying the highest premium",
+              "misconception": "Assumes the costliest product is the best"
+            },
+            {
+              "key": "D",
+              "text": "the product a friend happened to recommend",
+              "misconception": "Substitutes anecdote for a proper need analysis"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A product should be chosen for the features that are relevant to the individual's need and for its cost, not for the sheer count of features. More features often mean higher cost without added value for that person.",
+          "difficulty": 1
+        },
+        {
+          "stem": "Why should insurance needs be reviewed periodically?",
+          "options": [
+            {
+              "key": "A",
+              "text": "because life-stage changes such as marriage, children or new loans alter the cover required",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "because premiums fall automatically every year",
+              "misconception": "Invents an automatic premium reduction as the reason"
+            },
+            {
+              "key": "C",
+              "text": "because the sum insured grows on its own over time",
+              "misconception": "Assumes cover self-adjusts without any review"
+            },
+            {
+              "key": "D",
+              "text": "because the principle of indemnity forbids fixed cover",
+              "misconception": "Misapplies indemnity to mandate reviews"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Insurance needs change as circumstances change; a new dependant, a new loan or a change in income can raise or lower the cover required. Neither premiums nor the sum insured adjust by themselves, so periodic review is needed to keep cover adequate.",
+          "difficulty": 2
+        },
+        {
+          "stem": "In Rohan's plan, if he ignored both the Rs 30 lakh outstanding loan and his Rs 70 lakh of existing cover and investments, his estimate of Rs 2.78 crore would:",
+          "options": [
+            {
+              "key": "A",
+              "text": "overstate the true additional cover, because the Rs 70 lakh of existing assets outweighs the Rs 30 lakh loan",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "exactly equal the correct figure, since the two omissions cancel",
+              "misconception": "Assumes the loan and existing assets always offset each other exactly"
+            },
+            {
+              "key": "C",
+              "text": "understate the need, because the loan is larger than the assets",
+              "misconception": "Misjudges which of the two adjustments is larger"
+            },
+            {
+              "key": "D",
+              "text": "be irrelevant, since only the corpus ever matters",
+              "misconception": "Dismisses liabilities and existing assets from the need analysis"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Adding the Rs 30 lakh loan and subtracting the Rs 70 lakh of assets nets to a Rs 40 lakh reduction, so the correct figure (Rs 2.38 crore) is below the bare corpus of Rs 2.78 crore. Ignoring both leaves the estimate too high because the deductions exceed the addition.",
+          "difficulty": 3
+        }
+      ]
+    }
+  ],
+  "caselets": [
+    {
+      "scenario": "Kavya, 38, is the sole earner for her family in Pune, since her husband stopped working to care for their two young children. After meeting her own taxes and personal spending, Rs 6,00,000 of her annual income supports the household, and she expects it to rise about 6% a year until she retires at 58. The family holds a bank fixed deposit expected to earn 8%. Kavya has an outstanding home loan of Rs 25 lakh and existing term cover of Rs 40 lakh. She is comparing three options: a plain term plan, an endowment plan, and a term plan with a critical-illness rider. She wants cover that would let her family draw the lost income at the start of each year for the 20 years until she would have retired, and she also worries about a serious illness interrupting her earnings.",
+      "concept_titles": [
+        "Need for Insurance and Risk Management",
+        "Term Life Insurance",
+        "Human Life Value - Income Replacement Method",
+        "Need-Based Insurance Planning and Suitability",
+        "Traditional Life Products, Bonuses and Riders"
+      ],
+      "questions": [
+        {
+          "stem": "The Rs 6,00,000 figure that Kavya should aim to protect is her income after:",
+          "options": [
+            {
+              "key": "A",
+              "text": "her own taxes and personal expenses",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "adding back her home-loan EMI",
+              "misconception": "Adds a liability repayment into the income to be replaced"
+            },
+            {
+              "key": "C",
+              "text": "counting only her employer's annual bonus",
+              "misconception": "Restricts replaceable income to a single component"
+            },
+            {
+              "key": "D",
+              "text": "using her spouse's former salary",
+              "misconception": "Uses a non-earner's past income as the base"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Income replacement is based on the net income the family actually loses, that is, income after the earner's own taxes and personal costs. It is the household support of Rs 6,00,000, not a gross figure with liabilities added back or a non-earner's income.",
+          "difficulty": 1,
+          "case_position": 1,
+          "marks": 1
+        },
+        {
+          "stem": "For pure, low-cost protection with no maturity value, which option best fits Kavya's core need to secure her family against her death?",
+          "options": [
+            {
+              "key": "A",
+              "text": "the plain term plan",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "the endowment plan",
+              "misconception": "Chooses a savings-linked plan when pure protection is the need"
+            },
+            {
+              "key": "C",
+              "text": "the bank fixed deposit",
+              "misconception": "Confuses an investment with life cover"
+            },
+            {
+              "key": "D",
+              "text": "a critical-illness rider on its own",
+              "misconception": "Treats an add-on as if it were standalone life cover"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A plain term plan provides the largest death cover for the lowest premium and builds no maturity value, which matches a pure-protection need. An endowment plan bundles savings at higher cost, a deposit is not life cover, and a rider is only an add-on.",
+          "difficulty": 1,
+          "case_position": 2,
+          "marks": 1
+        },
+        {
+          "stem": "Using a corpus return of 8% and income growth of 6%, the adjusted rate is 1.8868%. The present value of Rs 6,00,000 drawn at the start of each year for 20 years, which is the corpus needed to replace her income, is closest to:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs 1.01 crore",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs 1.20 crore",
+              "misconception": "Multiplies income by years (Rs 6 lakh x 20), ignoring discounting"
+            },
+            {
+              "key": "C",
+              "text": "Rs 63.6 lakh",
+              "misconception": "Discounts at the nominal 8% instead of the adjusted real rate"
+            },
+            {
+              "key": "D",
+              "text": "Rs 99.2 lakh",
+              "misconception": "Uses an ordinary annuity though the income is drawn at the start of each year"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "The adjusted rate is (1.08 / 1.06) - 1 = 1.8868%. The present value of Rs 6,00,000 at the start of each year for 20 years at that rate (an annuity due) is about Rs 1.01 crore. Discounting at 8% understates it (about Rs 63.6 lakh), an ordinary annuity slightly understates it (about Rs 99.2 lakh), and Rs 6 lakh times 20 (Rs 1.20 crore) ignores time value.",
+          "difficulty": 3,
+          "case_position": 3,
+          "marks": 2
+        },
+        {
+          "stem": "Starting from the Rs 1.01 crore income-replacement corpus, adding her Rs 25 lakh home loan and deducting her Rs 40 lakh existing term cover gives an additional cover need of about:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs 86 lakh",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs 1.66 crore",
+              "misconception": "Adds the existing cover instead of subtracting it"
+            },
+            {
+              "key": "C",
+              "text": "Rs 1.01 crore",
+              "misconception": "Ignores both the loan and the existing cover"
+            },
+            {
+              "key": "D",
+              "text": "Rs 36 lakh",
+              "misconception": "Subtracts the loan instead of adding it"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Rs 1.01 crore plus the Rs 25 lakh loan is Rs 1.26 crore; subtracting the Rs 40 lakh existing cover leaves about Rs 86 lakh of additional cover. Adding the existing cover instead of subtracting it wrongly inflates the figure, and subtracting the loan reverses its treatment.",
+          "difficulty": 3,
+          "case_position": 4,
+          "marks": 1
+        },
+        {
+          "stem": "Kavya's worry that a serious illness could stop her income points to the critical-illness rider, which would:",
+          "options": [
+            {
+              "key": "A",
+              "text": "add cover that pays on a defined critical illness, for an extra premium",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "refund all her premiums if she stays healthy",
+              "misconception": "Confuses a rider with a return-of-premium feature"
+            },
+            {
+              "key": "C",
+              "text": "replace her term plan's death benefit",
+              "misconception": "Treats the rider as replacing the base cover"
+            },
+            {
+              "key": "D",
+              "text": "convert the term plan into a unit-linked plan",
+              "misconception": "Confuses adding a rider with switching to a market-linked plan"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A critical-illness rider is an add-on bought for an extra premium that pays a benefit if a specified serious illness is diagnosed, supplementing the base cover. It neither refunds premiums, replaces the death benefit, nor turns the plan into an investment product.",
+          "difficulty": 2,
+          "case_position": 5,
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "scenario": "Arjun, 34, runs a small business in Jaipur. He buys a family-floater health policy with a sum insured of Rs 5 lakh covering himself, his wife and one child; in its first year the policy excludes a pre-existing thyroid condition his wife has. Separately, a relationship manager pitches him a unit-linked plan, describing its returns as 'assured', and an endowment plan promising a bonus. The manager frames both as 'protection'. Arjun already pays for a term life policy that covers his family adequately, and he wants to decide sensibly rather than by the number of features on offer.",
+      "concept_titles": [
+        "Non-Life Insurance and Sum Insured",
+        "ULIPs and Variable Insurance Products",
+        "Traditional Life Products, Bonuses and Riders",
+        "Need-Based Insurance Planning and Suitability"
+      ],
+      "questions": [
+        {
+          "stem": "The Rs 5 lakh sum insured on Arjun's family floater is:",
+          "options": [
+            {
+              "key": "A",
+              "text": "the maximum the insurer will pay across the covered members in the year",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs 5 lakh available separately to each covered member",
+              "misconception": "Assumes the floater multiplies the sum insured per person"
+            },
+            {
+              "key": "C",
+              "text": "the premium Arjun pays for the policy",
+              "misconception": "Confuses the cover ceiling with the premium"
+            },
+            {
+              "key": "D",
+              "text": "a deductible he must pay before cover begins",
+              "misconception": "Confuses the sum insured with an excess"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "In a family floater, the single sum insured is the pool that all covered members share, and it is the insurer's maximum liability for the year. It is not a separate full amount per member, nor is it the premium or a deductible.",
+          "difficulty": 1,
+          "case_position": 1,
+          "marks": 1
+        },
+        {
+          "stem": "His wife's pre-existing thyroid condition, in the first year of a fresh policy, is:",
+          "options": [
+            {
+              "key": "A",
+              "text": "excluded for the initial waiting period",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "covered fully and immediately",
+              "misconception": "Ignores the standard waiting period for pre-existing conditions"
+            },
+            {
+              "key": "C",
+              "text": "covered only if claimed in cashless mode",
+              "misconception": "Confuses the claim settlement mode with the exclusion"
+            },
+            {
+              "key": "D",
+              "text": "never coverable under any circumstances",
+              "misconception": "Treats a temporary exclusion as permanent"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Pre-existing conditions are usually excluded for a fixed waiting period when a policy is first taken; after that period they come into cover. The exclusion is temporary and is unrelated to whether the claim is cashless.",
+          "difficulty": 2,
+          "case_position": 2,
+          "marks": 1
+        },
+        {
+          "stem": "The manager calls the unit-linked plan's returns 'assured'. The accurate view is that:",
+          "options": [
+            {
+              "key": "A",
+              "text": "the maturity value tracks market performance and is not a guaranteed fixed sum",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "the returns are fixed and fully guaranteed",
+              "misconception": "Accepts the mis-sold claim of guaranteed ULIP returns"
+            },
+            {
+              "key": "C",
+              "text": "the plan pays no death benefit at all",
+              "misconception": "Strips the protection element from a unit-linked plan"
+            },
+            {
+              "key": "D",
+              "text": "the plan has no lock-in period",
+              "misconception": "Denies the mandatory lock-in on unit-linked plans"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A unit-linked plan invests part of the premium in funds, so its maturity value moves with the markets and is not a guaranteed fixed sum. It does provide life cover and carries a minimum five-year lock-in, so the 'assured' pitch is misleading.",
+          "difficulty": 2,
+          "case_position": 3,
+          "marks": 1
+        },
+        {
+          "stem": "The endowment plan quotes a 'bonus'. If its sum assured is Rs 10 lakh and a reversionary bonus of 4% of the sum assured is declared for a year, then:",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rs 40,000 is added to the benefit for that year, and such reversionary bonus is not guaranteed every year",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "Rs 40,000 is paid to Arjun in cash immediately and is guaranteed annually",
+              "misconception": "Treats a reversionary bonus as guaranteed immediate cash"
+            },
+            {
+              "key": "C",
+              "text": "Rs 4,000 is added, applying 0.4% instead of 4%",
+              "misconception": "Misplaces the decimal in the bonus rate"
+            },
+            {
+              "key": "D",
+              "text": "no amount is added, because bonuses apply only to term plans",
+              "misconception": "Wrongly attributes bonuses to term insurance"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "A reversionary bonus of 4% on a Rs 10 lakh sum assured adds Rs 40,000 (4% of Rs 10 lakh) to the benefit, payable with maturity or claim, not as immediate cash. It depends on the insurer's performance, so it is not guaranteed each year, and term plans carry no such bonus.",
+          "difficulty": 3,
+          "case_position": 4,
+          "marks": 2
+        },
+        {
+          "stem": "Given that Arjun already has adequate term life cover, the manager's push toward the unit-linked and endowment plans 'for protection' is best judged by:",
+          "options": [
+            {
+              "key": "A",
+              "text": "whether each product's features and cost meet a real, unmet need",
+              "misconception": null
+            },
+            {
+              "key": "B",
+              "text": "the number of features each product lists",
+              "misconception": "Uses the count of features as the test of suitability"
+            },
+            {
+              "key": "C",
+              "text": "which product the manager promotes most strongly",
+              "misconception": "Lets sales pressure drive the decision"
+            },
+            {
+              "key": "D",
+              "text": "buying all three products to be safe",
+              "misconception": "Assumes stacking products improves suitability"
+            }
+          ],
+          "correct_key": "A",
+          "explanation": "Suitability turns on whether a product's features and cost address a genuine gap. Since term cover already meets the protection need, extra bundled products should be judged on need and cost, not on feature count or sales pressure.",
+          "difficulty": 2,
+          "case_position": 5,
+          "marks": 1
+        }
+      ]
+    }
+  ]
+}
