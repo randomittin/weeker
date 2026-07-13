@@ -81,6 +81,27 @@ Any OpenAI-compatible provider works the same way — just change the two
 model's dimension. All optional knobs: `WEEKER_EMBED_BATCH` (default 64),
 `WEEKER_CACHE_DIR` (default `.weeker_cache`).
 
+### Keyless embeddings (recommended, no API key)
+
+Embeddings need no provider at all. Set `WEEKER_EMBED_PROVIDER=local` to embed
+with a numpy-only [model2vec](https://github.com/MinishLab/model2vec) static
+model — torch-free, ~125 MB on disk, runs on CPU. This covers the entire
+ingestion path up through chunk+embed with **zero keys** (an LLM key is only
+needed later, for concept/question authoring).
+
+```bash
+./.venv/bin/pip install model2vec          # numpy-only, no torch
+export WEEKER_EMBED_PROVIDER=local          # select the local backend
+export WEEKER_EMBED_DIM=512                  # potion-retrieval-32M → 512 dims
+# optional: export WEEKER_EMBED_LOCAL_MODEL="minishlab/potion-base-8M"  # 256-dim, smaller
+```
+
+The default model (`minishlab/potion-retrieval-32M`, 512-dim) downloads once from
+the HF Hub, then loads from `~/.cache/huggingface` offline. `WEEKER_EMBED_DIM`
+**must** equal the model's true dimension or embedding calls raise a clear error.
+The on-disk sha256 embedding cache (`WEEKER_CACHE_DIR`) and SQLite cosine
+retrieval work identically to the HTTP path.
+
 ---
 
 ## STEP 2 — Add the workbook PDF (and, optionally, real weightage)

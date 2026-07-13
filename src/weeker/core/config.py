@@ -78,6 +78,12 @@ EMBED_BASE_URL = os.getenv("WEEKER_EMBED_BASE_URL", "https://api.openai.com/v1")
 EMBED_API_KEY = os.getenv("WEEKER_EMBED_API_KEY", "")
 EMBED_BATCH = int(os.getenv("WEEKER_EMBED_BATCH", "64"))
 CACHE_DIR = os.getenv("WEEKER_CACHE_DIR", ".weeker_cache")
+# Embedding backend selector. "http" (default) uses the OpenAI-compatible
+# HTTPTransport above; "local" uses a keyless numpy-only model2vec static model
+# (see LocalModel2VecTransport). The local model's true dim is 512 for the
+# default potion-retrieval-32M — set WEEKER_EMBED_DIM to match your model.
+EMBED_PROVIDER = os.getenv("WEEKER_EMBED_PROVIDER", "http")
+EMBED_LOCAL_MODEL = os.getenv("WEEKER_EMBED_LOCAL_MODEL", "minishlab/potion-retrieval-32M")
 
 
 def models_configured() -> bool:

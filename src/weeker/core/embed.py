@@ -77,13 +77,57 @@ class HTTPTransport:
         return vectors
 
 
+_LOCAL_MODEL_CACHE: dict[str, object] = {}
+
+
+class LocalModel2VecTransport:
+    """Keyless local embeddings via a numpy-only model2vec static model.
+
+    Loads ``config.EMBED_LOCAL_MODEL`` (default ``minishlab/potion-retrieval-32M``,
+    512-dim) once and caches it process-wide. No API key, no torch — just numpy.
+    Set ``WEEKER_EMBED_DIM`` to the model's dim (512 for the default model).
+    """
+
+    def __init__(self, model: str | None = None):
+        self.model = model or config.EMBED_LOCAL_MODEL
+
+    def _load(self) -> object:
+        cached = _LOCAL_MODEL_CACHE.get(self.model)
+        if cached is not None:
+            return cached
+        try:
+            from model2vec import StaticModel
+        except ImportError as exc:  # pragma: no cover - env-dependent
+            raise EmbedError(
+                "WEEKER_EMBED_PROVIDER=local needs model2vec: pip install model2vec"
+            ) from exc
+        static = StaticModel.from_pretrained(self.model)
+        _LOCAL_MODEL_CACHE[self.model] = static
+        return static
+
+    def embed(self, texts: list[str]) -> np.ndarray:
+        if not texts:
+            return np.empty((0, config.EMBED_DIM), dtype=np.float32)
+        vectors = np.asarray(self._load().encode(texts), dtype=np.float32)  # type: ignore[attr-defined]
+        if vectors.ndim != 2 or vectors.shape[1] != config.EMBED_DIM:
+            got = vectors.shape[1] if vectors.ndim == 2 else vectors.shape
+            raise EmbedError(
+                f"embedding dim {got} != EMBED_DIM {config.EMBED_DIM} "
+                f"(model={self.model!r}); set WEEKER_EMBED_DIM to match the model"
+            )
+        return vectors
+
+
 _default_transport: EmbedTransport | None = None
 
 
 def _get_default_transport() -> EmbedTransport:
     global _default_transport
     if _default_transport is None:
-        _default_transport = HTTPTransport()
+        if config.EMBED_PROVIDER == "local":
+            _default_transport = LocalModel2VecTransport()
+        else:
+            _default_transport = HTTPTransport()
     return _default_transport
 
 

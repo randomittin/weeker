@@ -2,17 +2,24 @@
 
 Order of attempts, first one that satisfies :func:`check_structure` wins:
 
-1. **outline** — the PDF's own bookmarks (``doc.get_toc``);
-2. **font heuristic** — lines whose span size stands out from the body size,
+1. **text headings** — explicit in-body ``Chapter N: Title`` / ``Unit N. Title``
+   markers on their own line (the strongest, keyless signal; robust to
+   degenerate bookmarks);
+2. **outline** — the PDF's own bookmarks (``doc.get_toc``);
+3. **font heuristic** — lines whose span size stands out from the body size,
    clustered into two heading levels;
-3. **LLM** — ``prompts/structure.txt`` over the first pages + font candidates.
+4. **LLM** — ``prompts/structure.txt`` over the first pages + font candidates.
 
-The structure gate (011 §S2) is pure code: chapters must not overlap, must cover
-≥ 95% of pages, and depth is capped at 2 by the data model itself.
+The LLM stage is skipped when no key is configured and no explicit ``transport``
+is supplied: the best heuristic structure is returned instead so keyless
+ingestion never crashes. The structure gate (011 §S2) is pure code: chapters
+must not overlap, must cover ≥ 95% of pages, and depth is capped at 2 by the
+data model itself.
 """
 
 from __future__ import annotations
 
+import re
 from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -20,12 +27,19 @@ from pathlib import Path
 import fitz
 from sqlalchemy.orm import Session
 
+from weeker.core import config
 from weeker.core.llm import Transport, complete
 from weeker.core.models import Chapter, Course, Section
 from weeker.ingest.textutil import load_prompt, render_prompt
 
 STRUCTURE_COVERAGE_MIN = 0.95
 _FONT_HEADING_RATIO = 1.15  # a heading span is ≥ this × the modal body size
+# An explicit chapter/unit heading: "Chapter 3: Mutual Funds", "Unit 12. Ethics".
+_CHAPTER_HEADING = re.compile(r"^(chapter|unit)\s+(\d+)\s*[:.\-]\s*(.+)$", re.IGNORECASE)
+
+
+class StructureError(RuntimeError):
+    """Raised when no structure can be recovered and the LLM stage is unavailable."""
 
 _STRUCTURE_SCHEMA = {
     "type": "object",
@@ -103,6 +117,58 @@ def _spans(chapters: list[ChapterNode]) -> list[tuple[int, int]]:
 
 def _passes(chapters: list[ChapterNode], page_count: int) -> bool:
     return chapters != [] and check_structure(_spans(chapters), page_count) == []
+
+
+def from_text_headings(doc: fitz.Document) -> StructureResult | None:
+    """Build chapters from explicit ``Chapter N: Title`` heading lines.
+
+    Scans each page for a line matching :data:`_CHAPTER_HEADING` that stands out
+    from body text (font larger than the modal body size) and is not a
+    table-of-contents dotted-leader entry. Keeps the first occurrence per chapter
+    number (the title page, after the TOC). ``None`` if fewer than two are found.
+    """
+    sizes: Counter[int] = Counter()
+    lines: list[tuple[str, int, float]] = []
+    for pno, page in enumerate(doc, start=1):
+        for block in page.get_text("dict").get("blocks", []):
+            if block.get("type", 0) != 0:
+                continue
+            for line in block.get("lines", []):
+                spans = line.get("spans", [])
+                if not spans:
+                    continue
+                text = "".join(sp.get("text", "") for sp in spans).strip()
+                if not text:
+                    continue
+                size = max(float(sp.get("size", 0)) for sp in spans)
+                sizes[round(size)] += 1
+                lines.append((text, pno, size))
+    if not sizes:
+        return None
+    body = float(sizes.most_common(1)[0][0])
+    found: dict[int, tuple[int, str]] = {}
+    for text, pno, size in lines:
+        if text.count(".") >= 4:  # skip TOC dotted-leader entries
+            continue
+        if size <= body:  # a heading stands out from body text
+            continue
+        m = _CHAPTER_HEADING.match(text)
+        if not m:
+            continue
+        num = int(m.group(2))
+        if num not in found:
+            title = f"{m.group(1).title()} {num}: {m.group(3).strip()}"
+            found[num] = (pno, title)
+    if len(found) < 2:
+        return None
+    ordered = sorted(found.items(), key=lambda kv: kv[1][0])  # by page
+    page_count = doc.page_count
+    chapters: list[ChapterNode] = []
+    for i, (_num, (page, title)) in enumerate(ordered):
+        end = (ordered[i + 1][1][0] - 1) if i + 1 < len(ordered) else page_count
+        chapters.append(ChapterNode(i + 1, title, max(1, page), max(page, end)))
+    chapters[0].page_start = 1  # absorb front matter (cover, TOC) into chapter 1
+    return StructureResult(chapters, "text")
 
 
 def from_outline(doc: fitz.Document) -> StructureResult | None:
@@ -248,10 +314,22 @@ def build_structure(
     doc = fitz.open(str(path))
     try:
         page_count = doc.page_count
-        for strat in (from_outline, from_font):
+        best: StructureResult | None = None
+        for strat in (from_text_headings, from_outline, from_font):
             result = strat(doc)
-            if result and _passes(result.chapters, page_count):
-                return result
+            if result and result.chapters:
+                if _passes(result.chapters, page_count):
+                    return result
+                best = best or result
+        # No heuristic passed the gate. Use the LLM stage when it is available;
+        # otherwise fall back to the best heuristic so keyless ingestion runs.
+        if transport is None and not config.llm_key_present():
+            if best is not None:
+                return best
+            raise StructureError(
+                "no structure recovered and no LLM configured — set WEEKER_LLM_API_KEY "
+                "or supply a PDF with bookmarks or explicit chapter headings"
+            )
         return from_llm(doc, source_filename or path.name, transport)
     finally:
         doc.close()

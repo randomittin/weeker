@@ -16,3 +16,6 @@ weeker.db
 .env
 .env.*
 *secret*
+
+# copyrighted course PDFs (not committed)
+courses/**/*.pdf
