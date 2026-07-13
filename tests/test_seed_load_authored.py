@@ -353,6 +353,70 @@ def test_load_authored_loads_all_caselets_in_a_file(tmp_path):
     assert db.scalar(select(func.count()).select_from(CaseGroup)) == 2
 
 
+def _cross_chapter_caselet_fixture() -> dict:
+    """A concept-only caselet file with ``chapter_ordinal: 0`` (no such chapter row).
+
+    Cross-chapter caselets are linked purely by ``concept_titles`` that resolve to
+    concepts living in ANY chapter — there is no chapter 0 to hang them off — so the
+    file carries no ``concepts`` of its own and references ones seeded elsewhere.
+    """
+    return {
+        "chapter_ordinal": 0,
+        "chapter_title": "Cross-chapter caselets (1-mark)",
+        "concepts": [],
+        "caselets": [
+            {
+                # titles seeded on chapter 1 by _seed — proving the caselet resolves
+                # concepts course-wide, not from a chapter-0 row that does not exist.
+                "scenario": _SCENARIO.replace("Priya", "Ananya").replace("Kochi", "Surat"),
+                "concept_titles": ["Net asset value", "Expense ratio"],
+                "questions": [
+                    _caselet_question(f"Cross chapter caselet question at position {p} here", p, 1.0)
+                    for p in (1, 2, 3, 4, 5)
+                ],
+            }
+        ],
+    }
+
+
+def test_load_authored_loads_cross_chapter_ordinal_zero_caselet(tmp_path):
+    """Regression: a caselet file with ``chapter_ordinal: 0`` and no ``concepts`` of
+    its own still loads, linking to concepts resolved course-wide by title. Guards the
+    cross-chapter (concept-only) caselet path a full-pattern mock depends on."""
+    db = _mem()
+    course, _, _ = _seed(db)
+    # The concepts live on chapter 1 (a DIFFERENT file); load that first so the
+    # cross-chapter caselet must resolve them course-wide, not from a chapter-0 row.
+    ch1 = tmp_path / "ch01.json"
+    ch1.write_text(json.dumps(_fixture()), encoding="utf-8")
+    load_authored([str(ch1)], db=db, embed_transport=BowEmbed(), cache_dir=tmp_path)
+
+    path = tmp_path / "extra_caselets_1mark.json"
+    path.write_text(json.dumps(_cross_chapter_caselet_fixture()), encoding="utf-8")
+
+    report = load_authored([str(path)], db=db, embed_transport=BowEmbed(), cache_dir=tmp_path)
+
+    assert report.file_errors == {}
+    assert report.caselets_inserted == 1
+    assert report.concepts_inserted == 0  # no chapter-0 concepts authored
+
+    groups = db.scalars(select(CaseGroup).where(CaseGroup.course_id == course.id)).all()
+    assert len(groups) == 1
+    cg = groups[0]
+    assert cg.status == STATUS_ACTIVE
+    nav = db.scalars(select(Concept).where(Concept.title == "Net asset value")).one()
+    ter = db.scalars(select(Concept).where(Concept.title == "Expense ratio")).one()
+    assert set(cg.concept_ids) == {str(nav.id), str(ter.id)}
+    qs = db.scalars(select(Question).where(Question.case_group_id == cg.id)).all()
+    assert len(qs) == 5
+    assert all(float(q.marks) == 1.0 for q in qs)
+
+    # idempotent: a second run adds no caselet.
+    report2 = load_authored([str(path)], db=db, embed_transport=BowEmbed(), cache_dir=tmp_path)
+    assert report2.caselets_inserted == 0
+    assert db.scalar(select(func.count()).select_from(CaseGroup)) == 1
+
+
 def test_load_authored_derives_dim_from_model_not_config(tmp_path):
     """Bug: loader depended on a hand-set WEEKER_EMBED_DIM that can mismatch.
 

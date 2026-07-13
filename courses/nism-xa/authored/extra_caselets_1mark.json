@@ -1,0 +1,335 @@
+{
+  "chapter_ordinal": 0,
+  "chapter_title": "Cross-chapter caselets (1-mark)",
+  "concepts": [],
+  "caselets": [
+    {
+      "scenario": "Sudha is a 52-year-old school teacher in Nagpur who plans to retire at 60. Her household spends about Rs 6,00,000 a year today, and she expects the cost of living to rise by roughly 6% every year. She has no employer pension. Over the next eight years she intends to keep building a savings pool by putting money into the Public Provident Fund (PPF) and buying National Savings Certificates (NSC). After she retires, she expects the money she has built up to be invested so that it earns about 8% a year, while prices keep climbing at about 6% a year. She owns her Nagpur flat, valued at around Rs 90 lakh, and wants a way to draw a steady monthly income from that flat without selling it or moving out. She is also studying a product sold by an insurer that would take a single lump sum from her savings pool and pay her a guaranteed monthly amount for the rest of her life.",
+      "concept_titles": [
+        "Retirement Planning Process and the Two Stages",
+        "Inflation and the Real (Inflation-adjusted) Rate of Return",
+        "Voluntary Schemes, Distribution Products, Annuities and Reverse Mortgage",
+        "Retirement Corpus Calculation",
+        "Small Saving Instruments and Their Tax Status"
+      ],
+      "questions": [
+        {
+          "stem": "During the eight years before she retires, while Sudha is still earning and adding to her savings pool, which stage of retirement is she in?",
+          "options": [
+            {"key": "A", "text": "The accumulation stage, when saving and investing build the corpus"},
+            {"key": "B", "text": "The distribution stage, when the corpus is drawn down for income", "misconception": "confusing the post-retirement drawdown phase with the pre-retirement build-up phase"},
+            {"key": "C", "text": "The annuity stage, which begins only after the flat is sold", "misconception": "treating an income product as a distinct life stage"},
+            {"key": "D", "text": "The vesting stage, which applies only to employer pensions", "misconception": "inventing a stage that does not describe personal saving"}
+          ],
+          "correct_key": "A",
+          "explanation": "Retirement has two stages. The accumulation stage is when a person is still working and saving to build the corpus; the distribution stage is when that corpus is later drawn down for income. Sudha is still earning and adding to her pool, so she is accumulating.",
+          "difficulty": 1,
+          "case_position": 1,
+          "marks": 1
+        },
+        {
+          "stem": "After Sudha retires, her savings pool is expected to earn about 8% a year while prices keep rising about 6% a year. The real (inflation-adjusted) rate at which her purchasing power grows is closest to:",
+          "options": [
+            {"key": "A", "text": "About 2%"},
+            {"key": "B", "text": "About 8%, because that is what the money earns", "misconception": "quoting the nominal return and ignoring inflation"},
+            {"key": "C", "text": "About 14%, adding the earning rate and inflation", "misconception": "adding inflation to the return instead of removing it"},
+            {"key": "D", "text": "About 6%, the rate at which prices rise", "misconception": "mistaking the inflation rate for the real return"}
+          ],
+          "correct_key": "A",
+          "explanation": "The real return is roughly the money's earning rate minus inflation. Earning 8% while prices rise 6% leaves about 2% of real, inflation-adjusted growth in purchasing power.",
+          "difficulty": 2,
+          "case_position": 2,
+          "marks": 1
+        },
+        {
+          "stem": "Sudha wants a steady monthly income drawn from her Rs 90 lakh flat while continuing to live in it, without selling or moving out. Which product is designed for exactly this?",
+          "options": [
+            {"key": "A", "text": "A reverse mortgage, which pays her against the pledged home"},
+            {"key": "B", "text": "An annuity, which pays income out of a lump sum rather than a home", "misconception": "confusing income bought from savings with income drawn from property"},
+            {"key": "C", "text": "A regular home loan, on which she would pay monthly instalments", "misconception": "reversing the direction of payments in an ordinary mortgage"},
+            {"key": "D", "text": "A fixed deposit created against the flat's value", "misconception": "assuming a deposit can be raised against occupied property for income"}
+          ],
+          "correct_key": "A",
+          "explanation": "A reverse mortgage lets a homeowner pledge a property and receive money as an income stream while still living in it. It is the opposite of an ordinary loan, where the borrower gets a lump sum upfront and repays in instalments.",
+          "difficulty": 2,
+          "case_position": 3,
+          "marks": 1
+        },
+        {
+          "stem": "Sudha also studies an insurer's product that would take a single lump sum from her savings pool and pay her a guaranteed amount for the rest of her life. This product is:",
+          "options": [
+            {"key": "A", "text": "An annuity"},
+            {"key": "B", "text": "A reverse mortgage, since it pays a periodic income", "misconception": "assuming any lifelong income must come from pledging property"},
+            {"key": "C", "text": "A systematic investment plan into equity", "misconception": "confusing a payout product with an accumulation product"},
+            {"key": "D", "text": "A term insurance policy", "misconception": "confusing a pure-protection cover with a pension payout"}
+          ],
+          "correct_key": "A",
+          "explanation": "An annuity converts a lump sum into a guaranteed periodic payment for life. Unlike a reverse mortgage, the income comes from money handed to the insurer, not from pledging a home.",
+          "difficulty": 2,
+          "case_position": 4,
+          "marks": 1
+        },
+        {
+          "stem": "In one year Sudha puts Rs 1,50,000 into PPF and also buys Rs 50,000 of NSC, both of which qualify under Section 80C. The maximum deduction she can claim under Section 80C that year is:",
+          "options": [
+            {"key": "A", "text": "Rs 1,50,000, the ceiling for the section"},
+            {"key": "B", "text": "Rs 2,00,000, the two amounts simply added together", "misconception": "adding qualifying investments while ignoring the section ceiling"},
+            {"key": "C", "text": "Rs 50,000, only the NSC amount", "misconception": "counting only one qualifying instrument"},
+            {"key": "D", "text": "Rs 3,00,000, double the larger investment", "misconception": "inventing a doubling rule that does not exist"}
+          ],
+          "correct_key": "A",
+          "explanation": "Section 80C caps the total deduction at Rs 1,50,000 in a year across all eligible investments. Even though her PPF and NSC together come to Rs 2,00,000, the deduction is limited to the Rs 1,50,000 ceiling.",
+          "difficulty": 2,
+          "case_position": 5,
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "scenario": "Karthik is a 30-year-old engineer in Chennai who holds three mutual fund schemes. The first is a technology-only fund that invests solely in software and IT companies. The second is a broadly diversified large-cap equity fund. The third is a debt fund that buys bonds paying periodic interest, and the fourth is an interval fund. He knows that a sponsor set up each fund, that trustees are appointed to protect the interests of investors, and that a separate company is appointed to actually pick the securities, run the scheme and charge a fee for doing so. His interval fund lets him buy and redeem units only during short, specified transaction windows and stays shut the rest of the time. When comparing two of his equity schemes over the last five years, Karthik notes that one scheme's yearly returns swung around its average by a standard deviation of 18%, while the other's swung by only 6%.",
+      "concept_titles": [
+        "What a Mutual Fund Is and Who Runs It",
+        "Categories of Equity Funds",
+        "Debt Funds and Their Two Core Risks",
+        "Open-Ended, Closed-Ended and Interval Fund Structures",
+        "Measuring Risk with Standard Deviation"
+      ],
+      "questions": [
+        {
+          "stem": "In Karthik's funds, which entity is the one appointed to pick the securities, run the scheme's operations and charge a fee for the service?",
+          "options": [
+            {"key": "A", "text": "The asset management company (AMC)"},
+            {"key": "B", "text": "The trustees, who are there to protect investors' interests", "misconception": "confusing the oversight role with the day-to-day management role"},
+            {"key": "C", "text": "The sponsor, who set the fund up", "misconception": "confusing the promoter who launches the fund with the manager who runs it"},
+            {"key": "D", "text": "The custodian, who safe-keeps the securities", "misconception": "confusing safekeeping of assets with managing them"}
+          ],
+          "correct_key": "A",
+          "explanation": "The AMC is appointed to manage a scheme: choosing securities, running operations and charging a fee. The sponsor promotes the fund, trustees safeguard investors, and the custodian only holds the securities.",
+          "difficulty": 2,
+          "case_position": 1,
+          "marks": 1
+        },
+        {
+          "stem": "Karthik holds both a technology-only fund and a broadly diversified large-cap fund. Which of the two carries the higher risk, and why?",
+          "options": [
+            {"key": "A", "text": "The technology-only fund, because concentration in one sector reduces diversification"},
+            {"key": "B", "text": "The diversified fund, because holding many stocks spreads mistakes", "misconception": "assuming broad diversification raises rather than lowers risk"},
+            {"key": "C", "text": "Both carry identical risk, since both hold equities", "misconception": "ignoring how concentration changes risk within equity"},
+            {"key": "D", "text": "The technology-only fund, but only because it is smaller", "misconception": "attributing sector risk to fund size rather than concentration"}
+          ],
+          "correct_key": "A",
+          "explanation": "A sector fund concentrated in one industry is riskier than a diversified equity fund because its fortunes ride on a single sector; a diversified fund spreads exposure across many companies and sectors, cushioning the impact of any one doing badly.",
+          "difficulty": 2,
+          "case_position": 2,
+          "marks": 1
+        },
+        {
+          "stem": "Karthik's debt fund buys bonds that pay periodic interest. The two core risks its manager must handle are:",
+          "options": [
+            {"key": "A", "text": "Credit (default) risk and interest-rate risk"},
+            {"key": "B", "text": "Currency risk and liquidity risk", "misconception": "listing risks that are not the defining pair for a rupee debt fund"},
+            {"key": "C", "text": "Credit risk and currency risk", "misconception": "swapping interest-rate risk for currency risk"},
+            {"key": "D", "text": "Longevity risk and inflation risk", "misconception": "borrowing risks from retirement planning instead of debt investing"}
+          ],
+          "correct_key": "A",
+          "explanation": "A debt fund's two core risks are credit (default) risk, that an issuer fails to pay interest or principal, and interest-rate risk, that bond prices move when market rates change.",
+          "difficulty": 2,
+          "case_position": 3,
+          "marks": 1
+        },
+        {
+          "stem": "Karthik's interval fund lets him transact only during short, specified windows and is otherwise shut. This makes it a variant of which structure?",
+          "options": [
+            {"key": "A", "text": "A closed-end fund that opens for transactions only during set periods"},
+            {"key": "B", "text": "An open-ended fund, since he can eventually buy and sell", "misconception": "assuming any ability to transact makes a fund open-ended"},
+            {"key": "C", "text": "An exchange-traded fund bought only on the exchange", "misconception": "confusing scheduled transaction windows with exchange trading"},
+            {"key": "D", "text": "An index fund that mirrors a benchmark", "misconception": "confusing a structure with an investment style"}
+          ],
+          "correct_key": "A",
+          "explanation": "An interval fund is a variant of a closed-end fund that becomes open for purchase and redemption only during specified transaction periods, unlike an open-ended fund where units can be bought or redeemed continuously.",
+          "difficulty": 2,
+          "case_position": 4,
+          "marks": 1
+        },
+        {
+          "stem": "Over five years, one of Karthik's schemes had returns with a standard deviation of 18% around its average, while the other's was 6%. Which scheme's returns are more volatile?",
+          "options": [
+            {"key": "A", "text": "The 18% scheme, because a larger standard deviation means wider swings around the average"},
+            {"key": "B", "text": "The 6% scheme, because a larger standard deviation means higher returns", "misconception": "reading standard deviation as a measure of return rather than dispersion"},
+            {"key": "C", "text": "They are equally volatile, since both are equity", "misconception": "ignoring the actual dispersion figures"},
+            {"key": "D", "text": "Volatility cannot be compared from standard deviation", "misconception": "denying that standard deviation quantifies risk"}
+          ],
+          "correct_key": "A",
+          "explanation": "Standard deviation measures how far returns spread around their average, so it is the common gauge of volatility. The scheme with the 18% standard deviation swings more widely and is therefore more volatile than the one at 6%.",
+          "difficulty": 2,
+          "case_position": 5,
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "scenario": "Farhan, aged 45, runs a manufacturing business in Ahmedabad and has a taxable income of about Rs 1.2 crore this year. He carries a health insurance policy with a sum insured of Rs 5 lakh and holds a unit-linked insurance plan (ULIP) he bought three years ago. Recently his car was damaged in an accident; the repair cost Rs 80,000 and his motor insurer reimbursed exactly that amount, leaving him no better and no worse off financially than before the accident. He is now organising his estate: he wants to put down, in a formal legal document, how his assets should pass to his family after his death, and he has separately filled in nominee details on his bank and insurance accounts. He is also curious why the tax he finally pays works out to more than the plain slab rate suggests.",
+      "concept_titles": [
+        "Insurable Risk and the Principle of Indemnity",
+        "Non-Life Insurance and Sum Insured",
+        "ULIPs and Variable Insurance Products",
+        "Estate Planning Tools: Wills, Trusts, Gifts and Nomination",
+        "Effective Rate of Tax: Surcharge and Cess"
+      ],
+      "questions": [
+        {
+          "stem": "Farhan's car repair cost Rs 80,000 and his motor insurer reimbursed exactly Rs 80,000, leaving him neither richer nor poorer. This outcome reflects which insurance principle?",
+          "options": [
+            {"key": "A", "text": "Indemnity, which restores the insured to the same financial position, no profit"},
+            {"key": "B", "text": "A fixed sum-assured payout made regardless of the actual loss", "misconception": "applying a life-cover fixed payout to a loss-reimbursement cover"},
+            {"key": "C", "text": "A no-claim bonus paid for staying accident-free", "misconception": "confusing a claim reimbursement with a loyalty discount"},
+            {"key": "D", "text": "A maturity benefit returned at the end of the policy", "misconception": "confusing a general-insurance claim with a savings payout"}
+          ],
+          "correct_key": "A",
+          "explanation": "Under the principle of indemnity, a general insurance claim compensates the actual loss so the insured ends up in the same financial position as before, with no gain. Paying exactly the Rs 80,000 repair cost is indemnity in action.",
+          "difficulty": 2,
+          "case_position": 1,
+          "marks": 1
+        },
+        {
+          "stem": "Farhan's health policy has a sum insured of Rs 5 lakh. He is hospitalised with a bill of Rs 7 lakh. Ignoring any add-ons, the most the insurer will pay under this policy is:",
+          "options": [
+            {"key": "A", "text": "Rs 5 lakh, because the sum insured is the insurer's maximum liability"},
+            {"key": "B", "text": "Rs 7 lakh, because the full hospital bill is always covered", "misconception": "assuming the actual bill overrides the sum insured cap"},
+            {"key": "C", "text": "Rs 2 lakh, the amount above the sum insured", "misconception": "paying only the excess over the sum insured"},
+            {"key": "D", "text": "Rs 6 lakh, the average of the sum insured and the bill", "misconception": "averaging the cover and the claim"}
+          ],
+          "correct_key": "A",
+          "explanation": "The sum insured is the maximum the insurer will pay for claims in the policy period. With a Rs 5 lakh sum insured, a Rs 7 lakh bill is met only up to Rs 5 lakh; the balance is Farhan's to bear.",
+          "difficulty": 2,
+          "case_position": 2,
+          "marks": 1
+        },
+        {
+          "stem": "Farhan wants to surrender his ULIP, which he bought three years ago. What lock-in period applies to a ULIP?",
+          "options": [
+            {"key": "A", "text": "Five years, before which the surrender value is not paid out"},
+            {"key": "B", "text": "Three years, so he can exit now with full value", "misconception": "assuming a shorter lock-in that lets him exit immediately"},
+            {"key": "C", "text": "One year from purchase", "misconception": "confusing a ULIP with a short-tenure product"},
+            {"key": "D", "text": "No lock-in, as units can be redeemed any day", "misconception": "treating a ULIP like an open-ended mutual fund"}
+          ],
+          "correct_key": "A",
+          "explanation": "A unit-linked insurance plan has a five-year lock-in; the surrender value is paid only after that period. Having held it three years, Farhan cannot yet receive the surrender proceeds.",
+          "difficulty": 2,
+          "case_position": 3,
+          "marks": 1
+        },
+        {
+          "stem": "Farhan wants a formal legal document stating how his assets should pass to his family after his death. Which estate-planning tool is this, and how does it differ from the nominations he filled in?",
+          "options": [
+            {"key": "A", "text": "A will, which declares his intentions for his property; a nominee only receives or holds the asset, not necessarily owns it"},
+            {"key": "B", "text": "A nomination, because the nominee automatically becomes the full owner", "misconception": "treating a nominee as the final owner rather than a receiver/trustee"},
+            {"key": "C", "text": "A power of attorney, which directs his assets after death", "misconception": "confusing an authority that operates during life with one effective after death"},
+            {"key": "D", "text": "A gift deed, which transfers assets after he dies", "misconception": "confusing a lifetime transfer with a testamentary one"}
+          ],
+          "correct_key": "A",
+          "explanation": "A will is the legal declaration of how a person wants their property dealt with after death. A nomination only names who receives or holds an asset; it does not by itself make the nominee the absolute owner, so it does not replace a will.",
+          "difficulty": 3,
+          "case_position": 4,
+          "marks": 1
+        },
+        {
+          "stem": "Farhan's taxable income is about Rs 1.2 crore, so a surcharge is added to his tax and a cess is then applied on top. Why does his final tax exceed the plain slab-rate amount?",
+          "options": [
+            {"key": "A", "text": "Because the surcharge (income above Rs 1 crore) and the cess are added over the slab tax, raising his effective rate"},
+            {"key": "B", "text": "Because surcharge and cess lower the effective rate below the slab rate", "misconception": "assuming surcharge and cess reduce rather than raise the burden"},
+            {"key": "C", "text": "Because the effective rate always equals the slab rate exactly", "misconception": "ignoring that surcharge and cess sit on top of slab tax"},
+            {"key": "D", "text": "Because income above Rs 10 lakh is fully exempt from surcharge", "misconception": "misplacing the income level at which surcharge applies"}
+          ],
+          "correct_key": "A",
+          "explanation": "For income above Rs 1 crore a surcharge is levied on the tax, and a cess is charged on the total. Both add to the slab-rate tax, so the effective rate of tax Farhan actually pays is higher than the headline slab rate.",
+          "difficulty": 3,
+          "case_position": 5,
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "scenario": "Neha, aged 28, has started her first job in Pune and has never invested before. She engages a registered professional who charges a fee to give her personalised advice suited to her goals, rather than merely executing buy and sell orders for a commission. This professional first sits down to identify Neha's life goals and draws up an action plan to align her money to meet them. The plan spreads her savings across three categories of investment with different risk-and-return characteristics: equity, debt and gold, so that a fall in the value of one may be cushioned by the others holding up. A year later, Neha reviews an equity investment where Rs 1,00,000 she put in five years ago has grown to Rs 1,61,051.",
+      "concept_titles": [
+        "What Financial Planning Is",
+        "Role and Types of Financial Advisers",
+        "Asset Allocation and Diversification",
+        "What Is an Asset Class",
+        "Compound Annual Growth Rate (CAGR)"
+      ],
+      "questions": [
+        {
+          "stem": "The professional first identifies Neha's life goals and draws up an action plan to align her money to meet them. This overall process is called:",
+          "options": [
+            {"key": "A", "text": "Financial planning"},
+            {"key": "B", "text": "Budgeting, which is only recording income and expenses", "misconception": "reducing goal-based planning to mere expense tracking"},
+            {"key": "C", "text": "Filing tax returns", "misconception": "confusing a compliance task with the planning process"},
+            {"key": "D", "text": "Day trading in shares", "misconception": "confusing a short-term trading activity with long-term planning"}
+          ],
+          "correct_key": "A",
+          "explanation": "Financial planning is the process of identifying a person's goals and putting an action plan in place to align their finances to meet those goals. That is exactly what the professional is doing for Neha.",
+          "difficulty": 1,
+          "case_position": 1,
+          "marks": 1
+        },
+        {
+          "stem": "Neha's plan uses equity, debt and gold, each having its own risk-and-return characteristics. Each such category of investments is called:",
+          "options": [
+            {"key": "A", "text": "An asset class"},
+            {"key": "B", "text": "A portfolio, which is the same as one category", "misconception": "confusing the whole holding with a single category within it"},
+            {"key": "C", "text": "An index of prices", "misconception": "confusing a category of investments with a market benchmark"},
+            {"key": "D", "text": "A mutual fund scheme", "misconception": "confusing an asset category with a product that invests in it"}
+          ],
+          "correct_key": "A",
+          "explanation": "An asset class is a category of investments, such as equity, debt or gold, defined by its own risk-and-return characteristics. A portfolio is the whole set of holdings, which may combine several asset classes.",
+          "difficulty": 1,
+          "case_position": 2,
+          "marks": 1
+        },
+        {
+          "stem": "The plan spreads Neha's savings across equity, debt and gold so a fall in one may be cushioned by the others. Splitting money across asset classes in this way is:",
+          "options": [
+            {"key": "A", "text": "Asset allocation with diversification"},
+            {"key": "B", "text": "Concentration, putting everything into the best single bet", "misconception": "calling spreading of money the opposite, concentrating it"},
+            {"key": "C", "text": "Speculation on short-term price moves", "misconception": "confusing risk-spreading with short-term betting"},
+            {"key": "D", "text": "Arbitrage between two markets", "misconception": "confusing diversification with exploiting price gaps"}
+          ],
+          "correct_key": "A",
+          "explanation": "Asset allocation assigns weights across asset classes to fit an investor's goals; diversification means combining investments so a fall in one is offset by others. Spreading Neha's money across equity, debt and gold does both.",
+          "difficulty": 2,
+          "case_position": 3,
+          "marks": 1
+        },
+        {
+          "stem": "Neha's Rs 1,00,000 grew to Rs 1,61,051 over five years. The compound annual growth rate (the smoothed yearly rate) is closest to:",
+          "options": [
+            {"key": "A", "text": "About 10% a year"},
+            {"key": "B", "text": "About 12.2% a year, the total gain divided by five years", "misconception": "using a simple average instead of the compounded yearly rate"},
+            {"key": "C", "text": "About 61% a year", "misconception": "reporting the total five-year gain as if it were annual"},
+            {"key": "D", "text": "About 5% a year", "misconception": "halving the true rate for no stated reason"}
+          ],
+          "correct_key": "A",
+          "explanation": "CAGR is the steady yearly rate that compounds the start value to the end value. Rs 1,00,000 growing to Rs 1,61,051 in five years works out to about 10% a year, since 1.10 compounded five times gives 1.61051.",
+          "difficulty": 2,
+          "case_position": 4,
+          "marks": 1
+        },
+        {
+          "stem": "The professional Neha engaged charges a fee for personalised advice suited to her goals, rather than merely executing trades for a commission. This professional is best described as:",
+          "options": [
+            {"key": "A", "text": "An investment adviser giving fee-based, personalised advice"},
+            {"key": "B", "text": "A stockbroker whose job is only to execute her trades", "misconception": "equating an adviser with an execution-only broker"},
+            {"key": "C", "text": "A bank teller processing deposits", "misconception": "confusing advice with routine banking service"},
+            {"key": "D", "text": "An insurance surveyor assessing claims", "misconception": "confusing an adviser with a claims-assessment role"}
+          ],
+          "correct_key": "A",
+          "explanation": "A financial or investment adviser provides personalised, goal-based advice, typically for a fee. That differs from a broker, who is paid a commission mainly to execute buy and sell orders without giving tailored advice.",
+          "difficulty": 2,
+          "case_position": 5,
+          "marks": 1
+        }
+      ]
+    }
+  ]
+}
