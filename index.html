@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="description" content="Weeker — adaptive NISM Series X-A exam prep." />
+  <title>Weeker · adaptive NISM X-A prep</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230E1424'/%3E%3Cpath d='M6 9l3.5 14L13 12l3 11 3-11 3.5 11L26 9' fill='none' stroke='%238B5CF6' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="app">
+    <aside class="sidebar" aria-label="Primary">
+      <a class="brand" href="#/dashboard" aria-label="Weeker home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <rect width="32" height="32" rx="8" fill="var(--surface-2)"></rect>
+          <path d="M6 9l3.5 14L13 12l3 11 3-11 3.5 11L26 9" fill="none" stroke="url(#g)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path>
+          <defs><linearGradient id="g" x1="0" y1="0" x2="32" y2="32"><stop offset="0" stop-color="#A78BFA"></stop><stop offset="1" stop-color="#22D3EE"></stop></linearGradient></defs>
+        </svg>
+        <span class="brand-name">Weeker</span>
+      </a>
+
+      <nav class="nav" aria-label="Sections">
+        <a class="nav-item" href="#/dashboard" data-route="dashboard">
+          <span class="nav-ico" aria-hidden="true">▤</span><span>Dashboard</span>
+        </a>
+        <a class="nav-item" href="#/study" data-route="study">
+          <span class="nav-ico" aria-hidden="true">◎</span><span>Study</span>
+        </a>
+        <a class="nav-item" href="#/diagnostic" data-route="diagnostic">
+          <span class="nav-ico" aria-hidden="true">◇</span><span>Diagnostic</span>
+        </a>
+        <a class="nav-item" href="#/mock" data-route="mock">
+          <span class="nav-ico" aria-hidden="true">▷</span><span>Mock exam</span>
+        </a>
+        <a class="nav-item" href="#/flash" data-route="flash">
+          <span class="nav-ico" aria-hidden="true">⚡</span><span>Flashcards</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-user" id="sidebar-user" hidden>
+        <span class="user-name" id="user-name"></span>
+        <button class="btn ghost logout-btn" id="logout-btn" type="button">Log out</button>
+      </div>
+
+      <div class="sidebar-foot">
+        <span class="dot" id="health-dot" aria-hidden="true"></span>
+        <span id="health-label" class="muted small">connecting…</span>
+      </div>
+    </aside>
+
+    <main id="main" class="main" tabindex="-1">
+      <div id="view" class="view" aria-live="polite"></div>
+    </main>
+  </div>
+
+  <div id="toasts" class="toasts" role="status" aria-live="polite" aria-atomic="false"></div>
+
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
